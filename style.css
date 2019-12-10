@@ -2029,6 +2029,11 @@ ul {
   margin-bottom: 20px;
 }
 
+.community-featured-posts .title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .community-featured-posts, .community-activity {
   padding-top: 40px;
   width: 100%;
@@ -2038,7 +2043,7 @@ ul {
   margin-bottom: 30px;
 }
 
-.community-header h1 {
+.community-header .title {
   margin-bottom: 0;
   font-size: 16px;
 }
