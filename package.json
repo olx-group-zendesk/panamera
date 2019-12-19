@@ -1,7 +1,7 @@
 {
   "name": "copenhagen_theme",
-  "version": "1.0.0",
-  "repository": "git@github.com:zendesk/copenhagen_theme.git",
+  "version": "1.0.1",
+  "repository": "git@github.com:olx-group-zendesk/panamera.git",
   "dependencies": {
     "node-fetch": "^2.1.2"
   },
