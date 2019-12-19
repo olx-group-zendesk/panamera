@@ -1,12 +1,12 @@
-# Copenhagen Theme by Zendesk
+# Panamera Theme by OLX Group
 
-The Copenhagen theme is the default Zendesk Guide theme. It is designed to be responsive and accessible.
+The Panamera theme is the default Zendesk Guide theme. It is designed to be responsive and accessible.
 Learn more about customizing Zendesk Guide [here](https://support.zendesk.com/hc/en-us/sections/206670747).
 
-The Copenhagen theme for Help Center consists of a [set of templates](#templates), [styles](#styles), a Javascript file used mainly for interactions and an [assets folder](#assets).
+The Panamera theme for Help Center consists of a [set of templates](#templates), [styles](#styles), a Javascript file used mainly for interactions and an [assets folder](#assets).
 
 ## How to use
-This is the latest version of the Copenhagen theme available for Guide. It is possible to use this repository as a starting point to build your own custom theme. You can fork this repository as you see fit.
+This is the latest version of the Panamera theme available for Guide. It is possible to use this repository as a starting point to build your own custom theme. You can fork this repository as you see fit.
 You can use your favorite IDE to develop themes and preview your changes locally in a web browser using the Zendesk Apps Tools (ZAT). For details, see [Previewing theme changes locally](https://support.zendesk.com/hc/en-us/articles/115014810447).
 
 ## Customizing your theme
