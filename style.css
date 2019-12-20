@@ -458,6 +458,55 @@ ul {
 
 .logo img {
   max-height: 37px;
+  height: 37px;
+}
+
+@media (min-width: 768px) {
+  .logo img {
+    max-height: 42px;
+    height: 42px;
+  }
+}
+
+.logo div {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .logo div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    padding-left: 10px;
+    line-height: 30px;
+    border-left: 2px solid #c7dcff;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo div > .title {
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo div > .subtitle {
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    display: flex;
+  }
 }
 
 .user-nav {
