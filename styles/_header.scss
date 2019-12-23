@@ -4,10 +4,14 @@ $header-height: 71px;
 .header {
     background-color: $header-background-color;
     box-shadow: $header-box-shadow;
+
     & > div {
         @include max-width-container;
+        @include tablet {
+            height: $header-height;
+        }
         display: flex;
-        height: $header-height;
+        height: $header-height - 16px;
         width: 100%;
         align-items: center;
         justify-content: space-between;
@@ -40,6 +44,7 @@ $header-height: 71px;
                 font-size: $font-size-bigger;
                 font-weight: $font-weight-semibold;
                 border-left: unset;
+                line-height: 125%;
                 a {
                     &:hover,
                     &:focus,
@@ -73,13 +78,16 @@ $header-height: 71px;
     white-space: nowrap;
 
     &[aria-expanded="true"] {
+        @include tablet {
+            top: $header-height;
+        }
         background-color: #fff;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15),
             0 4px 10px 0 rgba(0, 0, 0, 0.1);
         border: solid 1px #ddd;
         right: 0;
         left: 0;
-        top: $header-height;
+        top: $header-mobile-height;
         z-index: 1;
 
         > a {

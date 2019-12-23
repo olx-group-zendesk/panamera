@@ -40,10 +40,10 @@ $desktop-width: 1024px;
 $max-width-container: 1160px;
 
 // Fonts
-$heading_font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
-    sans-serif !default;
-$text_font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
-    sans-serif !default;
+$heading_font: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+    Arial, sans-serif !default;
+$text_font: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+    Arial, sans-serif !default;
 $font-weight-base: 400;
 $font-weight-light: 300;
 $font-weight-semibold: 600;
@@ -53,7 +53,7 @@ $header-background-color: rgba(0, 47, 52, 0.03);
 $header-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
 $primary-hover-color: #3b5998;
 $secondary-hover-color: #00777f;
-
+$header-mobile-height: 55px;
 // PRIMARY PALETTE
 
 // SECONDARY PALETTE
