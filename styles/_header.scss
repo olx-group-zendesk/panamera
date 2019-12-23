@@ -2,12 +2,17 @@
 $header-height: 71px;
 
 .header {
-    @include max-width-container;
-    position: relative;
-    align-items: center;
-    display: flex;
-    height: $header-height;
-    justify-content: space-between;
+    background-color: $header-background-color;
+    box-shadow: $header-box-shadow;
+    & > div {
+        @include max-width-container;
+        display: flex;
+        height: $header-height;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 4px;
+    }
 }
 
 .logo {
@@ -25,27 +30,24 @@ $header-height: 71px;
             display: flex;
             flex-direction: column;
             margin-left: 10px;
-            padding-left: 10px;
-            line-height: 30px;
             border-left: 2px solid $brand_color_ext_blue_light;
         }
 
         & > .title {
             @include tablet {
+                text-transform: uppercase;
                 white-space: nowrap;
                 font-size: $font-size-bigger;
                 font-weight: $font-weight-semibold;
-                margin-left: 10px;
-                padding-left: 10px;
+                border-left: unset;
             }
         }
         & > .subtitle {
             @include tablet {
                 white-space: nowrap;
-                font-size: $font-size-bigger;
-                font-weight: $font-weight-semibold;
-                margin-left: 10px;
-                padding-left: 10px;
+                font-size: $font-size-smaller;
+                font-weight: $font-weight-light;
+                border-left: unset;
             }
         }
     }

@@ -1,150 +1,161 @@
 /***** Base *****/
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: $background_color;
-  color: $text_color;
-  font-family: $text_font;
-  font-size: $font-size-base;
-  font-weight: $font-weight-base;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+    background-color: $background_color;
+    color: $text_color;
+    font-family: $text_font;
+    font-size: $font-size-base;
+    font-weight: $font-weight-base;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
 
-  > main {
-    @include desktop {
-      min-height: 65vh;
+    > main {
+        @include desktop {
+            min-height: 65vh;
+        }
     }
-  }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $heading_font;
-  font-weight: $font-weight-base;
-  margin-top: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading_font;
+    font-weight: $font-weight-base;
+    margin-top: 0;
 }
 
-h1 { font-size: 32px; }
-h2 { font-size: 22px; }
+h1 {
+    font-size: 32px;
+}
+h2 {
+    font-size: 22px;
+}
 h3 {
-  font-size: 18px;
-  font-weight: $font-weight-semibold;
+    font-size: 18px;
+    font-weight: $font-weight-semibold;
 }
 
-h4 { font-size: 16px; }
+h4 {
+    font-size: 16px;
+}
 
 a {
-  color: $link_color;
-  text-decoration: none;
+    color: $link_color;
+    text-decoration: none;
 
-  &:hover,
-  &:active,
-  &:focus {
-    text-decoration: underline;
-  }
+    &:hover,
+    &:active,
+    &:focus {
+        color: $link-hover-color;
+    }
 }
 
 input,
 textarea {
-  color: #000;
-  font-size: $input-font-size;
+    color: #000;
+    font-size: $input-font-size;
 }
 
 input {
-  font-weight: $font-weight-light;
-  max-width: 100%;
-  box-sizing: border-box;
-  outline: none;
-  transition: border .12s ease-in-out;
+    font-weight: $font-weight-light;
+    max-width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    transition: border 0.12s ease-in-out;
 
-  &:focus {
-    border: 1px solid $brand_color;
-  }
+    &:focus {
+        border: 1px solid $brand_color;
+    }
 }
 
 input[disabled] {
-  background-color: #ddd;
+    background-color: #ddd;
 }
 
 select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: url($assets-dropdown-arrow-svg) no-repeat #fff;
-  background-position: right 10px center;
-  border: 1px solid $border-color;
-  border-radius: 4px;
-  padding: 8px 30px 8px 10px;
-  outline: none;
-  color: $field-text-focus-color;
-  width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url($assets-dropdown-arrow-svg) no-repeat #fff;
+    background-position: right 10px center;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    padding: 8px 30px 8px 10px;
+    outline: none;
+    color: $field-text-focus-color;
+    width: 100%;
 
-  &:focus {
-    border: 1px solid $brand_color;
-  }
+    &:focus {
+        border: 1px solid $brand_color;
+    }
 
-  &::-ms-expand {
-    display: none;
-  }
+    &::-ms-expand {
+        display: none;
+    }
 }
 
 textarea {
-  border: 1px solid $border-color;
-  border-radius: 2px;
-  resize: vertical;
-  width: 100%;
-  outline: none;
-  padding: 10px;
+    border: 1px solid $border-color;
+    border-radius: 2px;
+    resize: vertical;
+    width: 100%;
+    outline: none;
+    padding: 10px;
 
-  &:focus {
-    border: 1px solid $brand_color;
-  }
+    &:focus {
+        border: 1px solid $brand_color;
+    }
 }
 
 .container {
-  @include max-width-container;
+    @include max-width-container;
 }
 
 .container-divider {
-  border-top: 1px solid $border-color;
-  margin-bottom: 20px;
+    border-top: 1px solid $border-color;
+    margin-bottom: 20px;
 }
 
 ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .error-page {
-  @include max-width-container;
+    @include max-width-container;
 }
 
 .dropdown-toggle {
-  background: none;
-  border: 0;
-  padding: 0;
-  text-align: initial;
+    background: none;
+    border: 0;
+    padding: 0;
+    text-align: initial;
 }
- .dropdown-toggle:focus {
-  outline: 0;
-  text-decoration: underline;
+.dropdown-toggle:focus {
+    outline: 0;
+    text-decoration: underline;
 }
 
 .dropdown-toggle::after {
-  color: inherit;
+    color: inherit;
 }
 
 .visibility-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap;
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
 }

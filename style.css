@@ -20,7 +20,12 @@ body {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $heading_font;
   font-weight: 400;
   margin-top: 0;
@@ -49,7 +54,7 @@ a {
 }
 
 a:hover, a:active, a:focus {
-  text-decoration: underline;
+  color: #00777f;
 }
 
 input,
@@ -63,7 +68,7 @@ input {
   max-width: 100%;
   box-sizing: border-box;
   outline: none;
-  transition: border .12s ease-in-out;
+  transition: border 0.12s ease-in-out;
 }
 
 input:focus {
@@ -439,18 +444,24 @@ ul {
 
 /***** Header *****/
 .header {
+  background-color: rgba(0, 47, 52, 0.03);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header > div {
   max-width: 1160px;
   margin: 0 auto;
   padding: 0 5%;
-  position: relative;
-  align-items: center;
   display: flex;
   height: 71px;
+  width: 100%;
+  align-items: center;
   justify-content: space-between;
+  margin-bottom: 4px;
 }
 
 @media (min-width: 1160px) {
-  .header {
+  .header > div {
     padding: 0;
     width: 90%;
   }
@@ -477,29 +488,26 @@ ul {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
-    padding-left: 10px;
-    line-height: 30px;
     border-left: 2px solid #c7dcff;
   }
 }
 
 @media (min-width: 768px) {
   .logo div > .title {
+    text-transform: uppercase;
     white-space: nowrap;
     font-size: 16px;
     font-weight: 600;
-    margin-left: 10px;
-    padding-left: 10px;
+    border-left: unset;
   }
 }
 
 @media (min-width: 768px) {
   .logo div > .subtitle {
     white-space: nowrap;
-    font-size: 16px;
-    font-weight: 600;
-    margin-left: 10px;
-    padding-left: 10px;
+    font-size: 11px;
+    font-weight: 300;
+    border-left: unset;
   }
 }
 
@@ -1044,6 +1052,10 @@ ul {
   color: $text_color;
 }
 
+.promoted-articles-item a:hover, .promoted-articles-item a:active, .promoted-articles-item a:focus {
+  color: #00777f;
+}
+
 .promoted-articles-item .icon-lock::before {
   vertical-align: baseline;
 }
@@ -1392,20 +1404,27 @@ ul {
   max-width: 100%;
 }
 
-.article-body ul, .article-body ol {
+.article-body ul,
+.article-body ol {
   padding-left: 20px;
   list-style-position: outside;
   margin: 20px 0 20px 20px;
 }
 
-[dir="rtl"] .article-body ul, [dir="rtl"] .article-body ol {
+[dir="rtl"] .article-body ul, [dir="rtl"]
+.article-body ol {
   padding-right: 20px;
   padding-left: 0;
   margin-left: 0;
   margin-right: 20px;
 }
 
-.article-body ul > ul, .article-body ol > ol, .article-body ol > ul, .article-body ul > ol, .article-body li > ul, .article-body li > ol {
+.article-body ul > ul,
+.article-body ol > ol,
+.article-body ol > ul,
+.article-body ul > ol,
+.article-body li > ul,
+.article-body li > ol {
   margin: 0;
 }
 
@@ -1920,20 +1939,27 @@ ul {
   max-width: 100%;
 }
 
-.comment-body ul, .comment-body ol {
+.comment-body ul,
+.comment-body ol {
   padding-left: 20px;
   list-style-position: outside;
   margin: 20px 0 20px 20px;
 }
 
-[dir="rtl"] .comment-body ul, [dir="rtl"] .comment-body ol {
+[dir="rtl"] .comment-body ul, [dir="rtl"]
+.comment-body ol {
   padding-right: 20px;
   padding-left: 0;
   margin-left: 0;
   margin-right: 20px;
 }
 
-.comment-body ul > ul, .comment-body ol > ol, .comment-body ol > ul, .comment-body ul > ol, .comment-body li > ul, .comment-body li > ol {
+.comment-body ul > ul,
+.comment-body ol > ol,
+.comment-body ol > ul,
+.comment-body ul > ol,
+.comment-body li > ul,
+.comment-body li > ol {
   margin: 0;
 }
 
@@ -2494,20 +2520,27 @@ ul {
   max-width: 100%;
 }
 
-.post-body ul, .post-body ol {
+.post-body ul,
+.post-body ol {
   padding-left: 20px;
   list-style-position: outside;
   margin: 20px 0 20px 20px;
 }
 
-[dir="rtl"] .post-body ul, [dir="rtl"] .post-body ol {
+[dir="rtl"] .post-body ul, [dir="rtl"]
+.post-body ol {
   padding-right: 20px;
   padding-left: 0;
   margin-left: 0;
   margin-right: 20px;
 }
 
-.post-body ul > ul, .post-body ol > ol, .post-body ol > ul, .post-body ul > ol, .post-body li > ul, .post-body li > ol {
+.post-body ul > ul,
+.post-body ol > ol,
+.post-body ol > ul,
+.post-body ul > ol,
+.post-body li > ul,
+.post-body li > ol {
   margin: 0;
 }
 
