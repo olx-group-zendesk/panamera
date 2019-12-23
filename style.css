@@ -500,6 +500,9 @@ ul {
     font-weight: 600;
     border-left: unset;
   }
+  .logo div > .title a:hover, .logo div > .title a:focus, .logo div > .title a:active {
+    color: #3b5998;
+  }
 }
 
 @media (min-width: 768px) {

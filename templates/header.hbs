@@ -1,9 +1,9 @@
 <header class="header">
   <div>
     <div class="logo">
-      {{#link 'help_center'}}
-      <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
-      {{/link}}
+      <a target="_blank" rel="noopener noreferrer" href="{{settings.country_site_url}}">
+        <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
+      </a>
       <div>
         <div class="title">{{#link 'help_center'}}{{dc 'header_title'}}{{/link}}</div>
         <div class="subtitle">{{settings.country_name}}</div>
