@@ -1,5 +1,5 @@
 /***** Header *****/
-$header-height: 71px;
+$header-height: 72px;
 
 .header {
     background-color: $header-background-color;
@@ -24,48 +24,28 @@ $header-height: 71px;
         max-height: 37px;
         height: 37px;
         @include tablet {
-            max-height: 42px;
-            height: 42px;
+            max-height: 41px;
+            height: 41px;
         }
     }
     div {
         display: none;
         @include tablet {
-            display: flex;
-            flex-direction: column;
-            margin-left: 10px;
-            border-left: 2px solid $brand_color_ext_blue_light;
-        }
-
-        & > .title {
-            @include tablet {
-                text-transform: uppercase;
+            display: block;
+            margin-left: 16px;
+            a {
+                color: $brand_text_color;
                 white-space: nowrap;
-                font-size: $font-size-bigger;
-                font-weight: $font-weight-semibold;
-                border-left: unset;
-                line-height: 125%;
-                a {
-                    &:hover,
-                    &:focus,
-                    &:active {
-                        color: $primary-hover-color;
-                    }
-                }
-            }
-        }
-        & > .subtitle {
-            @include tablet {
-                white-space: nowrap;
-                font-size: $font-size-smaller;
-                font-weight: $font-weight-light;
-                border-left: unset;
+                font-size: 20px;
+                line-height: 1.1;
+                font-weight: 500;
             }
         }
     }
 
     @include tablet {
         display: flex;
+        align-items: center;
     }
 }
 
@@ -160,27 +140,27 @@ $header-height: 71px;
 }
 
 .skip-navigation {
-  align-items: center;
-  background-color: black;
-  color: white;
-  display: flex;
-  font-size: 14px;
-  justify-content: center;
-  left: -999px;
-  margin: 20px;
-  padding: 20px;
-  overflow: hidden;
-  position: absolute;
-  top: auto;
-  z-index: -999;
-
-  &:focus,
-  &:active {
-    left: auto;
-    overflow: auto;
-    text-align: center;
-    text-decoration: none;
+    align-items: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    left: -999px;
+    margin: 20px;
+    padding: 20px;
+    overflow: hidden;
+    position: absolute;
     top: auto;
-    z-index: 999;
-  }
+    z-index: -999;
+
+    &:focus,
+    &:active {
+        left: auto;
+        overflow: auto;
+        text-align: center;
+        text-decoration: none;
+        top: auto;
+        z-index: 999;
+    }
 }

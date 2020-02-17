@@ -444,7 +444,7 @@ ul {
 
 /***** Header *****/
 .header {
-  background-color: rgba(0, 47, 52, 0.03);
+  background-color: #002f34;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -453,7 +453,7 @@ ul {
   margin: 0 auto;
   padding: 0 5%;
   display: flex;
-  height: 55px;
+  height: 56px;
   width: 100%;
   align-items: center;
   justify-content: space-between;
@@ -469,7 +469,7 @@ ul {
 
 @media (min-width: 768px) {
   .header > div {
-    height: 71px;
+    height: 72px;
   }
 }
 
@@ -480,8 +480,8 @@ ul {
 
 @media (min-width: 768px) {
   .logo img {
-    max-height: 42px;
-    height: 42px;
+    max-height: 41px;
+    height: 41px;
   }
 }
 
@@ -491,39 +491,22 @@ ul {
 
 @media (min-width: 768px) {
   .logo div {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    border-left: 2px solid #c7dcff;
+    display: block;
+    margin-left: 16px;
   }
-}
-
-@media (min-width: 768px) {
-  .logo div > .title {
-    text-transform: uppercase;
+  .logo div a {
+    color: $brand_text_color;
     white-space: nowrap;
-    font-size: 16px;
-    font-weight: 600;
-    border-left: unset;
-    line-height: 125%;
-  }
-  .logo div > .title a:hover, .logo div > .title a:focus, .logo div > .title a:active {
-    color: #3b5998;
-  }
-}
-
-@media (min-width: 768px) {
-  .logo div > .subtitle {
-    white-space: nowrap;
-    font-size: 11px;
-    font-weight: 300;
-    border-left: unset;
+    font-size: 20px;
+    line-height: 1.1;
+    font-weight: 500;
   }
 }
 
 @media (min-width: 768px) {
   .logo {
     display: flex;
+    align-items: center;
   }
 }
 
@@ -551,7 +534,7 @@ ul {
 
 @media (min-width: 768px) {
   .user-nav[aria-expanded="true"] {
-    top: 71px;
+    top: 72px;
   }
 }
 
