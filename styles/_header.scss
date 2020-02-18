@@ -15,7 +15,6 @@ $header-height: 72px;
         width: 100%;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 4px;
     }
 }
 
@@ -33,7 +32,11 @@ $header-height: 72px;
         @include tablet {
             display: block;
             margin-left: 16px;
+            [dir="rtl"] & {
+                margin-right: 16px;
+            }
             a {
+                font-family: $heading-font;
                 color: $brand_text_color;
                 white-space: nowrap;
                 font-size: 20px;
@@ -50,45 +53,16 @@ $header-height: 72px;
 }
 
 .user-nav {
-    @include tablet {
-        position: relative;
-    }
-    display: inline-block;
-    position: absolute;
-    white-space: nowrap;
-
-    &[aria-expanded="true"] {
-        @include tablet {
-            top: $header-height;
-        }
-        background-color: #fff;
-        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15),
-            0 4px 10px 0 rgba(0, 0, 0, 0.1);
-        border: solid 1px #ddd;
-        right: 0;
-        left: 0;
-        top: $header-mobile-height;
-        z-index: 1;
-
-        > a {
-            display: block;
-            margin: 20px;
-        }
-    }
+    position: relative;
 }
 
 .nav-wrapper {
+    display: flex;
     a {
-        @include tablet {
-            display: inline-block;
-        }
-
         border: 0;
-        color: $link_color;
-        display: none;
-        font-size: 14px;
-        padding: 0 20px 0 0;
-        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         [dir="rtl"] & {
             padding: 0 0 0 20px;
@@ -97,44 +71,13 @@ $header-height: 72px;
         &:hover,
         &:focus,
         &:active {
-            background-color: transparent;
-            color: $link_color;
-            text-decoration: underline;
+            background-color: $white;
+            color: $charcoal;
+            text-decoration: none;
         }
 
         &.login {
             display: inline-block;
-        }
-    }
-
-    .menu-button {
-        @include tablet {
-            display: none;
-        }
-        background: none;
-        border: 0;
-        color: $link_color;
-        display: inline-block;
-        margin-right: 10px;
-        padding: 0;
-        width: auto;
-
-        .icon-menu {
-            vertical-align: middle;
-            width: 13px;
-            height: 13px;
-        }
-
-        [dir="rtl"] & {
-            margin-left: 10px;
-            margin-right: 0;
-        }
-
-        &:hover,
-        &:focus,
-        &:active {
-            background-color: transparent;
-            color: $link_color;
         }
     }
 }
