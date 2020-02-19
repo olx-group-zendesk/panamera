@@ -54,6 +54,8 @@ $header-height: 72px;
 
 .user-nav {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .nav-wrapper {

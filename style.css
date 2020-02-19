@@ -568,6 +568,8 @@ input[type="submit"][disabled] {
 
 .user-nav {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .nav-wrapper {
@@ -637,30 +639,31 @@ input[type="submit"][disabled] {
 
 .user-info > [role="button"] {
   border: 0;
-  color: $link_color;
+  color: #fff;
   min-width: 0;
   padding: 0;
   white-space: nowrap;
 }
 
 .user-info > [role="button"]:hover, .user-info > [role="button"]:focus {
-  color: $link_color;
+  color: #fff;
   background-color: transparent;
 }
 
 .user-info > [role="button"]::after {
-  color: $link_color;
-  padding-right: 15px;
+  color: #fff;
+  padding-right: 28px;
 }
 
 [dir="rtl"] .user-info > [role="button"]::after {
-  padding-left: 15px;
+  padding-left: 28px;
   padding-right: 0;
 }
 
 #user #user-name {
   display: none;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 @media (min-width: 768px) {
@@ -670,7 +673,7 @@ input[type="submit"][disabled] {
 }
 
 #user #user-name:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /***** User avatar *****/
@@ -680,6 +683,11 @@ input[type="submit"][disabled] {
   border-radius: 50%;
   display: inline-block;
   vertical-align: middle;
+  margin-right: 11px;
+}
+
+[dir="rtl"] .user-avatar {
+  margin-left: 11px;
 }
 
 .avatar {
@@ -706,6 +714,14 @@ input[type="submit"][disabled] {
   right: -2px;
   text-align: center;
   width: 14px;
+}
+
+.dropdown-menu-end {
+  right: 14px;
+}
+
+[dir="rtl"] .dropdown-menu-end {
+  left: 14px;
 }
 
 /***** Footer *****/
