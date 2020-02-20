@@ -11,19 +11,19 @@
 
     > [role="button"] {
         border: 0;
-        color: $white;
+        color: $color-white;
         min-width: 0;
         padding: 0;
         white-space: nowrap;
 
         &:hover,
         &:focus {
-            color: $white;
+            color: $color-white;
             background-color: transparent;
         }
 
         &::after {
-            color: $white;
+            color: $color-white;
             padding-right: 28px;
 
             [dir="rtl"] & {

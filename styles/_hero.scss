@@ -24,8 +24,9 @@
             line-height: 1.05;
             letter-spacing: 0.5px;
         }
-        font-size: $font-size-h6;
+        font-size: $font-size-h3;
         text-align: left;
+        line-height: 1.08;
         [dir="rtl"] & {
             text-align: right;
         }

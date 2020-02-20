@@ -8,12 +8,12 @@
             font-size: $font-size-p3;
         }
         border: 1px solid $border-color;
-        border-radius: 2px;
+        border-radius: $border-radius;
         box-sizing: border-box;
         color: $field-text-color;
         font-family: $text_font;
 
-        height: 40px;
+        height: 48px;
         padding-left: 40px;
         padding-right: 20px;
         -webkit-appearance: none;

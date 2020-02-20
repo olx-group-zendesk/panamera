@@ -101,7 +101,7 @@ select {
 
 textarea {
     border: 1px solid $border-color;
-    border-radius: 2px;
+    border-radius: $border-radius;
     resize: vertical;
     width: 100%;
     outline: none;

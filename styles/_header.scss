@@ -11,7 +11,7 @@ $header-height: 72px;
             height: $header-height;
         }
         display: flex;
-        height: $header-height - 16px;
+        height: $header-height - 8px;
         width: 100%;
         align-items: center;
         justify-content: space-between;
@@ -20,8 +20,8 @@ $header-height: 72px;
 
 .logo {
     img {
-        max-height: 37px;
-        height: 37px;
+        max-height: 31px;
+        height: 31px;
         @include tablet {
             max-height: 41px;
             height: 41px;
@@ -73,8 +73,8 @@ $header-height: 72px;
         &:hover,
         &:focus,
         &:active {
-            background-color: $white;
-            color: $charcoal;
+            background-color: $color-white;
+            color: $color-charcoal;
             text-decoration: none;
         }
 

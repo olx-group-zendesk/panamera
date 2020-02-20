@@ -5,7 +5,7 @@ $brand_color: #2a65ea !default;
 $brand_text_color: #fff !default; //Color for text with an accent color background
 $text_color: #333 !default;
 $link_color: #2a65ea !default;
-$background_color: #fff !default;
+$background_color: #f2f4f5 !default;
 
 $visited-link-color: zass-darken($link_color, 20%);
 $hover-button-color: zass-darken($brand_color, 20%);
@@ -69,17 +69,23 @@ $font-weight-semibold: 600;
 
 // Font Sizes - OLX
 $font-size-h1: 40px;
+$font-size-h3: 24px;
 $font-size-h6: 20px;
 
 $font-size-p1: 18px;
 $font-size-p3: 16px;
+$font-size-p4: 14px;
 
 // PALETTE - OLX
-$charcoal: #002f34;
-$white: #fff;
+$color-charcoal: #002f34;
+$color-white: #fff;
+$color-blue-light: #ceddff;
+
+// Other - OLX
+$border-radius: 2px;
 
 // PANAMERA SPECIFIC
-$header-background-color: $charcoal;
+$header-background-color: $color-charcoal;
 $header-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
 $primary-hover-color: #3b5998;
 $secondary-hover-color: #00777f;
