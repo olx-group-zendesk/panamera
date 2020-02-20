@@ -794,14 +794,22 @@ input[type="submit"][disabled] {
 
 .search input[type="search"] {
   border: 1px solid #ddd;
-  border-radius: 30px;
+  border-radius: 2px;
   box-sizing: border-box;
   color: #666;
+  font-family: $text_font;
   height: 40px;
   padding-left: 40px;
   padding-right: 20px;
   -webkit-appearance: none;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .search input[type="search"] {
+    height: 72px;
+    font-size: 16px;
+  }
 }
 
 [dir="rtl"] .search input[type="search"] {
@@ -814,23 +822,6 @@ input[type="submit"][disabled] {
   color: #555;
 }
 
-.search::before {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #fff;
-  color: #777;
-  content: "\1F50D";
-  font-size: 18px;
-  position: absolute;
-  left: 15px;
-}
-
-[dir="rtl"] .search::before {
-  right: 15px;
-  left: auto;
-}
-
 .search-full input[type="search"] {
   border: 1px solid #fff;
 }
@@ -840,10 +831,16 @@ input[type="submit"][disabled] {
   background-image: url($homepage_background_image);
   background-position: center;
   background-size: cover;
-  height: 300px;
+  height: 140px;
   padding: 0 20px;
   text-align: center;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 300px;
+  }
 }
 
 .hero-inner {
@@ -852,6 +849,24 @@ input[type="submit"][disabled] {
   transform: translateY(-50%);
   max-width: 610px;
   margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 20px;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 40px;
+    height: 42px;
+    line-height: 1.05;
+    letter-spacing: 0.5px;
+  }
+}
+
+[dir="rtl"] .hero h1 {
+  text-align: right;
 }
 
 .page-header {
@@ -1613,7 +1628,7 @@ input[type="submit"][disabled] {
   color: $brand_text_color;
 }
 
-.article-vote .icon, .article-vote .search::before, .article-vote .recent-activity-item-comment span::before, .recent-activity-item-comment .article-vote span::before, .article-vote .article-vote::before, .article-vote .attachments .attachment-item::before, .attachments .article-vote .attachment-item::before, .article-vote .share a::before, .share .article-vote a::before, .article-vote .actions .dropdown-toggle::before, .actions .article-vote .dropdown-toggle::before, .article-vote .collapsible-nav-toggle::after, .article-vote .collapsible-sidebar-toggle::after {
+.article-vote .icon, .article-vote .recent-activity-item-comment span::before, .recent-activity-item-comment .article-vote span::before, .article-vote .article-vote::before, .article-vote .attachments .attachment-item::before, .attachments .article-vote .attachment-item::before, .article-vote .share a::before, .share .article-vote a::before, .article-vote .actions .dropdown-toggle::before, .actions .article-vote .dropdown-toggle::before, .article-vote .collapsible-nav-toggle::after, .article-vote .collapsible-sidebar-toggle::after {
   vertical-align: middle;
 }
 
@@ -3489,7 +3504,6 @@ input[type="submit"][disabled] {
 [class^="icon-"]::before,
 [class*=" icon-"]::before,
 .icon,
-.search::before,
 .recent-activity-item-comment span::before,
 .article-vote::before,
 .attachments .attachment-item::before,
