@@ -57,7 +57,7 @@
 
 section {
     // info message
-    &.info {
+    &.message {
         margin-bottom: 37px;
 
         & > div {
@@ -73,7 +73,12 @@ section {
             flex-direction: column;
             padding: 5px 16px;
             border-radius: $border-radius;
-            background-color: $color-blue-light;
         }
+    }
+    &.message-info {
+        background-color: $color-blue-light;
+    }
+    &.message-alert {
+        background-color: $color-red-light;
     }
 }
