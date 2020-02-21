@@ -54,6 +54,32 @@ a {
     &:focus {
         color: $secondary-hover-color;
     }
+    &.--link {
+        font-size: $font-size-p4;
+        font-family: $heading_font;
+
+        &-light {
+            color: $color-white;
+        }
+        &-dark {
+            color: $color-charcoal;
+        }
+        &::after {
+            content: "";
+            background: $color-charcoal;
+            height: 3px;
+            // transition: left 0.2s ease-in-out, right 0.2s ease-in-out;
+            // transition-property: left, right;
+            // transition-duration: 0.2s, 0.2s;
+            // transition-timing-function: ease-in-out, ease-in-out;
+            // transition-delay: 0s, 0s;
+            // margin-top: 2px;
+            // position: absolute;
+            // left: 0;
+            // right: 0;
+            // top: 100%;
+        }
+    }
 }
 
 input,

@@ -75,6 +75,25 @@ a:hover, a:active, a:focus {
   color: #00777f;
 }
 
+a.--link {
+  font-size: 14px;
+  font-family: $heading_font;
+}
+
+a.--link-light {
+  color: #fff;
+}
+
+a.--link-dark {
+  color: #002f34;
+}
+
+a.--link::after {
+  content: "";
+  background: #002f34;
+  height: 3px;
+}
+
 input,
 textarea {
   color: #000;
