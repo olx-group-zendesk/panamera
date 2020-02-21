@@ -75,23 +75,19 @@ a:hover, a:active, a:focus {
   color: #00777f;
 }
 
-a.--link {
+a.link {
+  text-decoration: none;
   font-size: 14px;
   font-family: $heading_font;
 }
 
-a.--link-light {
+a.link.light {
   color: #fff;
 }
 
-a.--link-dark {
+a.link.link-dark {
   color: #002f34;
-}
-
-a.--link::after {
-  content: "";
-  background: #002f34;
-  height: 3px;
+  border-bottom: 2px solid #002f34;
 }
 
 input,
@@ -816,9 +812,9 @@ input[type="submit"][disabled] {
   border-radius: 2px;
   box-sizing: border-box;
   color: #666;
-  font-family: $text_font;
+  font-family: "Geomanist Book", Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
   height: 48px;
-  padding-left: 40px;
+  padding-left: 48px;
   padding-right: 20px;
   -webkit-appearance: none;
   width: 100%;
@@ -828,21 +824,110 @@ input[type="submit"][disabled] {
   .search input[type="search"] {
     height: 72px;
     font-size: 16px;
+    padding-left: 63px;
+    padding-right: 20px;
+    padding-top: 5px;
+  }
+  [dir="rtl"] .search input[type="search"] {
+    padding-right: 63px;
+    padding-left: 20px;
   }
 }
 
 [dir="rtl"] .search input[type="search"] {
-  padding-right: 40px;
+  padding-right: 48px;
   padding-left: 20px;
 }
 
-.search input[type="search"]:focus {
-  border: 1px solid $brand_color;
-  color: #555;
+.search::before {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #002f34;
+  content: "";
+  background-image: url($assets-icon-search-svg);
+  font-size: 18px;
+  position: absolute;
+  left: 16px;
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: 768px) {
+  .search::before {
+    left: 24px;
+  }
+  [dir="rtl"] .search::before {
+    right: 24px;
+    left: auto;
+  }
+}
+
+[dir="rtl"] .search::before {
+  right: 16px;
+  left: auto;
 }
 
 .search-full input[type="search"] {
   border: 1px solid #fff;
+}
+
+zd-autocomplete {
+  top: 185px !important;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: 1000000;
+}
+
+@media (min-width: 768px) {
+  zd-autocomplete {
+    top: 300px !important;
+  }
+}
+
+zd-autocomplete-multibrand {
+  margin: 0 16px;
+  border-bottom: 1px solid #d8dfe0;
+  color: #002f34;
+  display: block;
+  padding: 15px 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+zd-autocomplete-multibrand:last-child {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+zd-autocomplete-multibrand[aria-selected="true"] {
+  background-color: #fff;
+}
+
+zd-autocomplete-multibrand em {
+  font-style: normal;
+  font-weight: 600;
+}
+
+zd-autocomplete-multibrand:hover, zd-autocomplete-multibrand:focus, zd-autocomplete-multibrand:active {
+  background-color: #fff;
+}
+
+zd-autocomplete-multibrand zd-autocomplete-title-multibrand {
+  font-weight: 300;
+  font-size: 14px;
+  color: inherit;
+}
+
+zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
+  font-weight: 300;
+  font-size: 11px;
+  color: #406367;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /***** Hero component *****/
@@ -1397,12 +1482,6 @@ section.info > div {
   }
 }
 
-section.info > div > div:last-of-type > a {
-  text-decoration: underline;
-  font-size: 14px;
-  font-family: $text_font;
-}
-
 /***** Article *****/
 .article {
   /*
@@ -1677,7 +1756,7 @@ section.info > div > div:last-of-type > a {
   color: $brand_text_color;
 }
 
-.article-vote .icon, .article-vote .recent-activity-item-comment span::before, .recent-activity-item-comment .article-vote span::before, .article-vote .article-vote::before, .article-vote .attachments .attachment-item::before, .attachments .article-vote .attachment-item::before, .article-vote .share a::before, .share .article-vote a::before, .article-vote .actions .dropdown-toggle::before, .actions .article-vote .dropdown-toggle::before, .article-vote .collapsible-nav-toggle::after, .article-vote .collapsible-sidebar-toggle::after {
+.article-vote .icon, .article-vote .search::before, .article-vote .recent-activity-item-comment span::before, .recent-activity-item-comment .article-vote span::before, .article-vote .article-vote::before, .article-vote .attachments .attachment-item::before, .attachments .article-vote .attachment-item::before, .article-vote .share a::before, .share .article-vote a::before, .article-vote .actions .dropdown-toggle::before, .actions .article-vote .dropdown-toggle::before, .article-vote .collapsible-nav-toggle::after, .article-vote .collapsible-sidebar-toggle::after {
   vertical-align: middle;
 }
 
@@ -3553,6 +3632,7 @@ section.info > div > div:last-of-type > a {
 [class^="icon-"]::before,
 [class*=" icon-"]::before,
 .icon,
+.search::before,
 .recent-activity-item-comment span::before,
 .article-vote::before,
 .attachments .attachment-item::before,

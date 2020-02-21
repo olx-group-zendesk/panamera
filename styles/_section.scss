@@ -75,11 +75,5 @@ section {
             border-radius: $border-radius;
             background-color: $color-blue-light;
         }
-
-        & > div > div:last-of-type > a {
-            text-decoration: underline;
-            font-size: $font-size-p4;
-            font-family: $text_font;
-        }
     }
 }

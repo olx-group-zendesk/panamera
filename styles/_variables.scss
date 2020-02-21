@@ -61,8 +61,13 @@ $max-width-container: 1160px;
 // Fonts
 $heading_font: "Geomanist Medium", Roboto, -apple-system, BlinkMacSystemFont,
     Segoe UI, Helvetica, Arial, sans-serif !default;
+
 $text_font: "Geomanist Regular", Roboto, -apple-system, BlinkMacSystemFont,
     Segoe UI, Helvetica, Arial, sans-serif !default;
+
+$paragraph_font: "Geomanist Book", Roboto, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Helvetica, Arial, sans-serif;
+
 $font-weight-base: 400;
 $font-weight-light: 300;
 $font-weight-semibold: 600;
@@ -80,6 +85,8 @@ $font-size-p4: 14px;
 $color-charcoal: #002f34;
 $color-white: #fff;
 $color-blue-light: #ceddff;
+$color-duck-egg-blue: #d8dfe0;
+$color-slate: #406367;
 
 // Other - OLX
 $border-radius: 2px;
