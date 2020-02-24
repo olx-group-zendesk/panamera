@@ -1083,10 +1083,10 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 }
 
 .blocks-item {
-  border: 1px solid $brand_color;
+  background-color: #fff;
   border-radius: 4px;
   box-sizing: border-box;
-  color: $brand_color;
+  color: #002f34;
   display: flex;
   flex: 1 0 340px;
   margin: 0 0 30px;
@@ -1101,17 +1101,17 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 }
 
 .blocks-item:hover, .blocks-item:focus, .blocks-item:active {
-  background-color: $brand_color;
+  background-color: #fff;
 }
 
 .blocks-item:hover *, .blocks-item:focus *, .blocks-item:active * {
-  color: $brand_text_color;
+  color: #002f34;
   text-decoration: none;
 }
 
 .blocks-item-internal {
   background-color: transparent;
-  border: 1px solid #ddd;
+  border: 1px solid #fff;
 }
 
 .blocks-item-internal .icon-lock::before {
@@ -1122,11 +1122,11 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 }
 
 .blocks-item-internal a {
-  color: $text_color;
+  color: #002f34;
 }
 
 .blocks-item-link {
-  color: $brand_color;
+  color: #002f34;
   padding: 20px 30px;
   display: flex;
   flex-direction: column;
@@ -1147,7 +1147,9 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 
 .blocks-item-title {
   margin-bottom: 0;
-  font-size: 16px;
+  font-family: $heading_font;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .blocks-item-description {
