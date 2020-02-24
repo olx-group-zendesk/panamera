@@ -11,12 +11,17 @@
 
 <div class="container">
 
+  {{#if settings.alert_enabled}}
   <section class="message message-alert">
     {{dc 'eqx_alert_content'}}
   </section>
+  {{/if}}
+
+  {{#if settings.info_enabled}}
   <section class="message message-info">
     {{dc 'eqx_alert_content'}}
   </section>
+  {{/if}}
 
   <section class="section knowledge-base">
     <h2 class="visibility-hidden">{{ t 'categories' }}</h2>

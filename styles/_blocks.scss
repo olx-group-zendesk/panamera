@@ -83,7 +83,10 @@
     }
 
     &-item-description {
+        font-family: $text_font;
+        font-size: $font-size-p4;
         font-weight: $font-weight-light;
+        color: $color-slate;
         margin: 0;
     }
 

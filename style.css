@@ -1153,7 +1153,10 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 }
 
 .blocks-item-description {
+  font-family: $text_font;
+  font-size: 14px;
   font-weight: 300;
+  color: #406367;
   margin: 0;
 }
 

@@ -380,20 +380,11 @@
                     "description": "country_name_description",
                     "label": "country_name_label",
                     "options": [
-                        { "label": "South Africa", "value": "South Africa" },
-                        { "label": "Pakistan", "value": "Pakistan" },
-                        { "label": "India", "value": "India" },
-                        { "label": "Indonesia", "value": "Indonesia" },
-                        { "label": "Argentina", "value": "Argentina" },
-                        { "label": "Colombia", "value": "Colombia" },
-                        { "label": "Costa Rica", "value": "Costa Rica" },
-                        { "label": "Ecuador", "value": "Ecuador" },
-                        { "label": "Guatemala", "value": "Guatemala" },
-                        { "label": "Panamá", "value": "Panamá" },
-                        { "label": "Perú", "value": "Perú" },
-                        { "label": "El Salvador", "value": "El Salvador" }
+                        { "label": "Kazakhstan", "value": "Kazakhstan" },
+                        { "label": "Poland", "value": "Poland" },
+                        { "label": "Ukraine", "value": "Ukraine" }
                     ],
-                    "value": "South Africa"
+                    "value": "Kazakhstan"
                 },
                 {
                     "identifier": "country_site_url",
@@ -402,106 +393,38 @@
                     "label": "country_site_url_label",
                     "options": [
                         {
-                            "label": "South Africa",
-                            "value": "https://www.olx.co.za/"
+                            "label": "Kazakhstan",
+                            "value": "https://www.olx.kz/"
                         },
                         {
-                            "label": "Pakistan",
-                            "value": "https://www.olx.com.pk/"
-                        },
-                        { "label": "India", "value": "https://www.olx.in/" },
-                        {
-                            "label": "Indonesia",
-                            "value": "https://www.olx.co.id/"
+                            "label": "Poland",
+                            "value": "https://www.olx.pl/"
                         },
                         {
-                            "label": "Argentina",
-                            "value": "https://www.olx.com.ar"
-                        },
-                        {
-                            "label": "Colombia",
-                            "value": "https://www.olx.com.co"
-                        },
-                        {
-                            "label": "Costa Rica",
-                            "value": "https://www.olx.co.cr"
-                        },
-                        {
-                            "label": "Ecuador",
-                            "value": "https://www.olx.com.ec"
-                        },
-                        {
-                            "label": "Guatemala",
-                            "value": "https://www.olx.com.gt"
-                        },
-                        {
-                            "label": "Panamá",
-                            "value": "https://www.olx.com.pa"
-                        },
-                        { "label": "Perú", "value": "https://www.olx.com.pe" },
-                        {
-                            "label": "El Salvador",
-                            "value": "https://www.olx.com.sv"
+                            "label": "Ukraine",
+                            "value": "https://www.olx.ua/"
                         }
                     ],
-                    "value": "https://www.olx.co.za/"
+                    "value": "https://www.olx.kz/"
+                }
+            ]
+        },
+        {
+            "label": "alerts_group_label",
+            "variables": [
+                {
+                    "identifier": "alert_enabled",
+                    "type": "checkbox",
+                    "description": "alert_enabled_description",
+                    "label": "alert_enabled_label",
+                    "value": true
                 },
                 {
-                    "identifier": "country_site_sell_url",
-                    "type": "list",
-                    "description": "country_site_sell_url_description",
-                    "label": "country_site_sell_url_label",
-                    "options": [
-                        {
-                            "label": "South Africa",
-                            "value": "https://www.olx.co.za/post"
-                        },
-                        {
-                            "label": "Pakistan",
-                            "value": "https://www.olx.com.pk/post"
-                        },
-                        {
-                            "label": "India",
-                            "value": "https://www.olx.in/post"
-                        },
-                        {
-                            "label": "Indonesia",
-                            "value": "https://www.olx.co.id/post"
-                        },
-                        {
-                            "label": "Argentina",
-                            "value": "https://www.olx.com.ar/post"
-                        },
-                        {
-                            "label": "Colombia",
-                            "value": "https://www.olx.com.co/post"
-                        },
-                        {
-                            "label": "Costa Rica",
-                            "value": "https://www.olx.co.cr/post"
-                        },
-                        {
-                            "label": "Ecuador",
-                            "value": "https://www.olx.com.ec/post"
-                        },
-                        {
-                            "label": "Guatemala",
-                            "value": "https://www.olx.com.gt/post"
-                        },
-                        {
-                            "label": "Panamá",
-                            "value": "https://www.olx.com.pa/post"
-                        },
-                        {
-                            "label": "Perú",
-                            "value": "https://www.olx.com.pe/post"
-                        },
-                        {
-                            "label": "El Salvador",
-                            "value": "https://www.olx.com.sv/post"
-                        }
-                    ],
-                    "value": "https://www.olx.co.za/post"
+                    "identifier": "info_enabled",
+                    "type": "checkbox",
+                    "description": "info_enabled_description",
+                    "label": "info_enabled_label",
+                    "value": true
                 }
             ]
         }
