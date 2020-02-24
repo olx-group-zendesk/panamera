@@ -58,19 +58,23 @@
 section {
     // info message
     &.message {
-        margin-bottom: 37px;
+        @include tablet {
+            margin-bottom: 37px;
+        }
+        margin-bottom: 16px;
 
         & > div {
             @include tablet {
+                display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
-                padding: 0 16px;
             }
             height: 56px;
             font-size: $font-size-p4;
             display: flex;
             flex-direction: column;
+            align-content: space-between;
             padding: 5px 16px;
             border-radius: $border-radius;
         }

@@ -1,5 +1,14 @@
 /***** Homepage *****/
 
+.articles {
+    & > h5 {
+        @include tablet {
+            margin: 48px 0 0 0;
+        }
+        margin: 40px 0 0 0;
+    }
+}
+
 .section {
     @include tablet {
         // margin-bottom: 60px;
@@ -45,9 +54,9 @@
 
         a {
             display: block;
-            border-bottom: 1px solid $border-color;
-            padding: 15px 0;
-            color: $text_color;
+            padding-top: 28px;
+            font-size: $font-size-p3;
+            color: $color-charcoal;
             &:hover,
             &:active,
             &:focus {
@@ -57,14 +66,6 @@
 
         .icon-lock::before {
             vertical-align: baseline;
-        }
-
-        &:last-child a {
-            @include desktop {
-                border-bottom: 1px solid $border-color;
-            }
-
-            border: 0;
         }
     }
 }

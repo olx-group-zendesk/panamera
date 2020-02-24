@@ -14,18 +14,26 @@
     }
 
     &-item {
-        @include tablet {
-            margin: 0 15px 30px;
-        }
         background-color: $color-white;
         border-radius: 4px;
         box-sizing: border-box;
         color: $color-charcoal;
         display: flex;
         flex: 1 0 340px;
-        margin: 0 0 30px;
+        margin: 0 0 8px;
         max-width: 100%;
-        text-align: center;
+        align-items: center;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+
+        @include tablet {
+            margin: 0 15px 30px;
+            &:last-child {
+                margin: 0 15px 30px;
+            }
+        }
 
         &:hover,
         &:focus,
@@ -36,6 +44,27 @@
                 color: $color-charcoal;
                 text-decoration: none;
             }
+        }
+
+        &::before {
+            @include tablet {
+                margin: 0 16px 0 24px;
+                [dir="rtl"] & {
+                    margin: 0 24px 0 16px;
+                }
+                width: 56px;
+                height: 56px;
+            }
+            [dir="rtl"] & {
+                margin: 0 10px 0 12px;
+            }
+            margin: 0 12px 0 10px;
+            position: relative;
+            content: "";
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: $color-teal-light;
         }
 
         &-internal {
@@ -57,11 +86,10 @@
 
     &-item-link {
         color: $color-charcoal;
-        padding: 20px 30px;
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        justify-content: center;
+        @include tablet {
+            padding: 24px 0;
+        }
+        padding: 16px 0;
         border-radius: inherit;
 
         &:hover,
@@ -76,21 +104,31 @@
     }
 
     &-item-title {
+        @include tablet {
+            font-family: $heading_font;
+            font-size: $font-size-h6;
+            font-weight: $font-weight-500;
+            padding-top: 18px;
+        }
         margin-bottom: 0;
-        font-family: $heading_font;
-        font-size: $font-size-h6;
-        font-weight: $font-weight-500;
+        font-family: $text_font;
+        font-size: $font-size-p4;
+        font-weight: $font-weight-base;
     }
 
     &-item-description {
+        @include tablet {
+            display: block;
+        }
         font-family: $text_font;
         font-size: $font-size-p4;
         font-weight: $font-weight-light;
         color: $color-slate;
         margin: 0;
+        display: none;
     }
 
     &-item-description:not(:empty) {
-        margin-top: 10px;
+        margin-top: 5px;
     }
 }

@@ -46,6 +46,10 @@ $header-height: 72px;
         }
     }
 
+    & .title-dark a {
+        color: $color-charcoal;
+    }
+
     @include tablet {
         display: flex;
         align-items: center;

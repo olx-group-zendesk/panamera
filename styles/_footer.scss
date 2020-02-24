@@ -1,20 +1,27 @@
 /***** Footer *****/
 .footer {
-  border-top: 1px solid $border-color;
-  margin-top: 60px;
-  padding: 30px 0;
+    border-top: 1px solid $border-color;
+    padding: 21px 0 12px 0;
 
-  a { color: $secondary-text-color; }
+    @include tablet {
+        margin-top: 60px;
+        padding: 28px 0 21px 0;
+    }
 
-  &-inner {
-    @include max-width-container;
-    display: flex;
-    justify-content: space-between;
-  }
+    a {
+        color: $secondary-text-color;
+    }
 
-  &-language-selector {
-    color: $secondary-text-color;
-    display: inline-block;
-    font-weight: $font-weight-light;
-  }
+    &-inner {
+        @include max-width-container;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-language-selector {
+        color: $secondary-text-color;
+        display: inline-block;
+        font-weight: $font-weight-light;
+    }
 }

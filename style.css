@@ -66,6 +66,10 @@ h4 {
   font-size: 16px;
 }
 
+h5 {
+  font-size: 20px;
+}
+
 a {
   color: $link_color;
   text-decoration: none;
@@ -574,6 +578,10 @@ input[type="submit"][disabled] {
   }
 }
 
+.logo .title-dark a {
+  color: #002f34;
+}
+
 @media (min-width: 768px) {
   .logo {
     display: flex;
@@ -742,8 +750,14 @@ input[type="submit"][disabled] {
 /***** Footer *****/
 .footer {
   border-top: 1px solid #ddd;
-  margin-top: 60px;
-  padding: 30px 0;
+  padding: 21px 0 12px 0;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    margin-top: 60px;
+    padding: 28px 0 21px 0;
+  }
 }
 
 .footer a {
@@ -756,6 +770,7 @@ input[type="submit"][disabled] {
   padding: 0 3%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 @media (min-width: 1160px) {
@@ -1089,13 +1104,20 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
   color: #002f34;
   display: flex;
   flex: 1 0 340px;
-  margin: 0 0 30px;
+  margin: 0 0 8px;
   max-width: 100%;
-  text-align: center;
+  align-items: center;
+}
+
+.blocks-item:last-child {
+  margin-bottom: 0px;
 }
 
 @media (min-width: 768px) {
   .blocks-item {
+    margin: 0 15px 30px;
+  }
+  .blocks-item:last-child {
     margin: 0 15px 30px;
   }
 }
@@ -1107,6 +1129,31 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 .blocks-item:hover *, .blocks-item:focus *, .blocks-item:active * {
   color: #002f34;
   text-decoration: none;
+}
+
+.blocks-item::before {
+  margin: 0 12px 0 10px;
+  position: relative;
+  content: "";
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #c8f8f6;
+}
+
+@media (min-width: 768px) {
+  .blocks-item::before {
+    margin: 0 16px 0 24px;
+    width: 56px;
+    height: 56px;
+  }
+  [dir="rtl"] .blocks-item::before {
+    margin: 0 24px 0 16px;
+  }
+}
+
+[dir="rtl"] .blocks-item::before {
+  margin: 0 10px 0 12px;
 }
 
 .blocks-item-internal {
@@ -1127,12 +1174,14 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 
 .blocks-item-link {
   color: #002f34;
-  padding: 20px 30px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  justify-content: center;
+  padding: 16px 0;
   border-radius: inherit;
+}
+
+@media (min-width: 768px) {
+  .blocks-item-link {
+    padding: 24px 0;
+  }
 }
 
 .blocks-item-link:hover, .blocks-item-link:active {
@@ -1147,9 +1196,18 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 
 .blocks-item-title {
   margin-bottom: 0;
-  font-family: $heading_font;
-  font-size: 20px;
-  font-weight: 500;
+  font-family: $text_font;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .blocks-item-title {
+    font-family: $heading_font;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 18px;
+  }
 }
 
 .blocks-item-description {
@@ -1158,13 +1216,30 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
   font-weight: 300;
   color: #406367;
   margin: 0;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .blocks-item-description {
+    display: block;
+  }
 }
 
 .blocks-item-description:not(:empty) {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 /***** Homepage *****/
+.articles > h5 {
+  margin: 40px 0 0 0;
+}
+
+@media (min-width: 768px) {
+  .articles > h5 {
+    margin: 48px 0 0 0;
+  }
+}
+
 .section {
   margin-bottom: 23px;
 }
@@ -1216,9 +1291,9 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 
 .promoted-articles-item a {
   display: block;
-  border-bottom: 1px solid #ddd;
-  padding: 15px 0;
-  color: $text_color;
+  padding-top: 28px;
+  font-size: 16px;
+  color: #002f34;
 }
 
 .promoted-articles-item a:hover, .promoted-articles-item a:active, .promoted-articles-item a:focus {
@@ -1227,16 +1302,6 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 
 .promoted-articles-item .icon-lock::before {
   vertical-align: baseline;
-}
-
-.promoted-articles-item:last-child a {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  .promoted-articles-item:last-child a {
-    border-bottom: 1px solid #ddd;
-  }
 }
 
 /***** Community section in homepage *****/
@@ -1478,7 +1543,13 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 }
 
 section.message {
-  margin-bottom: 37px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  section.message {
+    margin-bottom: 37px;
+  }
 }
 
 section.message > div {
@@ -1486,16 +1557,17 @@ section.message > div {
   font-size: 14px;
   display: flex;
   flex-direction: column;
+  align-content: space-between;
   padding: 5px 16px;
   border-radius: 2px;
 }
 
 @media (min-width: 768px) {
   section.message > div {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 16px;
   }
 }
 
