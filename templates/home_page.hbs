@@ -2,6 +2,11 @@
 <script type="text/javascript">
   document.addEventListener("DOMContentLoaded", function () {
 
+    var iconAssets = {
+      "icon-flag.svg": "{{asset 'icon-flag.svg'}}",
+      "icon-settings.svg": "{{asset 'icon-settings.svg'}}"
+    };
+
     function loadJSON(callback, fileName) {
       var xobj = new XMLHttpRequest();
       xobj.overrideMimeType("application/json");
@@ -16,15 +21,16 @@
       xobj.send(null);
     }
 
-    console.log("wot i wsjo!");
     loadJSON(function (response) {
       let parsed = JSON.parse(response);
-      console.log("Parsed", parsed);
 
+      // mapping in icons.json will be applied here so the proper image source
+      // can be set for appriopriate category ID.
       Object.keys(parsed).forEach(function items(itemKey) {
+        console.log("Path:", parsed[itemKey])
         document.getElementById(itemKey).setAttribute(
           "src",
-          "{{asset 'icon-flag.svg'}}".replace(/[^\/]+$/, parsed[itemKey])
+          iconAssets[parsed[itemKey]]
         );
       });
 
