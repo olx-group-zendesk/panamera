@@ -5,12 +5,17 @@
     {{search submit=false}}
   </nav>
 
+  {{#if settings.alert_enabled}}
   <section class="message message-alert">
     {{dc 'eqx_alert_content'}}
   </section>
+  {{/if}}
+
+  {{#if settings.info_enabled}}
   <section class="message message-info">
-    {{dc 'eqx_alert_content'}}
+    {{dc 'eqx_info_content'}}
   </section>
+  {{/if}}
 
   <div class="category-container">
     <div class="category-content">

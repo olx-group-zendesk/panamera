@@ -24,15 +24,8 @@
         max-width: 100%;
         align-items: center;
 
-        &:last-child {
-            margin-bottom: 0px;
-        }
-
         @include tablet {
-            margin: 0 15px 30px;
-            &:last-child {
-                margin: 0 15px 30px;
-            }
+            margin: 0 8px 16px;
         }
 
         &:hover,
@@ -112,23 +105,34 @@
         }
         margin-bottom: 0;
         font-family: $text_font;
-        font-size: $font-size-p4;
+        font-size: $font-size-p3;
         font-weight: $font-weight-base;
     }
 
     &-item-description {
-        @include tablet {
-            display: block;
-        }
         font-family: $text_font;
-        font-size: $font-size-p4;
+        font-size: $font-size-p6;
         font-weight: $font-weight-light;
         color: $color-slate;
         margin: 0;
-        display: none;
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 220px;
+        @include tablet {
+            font-size: $font-size-p4;
+        }
     }
 
     &-item-description:not(:empty) {
-        margin-top: 5px;
+        @include tablet {
+            margin-top: 0px;
+        }
+        margin-top: -2px;
+    }
+
+    &-item-description:empty {
+        margin-top: -2px;
     }
 }

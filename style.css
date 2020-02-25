@@ -1061,13 +1061,14 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
   justify-content: space-between;
   margin-bottom: 30px;
   min-height: 50px;
-  padding-bottom: 15px;
+  padding-bottom: 0px;
 }
 
 @media (min-width: 768px) {
   .sub-nav {
     align-items: baseline;
     flex-direction: row;
+    padding-bottom: 15px;
   }
 }
 
@@ -1109,16 +1110,9 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
   align-items: center;
 }
 
-.blocks-item:last-child {
-  margin-bottom: 0px;
-}
-
 @media (min-width: 768px) {
   .blocks-item {
-    margin: 0 15px 30px;
-  }
-  .blocks-item:last-child {
-    margin: 0 15px 30px;
+    margin: 0 8px 16px;
   }
 }
 
@@ -1197,7 +1191,7 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 .blocks-item-title {
   margin-bottom: 0;
   font-family: $text_font;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -1212,21 +1206,35 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 
 .blocks-item-description {
   font-family: $text_font;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
   color: #406367;
   margin: 0;
-  display: none;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 220px;
 }
 
 @media (min-width: 768px) {
   .blocks-item-description {
-    display: block;
+    font-size: 14px;
   }
 }
 
 .blocks-item-description:not(:empty) {
-  margin-top: 5px;
+  margin-top: -2px;
+}
+
+@media (min-width: 768px) {
+  .blocks-item-description:not(:empty) {
+    margin-top: 0px;
+  }
+}
+
+.blocks-item-description:empty {
+  margin-top: -2px;
 }
 
 /***** Homepage *****/
@@ -1553,12 +1561,12 @@ section.message {
 }
 
 section.message > div {
-  height: 56px;
+  min-height: 56px;
   font-size: 14px;
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  padding: 5px 16px;
+  padding: 16px;
   border-radius: 2px;
 }
 
@@ -1569,6 +1577,20 @@ section.message > div {
     justify-content: space-between;
     align-items: center;
   }
+}
+
+section.message > div > div:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+section.message > div > div:last-child a {
+  white-space: nowrap;
+  margin-left: 16px;
+}
+
+[dir="rtl"] section.message > div > div:last-child a {
+  margin-right: 16px;
 }
 
 section.message-info {
