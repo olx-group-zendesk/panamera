@@ -1,3 +1,38 @@
+{{#if settings.icons_enabled}}
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+
+    function loadJSON(callback, fileName) {
+      var xobj = new XMLHttpRequest();
+      xobj.overrideMimeType("application/json");
+      xobj.open("GET", fileName, true);
+      xobj.onreadystatechange = function () {
+        if (xobj.readyState == 4 && xobj.status == "200") {
+          // Required use of an anonymous callback as .open will NOT return
+          // a value but simply returns undefined in asynchronous mode
+          callback(xobj.responseText);
+        }
+      };
+      xobj.send(null);
+    }
+
+    console.log("wot i wsjo!");
+    loadJSON(function (response) {
+      let parsed = JSON.parse(response);
+      console.log("Parsed", parsed);
+
+      Object.keys(parsed).forEach(function items(itemKey) {
+        document.getElementById(itemKey).setAttribute(
+          "src",
+          "{{asset 'icon-flag.svg'}}".replace(/[^\/]+$/, parsed[itemKey])
+        );
+      });
+
+    }, "{{settings.icons}}");
+  });
+</script>
+{{/if}}
+
 <h1 class="visibility-hidden">{{ help_center.name }}</h1>
 
 <section id="main-content" class="section hero">
@@ -30,6 +65,11 @@
         {{#each categories}}
         {{#if ../has_multiple_categories}}
         <li class="blocks-item">
+          {{#if settings.icons_enabled}}
+          <div class="blocks-image">
+            <img id={{id}} src="{{asset 'icon-flag.svg'}}">
+          </div>
+          {{/if}}
           <a href='{{url}}' class="blocks-item-link">
             <span class="blocks-item-title">{{name}}</span>
             <span class="blocks-item-description">{{excerpt description}}</span>

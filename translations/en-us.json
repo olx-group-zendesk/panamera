@@ -72,5 +72,10 @@
     "alert_enabled_label": "Enable alert message",
     "alert_enabled_description": "Shows persistent alert message on the main mage",
     "info_enabled_label": "Enable info message",
-    "info_enabled_description": "Shows persistent info message on the main page"
+    "info_enabled_description": "Shows persistent info message on the main page",
+    "icons_group_label": "Icons",
+    "icons_enabled_label": "Enable icons",
+    "icons_enabled_description": "Turn on/off icons in category blocks.",
+    "icons_json_label": "File containing icon-category mapping",
+    "icons_json_description": "Upload JSON file containing icons data."
 }

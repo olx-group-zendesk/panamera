@@ -1,4 +1,52 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // add "zen" namespace for various utilities
+    window.zen = {
+        webWidget: {
+            show: function show() {
+                if (zE("webWidget:get", "display") === "hidden") {
+                    zE("webWidget", "show");
+                    zE("webWidget", "open");
+                } else if (zE("webWidget:get", "display") === "launcher") {
+                    zE("webWidget", "open");
+                }
+            }
+        }
+    };
+
+    // configure initial web widget and other elements involved
+    if (typeof zE === "undefined") {
+        let chatButton = document.querySelector("[name='live-chat']");
+        if (chatButton) {
+            chatButton.setAttribute("style", "display:none;");
+        }
+    } else {
+        zE("webWidget", "hide");
+    }
+
+    // add onmouseover functionality for telephone number contact channel button
+    var button_phone_1 = document.querySelector("[name='phone-line-1']"),
+        button_phone_2 = document.querySelector("[name='phone-line-2']");
+
+    if (button_phone_1) {
+        button_phone_1.addEventListener("mouseover", function() {
+            button_phone_1.innerText = button_phone_1.dataset.phoneLine1Number;
+        });
+        button_phone_1.addEventListener("mouseout", function() {
+            button_phone_1.innerText =
+                button_phone_1.dataset.phoneLine1NumberTitle;
+        });
+    }
+
+    if (button_phone_2) {
+        button_phone_2.addEventListener("mouseover", function() {
+            button_phone_2.innerText = button_phone_2.dataset.phoneLine2Number;
+        });
+        button_phone_2.addEventListener("mouseout", function() {
+            button_phone_2.innerText =
+                button_phone_2.dataset.phoneLine2NumberTitle;
+        });
+    }
+
     function closest(element, selector) {
         if (Element.prototype.closest) {
             return element.closest(selector);
@@ -183,26 +231,6 @@ document.addEventListener("DOMContentLoaded", function() {
         toggle.focus();
     }
 
-    var burgerMenu = document.querySelector(".header .menu-button");
-    var userMenu = document.querySelector("#user-nav");
-
-    burgerMenu.addEventListener("click", function(e) {
-        e.stopPropagation();
-        toggleNavigation(this, userMenu);
-    });
-
-    userMenu.addEventListener("keyup", function(e) {
-        if (e.keyCode === 27) {
-            // Escape key
-            e.stopPropagation();
-            closeNavigation(burgerMenu, this);
-        }
-    });
-
-    if (userMenu.children.length === 0) {
-        burgerMenu.style.display = "none";
-    }
-
     // Toggles expanded aria to collapsible elements
     var collapsible = document.querySelectorAll(
         ".collapsible-nav, .collapsible-sidebar"
@@ -277,4 +305,22 @@ document.addEventListener("DOMContentLoaded", function() {
     ) {
         notificationElm.previousElementSibling.focus();
     }
+
+    // Replaces text within html tag having class "current-year" to the today's
+    // date "year" value in the following format: YYYY.
+    var currentYear = document.querySelector(".current-year");
+    if (currentYear != undefined) {
+        currentYear.innerText = new Date().getFullYear();
+    }
+
+    // hide contact sections for specific roles
+    function setStyleForBlock(selectorString, styleAttribute) {
+        Array.prototype.filter
+            .call([document.querySelector(selectorString)], item => item)
+            .forEach(item => item.setAttribute("style", styleAttribute));
+    }
+
+    // This is hiding ticket form select field - due to (mis?)configuration and
+    // usage of specific form in each instance / brand / language.
+    setStyleForBlock(".request_ticket_form_id", "display:none");
 });

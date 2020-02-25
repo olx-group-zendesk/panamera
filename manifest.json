@@ -427,6 +427,24 @@
                     "value": true
                 }
             ]
+        },
+        {
+            "label": "icons_group_label",
+            "variables": [
+                {
+                    "identifier": "icons_enabled",
+                    "type": "checkbox",
+                    "description": "icons_enabled_description",
+                    "label": "icons_enabled_label",
+                    "value": true
+                },
+                {
+                    "identifier": "icons",
+                    "type": "file",
+                    "description": "icons_json_description",
+                    "label": "icons_json_label"
+                }
+            ]
         }
     ]
 }
