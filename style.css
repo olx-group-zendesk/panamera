@@ -1253,6 +1253,7 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 /***** Homepage *****/
 .articles > h5 {
   margin: 40px 0 0 0;
+  line-height: 22px;
 }
 
 @media (min-width: 768px) {
@@ -1314,6 +1315,7 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
   display: block;
   padding-top: 28px;
   font-size: 16px;
+  line-height: 20px;
   color: #002f34;
 }
 

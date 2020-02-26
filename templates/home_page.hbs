@@ -2,8 +2,14 @@
 <script type="text/javascript">
   document.addEventListener("DOMContentLoaded", function () {
 
+    // get the real paths of icon assets on the instance
     var iconAssets = {
+      "icon-bulb.svg": "{{asset 'icon-bulb.svg'}}",
+      "icon-card.svg": "{{asset 'icon-card.svg'}}",
       "icon-flag.svg": "{{asset 'icon-flag.svg'}}",
+      "icon-legal.svg": "{{asset 'icon-legal.svg'}}",
+      "icon-person.svg": "{{asset 'icon-person.svg'}}",
+      "icon-security.svg": "{{asset 'icon-security.svg'}}",
       "icon-settings.svg": "{{asset 'icon-settings.svg'}}"
     };
 
@@ -27,7 +33,6 @@
       // mapping in icons.json will be applied here so the proper image source
       // can be set for appriopriate category ID.
       Object.keys(parsed).forEach(function items(itemKey) {
-        console.log("Path:", parsed[itemKey])
         document.getElementById(itemKey).setAttribute(
           "src",
           iconAssets[parsed[itemKey]]
