@@ -60,6 +60,37 @@ $header-height: 72px;
     position: relative;
     display: flex;
     align-items: center;
+    & .locale {
+        display: flex;
+        color: $color-white;
+
+        &-current {
+            display: flex;
+            color: $color-roman-silver;
+            & > span[dir="ltr"] {
+                display: flex;
+                padding: 0 7px 0 0;
+                &::after {
+                    content: "";
+                    width: 1px;
+                    height: 21px;
+                    background-color: $color-slate;
+                    margin: 0 0 0 7px;
+                }
+            }
+            & > span[dir="rtl"] {
+                display: flex;
+                padding: 0 0 0 7px;
+                &::after {
+                    content: "";
+                    width: 1px;
+                    height: 21px;
+                    background-color: $color-slate;
+                    margin: 0 7px 0 0;
+                }
+            }
+        }
+    }
 }
 
 .nav-wrapper {
@@ -69,16 +100,30 @@ $header-height: 72px;
         display: flex;
         align-items: center;
         justify-content: center;
-
+        padding: 0 7px 0 0;
+        &[role="button"] {
+            padding: 0 8px;
+            &:hover,
+            &:focus,
+            &:active {
+                color: $color-charcoal;
+                background-color: $color-white;
+            }
+        }
+        &:nth-last-of-type(2) {
+            padding: 0 16px 0 0;
+        }
         [dir="rtl"] & {
-            padding: 0 0 0 20px;
+            padding: 0 0 0 7px;
+            &:nth-last-of-type(2) {
+                padding: 0 0 0 16px;
+            }
         }
 
         &:hover,
         &:focus,
         &:active {
-            background-color: $color-white;
-            color: $color-charcoal;
+            color: $color-white;
             text-decoration: none;
         }
 

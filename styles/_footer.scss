@@ -3,6 +3,17 @@
     border-top: 1px solid $border-color;
     padding: 21px 0 12px 0;
 
+    .title > span:first-child {
+        display: none;
+        @include tablet {
+            display: inline-block;
+            font-size: $font-size-p4;
+        }
+    }
+    .title > .subtitle {
+        font-size: $font-size-p4;
+    }
+
     @include tablet {
         margin-top: 60px;
         padding: 28px 0 21px 0;
