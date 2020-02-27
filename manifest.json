@@ -270,7 +270,7 @@
                     "type": "checkbox",
                     "description": "recent_activity_description",
                     "label": "recent_activity_label",
-                    "value": true
+                    "value": false
                 }
             ]
         },
@@ -443,6 +443,39 @@
                     "type": "file",
                     "description": "icons_json_description",
                     "label": "icons_json_label"
+                }
+            ]
+        },
+        {
+            "label": "contact_channels_group_label",
+            "variables": [
+                {
+                    "identifier": "default_form_id",
+                    "type": "checkbox",
+                    "description": "default_form_id_description",
+                    "label": "default_form_id_label",
+                    "value": false
+                },
+                {
+                    "identifier": "home_page_contact_enabled",
+                    "type": "checkbox",
+                    "description": "home_page_contact_enabled_description",
+                    "label": "home_page_contact_enabled_label",
+                    "value": true
+                },
+                {
+                    "identifier": "phone_line1_enabled",
+                    "type": "checkbox",
+                    "description": "phone_line1_enabled_description",
+                    "label": "phone_line1_enabled_label",
+                    "value": true
+                },
+                {
+                    "identifier": "phone_line2_enabled",
+                    "type": "checkbox",
+                    "description": "phone_line2_enabled_description",
+                    "label": "phone_line2_enabled_label",
+                    "value": true
                 }
             ]
         }

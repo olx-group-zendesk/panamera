@@ -62,21 +62,15 @@ section {
             margin-bottom: 32px;
         }
         margin-bottom: 16px;
+        border-radius: $border-radius;
 
         & > div {
-            @include tablet {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-            }
             min-height: 56px;
             font-size: $font-size-p4;
             display: flex;
             flex-direction: column;
             align-content: space-between;
             padding: 16px;
-            border-radius: $border-radius;
 
             & > div:last-child {
                 display: flex;
@@ -88,6 +82,12 @@ section {
                         margin-right: 16px;
                     }
                 }
+            }
+            @include tablet {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
             }
         }
     }

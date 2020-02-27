@@ -1,6 +1,22 @@
 /***** Blocks *****/
 /* Used in Homepage#categories and Community#topics */
 .blocks {
+    &-stacked {
+        @include tablet {
+            margin: 0 -15px;
+            flex-direction: row;
+        }
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 6px 0;
+
+        &-centered {
+            justify-content: center;
+        }
+    }
+
     &-list {
         @include tablet {
             margin: 0 -15px;
@@ -11,6 +27,9 @@
         justify-content: flex-start;
         list-style: none;
         padding: 0;
+        &-centered {
+            justify-content: center;
+        }
     }
 
     &-image {
@@ -43,6 +62,35 @@
         }
     }
 
+    &-button {
+        margin-bottom: 16px;
+        background-color: $color-white;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: $color-charcoal;
+        display: flex;
+        justify-content: space-around;
+        flex: 1 0 auto;
+        padding: 16px;
+        align-items: center;
+
+        div:last-child {
+            width: calc(100% - 114px);
+        }
+
+        @include tablet {
+            flex: 0 1 auto;
+            margin: 0 8px 16px;
+            div:last-child {
+                width: 182px;
+                margin-left: 16px;
+                [dir="rtl"] {
+                    margin-right: 16px;
+                }
+            }
+        }
+    }
+
     &-item {
         background-color: $color-white;
         border-radius: 4px;
@@ -56,17 +104,6 @@
 
         @include tablet {
             margin: 0 8px 16px;
-        }
-
-        &:hover,
-        &:focus,
-        &:active {
-            background-color: $color-white;
-
-            * {
-                color: $color-charcoal;
-                text-decoration: none;
-            }
         }
 
         &-internal {
@@ -84,24 +121,25 @@
                 color: $color-charcoal;
             }
         }
-    }
 
-    &-item-link {
-        color: $color-charcoal;
-        @include tablet {
-            padding: 24px 0;
-        }
-        padding: 16px 0;
-        border-radius: inherit;
+        &-link {
+            color: $color-charcoal;
+            @include tablet {
+                padding: 24px 0;
+            }
+            padding: 16px 0;
+            border-radius: inherit;
 
-        &:hover,
-        &:active {
-            text-decoration: none;
-        }
+            &:hover,
+            &:active {
+                text-decoration: none;
+                color: inherit;
+            }
 
-        &:focus {
-            @include focus-ring;
-            text-decoration: none;
+            &:focus {
+                @include focus-ring;
+                text-decoration: none;
+            }
         }
     }
 

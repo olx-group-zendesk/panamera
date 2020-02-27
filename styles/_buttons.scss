@@ -91,18 +91,42 @@ input[type="submit"] {
     }
 }
 
-// OLX Buttons
-.button-primary-large-light {
-    @include tablet {
+// OLX DESIGN
+a.olx-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $button-border-radius;
+    font-size: $font-size-p4;
+    font-family: $heading_font;
+    height: 40px;
+    max-height: 40px;
+    min-width: 108px;
+    cursor: pointer;
+
+    &-primary {
+        background-color: $color-charcoal;
+        color: $color-white;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $color-white;
+        }
+    }
+
+    &-secondary {
+        background-color: $color-white;
+        color: $color-charcoal;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $color-charcoal;
+        }
+    }
+
+    &-large {
         height: 48px;
         max-height: 48px;
+        font-size: $font-size-p3;
     }
-    background-color: $color-white;
-    height: 40px;
-    min-width: 108px;
-    max-height: 40px;
-    border-radius: 4px;
-    color: $color-charcoal;
-    font-size: $font-size-p3;
-    font-family: "Geomanist Medium";
 }

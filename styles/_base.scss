@@ -37,8 +37,10 @@ h2 {
     font-size: 22px;
 }
 h3 {
-    font-size: 18px;
-    font-weight: $font-weight-semibold;
+    font-size: 24px;
+    font-weight: $font-weight-500;
+    font-family: $heading_font;
+    line-height: 1.08;
 }
 
 h4 {
@@ -175,4 +177,22 @@ ul {
     position: absolute;
     width: 1px;
     white-space: nowrap;
+}
+
+span {
+    &.gray {
+        color: $color-roman-silver;
+    }
+
+    &.centered {
+        text-align: center;
+    }
+
+    &.small {
+        font-size: $font-size-p4;
+    }
+}
+
+.centered {
+    text-align: center;
 }
