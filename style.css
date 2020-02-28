@@ -167,7 +167,7 @@ textarea:focus {
 
 .container-divider {
   border-top: 1px solid #ddd;
-  margin-bottom: 20px;
+  background-color: #fff;
 }
 
 ul {
@@ -1173,7 +1173,8 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
   .sub-nav {
     align-items: baseline;
     flex-direction: row;
-    padding-bottom: 15px;
+    padding: 20px 0;
+    background-color: #fff;
   }
 }
 
@@ -1348,7 +1349,6 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 
 .blocks-item-link:focus {
   outline: 0;
-  box-shadow: 0 0 0 3px $brand_color;
   text-decoration: none;
 }
 

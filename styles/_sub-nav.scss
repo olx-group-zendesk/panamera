@@ -2,7 +2,8 @@
     @include tablet {
         align-items: baseline;
         flex-direction: row;
-        padding-bottom: 15px;
+        padding: 20px 0;
+        background-color: $color-white;
     }
 
     display: flex;

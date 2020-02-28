@@ -1,9 +1,13 @@
-<div class="container-divider"></div>
+<div class="container-divider">
+  <div class="container">
+    <nav class="sub-nav">
+      {{breadcrumbs}}
+      {{search submit=false}}
+    </nav>
+  </div>
+</div>
+
 <div class="container">
-  <nav class="sub-nav">
-    {{breadcrumbs}}
-    {{search submit=false}}
-  </nav>
 
   {{#if settings.alert_enabled}}
   <section class="message message-alert">

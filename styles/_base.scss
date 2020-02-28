@@ -137,7 +137,9 @@ textarea {
 
 .container-divider {
     border-top: 1px solid $border-color;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
+    // padding: 30px 0 0 0;
+    background-color: $color-white;
 }
 
 ul {
