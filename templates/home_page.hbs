@@ -28,15 +28,20 @@
     }
 
     loadJSON(function (response) {
-      let parsed = JSON.parse(response);
+      var
+        parsed = JSON.parse(response),
+        element;
 
       // mapping in icons.json will be applied here so the proper image source
       // can be set for appriopriate category ID.
       Object.keys(parsed).forEach(function items(itemKey) {
-        document.getElementById(itemKey).setAttribute(
-          "src",
-          iconAssets[parsed[itemKey]]
-        );
+        element = document.getElementById(itemKey)
+        if (element != undefined) {
+          element.setAttribute(
+            "src",
+            iconAssets[parsed[itemKey]]
+          );
+        }
       });
 
     }, "{{settings.icons}}");
