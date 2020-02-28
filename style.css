@@ -1290,7 +1290,7 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
     width: 182px;
     margin-left: 16px;
   }
-  .blocks-button div:last-child [dir="rtl"] {
+  [dir="rtl"] .blocks-button div:last-child {
     margin-right: 16px;
   }
 }

@@ -82,11 +82,11 @@
             flex: 0 1 auto;
             margin: 0 8px 16px;
             div:last-child {
-                width: 182px;
-                margin-left: 16px;
-                [dir="rtl"] {
+                [dir="rtl"] & {
                     margin-right: 16px;
                 }
+                width: 182px;
+                margin-left: 16px;
             }
         }
     }
