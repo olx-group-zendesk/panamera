@@ -6,9 +6,9 @@
     }
 
     &-content {
-        @include desktop {
-            flex: 0 0 80%;
-        }
+        // @include desktop {
+        //     flex: 0 0 80%;
+        // }
         flex: 1;
     }
 

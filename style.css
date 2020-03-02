@@ -1712,12 +1712,6 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
   flex: 1;
 }
 
-@media (min-width: 1024px) {
-  .section-content {
-    flex: 0 0 80%;
-  }
-}
-
 .section-subscribe .dropdown-toggle::after {
   display: none;
 }
