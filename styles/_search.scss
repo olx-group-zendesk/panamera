@@ -1,6 +1,10 @@
 /***** Search field *****/
 .search {
     position: relative;
+    @include tablet {
+        margin-bottom: 0px;
+    }
+    margin-bottom: 20px;
 
     input[type="search"] {
         @include tablet {
@@ -72,6 +76,14 @@
             [dir="rtl"] & {
                 padding-right: 63px;
                 padding-left: 20px;
+            }
+        }
+    }
+    &-gray {
+        input[type="search"] {
+            @include tablet {
+                background-color: $color-pale-gray;
+                border: unset;
             }
         }
     }

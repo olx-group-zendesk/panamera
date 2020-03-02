@@ -4,14 +4,15 @@
         flex-direction: row;
         padding: 20px 0;
         background-color: $color-white;
+        margin-bottom: 30px;
     }
 
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-between;
-    margin-bottom: 30px;
-    min-height: 50px;
-    padding-bottom: 0px;
+    background-color: $color-pale-gray;
+    // min-height: 50px;
+    // padding-bottom: 0px;
 
     //Inner pages search field
     input[type="search"] {

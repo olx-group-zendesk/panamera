@@ -45,12 +45,20 @@ h4,
 h5,
 h6 {
   font-family: $heading_font;
-  font-weight: 400;
+  font-weight: 500;
   margin-top: 0;
+  color: #002f34;
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 24px;
+  line-height: 1.08;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
 }
 
 h2 {
@@ -58,10 +66,15 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
-  font-weight: 500;
-  font-family: $heading_font;
-  line-height: 1.08;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 24px;
+    line-height: 1.08;
+  }
 }
 
 h4 {
@@ -166,8 +179,17 @@ textarea:focus {
 }
 
 .container-divider {
-  border-top: 1px solid #ddd;
-  background-color: #fff;
+  background-color: #f2f4f5;
+  margin-bottom: 20px;
+  padding: 30px 0 0 0;
+}
+
+@media (min-width: 768px) {
+  .container-divider {
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    padding: 0;
+  }
 }
 
 ul {
@@ -893,18 +915,12 @@ a.olx-button-large {
 
 /***** Breadcrumbs *****/
 .breadcrumbs {
-  margin: 0 0 15px 0;
+  margin: 0;
   padding: 0;
 }
 
-@media (min-width: 768px) {
-  .breadcrumbs {
-    margin: 0;
-  }
-}
-
 .breadcrumbs li {
-  color: lighten($text_color, 20%);
+  color: #406367;
   display: inline;
   font-weight: 300;
   font-size: 13px;
@@ -919,12 +935,19 @@ a.olx-button-large {
 }
 
 .breadcrumbs li a:visited {
-  color: $link_color;
+  color: #406367;
 }
 
 /***** Search field *****/
 .search {
   position: relative;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .search {
+    margin-bottom: 0px;
+  }
 }
 
 .search input[type="search"] {
@@ -1002,6 +1025,13 @@ a.olx-button-large {
   [dir="rtl"] .search-full input[type="search"] {
     padding-right: 63px;
     padding-left: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .search-gray input[type="search"] {
+    background-color: #f2f4f5;
+    border: unset;
   }
 }
 
@@ -1162,11 +1192,9 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 
 .sub-nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-between;
-  margin-bottom: 30px;
-  min-height: 50px;
-  padding-bottom: 0px;
+  background-color: #f2f4f5;
 }
 
 @media (min-width: 768px) {
@@ -1175,6 +1203,7 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
     flex-direction: row;
     padding: 20px 0;
     background-color: #fff;
+    margin-bottom: 30px;
   }
 }
 
@@ -1597,12 +1626,6 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
   flex: 1;
 }
 
-@media (min-width: 1024px) {
-  .category-content {
-    flex: 0 0 80%;
-  }
-}
-
 .section-tree {
   display: flex;
   flex-direction: column;
@@ -1629,8 +1652,18 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 
 .section-tree-title {
   margin-bottom: 0;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 500;
+  font-family: $heading_font;
+  color: #002f34;
+}
+
+@media (min-width: 768px) {
+  .section-tree-title {
+    font-size: 20px;
+    line-height: 1.1;
+  }
 }
 
 .section-tree-title a {
@@ -1643,8 +1676,17 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 }
 
 .article-list-item {
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 1.29;
   padding: 15px 0;
+  font-family: $text_font;
+}
+
+@media (min-width: 768px) {
+  .article-list-item {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
 
 .article-list-item a {
