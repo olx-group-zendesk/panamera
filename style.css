@@ -178,6 +178,16 @@ textarea:focus {
   }
 }
 
+.container-heading {
+  margin: 24px 0;
+}
+
+@media (min-width: 768px) {
+  .container-heading {
+    margin: 40px 0;
+  }
+}
+
 .container-divider {
   background-color: #f2f4f5;
   margin-bottom: 20px;
@@ -1839,7 +1849,6 @@ section.message-alert {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 40px;
   margin-top: 20px;
 }
 
@@ -1955,13 +1964,17 @@ section.message-alert {
   padding: 0 15px;
 }
 
+.article-body > p {
+  line-height: 1.29;
+}
+
 .article-body > p:last-child {
   margin-bottom: 0;
 }
 
 .article-content {
   line-height: 1.6;
-  margin: 40px 0;
+  margin-bottom: 26px;
   word-wrap: break-word;
 }
 
@@ -1994,6 +2007,7 @@ section.message-alert {
   flex: 1 0 auto;
   margin-bottom: 20px;
   padding: 0;
+  margin: 0 32px 0 0;
 }
 
 @media (min-width: 1024px) {
@@ -2038,6 +2052,16 @@ section.message-alert {
   border-top: 1px solid #ddd;
   padding: 30px 0;
   text-align: center;
+}
+
+.article-votes-question {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .article-votes-question {
+    margin-bottom: 20px;
+  }
 }
 
 .article-vote {
@@ -2142,8 +2166,7 @@ section.message-alert {
 }
 
 .sidenav-item.current-article, .sidenav-item:hover {
-  background-color: $brand_color;
-  color: $brand_text_color;
+  color: #7f9799;
   text-decoration: none;
 }
 

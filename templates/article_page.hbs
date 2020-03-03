@@ -21,8 +21,12 @@
   </section>
   {{/if}}
 
+  <h1 class="container-heading">{{section.name}}</h1>
+
   <div class="article-container" id="article-container">
+
     <aside class="article-sidebar" aria-labelledby="section-articles-title">
+
       {{#if settings.show_articles_in_section}}
       <div class="collapsible-sidebar">
         <button type="button" class="collapsible-sidebar-toggle" aria-labelledby="section-articles-title"
@@ -48,12 +52,12 @@
 
     <article id="main-content" class="article">
       <header class="article-header">
-        <h1 title="{{article.title}}" class="article-title">
+        <h3 title="{{article.title}}" class="article-title">
           {{article.title}}
           {{#if article.internal}}
           <span class="icon-lock" title="{{t 'internal'}}"></span>
           {{/if}}
-        </h1>
+        </h3>
 
         <div class="article-author">
           {{#if settings.show_article_author}}
@@ -132,7 +136,7 @@
         </div>
         {{#with article}}
         <div class="article-votes">
-          <span class="article-votes-question">{{t 'was_this_article_helpful'}}</span>
+          <h3 class="article-votes-question">{{t 'was_this_article_helpful'}}</h3>
           <div class="article-votes-controls" role='radiogroup'>
             {{vote 'up' role='radio' class='button article-vote article-vote-up'}}
             {{vote 'down' role='radio' class='button article-vote article-vote-down'}}
