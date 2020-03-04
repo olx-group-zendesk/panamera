@@ -171,12 +171,16 @@
     }
 
     &-vote {
+        font-family: $heading_font;
         background: transparent;
-        border: 1px solid $brand_color;
-        color: $brand_color;
+        border: 2px solid $color-charcoal;
+        color: $color-charcoal;
         margin: 10px 5px;
-        min-width: 90px;
+        min-width: 108px;
         width: auto;
+        @include tablet {
+            width: 193px;
+        }
 
         &::before {
             @extend .icon;
@@ -196,18 +200,25 @@
         &:focus,
         &:active {
             background-color: transparent;
-            color: $brand_color;
+            color: $color-charcoal;
         }
 
         &:hover {
-            background-color: $brand_color;
+            // background-color: $color-charcoal;
+            background-color: transparent;
+            color: $color-charcoal;
         }
 
         &:hover::before,
         &:hover::after,
         &[aria-selected="true"]::before,
         &[aria-selected="true"]::after {
-            color: $brand_text_color;
+            color: $color-charcoal;
+            font-family: $heading_font;
+        }
+
+        &[aria-selected="true"]::after {
+            color: $color-white;
         }
 
         .icon {
@@ -273,8 +284,10 @@
         display: block;
         font-weight: $font-weight-light;
         margin-bottom: 10px;
-        padding: 10px;
-
+        // padding: 10px;
+        &:first-of-type {
+            margin-top: 10px;
+        }
         &.current-article,
         &:hover {
             color: $color-roman-silver;

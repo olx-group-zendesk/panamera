@@ -1,5 +1,16 @@
 // Variables
 
+// PALETTE - OLX
+$color-charcoal: #002f34;
+$color-white: #fff;
+$color-blue-light: #ceddff;
+$color-duck-egg-blue: #d8dfe0;
+$color-pale-gray: #f2f4f5;
+$color-slate: #406367;
+$color-red-light: #ffd6c9;
+$color-teal-light: #c8f8f6;
+$color-roman-silver: #7f9799;
+
 // Colors
 $brand_color: #2a65ea !default;
 $brand_text_color: #fff !default; //Color for text with an accent color background
@@ -26,7 +37,7 @@ $font-size-navigation: 14px;
 $font-size-small: 13px;
 $font-size-smaller: 11px;
 
-$border-color: #ddd;
+$border-color: $color-duck-egg-blue;
 
 $button-color: $brand_color;
 
@@ -82,17 +93,6 @@ $font-size-p1: 18px;
 $font-size-p3: 16px;
 $font-size-p4: 14px;
 $font-size-p6: 12px;
-
-// PALETTE - OLX
-$color-charcoal: #002f34;
-$color-white: #fff;
-$color-blue-light: #ceddff;
-$color-duck-egg-blue: #d8dfe0;
-$color-pale-gray: #f2f4f5;
-$color-slate: #406367;
-$color-red-light: #ffd6c9;
-$color-teal-light: #c8f8f6;
-$color-roman-silver: #7f9799;
 
 // Other - OLX
 $border-radius: 4px;
