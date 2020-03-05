@@ -122,6 +122,7 @@
             border: 0;
             flex: 0 0 17%;
             height: auto;
+            margin: 0 32px 0 0;
         }
 
         border-bottom: 1px solid $border-color;
@@ -129,7 +130,7 @@
         flex: 1 0 auto; //Explicit values needed whith flex-direction: column for IE11
         margin-bottom: 20px;
         padding: 0;
-        margin: 0 32px 0 0;
+        margin: 0 5px 0 0;
     }
 
     &-relatives {
@@ -178,9 +179,6 @@
         margin: 10px 5px;
         min-width: 108px;
         width: auto;
-        @include tablet {
-            width: 193px;
-        }
 
         &::before {
             @extend .icon;
@@ -204,7 +202,6 @@
         }
 
         &:hover {
-            // background-color: $color-charcoal;
             background-color: transparent;
             color: $color-charcoal;
         }
@@ -273,7 +270,7 @@
 
 .sidenav {
     &-title {
-        font-size: $font-size-base;
+        font-size: $font-size-p3;
         position: relative;
         font-weight: 600;
     }
@@ -284,7 +281,6 @@
         display: block;
         font-weight: $font-weight-light;
         margin-bottom: 10px;
-        // padding: 10px;
         &:first-of-type {
             margin-top: 10px;
         }
@@ -299,10 +295,16 @@
 .recent-articles,
 .related-articles {
     &-title {
-        @extend .comment-heading;
+        font-size: 22px;
+        line-height: 1.1;
     }
 
     li {
         margin-bottom: 15px;
+        & > a {
+            color: $color-charcoal;
+            font-size: $font-size-p3;
+            line-height: 1.25;
+        }
     }
 }

@@ -2013,7 +2013,7 @@ section.message-alert {
   flex: 1 0 auto;
   margin-bottom: 20px;
   padding: 0;
-  margin: 0 32px 0 0;
+  margin: 0 5px 0 0;
 }
 
 @media (min-width: 1024px) {
@@ -2021,6 +2021,7 @@ section.message-alert {
     border: 0;
     flex: 0 0 17%;
     height: auto;
+    margin: 0 32px 0 0;
   }
 }
 
@@ -2078,12 +2079,6 @@ section.message-alert {
   margin: 10px 5px;
   min-width: 108px;
   width: auto;
-}
-
-@media (min-width: 768px) {
-  .article-vote {
-    width: 193px;
-  }
 }
 
 .article-vote::before {
@@ -2170,7 +2165,7 @@ section.message-alert {
 }
 
 .sidenav-title {
-  font-size: 15px;
+  font-size: 16px;
   position: relative;
   font-weight: 600;
 }
@@ -2192,9 +2187,22 @@ section.message-alert {
   text-decoration: none;
 }
 
+.recent-articles-title,
+.related-articles-title {
+  font-size: 22px;
+  line-height: 1.1;
+}
+
 .recent-articles li,
 .related-articles li {
   margin-bottom: 15px;
+}
+
+.recent-articles li > a,
+.related-articles li > a {
+  color: #002f34;
+  font-size: 16px;
+  line-height: 1.25;
 }
 
 /***** Attachments *****/
@@ -2286,8 +2294,7 @@ section.message-alert {
   padding: 20px 0;
 }
 
-.comment-heading, .recent-articles-title,
-.related-articles-title {
+.comment-heading {
   margin-bottom: 5px;
   margin-top: 0;
   font-size: 18px;
@@ -3387,7 +3394,6 @@ section.message-alert {
 
 .collapsible-sidebar-toggle:focus {
   outline: none;
-  border: 1px solid $brand_color;
 }
 
 .collapsible-sidebar-body {
