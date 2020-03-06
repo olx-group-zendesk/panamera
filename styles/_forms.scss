@@ -62,12 +62,6 @@
   margin: 0 0 0 10px;
 }
 
-.form-field.required > label::after {
-  content: "*";
-  color: #f00;
-  margin-left: 2px;
-}
-
 .form-field .optional {
   color: $secondary-text-color;
   margin-left: 4px;
@@ -77,12 +71,6 @@
   color: $secondary-text-color;
   font-size: 12px;
   margin: 5px 0;
-}
-
-[data-loading="true"] input,
-[data-loading="true"] textarea {
-  background: transparent url($assets-loader-gif) 99% 50% no-repeat;
-  background-size: 16px 16px;
 }
 
 .form footer {
