@@ -65,6 +65,13 @@ h2 {
   font-size: 22px;
 }
 
+@media (min-width: 768px) {
+  h2 {
+    font-size: 32px;
+    line-height: 1.06;
+  }
+}
+
 h3 {
   font-size: 20px;
   line-height: 1.1;
@@ -3757,7 +3764,8 @@ section.message-alert {
   order: 1;
 }
 
-.request-main .comment-fields, .request-main .request-submit-comment {
+.request-main .comment-fields,
+.request-main .request-submit-comment {
   display: none;
 }
 
@@ -3882,7 +3890,8 @@ section.message-alert {
   border: 0;
 }
 
-.request-details dt, .request-details dd {
+.request-details dt,
+.request-details dd {
   display: inline-block;
   vertical-align: top;
   font-size: 13px;
@@ -3909,7 +3918,8 @@ section.message-alert {
   display: inline-block;
 }
 
-.request-attachments dt, .request-attachments dd {
+.request-attachments dt,
+.request-attachments dd {
   width: 100%;
 }
 
@@ -3923,6 +3933,88 @@ section.message-alert {
 
 .request-follow-up {
   padding-top: 20px;
+}
+
+/* Hints module styling (including multiselect font color custom styles */
+.hints-container {
+  margin: 1em 0;
+  font-size: 11px;
+}
+
+@media (min-width: 768px) {
+  .hints-container {
+    min-height: 100px;
+  }
+}
+
+.hints-container > .title {
+  margin-left: 1em;
+  margin-right: 1em;
+  font-family: $heading_font;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .hints-container > .title {
+    margin-bottom: 0;
+    margin-left: 15px;
+    font-family: $heading_font;
+    font-size: 16px;
+  }
+}
+
+.hints-container > .title::before {
+  content: url($assets-icon-hints-svg);
+  left: -10px;
+  position: relative;
+  top: 10px;
+}
+
+.hints-container > .subtitle {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+@media (min-width: 768px) {
+  .hints-container > .subtitle {
+    margin-left: 40px;
+    margin-top: 2px;
+    font-size: 14px;
+  }
+}
+
+.hints-container > .subtitle > a {
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .hints-after {
+    font-family: $heading_font;
+    font-size: 24px;
+    line-height: 1.08;
+  }
+}
+
+.nesty-input {
+  color: #406367;
+}
+
+.nesty-input:focus {
+  color: #406367;
+  border-color: #d8dfe0 !important;
+}
+
+.nesty-panel li,
+.nesty-expand li,
+.nesty-selected li {
+  color: #406367;
+}
+
+.nesty-panel li.nesty-collapse,
+.nesty-expand li.nesty-collapse,
+.nesty-selected li.nesty-collapse {
+  color: #002f34;
+  font-weight: 600;
 }
 
 /***** Pagination *****/

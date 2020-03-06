@@ -478,6 +478,24 @@
                     "value": true
                 }
             ]
+        },
+        {
+            "label": "hints_group_label",
+            "variables": [
+                {
+                    "identifier": "hints_enabled",
+                    "type": "checkbox",
+                    "description": "hints_enabled_description",
+                    "label": "hints_enabled_label",
+                    "value": true
+                },
+                {
+                    "identifier": "hints",
+                    "type": "file",
+                    "description": "hints_json_description",
+                    "label": "hints_json_label"
+                }
+            ]
         }
     ]
 }
