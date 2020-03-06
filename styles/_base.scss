@@ -73,6 +73,7 @@ a {
         text-decoration: none;
         font-size: $font-size-p4;
         font-family: $heading_font;
+        transition: box-shadow 0.3s ease;
 
         &.light {
             color: $color-white;
@@ -80,6 +81,9 @@ a {
         &.link-dark {
             color: $color-charcoal;
             border-bottom: 2px solid $color-charcoal;
+        }
+        &:hover {
+            box-shadow: inset 0 -1px 0 0 $color-charcoal;
         }
     }
 }

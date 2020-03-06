@@ -103,12 +103,6 @@ $header-height: 72px;
         padding: 0 7px 0 0;
         &[role="button"] {
             padding: 0 8px;
-            &:hover,
-            &:focus,
-            &:active {
-                color: $color-charcoal;
-                background-color: $color-white;
-            }
         }
         &:nth-last-of-type(2) {
             padding: 0 16px 0 0;
@@ -123,12 +117,15 @@ $header-height: 72px;
         &:hover,
         &:focus,
         &:active {
-            color: $color-white;
             text-decoration: none;
         }
 
         &.login {
             display: inline-block;
+        }
+
+        &.my-activities {
+            padding: 7px 40px 7px 20px;
         }
     }
 }

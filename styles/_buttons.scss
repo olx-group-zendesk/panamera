@@ -30,7 +30,7 @@
     &:active,
     &:focus,
     &[aria-selected="true"] {
-        background-color: transparent;
+        // background-color: transparent;
         color: $color-charcoal;
         text-decoration: none;
     }
@@ -106,24 +106,33 @@ a.olx-button {
     max-height: 40px;
     min-width: 108px;
     cursor: pointer;
+    transition: all 0.3s ease;
 
     &-primary {
         background-color: $color-charcoal;
         color: $color-white;
+        box-shadow: inset 0 0 0 8px $color-charcoal;
+
         &:hover,
         &:focus,
         &:active {
-            color: $color-white;
+            background: none;
+            color: $color-charcoal;
+            box-shadow: inset 0 0 0 5px $color-charcoal;
         }
     }
 
     &-secondary {
-        background-color: $color-white;
+        background: $color-white;
         color: $color-charcoal;
+        box-shadow: inset 0 0 0 8px $color-white;
+
         &:hover,
         &:focus,
         &:active {
-            color: $color-charcoal;
+            background: none;
+            color: $color-white;
+            box-shadow: inset 0 0 0 5px $color-white;
         }
     }
 
