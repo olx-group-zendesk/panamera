@@ -40,6 +40,15 @@
     }
 }
 
-.upload-dropzone span {
-    color: $secondary-text-color;
+.upload-dropzone {
+    background: $color-aero-blue;
+    border-radius: $border-radius;
+    border: none;
+    & span,
+    & span > a {
+        font-family: $heading_font;
+        font-size: $font-size-p4;
+        line-height: 1.29;
+        color: $color-slate;
+    }
 }

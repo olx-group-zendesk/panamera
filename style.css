@@ -341,22 +341,25 @@ span.small {
 
 .button-large,
 input[type="submit"] {
-  background-color: $brand_color;
+  background-color: #002f34;
   border: 0;
   border-radius: 4px;
-  color: $brand_text_color;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 2.72;
+  color: #fff;
+  font-size: 16px;
+  font-family: $heading_font;
+  line-height: 2.52;
   min-width: 190px;
   padding: 0 1.9286em;
   width: 100%;
+  box-shadow: inset 0 0 0 8px #002f34;
+  transition: all 0.3s ease;
 }
 
 @media (min-width: 768px) {
   .button-large,
   input[type="submit"] {
     width: auto;
+    height: 48px;
   }
 }
 
@@ -364,7 +367,10 @@ input[type="submit"] {
 input[type="submit"]:hover,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-  background-color: darken($brand_color, 20%);
+  background: none;
+  color: #fff;
+  box-shadow: inset 0 0 0 5px #002f34;
+  color: #002f34;
 }
 
 .button-large[disabled],
@@ -491,6 +497,14 @@ a.olx-button-large {
 /***** Forms *****/
 .form {
   max-width: 650px;
+}
+
+@media (min-width: 768px) {
+  .form-background {
+    background: #fff;
+    border-radius: 4px;
+    padding: 32px;
+  }
 }
 
 .form-field ~ .form-field {
@@ -2262,8 +2276,18 @@ section.message-alert {
   right: 0;
 }
 
-.upload-dropzone span {
-  color: lighten($text_color, 20%);
+.upload-dropzone {
+  background: #cbf7ee;
+  border-radius: 4px;
+  border: none;
+}
+
+.upload-dropzone span,
+.upload-dropzone span > a {
+  font-family: $heading_font;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #406367;
 }
 
 /***** Social share links *****/
@@ -3984,6 +4008,8 @@ section.message-alert {
 }
 
 .hints-container > .subtitle > a {
+  color: #3a77ff;
+  text-decoration: underline;
   font-weight: 600;
 }
 
@@ -4015,6 +4041,18 @@ section.message-alert {
 .nesty-selected li.nesty-collapse {
   color: #002f34;
   font-weight: 600;
+}
+
+.notification {
+  font-family: $text_font;
+  line-height: 1.17;
+  padding-top: 7px;
+}
+
+.notification-inline.notification-error {
+  border-color: #de1609;
+  color: #de1609;
+  background-color: #ffeeea;
 }
 
 /***** Pagination *****/
