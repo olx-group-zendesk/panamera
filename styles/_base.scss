@@ -64,6 +64,13 @@ h5 {
     font-size: $font-size-h6;
 }
 
+p {
+    &.p-4 {
+        font-size: $font-size-p4;
+        line-height: 1.29;
+    }
+}
+
 a {
     color: $link_color;
     text-decoration: none;
@@ -179,6 +186,31 @@ ul {
 
 .error-page {
     @include max-width-container;
+    background: $color-red-bg-light;
+    border: 16px solid $color-white;
+    border-radius: $border-radius;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > img {
+        margin: 32px 0 16px 0;
+    }
+}
+
+section.not-found {
+    display: flex;
+    margin-top: 20px;
+    & p {
+        color: $color-slate;
+        margin: 0;
+        text-align: center;
+    }
+    & a {
+        margin: 31px;
+    }
+    @include tablet {
+        margin-top: 72px;
+    }
 }
 
 .dropdown-toggle {

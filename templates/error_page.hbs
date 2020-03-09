@@ -1,21 +1,24 @@
-<div class="container-divider"></div>
-<div id="main-content" class="error-page">
-  <h1>{{t 'oops'}}</h1>
+{{!-- <div class="container-divider"></div> --}}
+<section class="not-found">
+  <div id="main-content" class="error-page">
+    <img src="{{asset 'icon-error.svg'}}">
+    <h3>{{t 'oops'}}</h3>
 
-  {{#is error 'unauthorized'}}
+    {{#is error 'unauthorized'}}
     <h2>{{link 'sign_in'}}</h2>
-  {{/is}}
+    {{/is}}
 
-  {{#is error 'forbidden'}}
+    {{#is error 'forbidden'}}
     <h2>{{t 'not_authorized'}}</h2>
-  {{/is}}
+    {{/is}}
 
-  {{#is error 'not_found'}}
-    <h2>{{t 'nonexistent_page'}}</h2>
+    {{#is error 'not_found'}}
+    <p class="p-4">{{t 'nonexistent_page'}}</p>
     <p>{{t 'mistyped_address_or_moved_page'}}</p>
-  {{/is}}
+    {{/is}}
 
-  {{#link 'help_center'}}
+    {{#link 'help_center' class="link link-dark"}}
     {{t 'back_to_homepage'}}
-  {{/link}}
-</div>
+    {{/link}}
+  </div>
+</section>
