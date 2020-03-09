@@ -4985,13 +4985,12 @@ section.message-alert {
 }
 
 .search-results-sidebar .see-all-filters::after {
-  content: ' \2304';
+  content: " \2304";
   font-weight: bold;
 }
 
 .search-results-subheading {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 20px;
 }
 
 .search-results-list {
@@ -5000,6 +4999,7 @@ section.message-alert {
 
 .search-results-list > li {
   padding: 20px 0;
+  border-bottom: 1px solid #d8dfe0;
 }
 
 .search-results-list > li:first-child {
@@ -5008,6 +5008,10 @@ section.message-alert {
 
 .search-results-list > li h2 {
   margin-bottom: 0;
+}
+
+.search-results-list > li h2 > a {
+  color: #002f34;
 }
 
 .search-results .meta-group {
@@ -5125,7 +5129,9 @@ section.message-alert {
   }
 }
 
-.search-result-breadcrumbs li, .search-result-breadcrumbs li a, .search-result-breadcrumbs li a:visited {
+.search-result-breadcrumbs li,
+.search-result-breadcrumbs li a,
+.search-result-breadcrumbs li a:visited {
   color: inherit;
 }
 
