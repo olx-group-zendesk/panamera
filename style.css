@@ -535,10 +535,15 @@ a.olx-button-large {
   max-width: 650px;
 }
 
+.form-background {
+  background: #fff;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 28px;
+}
+
 @media (min-width: 768px) {
   .form-background {
-    background: #fff;
-    border-radius: 4px;
     padding: 32px;
   }
 }
@@ -3996,13 +4001,15 @@ section.message-alert {
 
 /* Hints module styling (including multiselect font color custom styles */
 .hints-container {
-  margin: 1em 0;
+  margin: 16px 0 24px 0;
+  border-bottom: 1px solid #d8dfe0;
   font-size: 11px;
 }
 
 @media (min-width: 768px) {
   .hints-container {
     min-height: 100px;
+    margin: 16px 0 32px 0;
   }
 }
 

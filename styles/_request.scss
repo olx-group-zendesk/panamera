@@ -204,13 +204,15 @@
             // background-size: 100px 100px;
             // background-color: $hints-background-color;
             min-height: 100px;
+            margin: 16px 0 32px 0;
         }
 
         // background-color: $hints-background-color;
         // border: 1px solid $brand_color_ext_blue_light;
         // border-radius: $input-border-radius;
         // color: $brand_color_ext_blue_dark;
-        margin: 1em 0;
+        margin: 16px 0 24px 0;
+        border-bottom: 1px solid $border-color;
         font-size: $font-size-smaller;
 
         & > .title {
