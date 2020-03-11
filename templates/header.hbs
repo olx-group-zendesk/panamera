@@ -11,18 +11,60 @@
 
     <div class="nav-wrapper">
       <nav class="user-nav" id="user-nav">
+
         {{#if alternative_locales}}
         <span class="locale locale-current">
+
           {{#is current_locale.name "العربية (مصر)"}}
           <span dir="rtl">العربية (مصر)</span>
-          {{else}}
-          <span dir="ltr">{{current_locale.name}}</span>
           {{/is}}
+
+          {{#is current_locale.name "English (US)"}}
+          <span dir="ltr">Eng</span>
+          {{/is}}
+
+          {{#is current_locale.name "Русский (Қазақстан)"}}
+          <span dir="ltr">Рус</span>
+          {{/is}}
+
+          {{#is current_locale.name "Қазақ тілі"}}
+          <span dir="ltr">Қаз</span>
+          {{/is}}
+
+          {{#is current_locale.name "Українська"}}
+          <span dir="ltr">Укр</span>
+          {{/is}}
+
         </span>
+
         {{#each alternative_locales}}
+        {{#is name "English (US)"}}
         <a class="locale" href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
-          {{name}}
+          Eng
         </a>
+        {{/is}}
+
+        {{#is name "Русский (Қазақстан)"}}
+        <a class="locale" href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
+          Рус
+        </a>
+        {{/is}}
+
+        {{#is name "Қазақ тілі"}}
+        <a class="locale" href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
+          Қаз
+        </a>
+        {{/is}}
+
+        {{#is name "Українська"}}
+        <a class="locale" href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
+          Укр
+        </a>
+        {{/is}}
+
+        {{!-- <a class="locale" href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
+          {{name}}
+        </a> --}}
         {{/each}}
         {{/if}}
 
