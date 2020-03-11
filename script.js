@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // configure initial web widget and other elements involved
     if (typeof zE === "undefined") {
-        let chatButton = document.querySelector("[name='live-chat']");
+        let chatButton = document.querySelector(".blocks-button-chat");
         if (chatButton) {
             chatButton.setAttribute("style", "display:none;");
         }
