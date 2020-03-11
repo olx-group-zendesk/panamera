@@ -30,10 +30,8 @@
         }
 
         .sidenav-item {
-            &:hover,
             &[aria-selected="true"] {
-                background-color: #e9ebed;
-                color: inherit;
+                color: $color-roman-silver;
                 text-decoration: none;
             }
         }
@@ -59,24 +57,21 @@
             display: none;
         }
 
-        .multibrand-filter-list .doc-count {
-            color: $field-text-color;
-        }
+        // .multibrand-filter-list .doc-count {
+        //     color: $color-charcoal;
+        // }
 
         .see-all-filters {
             background: none;
             border: none;
             cursor: pointer;
             display: block;
-            padding: 10px;
-            color: $link_color;
+            padding: 0;
+            color: $color-blue-primary;
+            text-decoration: none;
 
             &[aria-hidden="true"] {
                 display: none;
-            }
-
-            &:hover {
-                text-decoration: underline;
             }
 
             &::after {
@@ -181,7 +176,7 @@
         position: relative;
 
         &-icon {
-            color: $brand_color;
+            color: $color-blue-primary;
             vertical-align: middle;
             width: 13px;
             height: 13px;

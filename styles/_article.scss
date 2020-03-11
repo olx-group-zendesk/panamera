@@ -274,12 +274,11 @@
     &-title {
         font-size: $font-size-p3;
         position: relative;
-        font-weight: 600;
     }
 
     &-item {
         border-radius: 4px;
-        color: $text_color;
+        color: $color-charcoal;
         display: block;
         font-weight: $font-weight-light;
         margin-bottom: 10px;
@@ -288,7 +287,7 @@
         }
         &.current-article,
         &:hover {
-            color: $color-roman-silver;
+            color: $color-charcoal;
             text-decoration: none;
         }
     }

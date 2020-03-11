@@ -2235,12 +2235,11 @@ section.message-alert {
 .sidenav-title {
   font-size: 16px;
   position: relative;
-  font-weight: 600;
 }
 
 .sidenav-item {
   border-radius: 4px;
-  color: $text_color;
+  color: #002f34;
   display: block;
   font-weight: 300;
   margin-bottom: 10px;
@@ -2251,7 +2250,7 @@ section.message-alert {
 }
 
 .sidenav-item.current-article, .sidenav-item:hover {
-  color: #7f9799;
+  color: #002f34;
   text-decoration: none;
 }
 
@@ -4124,30 +4123,35 @@ section.message-alert {
   background-color: #f3f3f3;
 }
 
-.pagination li:hover:not(.pagination-current) span, .pagination li:hover:not(.pagination-current) a {
+.pagination li:hover:not(.pagination-current) span,
+.pagination li:hover:not(.pagination-current) a {
   color: $text_color;
   text-decoration: none;
 }
 
-.pagination a, .pagination span {
+.pagination a,
+.pagination span {
   font-size: 15px;
-  color: lighten($text_color, 20%);
+  color: #002f34;
   padding: 10px 12px;
 }
 
 @media (min-width: 768px) {
-  .pagination a, .pagination span {
-    font-size: 13px;
+  .pagination a,
+  .pagination span {
+    font-size: 14px;
     padding: 5px 12px;
   }
 }
 
 .pagination-current {
-  background-color: $brand_color;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px #002f34;
 }
 
-.pagination-current a, .pagination-current span {
-  color: $brand_text_color;
+.pagination-current a,
+.pagination-current span {
+  color: #002f34;
 }
 
 .pagination-first {
@@ -4935,9 +4939,8 @@ section.message-alert {
   }
 }
 
-.search-results-sidebar .sidenav-item:hover, .search-results-sidebar .sidenav-item[aria-selected="true"] {
-  background-color: #e9ebed;
-  color: inherit;
+.search-results-sidebar .sidenav-item[aria-selected="true"] {
+  color: #7f9799;
   text-decoration: none;
 }
 
@@ -4963,25 +4966,18 @@ section.message-alert {
   display: none;
 }
 
-.search-results-sidebar .multibrand-filter-list .doc-count {
-  color: #666;
-}
-
 .search-results-sidebar .see-all-filters {
   background: none;
   border: none;
   cursor: pointer;
   display: block;
-  padding: 10px;
-  color: $link_color;
+  padding: 0;
+  color: #3a77ff;
+  text-decoration: none;
 }
 
 .search-results-sidebar .see-all-filters[aria-hidden="true"] {
   display: none;
-}
-
-.search-results-sidebar .see-all-filters:hover {
-  text-decoration: underline;
 }
 
 .search-results-sidebar .see-all-filters::after {
@@ -5087,7 +5083,7 @@ section.message-alert {
 }
 
 .search-result-votes-icon, .search-result-meta-count-icon {
-  color: $brand_color;
+  color: #3a77ff;
   vertical-align: middle;
   width: 13px;
   height: 13px;
