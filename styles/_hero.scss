@@ -20,7 +20,6 @@
     & h1 {
         @include tablet {
             font-size: calc(36px + 6 * ((100vw - 320px) / 680));
-            height: 42px;
             line-height: 1.05;
             letter-spacing: 0.5px;
         }
