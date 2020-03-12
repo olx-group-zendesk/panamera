@@ -1349,6 +1349,7 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
   justify-content: center;
   border-radius: 50%;
   background-color: #c8f8f6;
+  min-width: 36px;
   width: 36px;
   height: 36px;
   margin: 0 12px 0 10px;
@@ -1360,6 +1361,7 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 
 @media (min-width: 768px) {
   .blocks-image {
+    min-width: 56px;
     width: 56px;
     height: 56px;
     margin: 0 16px 0 24px;
@@ -1448,13 +1450,13 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 
 .blocks-item-link {
   color: #002f34;
-  padding: 16px 0;
+  padding: 16px 3px;
   border-radius: inherit;
 }
 
 @media (min-width: 768px) {
   .blocks-item-link {
-    padding: 24px 0;
+    padding: 24px 5px;
   }
 }
 
