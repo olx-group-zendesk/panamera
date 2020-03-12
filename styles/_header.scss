@@ -91,6 +91,13 @@ $header-height: 72px;
             }
         }
     }
+
+    & a[role="button"] {
+        @include tablet {
+            display: inherit;
+        }
+        display: none;
+    }
 }
 
 .nav-wrapper {

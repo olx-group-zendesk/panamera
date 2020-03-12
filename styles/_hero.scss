@@ -19,12 +19,13 @@
 
     & h1 {
         @include tablet {
-            font-size: $font-size-h1;
+            font-size: calc(36px + 6 * ((100vw - 320px) / 680));
             height: 42px;
             line-height: 1.05;
             letter-spacing: 0.5px;
         }
-        font-size: $font-size-h3;
+        text-shadow: 0px 0px 1px #f2f4f5;
+        font-size: calc(24px + 6 * ((100vw - 320px) / 680));
         text-align: left;
         line-height: 1.08;
         [dir="rtl"] & {

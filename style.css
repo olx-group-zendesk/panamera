@@ -779,6 +779,16 @@ a.olx-button-large {
   margin: 0 7px 0 0;
 }
 
+.user-nav a[role="button"] {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .user-nav a[role="button"] {
+    display: inherit;
+  }
+}
+
 .nav-wrapper {
   display: flex;
 }
@@ -1206,14 +1216,15 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 }
 
 .hero h1 {
-  font-size: 24px;
+  text-shadow: 0px 0px 1px #f2f4f5;
+  font-size: calc(24px + 6 * ((100vw - 320px) / 680));
   text-align: left;
   line-height: 1.08;
 }
 
 @media (min-width: 768px) {
   .hero h1 {
-    font-size: 40px;
+    font-size: calc(36px + 6 * ((100vw - 320px) / 680));
     height: 42px;
     line-height: 1.05;
     letter-spacing: 0.5px;
