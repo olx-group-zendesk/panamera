@@ -86,5 +86,10 @@
     "phone_line1_enabled_label": "Enable phone line 1",
     "phone_line1_enabled_description": "Shows phone contact button for line 1.",
     "phone_line2_enabled_label": "Enable phone line 2",
-    "phone_line2_enabled_description": "Shows phone contact button for line 2."
+    "phone_line2_enabled_description": "Shows phone contact button for line 2.",
+    "hints_group_label": "Hints",
+    "hints_enabled_label": "Enable hints",
+    "hints_enabled_description": "Turn on/off answer suggestions in contact form.",
+    "hints_json_label": "File containing hints data",
+    "hints_json_description": "Upload JSON file containing hints data."
 }
