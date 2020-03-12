@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // configure initial web widget and other elements involved
     if (typeof zE === "undefined") {
-        let chatButton = document.querySelector(".blocks-button-chat");
+        var chatButton = document.querySelector(".blocks-button-chat");
         if (chatButton) {
             chatButton.setAttribute("style", "display:none;");
         }
@@ -265,8 +265,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // If a section has more than 6 subsections, we collapse the list, and show a trigger to display them all
-    const seeAllTrigger = document.querySelector("#see-all-sections-trigger");
-    const subsectionsList = document.querySelector(".section-list");
+    var seeAllTrigger = document.querySelector("#see-all-sections-trigger");
+    var subsectionsList = document.querySelector(".section-list");
 
     if (subsectionsList && subsectionsList.children.length > 6) {
         seeAllTrigger.setAttribute("aria-hidden", false);
@@ -278,7 +278,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // If multibrand search has more than 5 help centers or categories collapse the list
-    const multibrandFilterLists = document.querySelectorAll(
+    var multibrandFilterLists = document.querySelectorAll(
         ".multibrand-filter-list"
     );
     Array.prototype.forEach.call(multibrandFilterLists, function(filter) {
@@ -297,7 +297,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // If there are any error notifications below an input field, focus that field
-    const notificationElm = document.querySelector(".notification-error");
+    var notificationElm = document.querySelector(".notification-error");
     if (
         notificationElm &&
         notificationElm.previousElementSibling &&
@@ -316,8 +316,15 @@ document.addEventListener("DOMContentLoaded", function() {
     // hide contact sections for specific roles
     function setStyleForBlock(selectorString, styleAttribute) {
         Array.prototype.filter
-            .call([document.querySelector(selectorString)], item => item)
-            .forEach(item => item.setAttribute("style", styleAttribute));
+            .call(
+                [document.querySelector(selectorString)],
+                function processItem(item) {
+                    return item;
+                }
+            )
+            .forEach(function processItem(item) {
+                item.setAttribute("style", styleAttribute);
+            });
     }
 
     // This is hiding ticket form select field - due to (mis?)configuration and
