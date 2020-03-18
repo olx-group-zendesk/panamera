@@ -1,5 +1,5 @@
 {
-    "name": "Panamera olx-test",
+    "name": "Panamera KZ",
     "author": "Zendesk, Igor Wasiński",
     "version": "1.14.2",
     "api_version": 1,
@@ -336,7 +336,7 @@
                     "type": "checkbox",
                     "description": "follow_section_description",
                     "label": "follow_section_label",
-                    "value": true
+                    "value": false
                 }
             ]
         },
@@ -348,14 +348,14 @@
                     "type": "checkbox",
                     "description": "follow_post_description",
                     "label": "follow_post_label",
-                    "value": true
+                    "value": false
                 },
                 {
                     "identifier": "show_post_sharing",
                     "type": "checkbox",
                     "description": "post_sharing_description",
                     "label": "post_sharing_label",
-                    "value": true
+                    "value": false
                 }
             ]
         },
@@ -367,7 +367,7 @@
                     "type": "checkbox",
                     "description": "follow_topic_description",
                     "label": "follow_topic_label",
-                    "value": true
+                    "value": false
                 }
             ]
         },
@@ -417,14 +417,14 @@
                     "type": "checkbox",
                     "description": "alert_enabled_description",
                     "label": "alert_enabled_label",
-                    "value": true
+                    "value": false
                 },
                 {
                     "identifier": "info_enabled",
                     "type": "checkbox",
                     "description": "info_enabled_description",
                     "label": "info_enabled_label",
-                    "value": true
+                    "value": false
                 }
             ]
         },
@@ -468,14 +468,14 @@
                     "type": "checkbox",
                     "description": "phone_line1_enabled_description",
                     "label": "phone_line1_enabled_label",
-                    "value": true
+                    "value": false
                 },
                 {
                     "identifier": "phone_line2_enabled",
                     "type": "checkbox",
                     "description": "phone_line2_enabled_description",
                     "label": "phone_line2_enabled_label",
-                    "value": true
+                    "value": false
                 }
             ]
         },
