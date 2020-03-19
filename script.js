@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
     window.zen = {
         webWidget: {
             show: function show() {
+                if (typeof zE === "undefined") {
+                    return;
+                }
                 if (zE("webWidget:get", "display") === "hidden") {
                     zE("webWidget", "show");
                     zE("webWidget", "open");
