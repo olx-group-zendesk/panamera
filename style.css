@@ -2094,9 +2094,8 @@ section.message-alert {
   border-bottom: 1px solid #d8dfe0;
   border-top: 1px solid #d8dfe0;
   flex: 1 0 auto;
-  margin-bottom: 20px;
   padding: 0;
-  margin: 0 5px 0 0;
+  margin: 0 5px 20px 0;
 }
 
 @media (min-width: 1024px) {
