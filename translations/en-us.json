@@ -91,5 +91,8 @@
     "hints_enabled_label": "Enable hints",
     "hints_enabled_description": "Turn on/off answer suggestions in contact form.",
     "hints_json_label": "File containing hints data",
-    "hints_json_description": "Upload JSON file containing hints data."
+    "hints_json_description": "Upload JSON file containing hints data.",
+    "analytics_group_label": "Analytics",
+    "enhanced_analytics_label": "Enable enhanced analytics.",
+    "enhanced_analytics_description": "Turn on/off extra analytics for this theme."
 }

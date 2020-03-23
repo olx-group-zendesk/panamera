@@ -32,3 +32,61 @@
     </div> --}}
   </div>
 </footer>
+
+{{#if settings.enhanced_analytics}}
+<script type="text/javascript">
+  function ninjaGetCookie(getCookieName) {
+    var name = getCookieName + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+      if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+    }
+    return null;
+  }
+
+  function ninjaClickTrigger(event, touch_point_button) {
+    window.dataLayer.push({
+      'trackEvent': [event],
+      'touch_point_button': touch_point_button
+    });
+  };
+
+  window.dataLayer = window.dataLayer || [];
+
+  window.dataLayer.push({
+    "cleanup": function () {
+      window.dataLayer.push({
+        "trackPage": "help_center",
+        "page_title": document.title,
+        "touch_point_page": "help_center",
+        "user_id": ninjaGetCookie("user_id"),
+        "query_string": window.location.search || ""
+      });
+    }
+  });
+
+  var ninjaTag = document.getElementById("ninja-script-tag");
+
+  if (!ninjaTag) {
+    (function () {
+      "use strict";
+      window.configTracking = {
+        "siteUrl": "www.olx.ro",
+        "environment": "production"
+      };
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.id = "ninja-script-tag";
+      script.async = true;
+      script.src = (
+        "https:" === document.location.protocol ? "https://" : "http://"
+      ) + "ninja.akamaized.net\/ninja-cee.js";
+      (document.getElementsByTagName("head")[0] ||
+        document.getElementsByTagName("body")[0]
+      ).appendChild(script);
+    }());
+  }
+</script>
+{{/if}}
