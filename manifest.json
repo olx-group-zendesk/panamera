@@ -496,6 +496,18 @@
                     "label": "hints_json_label"
                 }
             ]
+        },
+        {
+            "label": "analytics_group_label",
+            "variables": [
+                {
+                    "identifier": "enhanced_analytics",
+                    "type": "checkbox",
+                    "description": "enhanced_analytics_description",
+                    "label": "enhanced_analytics_label",
+                    "value": false
+                }
+            ]
         }
     ]
 }
