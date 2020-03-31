@@ -1,4 +1,10 @@
 // Mixins
+@mixin dark-mode {
+    @media (prefers-color-scheme: dark) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media (min-width: #{$tablet-width}) {
         @content;

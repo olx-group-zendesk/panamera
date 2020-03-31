@@ -45,6 +45,9 @@
         [dir="rtl"] & {
             margin: 0 10px 0 12px;
         }
+        @include dark-mode {
+            background-color: $color-teal-dark;
+        }
         @include tablet {
             min-width: 56px;
             width: 56px;
