@@ -46,7 +46,7 @@
             margin: 0 10px 0 12px;
         }
         @include dark-mode {
-            background-color: $color-teal-dark;
+            background-color: $color-teal-dark-50;
         }
         @include tablet {
             min-width: 56px;
