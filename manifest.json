@@ -1,5 +1,5 @@
 {
-    "name": "Panamera olx-test",
+    "name": "Panamera BG",
     "author": "Zendesk, Igor Wasiński",
     "version": "1.14.2",
     "api_version": 1,
@@ -380,11 +380,12 @@
                     "description": "country_name_description",
                     "label": "country_name_label",
                     "options": [
+                        { "label": "Bulgaria", "value": "Bulgaria" },
                         { "label": "Kazakhstan", "value": "Kazakhstan" },
                         { "label": "Poland", "value": "Poland" },
                         { "label": "Ukraine", "value": "Ukraine" }
                     ],
-                    "value": "Kazakhstan"
+                    "value": "Bulgaria"
                 },
                 {
                     "identifier": "country_site_url",
@@ -392,6 +393,10 @@
                     "description": "country_site_url_description",
                     "label": "country_site_url_label",
                     "options": [
+                        {
+                            "label": "Bulgaria",
+                            "value": "https://www.olx.bg/"
+                        },
                         {
                             "label": "Kazakhstan",
                             "value": "https://www.olx.kz/"
@@ -405,7 +410,7 @@
                             "value": "https://www.olx.ua/"
                         }
                     ],
-                    "value": "https://www.olx.kz/"
+                    "value": "https://www.olx.bg/"
                 }
             ]
         },
@@ -461,21 +466,21 @@
                     "type": "checkbox",
                     "description": "home_page_contact_enabled_description",
                     "label": "home_page_contact_enabled_label",
-                    "value": true
+                    "value": false
                 },
                 {
                     "identifier": "phone_line1_enabled",
                     "type": "checkbox",
                     "description": "phone_line1_enabled_description",
                     "label": "phone_line1_enabled_label",
-                    "value": true
+                    "value": false
                 },
                 {
                     "identifier": "phone_line2_enabled",
                     "type": "checkbox",
                     "description": "phone_line2_enabled_description",
                     "label": "phone_line2_enabled_label",
-                    "value": true
+                    "value": false
                 }
             ]
         },
@@ -505,7 +510,7 @@
                     "type": "checkbox",
                     "description": "enhanced_analytics_description",
                     "label": "enhanced_analytics_label",
-                    "value": false
+                    "value": true
                 }
             ]
         }
