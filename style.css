@@ -1369,6 +1369,12 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
   margin: 0 10px 0 12px;
 }
 
+@media (prefers-color-scheme: dark) {
+  .blocks-image {
+    background-color: #267979;
+  }
+}
+
 @media (min-width: 768px) {
   .blocks-image {
     min-width: 56px;
