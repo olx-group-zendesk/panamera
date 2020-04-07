@@ -19,46 +19,46 @@
           <span dir="rtl">العربية (مصر)</span>
           {{/is}}
 
-          {{#is current_locale.name "English (US)"}}
-          <span dir="ltr">Eng</span>
+          {{#is current_locale.name "English (United States)"}}
+          <span dir="ltr">eng</span>
           {{/is}}
 
-          {{#is current_locale.name "Русский"}}
-          <span dir="ltr">Рус</span>
+          {{#is current_locale.name "русский"}}
+          <span dir="ltr">pyc</span>
           {{/is}}
 
-          {{#is current_locale.name "Қазақ тілі"}}
-          <span dir="ltr">Қаз</span>
+          {{#is current_locale.name "қазақ тілі"}}
+          <span dir="ltr">қаз</span>
           {{/is}}
 
-          {{#is current_locale.name "Українська"}}
-          <span dir="ltr">Укр</span>
+          {{#is current_locale.name "українська"}}
+          <span dir="ltr">укр</span>
           {{/is}}
 
         </span>
 
         {{#each alternative_locales}}
-        {{#is name "English (US)"}}
+        {{#is name "English (United States)"}}
         <a class="locale" href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
-          Eng
+          eng
         </a>
         {{/is}}
 
-        {{#is name "Русский"}}
+        {{#is name "русский"}}
         <a class="locale" href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
-          Рус
+          pyc
         </a>
         {{/is}}
 
-        {{#is name "Қазақ тілі"}}
+        {{#is name "қазақ тілі"}}
         <a class="locale" href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
-          Қаз
+          қаз
         </a>
         {{/is}}
 
-        {{#is name "Українська"}}
+        {{#is name "українська"}}
         <a class="locale" href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
-          Укр
+          укр
         </a>
         {{/is}}
 
