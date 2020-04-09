@@ -1,5 +1,5 @@
 {
-    "name": "Panamera olx-test",
+    "name": "Panamera PT",
     "author": "Zendesk, Igor Wasiński",
     "version": "1.14.2",
     "api_version": 1,
@@ -382,9 +382,10 @@
                     "options": [
                         { "label": "Kazakhstan", "value": "Kazakhstan" },
                         { "label": "Poland", "value": "Poland" },
+                        { "label": "Portugal", "value": "Portugal" },
                         { "label": "Ukraine", "value": "Ukraine" }
                     ],
-                    "value": "Kazakhstan"
+                    "value": "Portugal"
                 },
                 {
                     "identifier": "country_site_url",
@@ -401,11 +402,15 @@
                             "value": "https://www.olx.pl/"
                         },
                         {
+                            "label": "Portugal",
+                            "value": "https://www.olx.pt/"
+                        },
+                        {
                             "label": "Ukraine",
                             "value": "https://www.olx.ua/"
                         }
                     ],
-                    "value": "https://www.olx.kz/"
+                    "value": "https://www.olx.pt/"
                 }
             ]
         },
@@ -461,21 +466,21 @@
                     "type": "checkbox",
                     "description": "home_page_contact_enabled_description",
                     "label": "home_page_contact_enabled_label",
-                    "value": true
+                    "value": false
                 },
                 {
                     "identifier": "phone_line1_enabled",
                     "type": "checkbox",
                     "description": "phone_line1_enabled_description",
                     "label": "phone_line1_enabled_label",
-                    "value": true
+                    "value": false
                 },
                 {
                     "identifier": "phone_line2_enabled",
                     "type": "checkbox",
                     "description": "phone_line2_enabled_description",
                     "label": "phone_line2_enabled_label",
-                    "value": true
+                    "value": false
                 }
             ]
         },
