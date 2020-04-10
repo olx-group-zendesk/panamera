@@ -510,7 +510,7 @@
                     "type": "checkbox",
                     "description": "enhanced_analytics_description",
                     "label": "enhanced_analytics_label",
-                    "value": true
+                    "value": false
                 }
             ]
         }
