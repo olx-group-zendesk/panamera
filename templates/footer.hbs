@@ -68,25 +68,34 @@
   });
 
   var ninjaTag = document.getElementById("ninja-script-tag");
+  var siteUrl = "{{settings.country_site_url}}".match(/(^\w+:|^)\/\/(.+)\/$/)[2];
 
-  if (!ninjaTag) {
-    (function () {
-      "use strict";
-      window.configTracking = {
-        "siteUrl": "www.olx.ro",
-        "environment": "production"
-      };
-      var script = document.createElement("script");
-      script.type = "text/javascript";
-      script.id = "ninja-script-tag";
-      script.async = true;
-      script.src = (
-        "https:" === document.location.protocol ? "https://" : "http://"
-      ) + "ninja.akamaized.net\/ninja-cee.js";
-      (document.getElementsByTagName("head")[0] ||
-        document.getElementsByTagName("body")[0]
-      ).appendChild(script);
-    }());
+  if (!siteUrl) {
+    console.warn(
+      "[NinjaTracker]: No siteUrl defined!",
+      "{{settings.country_site_url}}"
+    );
+  } else {
+    if (!ninjaTag) {
+      (function () {
+        "use strict";
+        window.configTracking = {
+          "siteUrl": siteUrl,
+          "environment": "production"
+        };
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.id = "ninja-script-tag";
+        script.async = true;
+        script.src = (
+          "https:" === document.location.protocol ? "https://" : "http://"
+        ) + "ninja.akamaized.net\/ninja-cee.js";
+        (document.getElementsByTagName("head")[0] ||
+          document.getElementsByTagName("body")[0]
+        ).appendChild(script);
+      }());
+    }
   }
+
 </script>
 {{/if}}
