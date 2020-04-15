@@ -1,12 +1,191 @@
 [
     {
-        "instance": "Test",
-        "form_id": "360017767431",
-        "default_suggestion": "Hello there!",
+        "instance": "Romania",
+        "form_id": "360004203939",
+        "default_suggestion": "Vă rugăm să alegeți din selecția de mai sus.",
         "data": [
             {
-                "fields": ["ato__level_6__level7"],
-                "answer_suggestion": "Hello, this is a test hint to be displayed in the widget. Check <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/210631449'>this</a> <script>alert('evil code!');</script>out dude!"
+                "fields": ["l101_l201", "l101_l202"],
+                "answer_suggestion": "Ajuta-ne cu mai multe informatii. Un printscreen sau o imagine cu mesajul afisat, alaturi de dispozitivul de pe care se incearca acest lucru."
+            },
+            {
+                "fields": ["l101_l203"],
+                "answer_suggestion": "Logheaza-te in contul tau OLX si acceseaza sectiunea de \"Setari\". Pentru mai multe detalii legat de datele ce pot fi modificate, afla <a target='_blank' rel='noreferrer noopener' href='https://ajutor.olx.ro/hc/ro/articles/207802685-Ce-date-ale-contului-meu-pot-schimba-?ref=answersugg_editareprofil'>de aici</a>."
+            },
+            {
+                "fields": ["l101_l205"],
+                "answer_suggestion": "Logheaza-te in contul tau OLX si acceseaza sectiunea de \"Setari\". Jos de tot in \"Administrare cont\" vei putea solicita datele tale. Mai multe informatii despre acest lucru pot fi gasite si <a target='_blank' rel='noreferrer noopener' href='https://ajutor.olx.ro/hc/ro/articles/360000015780-Cerere-de-acces-datele-tale-in-OLX-?ref=answersugg_cereredate'>aici</a>."
+            },
+            {
+                "fields": ["l101_l204"],
+                "answer_suggestion": "Logheaza-te in contul tau OLX si acceseaza sectiunea de \"Setari\". Jos de tot in \"Administrare cont\" vei putea solicita stergerea contului. Mai multe detalii despre acest lucru pot fi gasite si <a target='_blank' rel='noreferrer noopener' href='https://ajutor.olx.ro/hc/ro/articles/207802715-Cum-imi-sterg-contul-?ref=answersugg_stergerecont'>aici</a>."
+            },
+            {
+                "fields": [
+                    "l101_l207",
+                    "l102_l208_l207",
+                    "l102_l209_l207",
+                    "l104_l2013_l207",
+                    "l104_l2014_l207",
+                    "l104_l2015_l207",
+                    "l106_l2022_l207",
+                    "l106_l2023_l207",
+                    "l106_l2024_l207",
+                    "l106_l2025_l207",
+                    "l106_l2026_l207",
+                    "l106_l207"
+                ],
+                "answer_suggestion": "Ajuta-ne cu mai multe informatii. Cu cat este detaliata mai bine situatia, si rezolvarea din partea noastra va fi una completa."
+            },
+            {
+                "fields": ["l102_l208_l3012"],
+                "answer_suggestion": "Asigura-te ca folosesti filtrul de locatie/localitate. In caz ca tot nu se reuseste, este posibil ca acea localitate sa nu existe in baza noastra de date. Recomandam ceva din imprejurimi sau o localitate mai mare ca intindere."
+            },
+            {
+                "fields": ["l102_l208_l3013", "l102_l208_l3014"],
+                "answer_suggestion": "Tine cont ca nu toti oamenii pot raspunde imediat inapoi. Daca se intampla sa treaca o perioada mai mare de timp si tot nu se reuseste contactarea vanzatorului, ajuta-ne cu un numar de anunt sau linkul de la acesta si vedem ce alternative ar fi."
+            },
+            {
+                "fields": ["l102_l209_l3015"],
+                "answer_suggestion": "<a target='_blank' rel='noreferrer noopener' href='https://ajutor.olx.ro/hc/ro/articles/207802675-Din-ce-motiv-mi-a-fost-respins-anuntul-?ref=answersugg_respingereanunt'>Asigura-te</a> ca anuntul nu se afla in lista noastra de obiecte interzise sau nu incalca regulile de buna conduita."
+            },
+            {
+                "fields": ["l102_l209_l3016"],
+                "answer_suggestion": "Orice anunt are o valabilitate standard de 30 de zile. Pentru mai multe detalii legat de valabilitatea si prelungirea unei oferte, poti accesa <a target='_blank' rel='noreferrer noopener' href='https://ajutor.olx.ro/hc/ro/articles/207096539-Care-este-valabilitatea-unui-anunt-fie-gratuit-sau-platit-?ref=answersugg_valabilitateanunt'>acest articol</a>."
+            },
+            {
+                "fields": ["l102_l209_l3017"],
+                "answer_suggestion": "Cat timp inca se numara in lista ta de anunturi active, lucrurile sunt perfect in regula. Ca sa te poti asigura ca totul este intr-adevar asa, <a target='_blank' rel='noreferrer noopener' href='https://ajutor.olx.ro/hc/ro/articles/207096589-Ce-sa-fac-daca-nu-imi-gasesc-anuntul-?ref=answersugg_nugasescanunt'>aici</a> ai cateva variante de verificare."
+            },
+            {
+                "fields": ["l102_l209_l3020"],
+                "answer_suggestion": "Atata timp cat se tine cont de limita de anunturi gratuite din categoria anuntului tau, nu ar trebui sa fie dificultati. Daca insa situatia persista, <a target='_blank' rel='noreferrer noopener' href='https://ajutor.olx.ro/hc/ro/articles/207802645-Cum-adaug-un-anunt-pe-OLX-?ref=answersugg_adaugareanunt'>aici</a> se pot gasi niste pasi ajutatori sau ofera-ne cat mai multe detalii legat de problema intampinata."
+            },
+            {
+                "fields": ["l102_l209_l3021"],
+                "answer_suggestion": "Logheaza-te in contul OLX si acceseaza sectiunea de \"Anunturi\". In dreptul fiecarei oferte va fi disponibil un buton de \"Modifica\", astfel incat sa se poata ajusta dupa bunul plac. Alternativ, se poate face modificarea si direct din pagina unui anunt ce iti apartine prin acelasi buton. Mai multe informatii legat de editarea anunturilor pot fi accesate inclusiv <a target='_blank' rel='noreferrer noopener' href='https://ajutor.olx.ro/hc/ro/articles/207802665-Ce-schimbari-ii-pot-aduce-anuntului-meu-?ref=answersugg_modifanunt'>de aici</a>."
+            },
+            {
+                "fields": ["l102_l209_l3022"],
+                "answer_suggestion": "Asigura-te ca ai ajuns la sectiunea de locatie/localitate. In caz ca tot nu se reuseste, este posibil ca acea localitate sa nu existe in baza noastra de date. Recomandam ceva din imprejurimi sau o localitate mai mare ca intindere."
+            },
+            {
+                "fields": ["l104_l2013_l3023"],
+                "answer_suggestion": "Pentru a se putea evidentia un anunt cat mai mult si automat sa creasca si sansele tale de vanzare, am creat serviciul de promovare. Nu ezita sa alegi dintre <a target='_blank' rel='noreferrer noopener' href='https://ajutor.olx.ro/hc/ro/articles/360009376480-De-ce-sa-investesti-in-promovarea-unui-anunt-?ref=answersugg_investpromo'>optiunile curente</a>."
+            },
+            {
+                "fields": ["l104_l2013_l3024"],
+                "answer_suggestion": "Logheaza-te in contul OLX si acceseaza sectiunea de \"Anunturi\". In dreptul fiecarei oferte va fi disponibil un buton de \"Promoveaza\", astfel incat sa se poata alege tipul de promovare dorit. Alternativ, se poate face promovarea si direct din pagina unui anunt ce iti apartine prin acelasi buton. Mai multe informatii legat de optiunile de promovare curente pot fi accesate <a target='_blank' rel='noreferrer noopener' href='https://ajutor.olx.ro/hc/ro/categories/200850609-Servicii-de-promovare-curente-Evidentierea-anunturilor?ref=answersugg_promovari'>de aici</a>."
+            },
+            {
+                "fields": ["l104_l2013_l3027"],
+                "answer_suggestion": "Logheaza-te in contul OLX si acceseaza sectiunea de \"Anunturi\" astfel incat sa poti verifica daca anuntul se numara printre cele active. Daca este inca \"in asteptare\", fie echipa noastra verifica daca informatiile din acesta corespund regulilor de buna conduita OLX sau plata nu a fost procesata cu succes. Ca sa te poti asigura ca anuntul este intr-adevar activat cu succes sau promovat, <a target='_blank' rel='noreferrer noopener' href='https://ajutor.olx.ro/hc/ro/articles/207096589-Ce-sa-fac-daca-nu-imi-gasesc-anuntul-?ref=answersugg_nugasescanunt'>aici</a> ai cateva variante de verificare."
+            },
+            {
+                "fields": ["l104_l2013_l3028"],
+                "answer_suggestion": "Logheaza-te in contul OLX si acceseaza sectiunea de \"Anunturi\" astfel incat sa poti verifica daca anuntul se numara printre cele active. Daca este in dreptul lui un banner ce indica \"promovat\",inseamna ca totul este in regula, in caz contrar, este posibil ca plata sa nu fi fost inca procesata cu succes. Verifica si adresa de mail pentru a vedea daca a fost trimisa si o confirmare a acestui aspect. Pentru a vedea cum functioneaza serviciile noastre de promovare, <a target='_blank' rel='noreferrer noopener' href='https://ajutor.olx.ro/hc/ro/categories/200850609-Servicii-de-promovare-curente-Evidentierea-anunturilor?ref=answersugg_promovari'>aici</a> ai lucrurile mai detaliate in functie de serviciul selectat."
+            },
+            {
+                "fields": ["l104_l2013_l3029"],
+                "answer_suggestion": "Atunci cand moderatorii nostri observa ca un anunt incalca una sau mai multe reguli, sunt nevoiti sa il dezactiveze. Asta nu inseamna insa ca ramai cu banii dati. Nimic nu se pierde, totul se duce in soldul contului tau, inclusiv TVA-ul. Verifica-ti soldul in sectiunea de \"Plati\""
+            },
+            {
+                "fields": ["l104_l2014_l3030"],
+                "answer_suggestion": "Creditele sunt ca un portofel virtual, cu cat valoarea lor este mai mare, si serviciile disponibile de activare sunt mai diverse (pachete de anunturi sau servicii de promovare), totul in functie de nevoie. Vrei sa aflii mai multe detalii legat de portofelul electronic, acceseaza cu incredere <a target='_blank' rel='noreferrer noopener' href='https://ajutor.olx.ro/hc/ro/articles/360009510779-Cum-folosesc-portofelul-electronic-?ref=answersugg_portofel'>articolul acesta</a>."
+            },
+            {
+                "fields": ["l104_l2014_l3033", "l104_l2015_l3035"],
+                "answer_suggestion": "Logheaza-te in contul OLX si apasa pe butonul de \"Incarca-ti credite\", chiar langa soldul contului. Mai multe detalii legat de achizitionarea creditelor sunt disponibile <a target='_blank' rel='noreferrer noopener' href='https://ajutor.olx.ro/hc/ro/articles/360009442660-Cum-incarc-credite-in-portofelul-electronic-?ref=answersugg_incarcareportofel'>aici</a>."
+            },
+            {
+                "fields": ["l104_l2014_l3034"],
+                "answer_suggestion": "Creditele sunt ca un portofel virtual, cu cat valoarea lor este mai mare, si serviciile disponibile de activare sunt mai diverse (pachete de anunturi sau servicii de promovare), totul in functie de nevoie. Vrei sa aflii mai multe detalii legat de portofelul electronic, acceseaza cu incredere <a target='_blank' rel='noreferrer noopener' href='https://ajutor.olx.ro/hc/ro/articles/360009510779-Cum-folosesc-portofelul-electronic-?ref=answersugg_portofel'>articolul acesta</a>."
+            },
+            {
+                "fields": ["l104_l2015_l3036", "l104_l2015_l3037"],
+                "answer_suggestion": "Platile pot fi facute in mai multe modalitati, astfel incat sa o poti alege pe cea mai accesibila nevoilor tale (plata prin card, SMS, ordin de plata sau direct prin portofelul OLX). <a target='_blank' rel='noreferrer noopener' href='https://ajutor.olx.ro/hc/ro/sections/201761275-Cum-platesc-?ref=answersugg_modalitatiplata'>Aici</a> poti gasi mai multe detalii legat de fiecare modalitate disponibila."
+            },
+            {
+                "fields": ["l104_l2015_l3039"],
+                "answer_suggestion": "Atunci cand moderatorii nostri observa ca un anunt incalca una sau mai multe reguli, sunt nevoiti sa il dezactiveze. Asta nu inseamna insa ca ramai cu banii dati. Nimic nu se pierde, totul se duce in soldul contului tau, inclusiv TVA-ul. Verifica-ti soldul in sectiunea de \"Plati\"."
+            },
+            {
+                "fields": ["l105_l2018"],
+                "answer_suggestion": "Asigura-te in primul rand ca aplicatia este updatata la <a target='_blank' rel='noreferrer noopener' href='https://play.google.com/store/apps/details?id=ro.mercador'>ultima versiune disponibila</a>. Pentru a putea veni cu o rezolvare cat mai rapid, ajuta-ne cu mesajul de eroare intampinat, inclusiv cu modelul de telefon folosit si versiunea sistemului de operare a acestuia."
+            },
+            {
+                "fields": ["l105_l2019"],
+                "answer_suggestion": "Asigura-te in primul rand ca aplicatia este updatata la <a target='_blank' rel='noreferrer noopener' href='https://apps.apple.com/ro/app/olx-ro/id653399343'>ultima versiune disponibila</a>. Pentru a putea veni cu o rezolvare cat mai rapid, ajuta-ne cu mesajul de eroare intampinat, inclusiv cu modelul de telefon folosit si versiunea sistemului de operare a acestuia."
+            },
+            {
+                "fields": ["l105_l2020"],
+                "answer_suggestion": "Ajuta-ne cu mai multe informatii. Un printscreen sau o imagine cu mesajul afisat si pasii efectuati pana s-a intamplat acel lucru si sigur clarificam rapid situatia."
+            },
+            {
+                "fields": ["l105_l2021"],
+                "answer_suggestion": "Ajuta-ne cu mai multe informatii. Un printscreen sau o imagine cu mesajul afisat, alaturi de dispozitivul de pe care se incearca acest lucru si sigur clarificam rapid situatia."
+            },
+            {
+                "fields": ["l106_l2022_l3040"],
+                "answer_suggestion": "Ai trimis bani in avans si nu ai primit produsul sau ai primit ceva diferit? Ne pare tare rau, in primul rand. Nimanui nu ar trebui sa i se intample asa ceva. Ai incredere si ca se rezolva! Se poate intampla oricui si noi avem feedback constant ca lucrurile se clarifica. Asa ca acum trebuie sa gasim o rezolvare. Citeste pasii de <a target='_blank' rel='noreferrer noopener' href='https://ajutor.olx.ro/hc/ro/articles/207802975-Cred-ca-am-fost-inselat-Cum-pot-rezolva-?ref=answersugg_frauda'>aici</a> - se bazeaza pe experientele de pana acum. Vezi ce se potriveste cazului tau si contacteaza-ne cat mai repede pentru gasi impreuna si o solutie personalizata."
+            },
+            {
+                "fields": ["l106_l2022_l3041"],
+                "answer_suggestion": "Ajuta-ne cu mai multe informatii legat de cum anume s-a intamplat acest lucru. Prima recomandare ar fi sa se incerce din nou legatura cu cumparatorul, poate doar este o neintelegere la mijloc. Daca nu coopereaza, mergi la politie. Ei au dreptul legal de a ne cere toate datele pe care le detinem despre un utilizator si pot demara o ancheta oficiala. Noi colaboram cu ei si facem tot posibilul sa scoatem lucrurile la suprafata. <a target='_blank' rel='noreferrer noopener' href='https://ajutor.olx.ro/hc/ro/articles/207802975-Cred-ca-am-fost-inselat-Cum-pot-rezolva-?ref=answersugg_frauda'>Aici</a> poti gasi mai multe sfaturi ce te pot ajuta."
+            },
+            {
+                "fields": [
+                    "l106_l2022_l3042",
+                    "l106_l2022_l3043",
+                    "l106_l2023_l3044",
+                    "l106_l2023_l3045",
+                    "l106_l2023_l3046"
+                ],
+                "answer_suggestion": "Ne pare rau ca ai patit asta pe OLX. Ca sa te putem ajuta eficient, iti recomadam cu incredere sa incepi demersurile intai printr-o petitie catre Politie folosind <a target='_blank' rel='noreferrer noopener'href='https://www.politiaromana.ro/ro/petitii-online'>acest formular</a>. Sesizarea ta va fi preluata de autoritati, iar noi putem sa oferim in acest cadru legal toate informatiile relevante in ancheta, asa incat sa iti recuperezi prejudiciul."
+            },
+            {
+                "fields": ["l106_l2023_l3047"],
+                "answer_suggestion": "Pentru a putea preveni situatii de genul acesta, incurajam intotdeauna sa se apeleze la serviciul de Livrare cu verificare, astfel incat sa poti vedea si continutul pachetului si sa pleci impacat stiind ca este ceea ce ai cerut. Daca totusi a fost ceva ce nu s-a observat la prima vedere sau ceva trimis cu rea-vointa, iti recomadam cu incredere sa incepi demersurile intai printr-o petitie catre Politie folosind <a target='_blank' rel='noreferrer noopener' href='https://www.politiaromana.ro/ro/petitii-online'>acest formular</a>. Sesizarea ta va fi preluata de autoritati, iar noi putem sa oferim in acest cadru legal toate informatiile relevante in ancheta, asa incat sa iti recuperezi prejudiciul."
+            },
+            {
+                "fields": ["l106_l2024_l3048", "l106_l2024_l3049"],
+                "answer_suggestion": "Bine ca ne-ai sesizat. Pentru eficienta maxima, poti <a target='_blank' rel='noreferrer noopener' href='https://ajutor.olx.ro/hc/ro/articles/207096799-Am-gasit-un-anunt-nepotrivit-?ref=answersugg_raportare'>raporta</a> astfel de anunturi direct catre echipa noastra de preventie."
+            },
+            {
+                "fields": ["l106_l2025_l3050"],
+                "answer_suggestion": "Bine ca ne-ai sesizat. Pentru eficienta maxima, poti <a target='_blank' rel='noreferrer noopener' href='https://ajutor.olx.ro/hc/ro/articles/207096799-Am-gasit-un-anunt-nepotrivit-?ref=answersugg_raportare'>raporta</a> astfel de situatii direct catre echipa noastra de preventie."
+            },
+            {
+                "fields": ["l106_l2025_l3051"],
+                "answer_suggestion": "Cateodata, in febra momentului, mai ies si scantei si se ajunge la niste mesaje de unde nici nu mai tii minte care a fost carbunele care a aprins totul. Lucrurile merg mult mai usor atunci cand ambele parti se trateaza cu respect. Daca totusi vezi ca lucrurile degenereaza repede fara sa ai vreo vina, recomandam blocarea celuilalt utilizator. Din orice discutie/mesaj, in dreptul profilului de utilizator, vei avea optiunea de \"Blocheaza utilizatorul\". Ca sa putem preveni in asa fel incat sa nu se repete acelasi lucru si cu altcineva, ne poti ajuta cu cateva detalii ale utilizatorului in cauza si putem vedea ce masuri se pot lua."
+            },
+            {
+                "fields": ["l106_l2025_l3052"],
+                "answer_suggestion": "Ofertele bune nu tin cont de ora, dar cumparatorii ar trebui sa tina cont de orele normale de contact. Tine lucrurile sub control si precizeaza in descrierea anuntului orele intre care se poate lua legatura cu tine."
+            },
+            {
+                "fields": ["l106_l2025_l3053"],
+                "answer_suggestion": "Pentru orice situatie exista si o rezolvare. Ca sa putem vedea exact despre ce anume este vorba, un printscreen cu mesajul primit ar fi de mare ajutor, iar de aici putem vedea ce anume ramane de facut. Daca totusi vezi ca persoana devina insistenta, recomandam blocarea celuilalt utilizator. Din orice discutie/mesaj, in dreptul profilului de utilizator, vei avea optiunea de \"Blocheaza utilizatorul\"."
+            },
+            {
+                "fields": ["l106_l2026_l3054"],
+                "answer_suggestion": "Sunt sanse foarte mari sa fie vorba doar de o greseala nevinovata. Ajuta-ne cu numarul de telefon folosit si un ID de anunt sau link catre acesta si sigur clarificam impreuna."
+            },
+            {
+                "fields": ["l106_l2026_l3055"],
+                "answer_suggestion": "Sunt sanse foarte mari sa fie vorba doar de o greseala nevinovata. Ajuta-ne cu cat mai multe detalii pentru a putea vedea intreaga situatie si sigur clarificam impreuna."
+            },
+            {
+                "fields": ["l106_l2026_l3056"],
+                "answer_suggestion": "Neaparat sa modifici parola contului in cazul acesta pentru un plus de securitate. Oricat de usor de tinut minte ar fi parole gen \"12345\" sau \"olx\", iti recomandam sa aiba cel putin 8 caractere, dintre care 2-3 sa fie cifre, nu litere."
+            },
+            {
+                "fields": ["l106_l2027"],
+                "answer_suggestion": "Pentru a putea lua masurile necesare, ajuta-ne cu un act care sa ateste drepturile de autor semnalate si totodata ID-urile de anunt sau linkurile catre cele vizate."
+            },
+            {
+                "fields": ["l108"],
+                "answer_suggestion": "Multumim ca ti-ai rapit din timpul tau pentru acest lucru :). Orice sugestie este una binevenita si ne ajuta si pe noi sa intelegem exact nevoile utilizatorilor astfel incat sa putem face primii pasi spre schimbare."
             }
         ]
     }
