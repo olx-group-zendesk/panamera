@@ -1,12 +1,236 @@
 [
     {
-        "instance": "Test",
-        "form_id": "360017767431",
-        "default_suggestion": "Hello there!",
+        "instance": "Portugal",
+        "form_id": "360003266697",
+        "default_suggestion": "Por favor selecione uma das opções acima",
         "data": [
             {
-                "fields": ["ato__level_6__level7"],
-                "answer_suggestion": "Hello, this is a test hint to be displayed in the widget. Check <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/210631449'>this</a> <script>alert('evil code!');</script>out dude!"
+                "fields": ["l101_l201", "l101_l202"],
+                "answer_suggestion": "Ajuda-nos com mais informações. Envia-nos uma captura de ecrã com a informação apresentada, e partilha qual o equipamento que estás a utilizar."
+            },
+            {
+                "fields": ["l101_l203"],
+                "answer_suggestion": "Podes editar o teu perfil após acederes à tua conta pessoal no MyOLX. Consulta quais os dados que podes alterar na tua conta e como efectuar essas alterações <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002756577'>aqui</a>."
+            },
+            {
+                "fields": ["l101_l205"],
+                "answer_suggestion": "Podes solicitar o acesso aos teus dados após acederes ao MyOLX através da área Dados pessoais e seguidamente Administração de conta, consulta mais informação sobre este pedido <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002773657'>aqui</a>."
+            },
+            {
+                "fields": ["l101_l204"],
+                "answer_suggestion": "Podes eliminar a tua conta após acederes ao MyOLX através da área Dados pessoais e seguidamente Administração de conta, consulta mais informação sobre este pedido <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002833257'>aqui</a>."
+            },
+            {
+                "fields": ["l101_l207"],
+                "answer_suggestion": "Ajuda-nos com mais informações. Quanto mais detalhada a descrição da tua situação, melhor conseguiremos ajudar-te."
+            },
+            {
+                "fields": ["l102_l208_l3012"],
+                "answer_suggestion": "Confirma se está seleccionada a Região ou Freguesia adequada e experimenta aumentar os quilómetros do raio de pesquisa."
+            },
+            {
+                "fields": ["l102_l208_l3013"],
+                "answer_suggestion": "Por vezes os utilizadores do OLX não conseguem responder no espaço de tempo esperado, aguarda pelo contacto ou em alternativa procura um novo negócio adequado ao que pretendes."
+            },
+            {
+                "fields": ["l102_l208_l3014"],
+                "answer_suggestion": "Por vezes os utilizadores do OLX não conseguem responder no espaço de tempo esperado, aguarda pelo contacto ou em alternativa procura um novo negócio adequado ao que pretendes."
+            },
+            {
+                "fields": ["l102_l208_l207"],
+                "answer_suggestion": "Ajuda-nos com mais informações. Quanto mais detalhada a descrição da tua situação, melhor conseguiremos ajudar-te."
+            },
+            {
+                "fields": ["l102_l209_l3015"],
+                "answer_suggestion": "Confirma <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002779677'>aqui</a> se o teu anúncio não contém artigos que são proibidos na nossa plataforma. Temos também na nossa ajuda diversos artigos criados para cada categoria com informações relevantes. "
+            },
+            {
+                "fields": ["l102_l209_l3016"],
+                "answer_suggestion": "Todos os anúncios no OLX têm a duração de 28 dias, para mais informações sobre a validade do anúncios consulta este <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/203070732'>artigo</a> na nossa ajuda. "
+            },
+            {
+                "fields": ["l102_l209_l3017"],
+                "answer_suggestion": "Por favor indica-nos qual o código ID do anúncio ou o link para página do anúncio ou dos anúncios em questão."
+            },
+            {
+                "fields": ["l102_l209_l3020"],
+                "answer_suggestion": "Por favor indica-nos qual o código ID do anúncio ou o link para página do anúncio ou dos anúncios em questão. Se ainda não criaste o anúncio envia-nos uma captura de ecrã com a informação apresentada, e partilha qual o equipamento que estás a utilizar. "
+            },
+            {
+                "fields": ["l102_l209_l3021"],
+                "answer_suggestion": "Podes editar os teus anúncios após acedered ao MyOLX. Consulta <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002779637'>aqui</a> como poderás editar os teus anúncios."
+            },
+            {
+                "fields": ["l102_l209_l3022"],
+                "answer_suggestion": "Ajuda-nos com mais informações. Envia-nos uma captura de ecrã com a informação apresentada, e partilha qual o equipamento que estás a utilizar."
+            },
+            {
+                "fields": ["l102_l209_l207"],
+                "answer_suggestion": "Ajuda-nos com mais informações. Quanto mais detalhada a descrição da tua situação, melhor conseguiremos ajudar-te."
+            },
+            {
+                "fields": ["l104_l2013_l3023"],
+                "answer_suggestion": "No OLX, quanto mais visibilidade o teu anúncio tiver, mais mensagens de interessados poderás receber! Consulta <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/203504311'>aqui</a> mais informações."
+            },
+            {
+                "fields": ["l104_l2013_l3024"],
+                "answer_suggestion": "Podes destacar os teus anúncios após efectuar o acesso ao MyOLX. Consulta <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002762197'>aqui</a> o artigo disponível na ajuda para mais informações."
+            },
+            {
+                "fields": ["l104_l2013_l3028", "l104_l2013_l3027"],
+                "answer_suggestion": "Por favor indica-nos qual o código ID do anúncio ou o link para página do anúncio ou dos anúncios em questão. Partilha também qual o destaque que adquiriste."
+            },
+            {
+                "fields": ["l104_l2013_l3029"],
+                "answer_suggestion": "Confirma <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002779677'>aqui</a> se o teu anúncio não contém artigos que são proibidos na nossa plataforma. Temos também na nossa ajuda diversos artigos criados para cada categoria com informações relevantes."
+            },
+            {
+                "fields": ["l104_l2013_l207"],
+                "answer_suggestion": "Ajuda-nos com mais informações. Quanto mais detalhada a descrição da tua situação, melhor conseguiremos ajudar-te."
+            },
+            {
+                "fields": ["l104_l2014_l3030"],
+                "answer_suggestion": "Temos diversas formas para o carregamento de saldo na tua conta OLX. Consulta <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002755418'>aqui</a> o artigo de ajuda para mais informações."
+            },
+            {
+                "fields": ["l104_l2014_l3033"],
+                "answer_suggestion": "No MyOLX selecciona a opção Carregar conta. Consulta <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002755418'></a> o artigo de ajuda para mais informações."
+            },
+            {
+                "fields": ["l104_l2014_l3034"],
+                "answer_suggestion": "O Saldo da conta está disponível para o pagamento de qualquer destaque, basta seleccionares a opção de usar Saldo OLX.  Consulta <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002762197'>aqui</a> o artigo de ajuda para mais informações."
+            },
+            {
+                "fields": ["l104_l2014_l207"],
+                "answer_suggestion": "Ajuda-nos com mais informações. Quanto mais detalhada a descrição da tua situação, melhor conseguiremos ajudar-te."
+            },
+            {
+                "fields": ["l104_l2015_l3035"],
+                "answer_suggestion": "No MyOLX selecciona a opção Carregar conta. Consulta <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002755418'>aqui</a> o artigo de ajuda para mais informações."
+            },
+            {
+                "fields": ["l104_l2015_l3036"],
+                "answer_suggestion": "Temos diversas formas para o carregamento de saldo na tua conta OLX. Consulta <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002755418'>aqui</a> o artigo de ajuda para mais informações."
+            },
+            {
+                "fields": ["l104_l2015_l3037"],
+                "answer_suggestion": "Temos diversas formas para o carregamento de saldo na tua conta OLX. Consulta <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002755418'>aqui</a> o artigo de ajuda para mais informações."
+            },
+            {
+                "fields": ["l104_l2015_l3039"],
+                "answer_suggestion": "Ajuda-nos com mais informações. Quanto mais detalhada a descrição da tua situação, melhor conseguiremos ajudar-te. Caso o pagamento tenha sido por Paypal indica-nos por favor o ID de Transacção e o endereço electrónico associado à conta de Paypal, se foi pago através de qualquer outra forma de pagamento, indica-nos qual o Nome to Titular e o IBAN para o qual pretendes o reembolso."
+            },
+            {
+                "fields": ["l104_l2015_l207"],
+                "answer_suggestion": "Ajuda-nos com mais informações. Quanto mais detalhada a descrição da tua situação, melhor conseguiremos ajudar-te."
+            },
+            {
+                "fields": ["l105_l2018"],
+                "answer_suggestion": "Ajuda-nos com mais informações. Envia-nos uma captura de ecrã com a informação apresentada, e partilha qual o equipamento que estás a utilizar. "
+            },
+            {
+                "fields": ["l105_l2019"],
+                "answer_suggestion": "Ajuda-nos com mais informações. Envia-nos uma captura de ecrã com a informação apresentada, e partilha qual o equipamento que estás a utilizar. "
+            },
+            {
+                "fields": ["l105_l2020"],
+                "answer_suggestion": "Ajuda-nos com mais informações. Envia-nos uma captura de ecrã com a informação apresentada, e partilha qual o equipamento e o navegador de internet que estás a utilizar."
+            },
+            {
+                "fields": ["l105_l2021"],
+                "answer_suggestion": "Ajuda-nos com mais informações. Envia-nos uma captura de ecrã com a informação apresentada, e partilha qual o equipamento e o navegador de internet que estás a utilizar."
+            },
+            {
+                "fields": ["l106_l2022_l3040"],
+                "answer_suggestion": "Para evitar situações como esta, encorajamos a entrega em mãos ou o serviço CTT E-Segue. Verifica <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002777878'>aqui</a> como poderás efectuar uma queixa online junto das autoridades. Iremos ajudar as autoridades com qualquer informação que seja necessária."
+            },
+            {
+                "fields": ["l106_l2022_l3041"],
+                "answer_suggestion": "Para evitar situações como esta, encorajamos a entrega em mãos ou o serviço CTT E-Segue. Verifica <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002777878'>aqui</a> como poderás efectuar uma queixa online junto das autoridades. Iremos ajudar as autoridades com qualquer informação que seja necessária."
+            },
+            {
+                "fields": ["l106_l2022_l3042", "l106_l2022_l3043"],
+                "answer_suggestion": "Verifica <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002777878'>aqui</a> como poderás efectuar uma queixa online junto das autoridades. Iremos ajudar as autoridades com qualquer informação que seja necessária."
+            },
+            {
+                "fields": ["l106_l2022_l207"],
+                "answer_suggestion": "Ajuda-nos com mais informações. Quanto mais detalhada a descrição da tua situação, melhor conseguiremos ajudar-te."
+            },
+            {
+                "fields": ["l106_l2023_l3044"],
+                "answer_suggestion": "Por favor reporta esse anúncio o mais rápido possível, consulta <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002786078'>aqui</a> como poderás fazê-lo."
+            },
+            {
+                "fields": ["l106_l2023_l3045"],
+                "answer_suggestion": "Para evitar situações como esta, encorajamos a entrega em mãos ou o serviço CTT E-Segue. Verifica <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002777878'>aqui</a> como poderás efectuar uma queixa online junto das autoridades. Iremos ajudar as autoridades com qualquer informação que seja necessária."
+            },
+            {
+                "fields": ["l106_l2023_l3046"],
+                "answer_suggestion": "Verifica <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002777878'>aqui</a> como poderás efectuar uma queixa online junto das autoridades. Iremos ajudar as autoridades com qualquer informação que seja necessária."
+            },
+            {
+                "fields": ["l106_l2023_l3047"],
+                "answer_suggestion": "Para evitar situações como esta, encorajamos a entrega em mãos ou o serviço CTT E-Segue. Verifica <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002777878'>aqui</a> como poderás efectuar uma queixa online junto das autoridades. Iremos ajudar as autoridades com qualquer informação que seja necessária."
+            },
+            {
+                "fields": ["l106_l2023_l207"],
+                "answer_suggestion": "Ajuda-nos com mais informações. Quanto mais detalhada a descrição da tua situação, melhor conseguiremos ajudar-te."
+            },
+            {
+                "fields": ["l106_l2024_l3048", "l106_l2024_l3049"],
+                "answer_suggestion": "Por favor reporta esse anúncio o mais rápido possível, consulta <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002786078'>aqui</a> como poderás fazê-lo."
+            },
+            {
+                "fields": ["l106_l2024_l207"],
+                "answer_suggestion": "Ajuda-nos com mais informações. Quanto mais detalhada a descrição da tua situação, melhor conseguiremos ajudar-te."
+            },
+            {
+                "fields": ["l106_l2024_l3050"],
+                "answer_suggestion": "Por favor reporta esse anúncio o mais rápido possível, consulta <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002786078'>aqui</a> como poderás fazê-lo. Indica-nos a informação mais completa que consigas para podermos analisar esse utilizador."
+            },
+            {
+                "fields": ["l106_l2025_l3051"],
+                "answer_suggestion": "Por vezes os utilizadores exaltam-se nas diversas fases dos negócios, remomendamos sempre que caso não se sitam confortáveis, os nossos utilizadores devem parar essa negociação e aguardar por uma nova oportunidade. Pedimos que nos dês mais informações para verificarmos esses comportamentos. Se verificares que continuas a receber mensagens de um utilizador podes bloquear a recepção das mensagens do OLX desse utilizador, vê <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002755738'>aqui</a> como bloquear outro utilizador."
+            },
+            {
+                "fields": ["l106_l2025_l3052"],
+                "answer_suggestion": "Por vezes os negócios são tão apeteciveis que os utilizadores perdem a noção do tempo. De forma a teres o controle sobre esses horários, especifica na descrição do anúncio quando os interessados podem contactar."
+            },
+            {
+                "fields": ["l106_l2025_l3053"],
+                "answer_suggestion": "Ajuda-nos com mais informações. Envia-nos uma captura de ecrã com a mensagem recebida. Se verificares que continuas a receber mensagens de um utilizador podes bloquear a recepção das mensagens do OLX desse utilizador, vê <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002755738'>aqui</a> como bloquear outro utilizador."
+            },
+            {
+                "fields": ["l106_l2025_l207"],
+                "answer_suggestion": "Ajuda-nos com mais informações. Quanto mais detalhada a descrição da tua situação, melhor conseguiremos ajudar-te."
+            },
+            {
+                "fields": ["l106_l2026_l3054"],
+                "answer_suggestion": "É muito provável que seja apenas um erro do utilizador. Ajuda-nos com a informação do número de telefone e qual o código ID ou link do anúncio para resolvermos esta situação em conjunto."
+            },
+            {
+                "fields": ["l106_l2026_l3055"],
+                "answer_suggestion": "É muito provável que seja apenas um erro do utilizador. Ajuda-nos com o máximo de detalhes possíveis para resolvermos esta situação em conjunto."
+            },
+            {
+                "fields": ["l106_l2026_l3056"],
+                "answer_suggestion": "Altera assim que possível a tua password para proteccção adicional. Consulta o nosso artigo sobre Phishing <a target='_blank' rel='noreferrer noopener' href='https://help.olx.pt/hc/pt/articles/360002774138'>aqui</a> para informações adicionais. "
+            },
+            {
+                "fields": ["l106_l2026_l207"],
+                "answer_suggestion": "Ajuda-nos com mais informações. Quanto mais detalhada a descrição da tua situação, melhor conseguiremos ajudar-te."
+            },
+            {
+                "fields": ["l106_l2027"],
+                "answer_suggestion": "Para podermos ajudar-te por favor partilha connosco uma prova dos direitos de autor e quais os códigos ID ou links dos anúncios em questão. "
+            },
+            {
+                "fields": ["l106_l207"],
+                "answer_suggestion": "Ajuda-nos com mais informações. Quanto mais detalhada a descrição da tua situação, melhor conseguiremos ajudar-te."
+            },
+            {
+                "fields": ["l108"],
+                "answer_suggestion": "Obrigado por teres dedicado o teu tempo para a melhoria OLX :). Qualquer sugestão é bem-vinda e ajuda-nos a entender as necessidades exatas dos nossos utilizadores para que possamos proporcionar a melhor plataforma possível."
             }
         ]
     }
