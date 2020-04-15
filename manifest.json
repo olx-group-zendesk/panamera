@@ -461,7 +461,7 @@
                     "type": "checkbox",
                     "description": "home_page_contact_enabled_description",
                     "label": "home_page_contact_enabled_label",
-                    "value": false
+                    "value": true
                 },
                 {
                     "identifier": "phone_line1_enabled",
