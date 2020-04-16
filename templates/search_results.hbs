@@ -156,6 +156,13 @@
         {{t 'browse_help_center'}}
         {{/link}}
       </p>
+      <p>
+        {{dc 'alternatively_browse_olx_site_prefix'}}<strong>{{query}}</strong>{{dc 'alternatively_browse_olx_site_postfix'}}
+        <a href="{{settings.country_site_url}}{{dc 'search_url'}}{{query}}" target="_blank" rel="noreferrer noopener">
+          {{dc 'search_on_olx'}}
+        </a>
+      </p>
+
       {{/if}}
     </section>
   </div>

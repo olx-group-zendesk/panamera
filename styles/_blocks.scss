@@ -94,6 +94,12 @@
                 margin-left: 16px;
             }
         }
+
+        // Hide the chat button initially, as it will be shown by JS if chat
+        // functions object (zE) is detected.
+        &-chat {
+            display: none;
+        }
     }
 
     &-item {

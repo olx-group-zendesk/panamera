@@ -310,7 +310,7 @@
                     "type": "checkbox",
                     "description": "recently_viewed_articles_description",
                     "label": "recently_viewed_articles_label",
-                    "value": false
+                    "value": true
                 },
                 {
                     "identifier": "show_related_articles",

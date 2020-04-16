@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // add "zen" namespace for various utilities
     window.zen = {
         webWidget: {
@@ -12,17 +12,17 @@ document.addEventListener("DOMContentLoaded", function() {
                 } else if (zE("webWidget:get", "display") === "launcher") {
                     zE("webWidget", "open");
                 }
-            }
-        }
+            },
+        },
     };
 
-    // configure initial web widget and other elements involved
-    if (typeof zE === "undefined") {
+    // Show chat button if chat functions object is available.
+    // This means chat was enabled in HC ("Widget" settings).
+    if (typeof zE !== "undefined") {
         var chatButton = document.querySelector(".blocks-button-chat");
         if (chatButton) {
-            chatButton.setAttribute("style", "display:none;");
+            chatButton.setAttribute("style", "display:flex;");
         }
-    } else {
         zE("webWidget", "hide");
     }
 
@@ -31,20 +31,20 @@ document.addEventListener("DOMContentLoaded", function() {
         button_phone_2 = document.querySelector("[name='phone-line-2']");
 
     if (button_phone_1) {
-        button_phone_1.addEventListener("mouseover", function() {
+        button_phone_1.addEventListener("mouseover", function () {
             button_phone_1.innerText = button_phone_1.dataset.phoneLine1Number;
         });
-        button_phone_1.addEventListener("mouseout", function() {
+        button_phone_1.addEventListener("mouseout", function () {
             button_phone_1.innerText =
                 button_phone_1.dataset.phoneLine1NumberTitle;
         });
     }
 
     if (button_phone_2) {
-        button_phone_2.addEventListener("mouseover", function() {
+        button_phone_2.addEventListener("mouseover", function () {
             button_phone_2.innerText = button_phone_2.dataset.phoneLine2Number;
         });
-        button_phone_2.addEventListener("mouseout", function() {
+        button_phone_2.addEventListener("mouseout", function () {
             button_phone_2.innerText =
                 button_phone_2.dataset.phoneLine2NumberTitle;
         });
@@ -72,8 +72,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // social share popups
     Array.prototype.forEach.call(
         document.querySelectorAll(".share a"),
-        function(anchor) {
-            anchor.addEventListener("click", function(e) {
+        function (anchor) {
+            anchor.addEventListener("click", function (e) {
                 e.preventDefault();
                 window.open(this.href, "", "height = 500, width = 500");
             });
@@ -131,9 +131,11 @@ document.addEventListener("DOMContentLoaded", function() {
     if (showRequestCommentContainerTrigger) {
         showRequestCommentContainerTrigger.addEventListener(
             "click",
-            function() {
+            function () {
                 showRequestCommentContainerTrigger.style.display = "none";
-                Array.prototype.forEach.call(requestCommentFields, function(e) {
+                Array.prototype.forEach.call(requestCommentFields, function (
+                    e
+                ) {
                     e.style.display = "block";
                 });
                 requestCommentSubmit.style.display = "inline-block";
@@ -157,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function() {
         );
 
     if (requestMarkAsSolvedButton) {
-        requestMarkAsSolvedButton.addEventListener("click", function() {
+        requestMarkAsSolvedButton.addEventListener("click", function () {
             requestMarkAsSolvedCheckbox.setAttribute("checked", true);
             requestCommentSubmitButton.disabled = true;
             this.setAttribute("data-disabled", true);
@@ -172,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function() {
     );
 
     if (requestCommentTextarea) {
-        requestCommentTextarea.addEventListener("input", function() {
+        requestCommentTextarea.addEventListener("input", function () {
             if (requestCommentTextarea.value === "") {
                 if (requestMarkAsSolvedButton) {
                     requestMarkAsSolvedButton.innerText = requestMarkAsSolvedButton.getAttribute(
@@ -201,8 +203,8 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelectorAll(
             "#request-status-select, #request-organization-select"
         ),
-        function(el) {
-            el.addEventListener("change", function(e) {
+        function (el) {
+            el.addEventListener("change", function (e) {
                 e.stopPropagation();
                 saveFocus();
                 closest(this, "form").submit();
@@ -213,7 +215,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Submit requests filter form on search in the request list page
     var quickSearch = document.querySelector("#quick-search");
     quickSearch &&
-        quickSearch.addEventListener("keyup", function(e) {
+        quickSearch.addEventListener("keyup", function (e) {
             if (e.keyCode === 13) {
                 // Enter key
                 e.stopPropagation();
@@ -239,16 +241,16 @@ document.addEventListener("DOMContentLoaded", function() {
         ".collapsible-nav, .collapsible-sidebar"
     );
 
-    Array.prototype.forEach.call(collapsible, function(el) {
+    Array.prototype.forEach.call(collapsible, function (el) {
         var toggle = el.querySelector(
             ".collapsible-nav-toggle, .collapsible-sidebar-toggle"
         );
 
-        el.addEventListener("click", function(e) {
+        el.addEventListener("click", function (e) {
             toggleNavigation(toggle, this);
         });
 
-        el.addEventListener("keyup", function(e) {
+        el.addEventListener("keyup", function (e) {
             if (e.keyCode === 27) {
                 // Escape key
                 closeNavigation(toggle, this);
@@ -262,7 +264,7 @@ document.addEventListener("DOMContentLoaded", function() {
     );
 
     if (requestOrganisationSelect) {
-        requestOrganisationSelect.addEventListener("change", function() {
+        requestOrganisationSelect.addEventListener("change", function () {
             closest(this, "form").submit();
         });
     }
@@ -274,7 +276,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (subsectionsList && subsectionsList.children.length > 6) {
         seeAllTrigger.setAttribute("aria-hidden", false);
 
-        seeAllTrigger.addEventListener("click", function(e) {
+        seeAllTrigger.addEventListener("click", function (e) {
             subsectionsList.classList.remove("section-list--collapsed");
             seeAllTrigger.parentNode.removeChild(seeAllTrigger);
         });
@@ -284,14 +286,14 @@ document.addEventListener("DOMContentLoaded", function() {
     var multibrandFilterLists = document.querySelectorAll(
         ".multibrand-filter-list"
     );
-    Array.prototype.forEach.call(multibrandFilterLists, function(filter) {
+    Array.prototype.forEach.call(multibrandFilterLists, function (filter) {
         if (filter.children.length > 6) {
             // Display the show more button
             var trigger = filter.querySelector(".see-all-filters");
             trigger.setAttribute("aria-hidden", false);
 
             // Add event handler for click
-            trigger.addEventListener("click", function(e) {
+            trigger.addEventListener("click", function (e) {
                 e.stopPropagation();
                 trigger.parentNode.removeChild(trigger);
                 filter.classList.remove("multibrand-filter-list--collapsed");

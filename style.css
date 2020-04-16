@@ -1459,6 +1459,10 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
   }
 }
 
+.blocks-button-chat {
+  display: none;
+}
+
 .blocks-item {
   background-color: #fff;
   border-radius: 4px;
