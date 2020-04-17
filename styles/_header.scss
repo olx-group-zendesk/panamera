@@ -5,6 +5,21 @@ $header-height: 72px;
     background-color: $header-background-color;
     box-shadow: $header-box-shadow;
 
+    &--margin {
+        @include tablet {
+            height: $header-height;
+        }
+        height: $header-height - 8px;
+    }
+
+    &--fixed {
+        position: fixed;
+        z-index: 10;
+        right: 0;
+        left: 0;
+        top: 0;
+    }
+
     & > div {
         @include max-width-container;
         @include tablet {
@@ -15,6 +30,18 @@ $header-height: 72px;
         width: 100%;
         align-items: center;
         justify-content: space-between;
+    }
+}
+
+.headroom {
+    will-change: transform;
+    transition: transform 200ms ease-in-out;
+
+    &--pinned {
+        transform: translateY(0%);
+    }
+    &--unpinned {
+        transform: translateY(-100%);
     }
 }
 

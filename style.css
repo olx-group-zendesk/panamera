@@ -668,6 +668,24 @@ a.olx-button-large {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
+.header--margin {
+  height: 64px;
+}
+
+@media (min-width: 768px) {
+  .header--margin {
+    height: 72px;
+  }
+}
+
+.header--fixed {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
 .header > div {
   max-width: 1160px;
   margin: 0 auto;
@@ -690,6 +708,19 @@ a.olx-button-large {
   .header > div {
     height: 72px;
   }
+}
+
+.headroom {
+  will-change: transform;
+  transition: transform 200ms ease-in-out;
+}
+
+.headroom--pinned {
+  transform: translateY(0%);
+}
+
+.headroom--unpinned {
+  transform: translateY(-100%);
 }
 
 .logo img {
