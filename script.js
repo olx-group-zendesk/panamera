@@ -318,21 +318,11 @@ document.addEventListener("DOMContentLoaded", function () {
         currentYear.innerText = new Date().getFullYear();
     }
 
-    // hide contact sections for specific roles
-    function setStyleForBlock(selectorString, styleAttribute) {
-        Array.prototype.filter
-            .call(
-                [document.querySelector(selectorString)],
-                function processItem(item) {
-                    return item;
-                }
-            )
-            .forEach(function processItem(item) {
-                item.setAttribute("style", styleAttribute);
-            });
+    function setStyleAttribute(selectorString, styleAttribute) {
+        var element = document.querySelector(selectorString);
+        if (element) element.setAttribute("style", styleAttribute);
     }
 
-    // This is hiding ticket form select field - due to (mis?)configuration and
-    // usage of specific form in each instance / brand / language.
-    setStyleForBlock(".request_ticket_form_id", "display:none");
+    // Always hide this element - we have a "single form setup" for contact.
+    setStyleAttribute(".request_ticket_form_id", "display:none");
 });
