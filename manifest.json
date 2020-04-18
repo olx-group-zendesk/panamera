@@ -384,7 +384,7 @@
                         { "label": "Poland", "value": "Poland" },
                         { "label": "Ukraine", "value": "Ukraine" }
                     ],
-                    "value": "Kazakhstan"
+                    "value": "Ukraine"
                 },
                 {
                     "identifier": "country_site_url",
@@ -405,7 +405,7 @@
                             "value": "https://www.olx.ua/"
                         }
                     ],
-                    "value": "https://www.olx.kz/"
+                    "value": "https://www.olx.ua/"
                 }
             ]
         },
@@ -461,21 +461,21 @@
                     "type": "checkbox",
                     "description": "home_page_contact_enabled_description",
                     "label": "home_page_contact_enabled_label",
-                    "value": true
+                    "value": false
                 },
                 {
                     "identifier": "phone_line1_enabled",
                     "type": "checkbox",
                     "description": "phone_line1_enabled_description",
                     "label": "phone_line1_enabled_label",
-                    "value": true
+                    "value": false
                 },
                 {
                     "identifier": "phone_line2_enabled",
                     "type": "checkbox",
                     "description": "phone_line2_enabled_description",
                     "label": "phone_line2_enabled_label",
-                    "value": true
+                    "value": false
                 }
             ]
         },
