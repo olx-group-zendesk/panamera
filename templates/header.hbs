@@ -1,8 +1,10 @@
 <a class="skip-navigation" tabindex="1" href="#main-content">{{t 'skip_navigation' }}</a>
 
+{{#if settings.enable_headroom}}
 <header class="header--margin"></header>
+{{/if}}
 
-<header id="main-nav-header" class="header header--fixed">
+<header id="main-nav-header" class="header {{#if settings.enable_headroom}}header--fixed{{/if}}">
   <div>
     <div class="logo">
       <a target="_blank" rel="noopener noreferrer" href="{{settings.country_site_url}}">
@@ -84,8 +86,8 @@
   </div>
 </header>
 
+{{#if settings.enable_headroom}}
 <script>
-
   (function () {
     var header = new Headroom(document.querySelector("#main-nav-header"), {
       offset: 72,
@@ -93,5 +95,5 @@
     });
     header.init();
   }());
-
 </script>
+{{/if}}
