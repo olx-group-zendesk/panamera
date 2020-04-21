@@ -836,15 +836,15 @@ a.olx-button-large {
   padding: 0 8px;
 }
 
-.nav-wrapper a:nth-last-of-type(2) {
+.nav-wrapper a.locale:nth-last-of-type(2) {
   padding: 0 16px 0 0;
 }
 
-[dir="rtl"] .nav-wrapper a {
+[dir="rtl"] .nav-wrapper a.locale {
   padding: 0 0 0 7px;
 }
 
-[dir="rtl"] .nav-wrapper a:nth-last-of-type(2) {
+[dir="rtl"] .nav-wrapper a.locale:nth-last-of-type(2) {
   padding: 0 0 0 16px;
 }
 
