@@ -12,6 +12,7 @@
             padding-left: 63px;
             padding-right: 20px;
             padding-top: 5px;
+            line-height: 5;
             [dir="rtl"] & {
                 padding-right: 63px;
                 padding-left: 20px;
@@ -35,7 +36,7 @@
         }
 
         &::placeholder {
-            line-height: 5;
+            line-height: 4;
             color: $color-roman-silver;
         }
 
