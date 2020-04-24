@@ -1084,6 +1084,7 @@ a.olx-button-large {
   box-sizing: border-box;
   color: #666;
   font-family: "Geomanist Book", Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+  line-height: 4;
   height: 48px;
   padding-left: 48px;
   padding-right: 20px;
@@ -1109,6 +1110,11 @@ a.olx-button-large {
   padding-left: 20px;
 }
 
+.search input[type="search"]::placeholder {
+  line-height: 5;
+  color: #7f9799;
+}
+
 .search::before {
   position: relative;
   top: 50%;
@@ -1121,6 +1127,7 @@ a.olx-button-large {
   left: 16px;
   width: 24px;
   height: 24px;
+  opacity: 0.6;
 }
 
 @media (min-width: 768px) {
