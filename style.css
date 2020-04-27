@@ -572,6 +572,7 @@ a.olx-button-large {
 .form-field input[type="text"] {
   border: 1px solid #d8dfe0;
   border-radius: 4px;
+  line-height: 1.4;
 }
 
 .form-field input[type="text"]:focus {
