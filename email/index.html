@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style type="text/css">
+            body,
+            table {
+                font-family: "Roboto", Roboto, Arial, Helvetica, sans-serif;
+                -moz-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                -webkit-font-smoothing: antialiased;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            a,
+            a:hover {
+                text-decoration: none !important;
+            }
+
+            span.delimiter {
+                color: #c0c0c0;
+                opacity: 0.5;
+                font-size: smaller;
+            }
+
+            @media only screen and (max-width: 480px) {
+                body,
+                table,
+                td,
+                p,
+                a,
+                li,
+                blockquote {
+                    -webkit-text-size-adjust: none !important;
+                }
+
+                *[class].responsive-full {
+                    width: 100% !important;
+                }
+
+                *[class].responsive-block {
+                    display: block !important;
+                    width: 100% !important;
+                    height: auto !important;
+                }
+
+                *[class].responsive-image img {
+                    height: auto !important;
+                    max-width: 100% !important;
+                    width: 100% !important;
+                }
+
+                *[class].responsive-hidden {
+                    display: none !important;
+                }
+
+                *[class].responsive-center {
+                    text-align: center !important;
+                }
+
+                *[class].responsive-block-center {
+                    margin: 0 auto !important;
+                }
+            }
+        </style>
+    </head>
+
+    <body
+        style="background-color: #f2f4f5;"
+        leftmargin="0"
+        topmargin="0"
+        marginwidth="0"
+        marginheight="0"
+    >
+        <span class="delimiter">
+            {{delimiter}}
+        </span>
+        <table
+            class="responsive-full"
+            cellpadding="0"
+            cellspacing="0"
+            style="
+                border: 0;
+                font-size: 14px;
+                color: #406367;
+                background-color: #f2f4f5;
+            "
+        >
+            <tr>
+                <td class="responsive-hidden"></td>
+                <td valign="top" width="600px">
+                    {{content}}
+                </td>
+                <td class="responsive-hidden"></td>
+            </tr>
+        </table>
+    </body>
+</html>

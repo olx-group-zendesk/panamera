@@ -39,7 +39,7 @@
 .form-field input[type="text"] {
     border: 1px solid $border-color;
     border-radius: 4px;
-
+    line-height: 1.4;
     &:focus {
         border: 1px solid $brand_color;
     }

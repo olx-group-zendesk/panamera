@@ -572,6 +572,7 @@ a.olx-button-large {
 .form-field input[type="text"] {
   border: 1px solid #d8dfe0;
   border-radius: 4px;
+  line-height: 1.4;
 }
 
 .form-field input[type="text"]:focus {
@@ -836,15 +837,15 @@ a.olx-button-large {
   padding: 0 8px;
 }
 
-.nav-wrapper a:nth-last-of-type(2) {
+.nav-wrapper a.locale:nth-last-of-type(2) {
   padding: 0 16px 0 0;
 }
 
-[dir="rtl"] .nav-wrapper a {
+[dir="rtl"] .nav-wrapper a.locale {
   padding: 0 0 0 7px;
 }
 
-[dir="rtl"] .nav-wrapper a:nth-last-of-type(2) {
+[dir="rtl"] .nav-wrapper a.locale:nth-last-of-type(2) {
   padding: 0 0 0 16px;
 }
 
@@ -1084,6 +1085,7 @@ a.olx-button-large {
   box-sizing: border-box;
   color: #666;
   font-family: "Geomanist Book", Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+  line-height: 4;
   height: 48px;
   padding-left: 48px;
   padding-right: 20px;
@@ -1097,6 +1099,7 @@ a.olx-button-large {
     padding-left: 63px;
     padding-right: 20px;
     padding-top: 5px;
+    line-height: 5;
   }
   [dir="rtl"] .search input[type="search"] {
     padding-right: 63px;
@@ -1107,6 +1110,11 @@ a.olx-button-large {
 [dir="rtl"] .search input[type="search"] {
   padding-right: 48px;
   padding-left: 20px;
+}
+
+.search input[type="search"]::placeholder {
+  line-height: 4;
+  color: #7f9799;
 }
 
 .search::before {
@@ -1121,6 +1129,7 @@ a.olx-button-large {
   left: 16px;
   width: 24px;
   height: 24px;
+  opacity: 0.6;
 }
 
 @media (min-width: 768px) {
