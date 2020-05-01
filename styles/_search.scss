@@ -21,13 +21,14 @@
         box-sizing: border-box;
         color: $field-text-color;
         font-family: $paragraph_font;
-        height: 48px;
+        min-height: 48px;
         padding-top: 0px;
         padding-left: 48px;
         padding-right: 20px;
         -webkit-appearance: none;
         width: 100%;
         vertical-align: middle;
+        line-height: inherit;
 
         [dir="rtl"] & {
             padding-right: 48px;
@@ -71,8 +72,9 @@
 
     &-full input[type="search"] {
         border: 1px solid $color-white;
+        line-height: inherit;
         @include tablet {
-            height: 72px;
+            min-height: 72px;
             font-size: $font-size-p3;
             padding-left: 63px;
             padding-right: 20px;
@@ -89,6 +91,7 @@
                 background-color: $color-pale-gray;
                 border: unset;
             }
+            line-height: inherit;
         }
     }
 }
