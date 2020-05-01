@@ -37,6 +37,7 @@
 
         &::placeholder {
             color: $color-roman-silver;
+            line-height: inherit;
         }
 
         // &:focus {

@@ -1114,6 +1114,7 @@ a.olx-button-large {
 
 .search input[type="search"]::placeholder {
   color: #7f9799;
+  line-height: inherit;
 }
 
 .search::before {
