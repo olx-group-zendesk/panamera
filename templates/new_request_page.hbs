@@ -1,9 +1,7 @@
 {{#if settings.hints_enabled}}
 <script defer type="text/javascript" src="{{asset 'sanitize-html.min.js'}}"></script>
 <script type="text/javascript">
-  /**
-   * This services "hints" functionality
-   */
+  // Services for the "hints" module.
   document.addEventListener("DOMContentLoaded", function () {
 
     // do some digging with query selectors and regexes to get currently used
@@ -34,8 +32,6 @@
       console.log("Cascading Select Field not found. Disabling hints.");
       return;
     }
-
-    console.info("Cascading Select Field ID:", cascadingSelectFieldId);
 
     // perform early exit if the multiselect form is not available
     var multiSelect = document.querySelector(
@@ -83,7 +79,7 @@
 
     // once hints data is loaded from JSON...
     loadJSON(function (response) {
-      let hintsParsed = JSON.parse(response),
+      var hintsParsed = JSON.parse(response),
         hintsContainerDiv = document.createElement("div"),
         hintsContentDiv = document.createElement("div"),
         hintsAfter = document.createElement("div"),
@@ -122,12 +118,18 @@
           .insertAdjacentElement("afterend", emailField);
       }
 
+      // if cascading select is pre-selected (i.e. validation page)
+      var input = document.querySelector(
+        'input[name="request[custom_fields][' + cascadingSelectFieldId + ']"]'
+      );
+      var hint = findAnswer(form, input.value);
+      if (hint) updateSuggestion(hint.answer_suggestion);
 
       // on change of the field - update the hints suggestion content
       document.querySelector(
         "#request_custom_fields_" + cascadingSelectFieldId
       ).addEventListener("change", function (element) {
-        let hint = findAnswer(form, element.target.value);
+        var hint = findAnswer(form, element.target.value);
         if (hint !== undefined && hint.hasOwnProperty("answer_suggestion")) {
           updateSuggestion(hint.answer_suggestion);
         }
