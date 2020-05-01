@@ -1,6 +1,6 @@
 .sub-nav {
     @include tablet {
-        align-items: baseline;
+        align-items: center;
         flex-direction: row;
         padding: 20px 0;
         background-color: $color-white;
