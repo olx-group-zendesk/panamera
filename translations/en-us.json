@@ -37,6 +37,8 @@
     "home_page_group_label": "Home page elements",
     "recent_activity_label": "Recent activity",
     "recent_activity_description": "Show recent activity on home page",
+    "enable_headroom_label": "Enable headroom",
+    "enable_headroom_description": "Enable navbar hiding on scroll.",
     "article_page_group_label": "Article page elements",
     "articles_in_section_label": "Articles in section",
     "articles_in_section_description": "Show sidebar of articles in section",
