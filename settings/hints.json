@@ -1,12 +1,284 @@
 [
     {
-        "instance": "Test",
-        "form_id": "360017767431",
-        "default_suggestion": "Hello there!",
+        "instance": "Poland",
+        "form_id": "360004269779",
+        "default_suggestion": "Do swojej wiadomości możesz załączyć plik. Pamiętaj, że dopuszczalne typy plików to: jpg, jpeg, png, doc, pdf, gif, zip, rar, tar, html, swf, txt, xls, docx, xlsx.",
         "data": [
             {
-                "fields": ["ato__level_6__level7"],
-                "answer_suggestion": "Hello, this is a test hint to be displayed in the widget. Check <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/210631449'>this</a> <script>alert('evil code!');</script>out dude!"
+                "fields": ["l101_l201", "l101_l202"],
+                "answer_suggestion": "Prosimy o przesłanie zrzutów ekranu z widocznym komunikatem błędu. Prosimy o informację, czy problem wystęuje na komputerze czy w aplikacji mobilnej."
+            },
+            {
+                "fields": ["l101_l203_l307"],
+                "answer_suggestion": "Zaloguj się do Mój OLX i przejdź do zakładki „Ustawienia/Zmień dane kontaktowe”. <b>WAŻNE:</b> W przypadku zmiany numeru telefonu, aktywne już ogłoszenia musisz edytować ręcznie!"
+            },
+            {
+                "fields": ["l101_l203_l308"],
+                "answer_suggestion": "Logowanie się za pomocą Facebooka jest możliwe tylko w przypadku, gdy adres e-mail powiązany z Facebookiem jest taki sam jak adres konta OLX. Konta możesz połączyć w aplikacji - kliknij przycisk „Facebook” widoczny w Menu."
+            },
+            {
+                "fields": ["l101_l203_l309"],
+                "answer_suggestion": "Napisz do nas z adresu e-mail, na który masz zarejestrowane konto zarówno u nas jak i w serwisie Facebook. Zrobimy to za Ciebie!"
+            },
+            {
+                "fields": ["l101_l203_l207"],
+                "answer_suggestion": "Potrzebujemy więcej informacji. Wskaż dokładnie co chcesz zmienić na swoim koncie :)"
+            },
+            {
+                "fields": ["l101_l204"],
+                "answer_suggestion": "Usunięcie konta jest możliwe po zalogowaniu do niego i w zakładce „Ustawienia/Zarządzanie kontem/Usuń konto”. Pamiętaj, że jest to nieodwracalne."
+            },
+            {
+                "fields": ["l101_l205"],
+                "answer_suggestion": "Potrzebujemy więcej informacji. Napisz do nas wskazując dokładnie, których danych Ci potrzeba."
+            },
+            {
+                "fields": ["l101_l207"],
+                "answer_suggestion": "Potrzebujemy więcej informacji. Napisz do nas wskazując czego dotyczy Twoje zgłoszenie."
+            },
+            {
+                "fields": ["l102_l208_l3013"],
+                "answer_suggestion": "Pamiętaj, czasem może się zdarzyć tak, że ktoś nie może odpisać. Jeśli jednak minęło już kilka dni i nadal nie masz kontaktu ze Sprzedającym, wtedy napisz do nas wskazując nazwę Użytkownika, numer ogłoszenia lub link do tego ogłoszenia."
+            },
+            {
+                "fields": ["l102_l208_l3014"],
+                "answer_suggestion": "Poczekaj jeszcze chwilę, być może Sprzedający nie ma dostępu do OLX i Twojej wiadomości. Jeżeli jednak nie skontaktuje się z Tobą, napisz do nas wskazując nazwę, numer ogłoszenia lub link."
+            },
+            {
+                "fields": ["l102_l208_l207"],
+                "answer_suggestion": "Potrzebujemy więcej informacji. Napisz do nas wskazując czego dotyczy Twoje zgłoszenie."
+            },
+            {
+                "fields": [
+                    "l102_l209_l3015",
+                    "l102_l209_l3016",
+                    "l102_l209_l3090"
+                ],
+                "answer_suggestion": "Prześlij do nas numer ogłoszenia, którego sprawa dotyczy. <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/210631449'>Sprawdź</a> też czy Twoje ogłoszenie nie znajduje się na liście przedmiotów zabronionych."
+            },
+            {
+                "fields": ["l102_l209_l3017"],
+                "answer_suggestion": "Pamiętaj, że czasem może się zdarzyć tak, że ktoś nie odpisze. Jeśli minęło już kilka dni i nadal nie masz kontaktu z Kupującym, wtedy napisz do nas podając wszelkie szczegóły transakcji."
+            },
+            {
+                "fields": ["l102_l209_l3020"],
+                "answer_suggestion": "Napisz, którego ogłoszenia nie możesz znaleźć oraz jaką frazę wpisujesz w wyszukiwarkę. Dołącz również zrzut ekranu z wynikami wyszukiwania, przyspieszy to rozwiązanie sprawy."
+            },
+            {
+                "fields": ["l102_l209_l3021"],
+                "answer_suggestion": "Zaloguj się na konto w OLX i przejdź do zakładki „Ogłoszenia”. Znajdziesz tam wszystkie dodane przez siebie oferty. Przy każdej z nich, pod tytułem widoczny jest link „Zakończ”. Po jego kliknięciu ogłoszenie zostanie przeniesione do zakładki „Zakończone” na Twoim koncie i nie będzie widoczne dla innych Użytkowników. Informacje o usuwaniu ogłoszeń znajdziesz również w naszym <a target='_blank' rel='noreferrer noopener' href='http://pomoc.olx.pl/hc/pl/articles/211658805'>artykule</a>."
+            },
+            {
+                "fields": ["l102_l209_l3022"],
+                "answer_suggestion": "Zaloguj się do Mój OLX i przejdź do zakładki „Ogłoszenia”. Przy każdym z nich, pod tytułem widoczny jest przycisk „Edycja”. Po jego kliknięciu pojawi się możliwość wprowadzenia zmian do ogłoszenia. Możesz też skorzystać z linku bezpośrednio na stronie ogłoszenia: pod mapką widoczna jest opcja „Edytuj”. Po zalogowaniu, tak jak przy poprzedniej opcji pojawi się możliwość wprowadzenia zmian do ogłoszenia. Więcej informacji na temat edycji ogłoszeń znajdziesz <a target='_blank' rel='noreferrer noopener' href='http://pomoc.olx.pl/hc/pl/articles/211658745-Edycja-og%C5%82oszenia'>tutaj</a>."
+            },
+            {
+                "fields": ["l102_l209_l207"],
+                "answer_suggestion": "Potrzebujemy więcej informacji. Napisz do nas wskazując czego dotyczy Twoje zgłoszenie."
+            },
+            {
+                "fields": ["l104_l2013_l3023"],
+                "answer_suggestion": "Jeśli zależy Ci na tym, aby Twoje ogłoszenie było lepiej widoczne na OLX i cieszyło się jeszcze większym zainteresowaniem, możesz skorzystać bogatej oferty promowania ogłoszeń. Szczegóły znajdziesz <a target='_blank' rel='noreferrer noopener' href=''>tutaj</a>."
+            },
+            {
+                "fields": ["l104_l2013_l3024"],
+                "answer_suggestion": "Zdajemy sobie sprawę z tego, że możesz nie wiedzieć jak wypromować swoje ogłoszenie, dlatego specjalnie dla Ciebie przygotowaliśmy krótką i przejrzystą instrukcję, którą znajdziesz <a target='_blank' rel='noreferrer noopener' href=''>tutaj</a>."
+            },
+            {
+                "fields": ["l104_l2013_l3101"],
+                "answer_suggestion": "Zdajemy sobie sprawę z tego, że możesz nie wiedzieć jak odświeżyć swoje ogłoszenie, dlatego specjalnie dla Ciebie przygotowaliśmy krótką i przejrzystą instrukcję, którą znajdziesz <a target='_blank' rel='noreferrer noopener' href=''>tutaj</a>."
+            },
+            {
+                "fields": ["l104_l2013_l3102"],
+                "answer_suggestion": "Cena promowania uzależniona jest od jego rodzaju i kategorii, w której znajduje się ogłoszenie. Pod tym <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/360000828525#r18'>linkiem</a> znajdziesz szczegółowy cennik dostępnych promowań."
+            },
+            {
+                "fields": ["l104_l2013_l3027"],
+                "answer_suggestion": "W pierwszej kolejności zaloguj się do swojego konta i sprawdź co się dzieje z Twoim ogłoszeniem - możliwe, że opłata jeszcze do nas nie dotarła lub zostało ono usunięte np. z powodu wyboru złej kategorii. Informacje o ogłoszeniu znajdziesz też na swojej skrzynce e-mail w wiadomościach od OLX. Pomocny będzie również ten <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/211659125'>artykuł</a>."
+            },
+            {
+                "fields": ["l104_l2013_l3028"],
+                "answer_suggestion": "Możliwe, że opłata za ogłoszenie jeszcze do nas nie dotarła lub zostało ono usunięte np. z powodu wyboru złej kategorii. Zaloguj się do swojego konta OLX i sprawdź co się dzieje z Twoim ogłoszeniem. Informacje o jego statusie znajdziesz też na swojej skrzynce e-mail, w wiadomościach od OLX. Wyjaśnienie znajdziesz też w tym <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/211659125'>artykule</a>."
+            },
+            {
+                "fields": ["l104_l2013_l3029"],
+                "answer_suggestion": "Powód usunięcia ogłoszenia możesz poznać po zalogowaniu się do konta OLX i przejściu do zakładki „Zmoderowane”. Środki za opłacone wyróżnienie zostały zwrócone na konto w OLX.pl w postaci punktów. Więcej na temat zwrotu możesz przeczytać w tym <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/211659145'>artykule</a>."
+            },
+            {
+                "fields": ["l104_l2013_l207"],
+                "answer_suggestion": "Napisz proszę do nas i daj nam znać co się wydarzyło. Podaj jak najwięcej szczegółów i pamiętaj o przesłaniu numeru ID ogłoszenia, którego sprawa dotyczy. Z pewnością znajdziemy rozwiązanie!"
+            },
+            {
+                "fields": ["l104_l2014_l3030"],
+                "answer_suggestion": "Pakiet ogłoszeń jest ważny przez 90 lub 30 dni - w zależności od wybranej kategorii. W tym czasie możesz dodawać ogłoszenia w kategoriach objętych zakupionym pakietem. Każde dodanie ogłoszenia pomniejsza pulę posiadanych jednostek o jedną sztukę, a dodane tak ogłoszenie widoczne jest na OLX przez 30 dni. Po tym czasie znów możesz je aktywować, jeśli pakiet będzie nadal aktywny. Więcej informacji o pakietach w poszczególnych kategoriach znajdziesz w tych <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/sections/115000602445-Pakiety'>artykułach</a>."
+            },
+            {
+                "fields": ["l104_l2014_l3031"],
+                "answer_suggestion": "Pakiety ogłoszeń dostępne są w następujących kategoriach: Elektronika, Dom i Ogród, Praca, Motoryzacja, Nieruchomości - wynajem, Usługi i Firmy i Ślub i Wesele oraz Rolnictwo. Jak widzisz jest ich dość sporo, dlatego przygotowaliśmy dla Ciebie artykuły dla każdej z kategorii, które znajdziesz <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/sections/115000602445-Pakiety'>tutaj</a>."
+            },
+            {
+                "fields": ["l104_l2014_l3103"],
+                "answer_suggestion": "Cena Pakietu uzależniona jest od jego rodzaju i kategorii, w której powinny znaleźć się ogłoszenia. <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/360000828525#r13'>Tutaj</a> znajdziesz szczegółowy cennik dostępnych Pakietów ogłoszeń."
+            },
+            {
+                "fields": ["l104_l2014_l3033"],
+                "answer_suggestion": "Pakiet będzie dostępny do kupienia po przekroczeniu limitu bezpłatnych ogłoszeń w danej kategorii. Możesz go również kupić klikając przycisk „Kup pakiet ogłoszeń”, który jest widoczny po zalogowaniu na konto."
+            },
+            {
+                "fields": ["l104_l2014_l207"],
+                "answer_suggestion": "Napisz proszę do nas i jak najdokładniej opisz jak Ci możemy pomóc. Podaj jak najwięcej szczegółów odnośnie interesującego Cię pakietu ogłoszeń."
+            },
+            {
+                "fields": ["l104_l2015_l3035"],
+                "answer_suggestion": "Płatności możesz dokonać na kilka sposobów - przelewem online, kartą płatniczą, przelewem tradycyjnym lub za pomocą wiadomości SMS. Więcej informacji i przejrzystą instrukcję znajdziesz <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/211658945'>tutaj</a>."
+            },
+            {
+                "fields": ["l104_l2015_l3036"],
+                "answer_suggestion": "Płatności możesz dokonać na 4 sposoby - przelewem online, kartą płatniczą, przelewem tradycyjnym lub za pomocą wiadomości SMS. Dodatkową opcją będzie opłacenie usługi zgromadzonymi na koncie OLX punktami. Więcej informacji <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/211658945'>tutaj</a>."
+            },
+            {
+                "fields": ["l104_l2015_l3037"],
+                "answer_suggestion": "Przykro nam, że wystąpiły trudności. Napisz proszę do nas i podaj jak najwięcej szczegółów, dołącz ID ogłoszenia oraz zrzut ekranu obrazujący problem. Z pewnością znajdziemy rozwiązanie!"
+            },
+            {
+                "fields": ["l104_l2015_l3039"],
+                "answer_suggestion": "Jeśli Twoje opłacone ogłoszenie zostanie przez nas usunięte, środki zwracamy w formie punktów na konto OLX, gdzie oczekują na ponowne wykorzystanie. Punkty znajdują się w zakładce Płatności widocznej po zalogowaniu, znajdziesz tam także termin ich ważności - 90 dni. Dokładniejsze informacje <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/211659145'>tutaj</a>."
+            },
+            {
+                "fields": ["l104_l2015_l207"],
+                "answer_suggestion": "Napisz proszę do nas i daj nam znać co się wydarzyło. Podaj jak najwięcej szczegółów odnośnie płatności, w tym ID ogłoszenia oraz potwierdzenie wykonanej płatności. Z pewnością znajdziemy rozwiązanie!"
+            },
+            {
+                "fields": ["l104_l2016_l3057"],
+                "answer_suggestion": "Faktury wystawiamy na podstawie wniosku przekazanego za pomocą zakładki „Płatności” dostępnej na Twoim koncie OLX. Specjalnie dla Ciebie przygotowaliśmy przejrzystą <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/210631749'>instrukcję</a>, która krok po kroku pomoże Ci pobrać dokument."
+            },
+            {
+                "fields": ["l104_l2016_l3104"],
+                "answer_suggestion": "Fakturę możesz otrzymać za każdą opłaconą usługę w ramach OLX. Pamiętaj jednak, że w przypadku doładowania swojego konta, fakturę możesz pobrać tylko za konkretną wykonaną przez nas usługę, a nie za samo doładowanie. Możliwość wygenerowania faktury dla tych środków pojawi się więc automatycznie po tym jak zostaną one przez Ciebie wykorzystane. Możesz o tym przeczytać <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/210631749'>tutaj</a>."
+            },
+            {
+                "fields": ["l104_l2016_l3105"],
+                "answer_suggestion": "Dane do faktury możesz zmienić po zalogowaniu się do swojego konta OLX i przejściu do zakładki Ustawienia - Dane do faktury. Jak możesz to zrobic, przeczytasz <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/210631109'>tutaj</a>. Jeśli korzystasz z usługi Zapłać na koniec miesiąca i zajdzie konieczność zmiany Twoich danych, skontaktuj się z nami - pomożemy i wszystko wyjaśnimy!"
+            },
+            {
+                "fields": ["l104_l2016_l3060"],
+                "answer_suggestion": "Skontaktuj się z nami, a z pewnością znajdziemy rozwiązanie!"
+            },
+            {
+                "fields": ["l104_l2016_l3061"],
+                "answer_suggestion": "Świetny wybór! Dzięki tej formie płatności ustalisz na swoim koncie miesięczny limit wydatków. Pojawi się wówczas możliwość korzystania z dowolnych usług w ramach ustalonego limitu. Na koniec miesiąca znajdziesz na swoim koncie OLX zbiorczą fakturę, którą będzie trzeba opłacić w przeciągu 14 dni. Ten sposób płatności włączysz w zakładce „Ustawienia/Dane do faktury”. Jeśli pozytywnie zweryfikujemy wniosek, wyślemy wówczas wiadomość potwierdzającą na adres e-mail przypisany do konta OLX.pl. Więcej informacji na temat usługi znajdziesz <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/115000960329'>tutaj</a>."
+            },
+            {
+                "fields": ["l104_l2016_l207"],
+                "answer_suggestion": "Napisz proszę do nas i daj znać co się wydarzyło. Podaj jak najwięcej szczegółów odnośnie płatności lub faktury, w tym numer dokumentu oraz ID ogłoszenia. Z pewnością znajdziemy rozwiązanie! Możliwe, że odpowiedź na Twoje pytanie znajduje się w tym <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/210631189'>artykule</a>."
+            },
+            {
+                "fields": ["l105_l2018"],
+                "answer_suggestion": "Jeżeli pojawiły się trudności, wyczyść dane aplikacji w swoim telefonie. Ustawienia te są dostępne po przejściu następującej ścieżki: „Ustawienia / Menadżer aplikacji / Zainstalowane aplikacje / OLX / Wyczyść dane” (w zależności od wersji systemu ścieżka ta może nieznacznie się różnić). Wyłącz również aplikacje działające w tle. Mogą one zużywać dostępne zasoby pamięci Twojego urządzenia mobilnego. W ostateczności dokonaj ponownej instalacji najnowszej dostępnej wersji aplikacji OLX.pl. Najnowszą wersję aplikacji OLX.pl odpowiednią dla swojego systemu pobierzesz z tego <a target='_blank' rel='noreferrer noopener' href='https://play.google.com/store/apps/details?id=pl.tablica&referrer=adjust_reftag%3DcC4w1euSn3SLe%26utm_source%3DSMS_rtgt)'>linku</a>. Jeżeli problem będzie się powtarzał, wykonaj zrzut ekranu obrazujący treść komunikatu o błędzie i prześlij go do nas wraz z odpowiedzią na poniższe pytania:<br /> - Czy problem jest powtarzalny? Występuje zawsze, czasem, sporadycznie w określonym przypadku? - Czy posiadasz zainstalowany na telefonie antywirus/firewall [tak/nie]? Jeśli tak - jaki?<br/> - W jaki sposób łączysz się z internetem (internet w komórce / wifi)?<br/> - Jaki model telefonu posiadasz?<br/> - Jaki system operacyjny ma Twój telefon (np. Android 4.4.0)?<br/> - Podaj numer wersji aplikacji OLX.pl, którą posiadasz."
+            },
+            {
+                "fields": ["l105_l2020", "l105_l2021"],
+                "answer_suggestion": "Abyśmy mogli sprawdzić Twoje zgłoszenie napisz do nas, co się dokładnie dzieje oraz prześlij następujące informacje:<br/> - Od kiedy funkcja nie działa prawidłowo?<br/> - Jaki komunikat błędu jest widoczny? Podaj dokładną treść.<br/> - Z jakiej przeglądarki internetowej korzystasz? (np. Firefox 11.0, Internet Explorer 8.0.6)?<br/>Koniecznie sprawdź czy Twoja przeglądarka została zaktualizowana do najnowszej wersji i czy jest w niej włączona obsługa języka Java Script. Napisz też czy problem występuje również na innej przeglądarce. Bardzo pomocny dla nas będzie również zrzut ekranu przedstawiający problem. Wskazówki dotyczące jego wykonania znajdziesz <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/210631609'>tutaj</a>."
+            },
+            {
+                "fields": ["l106_l2022_l3040"],
+                "answer_suggestion": "Prześlij do nas więcej informacji związanych z zakupem, szczególnie:<br/> - numer ogłoszenia i nazwę Użytkownika (znajdziesz je w korespondencji),<br/> - link do ogłoszenia (z historii przeglądarki),<br/> - numer konta bankowego, na jaki został zrobiony przelew,<br/> - okoliczności sprawy,<br/> - informację, kiedy miał miejsce ostatni kontakt z Użytkownikiem.<br/>Poinformuj również policję! Zapoznaj się też z tym <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/210631829'>artykułem</a>."
+            },
+            {
+                "fields": ["l106_l2022_l3041"],
+                "answer_suggestion": "Przekaż nam więcej informacji na temat okoliczności tego zdarzenia, podaj również nazwę tego Użytkownika. W pierwszej kolejności polecam Tobie ponowny kontakt z kupującym. Jeżeli nie uda się wyjaśnić sprawy tą drogą udaj się na komisariat aby zgłosić zdarzenie."
+            },
+            {
+                "fields": ["l106_l2022_l3042"],
+                "answer_suggestion": "Daj nam znać co dokładnie się wydarzyło i podaj jak najwięcej szczegółów: ID ogłoszenia, nazwę Użytkownika oraz otrzymane potwierdzenie płatności. Koniecznie udaj się na Policję!"
+            },
+            {
+                "fields": ["l106_l2022_l3043"],
+                "answer_suggestion": "Opisz nam proszę całe zdarzenie i podaj jak najwięcej szczegółów: ID ogłoszenia, nazwę Użytkownika, okoliczności oraz inne dane, które posiadasz. Jak najszybciej udaj się na Policję - czas gra tutaj ogromną rolę!"
+            },
+            {
+                "fields": ["l106_l2022_l207"],
+                "answer_suggestion": "Daj nam znać co dokładnie się wydarzyło i podaj jak najwięcej szczegółów: ID ogłoszenia, nazwę Użytkownika, oraz potwierdzenia płatności, jeśli takie posiadasz."
+            },
+            {
+                "fields": ["l106_l2023_l3044"],
+                "answer_suggestion": "Sprzedaż nieoryginalnych przedmiotów jest niezgodna z polskim prawem, dlatego skontaktuj się z Użytkownikiem, a jeśli to nie pomoże zgłoś sprawę na policji."
+            },
+            {
+                "fields": ["l106_l2023_l3045"],
+                "answer_suggestion": "Najlepszym rozwiązaniem będzie ponowny kontakt z Użytkownikiem, możliwe że dzięki temu uda się wyjaśnić tę sytuację i dojść do porozumienia. Pamiętaj, że najlepiej odebrać przedmiot osobiście. Informacje na ten temat znajdziesz <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/211659325-Towar-niezgodny-z-opisem'>tutaj</a>."
+            },
+            {
+                "fields": ["l106_l2023_l3046"],
+                "answer_suggestion": "W przypadku zakupienia przedmiotu, który mógł wcześniej zostać skradziony, niezwłocznie zgłoś sprawę policji."
+            },
+            {
+                "fields": ["l106_l2023_l3047"],
+                "answer_suggestion": "Jeżeli Twoim zdaniem zakupiony przedmiot posiada wady lub nie działa, zgłoś to Sprzedawcy. Pamiętaj, że najlepiej odebrać przedmiot osobiście. Informacje na ten temat znajdziesz <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/211659325-Towar-niezgodny-z-opisem'>tutaj</a>."
+            },
+            {
+                "fields": ["l106_l2023_l207"],
+                "answer_suggestion": "Daj nam znać co dokładnie się wydarzyło i podaj jak najwięcej szczegółów: ID ogłoszenia, nazwę Użytkownika oraz otrzymane potwierdzenie płatności. "
+            },
+            {
+                "fields": ["l106_l2024_l3048"],
+                "answer_suggestion": "Jeśli masz podejrzenie, że ogłoszenie nie jest prawdziwe, koniecznie skorzystaj z opcji „Zgłoś naruszenie”, która widoczna jest przy każdym ogłoszeniu. Pamiętaj również, że z uwagi na brak zabezpieczeń dla transakcji rekomendujemy wyłącznie odbiór osobisty.  Zachęcamy przeczytania tego <a target='_blank'rel='noreferrernoopener'href='https://pomoc.olx.pl/hc/pl/articles/210631909'>artykułu</a>."
+            },
+            {
+                "fields": ["l106_l2024_l3049"],
+                "answer_suggestion": "Jeśli masz podejrzenie, że oferowany przedmiot jest nielegalny, koniecznie skorzystaj z opcji Zgłoś naruszenie, która widoczna jest przy każdym ogłoszeniu.Więcej informacji <a target='_blank'rel='noreferrer noopener'href='https://pomoc.olx.pl/hc/pl/articles/210631869'>tutaj</a>."
+            },
+            {
+                "fields": ["l106_l2024_l207"],
+                "answer_suggestion": "Jeśli masz podejrzenie, że ogłoszenie nie jest prawdziwe, koniecznie skorzystaj z opcji Zgłoś naruszenie, która widoczna jest przy każdym ogłoszeniu. Zajmie to dosłownie chwilę, a jak to zrobić wskaże Ci ta krótka i przejrzysta <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/210631869'>instrukcja</a>."
+            },
+            {
+                "fields": ["l106_l2025_l3050"],
+                "answer_suggestion": "Dobrze, że zwracasz uwagę na takie sytuacje. Opisz dokładnie co wzbudziło Twoje wątpliwości, podaj również nazwę tego Użytkownika oraz numer ogłoszenia. Więcej informacji na temat bezpieczeństwa znajdziesz <a target='_blank' rel='noreferrer noopener' href='https://blog.olx.pl/2018/01/24/porozmawiajmy-o-bezpieczenstwie/'>tutaj</a>."
+            },
+            {
+                "fields": ["l106_l2025_l3051"],
+                "answer_suggestion": "Opisz dokładniej, czego dotyczył niechciany kontakt. Pamiętaj aby do zgłoszenia dołączyć numer ID ogłoszenia i nazwę Użytkownika, którą odnajdziesz w korespondencji. Jeżeli nie chcesz dostawać już wiadomości od tej osoby, możesz ją zablokować – wystarczy, że skorzystasz z przycisku „zablokuj użytkownika”."
+            },
+            {
+                "fields": ["l106_l2025_l3052"],
+                "answer_suggestion": "Abyśmy mogli pomóc napisz w jakich okolicznościach nastąpił niechciany kontakt. Pamiętaj, że możesz zablokować połączenia przychodzące z konkretnego numeru. W tym celu skontaktuj się z operatorem swojej sieci komórkowej."
+            },
+            {
+                "fields": ["l106_l2025_l3053"],
+                "answer_suggestion": "Abyśmy mogli sprawdzić Twoje zgłoszenie, koniecznie prześlij do nas nazwę Użytkownika, który się z Tobą kontaktował (widoczny w korespondencji).Jeżeli nie chcesz dostawać już wiadomości od tej osoby, możesz ją zablokować – skorzystaj z przycisku „zablokuj użytkownika”, który dostępny jest pod otrzymaną wiadomością."
+            },
+            {
+                "fields": ["l106_l2025_l207"],
+                "answer_suggestion": "Opisz dokładnie czego dotyczył niechciany kontakt lub zachowanie. Koniecznie prześlij też do nas nazwę tego Użytkownika, którą odnajdziesz w swojej korespondencji. O niechcianych wiadomościach przeczytasz również <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/211659365'>tutaj</a>."
+            },
+            {
+                "fields": ["l106_l2026_l3054"],
+                "answer_suggestion": "Prawdopodobnie Użytkownik, pomylił się i przez przypadek podał w ogłoszeniu Twój numer telefonu. Podaj proszę numer, który został wykorzystany, oraz numer ogłoszenia, w którym jest on widoczny. "
+            },
+            {
+                "fields": ["l106_l2026_l3055"],
+                "answer_suggestion": "Prawdopodobnie Użytkownik, pomylił się i przez przypadek podał w formularzu Twój adres e-mail. Jeżeli na Twój adres została wysłana wiadomość z naszą odpowiedzią zignoruj ją."
+            },
+            {
+                "fields": ["l106_l2026_l3056"],
+                "answer_suggestion": "Zmień najszybciej jak to możliwe hasło do swojej skrzynki pocztowej, a następnie skontaktuj się z nami w celu odblokowania konta. Całe zdarzenie zgłoś organom ścigania!"
+            },
+            {
+                "fields": ["l106_l2026_l207"],
+                "answer_suggestion": "Abyśmy mogli pomóc potrzebujemy więcej informacji. Napisz do nas wskazując dokładnie, do jakiego naruszenia doszło."
+            },
+            {
+                "fields": ["l106_l2027"],
+                "answer_suggestion": "Bardzo proszę o kierowanie wszelkich zgłoszeń dotyczących naruszeń praw firm na adres notice@olx.pl. Zgłoszenie powinno zawierać wskazanie konkretnych ogłoszeń, w których doszło do naruszeń, jak również precyzyjne opisanie zaistniałych naruszeń wraz z ich podstawą prawną, oraz upoważnienie do zgłaszania tego typu spraw. "
+            },
+            {
+                "fields": ["l106_l207"],
+                "answer_suggestion": "Abyśmy mogli pomóc potrzebujemy więcej informacji. Napisz do nas wskazując dokładnie, do jakiego naruszenia doszło."
+            },
+            {
+                "fields": ["l108"],
+                "answer_suggestion": "Dziękujemy za zaangażowanie! Wszystkie przesłane do nas sugestie są rozpatrywane, dlatego opisz dokładnie co chcesz zmienić!"
             }
         ]
     }
