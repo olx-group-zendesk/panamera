@@ -1,17 +1,17 @@
 {
-  "name": "copenhagen_theme",
-  "version": "1.0.3",
-  "repository": "git@github.com:zendesk/copenhagen_theme.git",
-  "dependencies": {
-    "node-fetch": "^2.1.2"
-  },
-  "devDependencies": {
-    "js-yaml": "^3.13.1",
-    "nodemon": "^2.0.2"
-  },
-  "scripts": {
-    "build-css": "./bin/compile.rb",
-    "preview": "zat theme preview",
-    "start": "nodemon -e scss -x \"npm run build-css\""
-}
+    "name": "copenhagen_theme",
+    "version": "1.0.3",
+    "repository": "git@github.com:zendesk/copenhagen_theme.git",
+    "dependencies": {
+        "node-fetch": "^2.1.2"
+    },
+    "devDependencies": {
+        "js-yaml": "^3.13.1",
+        "nodemon": "^2.0.4"
+    },
+    "scripts": {
+        "build-css": "./bin/compile.rb",
+        "preview": "zat theme preview",
+        "start": "nodemon -e scss -x \"npm run build-css\""
+    }
 }
