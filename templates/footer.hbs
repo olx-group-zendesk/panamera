@@ -35,6 +35,14 @@
 
 {{#if settings.enhanced_analytics}}
 <script type="text/javascript">
+  // detect if the user agent indicates mobile platform
+  function isMobile() {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      return true;
+    }
+    return false;
+  }
+
   function ninjaGetCookie(getCookieName) {
     var name = getCookieName + "=";
     var ca = document.cookie.split(";");
@@ -63,7 +71,8 @@
         page_title: document.title,
         touch_point_page: "help_center",
         user_id: ninjaGetCookie("user_id"),
-        query_string: window.location.search
+        query_string: window.location.search,
+        platform: isMobile() ? "mobile-html5" : "desktop"
       });
     }
   });
