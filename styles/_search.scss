@@ -11,7 +11,6 @@
             font-size: $font-size-p3;
             padding-left: 63px;
             padding-right: 20px;
-            padding-top: 5px;
             [dir="rtl"] & {
                 padding-right: 63px;
                 padding-left: 20px;
@@ -22,16 +21,23 @@
         box-sizing: border-box;
         color: $field-text-color;
         font-family: $paragraph_font;
-
-        height: 48px;
+        min-height: 48px;
+        padding-top: 0px;
         padding-left: 48px;
         padding-right: 20px;
         -webkit-appearance: none;
         width: 100%;
+        vertical-align: middle;
+        line-height: inherit;
 
         [dir="rtl"] & {
             padding-right: 48px;
             padding-left: 20px;
+        }
+
+        &::placeholder {
+            color: $color-roman-silver;
+            line-height: inherit;
         }
 
         // &:focus {
@@ -58,7 +64,7 @@
         left: 16px;
         width: 24px;
         height: 24px;
-
+        opacity: 0.6;
         [dir="rtl"] & {
             right: 16px;
             left: auto;
@@ -67,8 +73,9 @@
 
     &-full input[type="search"] {
         border: 1px solid $color-white;
+        line-height: inherit;
         @include tablet {
-            height: 72px;
+            min-height: 72px;
             font-size: $font-size-p3;
             padding-left: 63px;
             padding-right: 20px;
@@ -85,6 +92,7 @@
                 background-color: $color-pale-gray;
                 border: unset;
             }
+            line-height: inherit;
         }
     }
 }
