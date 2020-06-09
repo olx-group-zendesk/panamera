@@ -277,7 +277,7 @@
                     "type": "checkbox",
                     "description": "enable_headroom_description",
                     "label": "enable_headroom_label",
-                    "value": false
+                    "value": true
                 }
             ]
         },
@@ -475,14 +475,14 @@
                     "type": "checkbox",
                     "description": "phone_line1_enabled_description",
                     "label": "phone_line1_enabled_label",
-                    "value": true
+                    "value": false
                 },
                 {
                     "identifier": "phone_line2_enabled",
                     "type": "checkbox",
                     "description": "phone_line2_enabled_description",
                     "label": "phone_line2_enabled_label",
-                    "value": true
+                    "value": false
                 }
             ]
         },
