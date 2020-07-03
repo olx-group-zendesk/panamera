@@ -1,4 +1,17 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+{{#unless signed_in}}
+<script type="text/javascript">
+    if (
+        document.cookie.match(/^(.*;)?\s*access_token\s*=\s*[^;]+(.*)?$/) !==
+        null
+    ) {
+        var url = new URL(window.location)
+        if (url.searchParams.get("jwt") === "true") {
+            window.location = "{{settings.country_site_url}}" + "account/zendesksso/"
+        }
+    }
+</script>
+{{/unless}}
 {{#if settings.enable_headroom}}
 <script src="{{asset 'headroom.min.js'}}"></script>
 {{/if}}
