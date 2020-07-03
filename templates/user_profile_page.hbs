@@ -28,9 +28,7 @@
             </svg>
           </span>
         {{/if}}
-        <span class="edit-profile-button">
-          {{edit}}
-        </span>
+        {{actions class='user-profile-actions split-button'}}
         <div class="community-follow">
           {{subscribe}}
         </div>
@@ -165,7 +163,7 @@
                         {{/isnt}}
 
                         {{#if pending}}
-                          <span class="status-label status-label-pending">{{t 'pending_approval'}}</span>
+                          <span class="status-label status-label-pending-moderation">{{t 'pending_approval'}}</span>
                         {{/if}}
 
                         {{#if official}}
@@ -280,7 +278,7 @@
                     {{/isnt}}
 
                     {{#if pending}}
-                      <span class="status-label status-label-pending">{{t 'pending_approval'}}</span>
+                      <span class="status-label status-label-pending-moderation">{{t 'pending_approval'}}</span>
                     {{/if}}
 
                     {{#if official}}
