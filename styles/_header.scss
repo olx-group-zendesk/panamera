@@ -4,6 +4,7 @@ $header-height: 72px;
 .header {
     background-color: $header-background-color;
     box-shadow: $header-box-shadow;
+    border-bottom: $header-border-bottom;
 
     &--margin {
         @include tablet {
@@ -47,11 +48,11 @@ $header-height: 72px;
 
 .logo {
     img {
-        max-height: 31px;
-        height: 31px;
+        max-height: 26px;
+        height: 26px;
         @include tablet {
-            max-height: 41px;
-            height: 41px;
+            max-height: 32px;
+            height: 32px;
         }
     }
     div {
@@ -66,7 +67,7 @@ $header-height: 72px;
                 font-family: $heading_font;
                 color: $brand_text_color;
                 white-space: nowrap;
-                font-size: 20px;
+                font-size: 18px;
                 line-height: 1.1;
                 font-weight: 500;
             }
