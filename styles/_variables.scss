@@ -39,21 +39,75 @@ $tablet-width: 768px;
 $desktop-width: 1024px;
 $max-width-container: 1160px;
 
-// Fonts
-$heading_font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
-    sans-serif !default;
-$text_font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
-    sans-serif !default;
-$font-weight-base: 400;
-$font-weight-light: 300;
-$font-weight-semibold: 600;
-
-// Custom
+// ================================ OLX Custom =================================
 
 $border-radius-alert: 2px;
 $font-size-alert: 0.85rem;
 $color-alert: #ffd6c9;
 $color-info: #c7dcff;
 $color-text-navbar: #fff;
-$header-background-color: #464b53;
+$header-background-color: #002f34;
 $header-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+
+// PALETTE - OLX
+$color-aero-blue: #cbf7ee;
+$color-charcoal: #002f34;
+$color-white: #fff;
+$color-blue-light: #ceddff;
+$color-blue-primary: #3a77ff;
+$color-duck-egg-blue: #d8dfe0;
+$color-pale-gray: #f2f4f5;
+$color-slate: #406367;
+$color-red-light: #ffd6c9;
+$color-red-bg-light: #ffeeea;
+$color-teal-primary: #23e5db;
+$color-teal-light: #c8f8f6;
+$color-teal-dark: #176361;
+$color-teal-dark-mode: #97c5c3;
+$color-roman-silver: #7f9799;
+$color-error: #de1609;
+
+// OLX Font - Geomanist
+@font-face {
+    font-family: "Geomanist Book";
+    src: local("Geomanist Book");
+    src: url($assets-geomanist-book-otf);
+}
+
+@font-face {
+    font-family: "Geomanist Medium";
+    src: local("Geomanist Medium");
+    src: url($assets-geomanist-medium-otf);
+}
+
+@font-face {
+    font-family: "Geomanist Regular";
+    src: local("Geomanist Regular");
+    src: url($assets-geomanist-regular-otf);
+}
+
+$heading_font: "Geomanist Medium", Roboto, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Helvetica, Arial, sans-serif !default;
+
+$text_font: "Geomanist Regular", Roboto, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Helvetica, Arial, sans-serif !default;
+
+$paragraph_font: "Geomanist Book", Roboto, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Helvetica, Arial, sans-serif;
+
+$font-weight-base: 400;
+$font-weight-light: 300;
+$font-weight-500: 500;
+$font-weight-semibold: 600;
+
+// Font Sizes - OLX
+$font-size-h1: 40px;
+$font-size-h3: 24px;
+$font-size-h6: 20px;
+$font-size-p1: 18px;
+$font-size-p3: 16px;
+$font-size-p4: 14px;
+$font-size-p6: 12px;
+
+// Buttons
+$button-border-radius: 4px;

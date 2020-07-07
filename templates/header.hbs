@@ -14,6 +14,61 @@
     </div>
 
     <div class="nav-wrapper">
+
+      {{#if alternative_locales}}
+      <span class="locale locale-current">
+
+        {{#is current_locale.name "English (US)"}}
+        <span dir="ltr">Eng</span>
+        {{/is}}
+
+        {{#is current_locale.name "Русский"}}
+        <span dir="ltr">Рус</span>
+        {{/is}}
+
+        {{#is current_locale.name "Қазақ тілі"}}
+        <span dir="ltr">Қаз</span>
+        {{/is}}
+
+        {{#is current_locale.name "Українська"}}
+        <span dir="ltr">Укр</span>
+        {{/is}}
+
+      </span>
+
+      <span>
+        {{#each alternative_locales}}
+        {{#is name "English (US)"}}
+        <a class="locale" href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
+          Eng
+        </a>
+        {{/is}}
+
+        {{#is name "Русский"}}
+        <a class="locale" href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
+          Рус
+        </a>
+        {{/is}}
+
+        {{#is name "Қазақ тілі"}}
+        <a class="locale" href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
+          Қаз
+        </a>
+        {{/is}}
+
+        {{#is name "Українська"}}
+        <a class="locale" href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
+          Укр
+        </a>
+        {{/is}}
+
+        {{!-- <a class="locale" href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
+          {{name}}
+        </a> --}}
+        {{/each}}
+      </span>
+      {{/if}}
+
       <button class="menu-button" aria-controls="user-nav" aria-expanded="false" aria-label="{{t 'toggle_navigation'}}">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16"
           class="icon-menu">
@@ -23,6 +78,7 @@
       <nav class="user-nav" id="user-nav">
         {{link 'community'}}
         {{link 'new_request' class='submit-a-request'}}
+        <a href="#">Bla</a>
       </nav>
       {{#if signed_in}}
       <div class="user-info dropdown">
@@ -44,6 +100,9 @@
         </div>
       </div>
       {{else}}
+      <a role="button" class="olx-button olx-button-secondary olx-button-large" href="{{dc 'sell_url'}}">
+        {{dc 'sell_button_text'}}
+      </a>
       {{#link "sign_in" class="sign-in"}}
       {{t 'sign_in'}}
       {{/link}}
@@ -55,7 +114,7 @@
 <script>
   (function () {
     var header = new Headroom(document.querySelector("#main-nav-header"), {
-      offset: 71,
+      offset: 72,
       tolerance: 5
     });
     header.init();

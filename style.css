@@ -181,6 +181,24 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "Geomanist Book";
+  src: local("Geomanist Book");
+  src: url($assets-geomanist-book-otf);
+}
+
+@font-face {
+  font-family: "Geomanist Medium";
+  src: local("Geomanist Medium");
+  src: url($assets-geomanist-medium-otf);
+}
+
+@font-face {
+  font-family: "Geomanist Regular";
+  src: local("Geomanist Regular");
+  src: url($assets-geomanist-regular-otf);
+}
+
 /***** Base *****/
 * {
   box-sizing: border-box;
@@ -357,7 +375,7 @@ ul {
   margin: 0;
   padding: 0 20px;
   text-align: center;
-  transition: background-color .12s ease-in-out, border-color .12s ease-in-out, color .15s ease-in-out;
+  transition: background-color 0.12s ease-in-out, border-color 0.12s ease-in-out, color 0.15s ease-in-out;
   user-select: none;
   white-space: nowrap;
   width: 100%;
@@ -385,7 +403,8 @@ ul {
   cursor: default;
 }
 
-.button-large, input[type="submit"] {
+.button-large,
+input[type="submit"] {
   cursor: pointer;
   background-color: $brand_color;
   border: 0;
@@ -400,16 +419,21 @@ ul {
 }
 
 @media (min-width: 768px) {
-  .button-large, input[type="submit"] {
+  .button-large,
+  input[type="submit"] {
     width: auto;
   }
 }
 
-.button-large:hover, .button-large:active, .button-large:focus, input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus {
+.button-large:hover, .button-large:active, .button-large:focus,
+input[type="submit"]:hover,
+input[type="submit"]:active,
+input[type="submit"]:focus {
   background-color: darken($brand_color, 20%);
 }
 
-.button-large[disabled], input[type="submit"][disabled] {
+.button-large[disabled],
+input[type="submit"][disabled] {
   background-color: #ddd;
 }
 
@@ -423,6 +447,50 @@ ul {
   color: $text_color;
   border: 1px solid #ddd;
   background-color: darken($background_color, 3%);
+}
+
+.olx-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: $heading_font;
+  height: 40px;
+  max-height: 40px;
+  min-width: 108px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.olx-button-primary {
+  background-color: #002f34;
+  color: #fff;
+  box-shadow: inset 0 0 0 8px #002f34;
+}
+
+.olx-button-primary:hover, .olx-button-primary:focus, .olx-button-primary:active {
+  background: none;
+  color: #002f34;
+  box-shadow: inset 0 0 0 5px #002f34;
+}
+
+.olx-button-secondary {
+  background: #fff;
+  color: #002f34;
+  box-shadow: inset 0 0 0 8px #fff;
+}
+
+.olx-button-secondary:hover, .olx-button-secondary:focus, .olx-button-secondary:active {
+  background: none;
+  color: #fff;
+  box-shadow: inset 0 0 0 5px #fff;
+}
+
+.olx-button-large {
+  height: 48px;
+  max-height: 48px;
+  font-size: 16px;
 }
 
 /***** Split button *****/
@@ -639,7 +707,7 @@ ul {
 
 /***** Header *****/
 .header {
-  background-color: #464b53;
+  background-color: #002f34;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -670,7 +738,7 @@ ul {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  background-color: #464b53;
+  background-color: #002f34;
 }
 
 @media (min-width: 1160px) {
@@ -731,10 +799,9 @@ ul {
     line-height: 1.1;
     font-weight: 500;
   }
-}
-
-.logo .title a {
-  color: #fff;
+  .logo div a:hover, .logo div a:focus, .logo div a:active {
+    text-decoration: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -769,13 +836,55 @@ ul {
 .user-nav[aria-expanded="true"] > a {
   display: block;
   margin: 20px;
+  color: #002f34;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.nav-wrapper .locale {
+  color: #fff;
+  display: inline-block;
+}
+
+.nav-wrapper .locale-current {
+  display: inline-block;
+  color: #7f9799;
+}
+
+.nav-wrapper .locale-current > span[dir="ltr"] {
+  display: flex;
+  padding: 0 7px 0 0;
+}
+
+.nav-wrapper .locale-current > span[dir="ltr"]::after {
+  content: "";
+  width: 1px;
+  height: 21px;
+  background-color: #406367;
+  margin: 0 0 0 7px;
+}
+
+.nav-wrapper .locale-current > span[dir="rtl"] {
+  display: flex;
+  padding: 0 0 0 7px;
+}
+
+.nav-wrapper .locale-current > span[dir="rtl"]::after {
+  content: "";
+  width: 1px;
+  height: 21px;
+  background-color: #406367;
+  margin: 0 7px 0 0;
 }
 
 .nav-wrapper a {
   border: 0;
-  color: $link_color;
+  color: #fff;
   display: none;
-  font-size: 14px;
+  font-size: 15px;
   padding: 0 20px 0 0;
   width: auto;
 }
@@ -792,12 +901,29 @@ ul {
 
 .nav-wrapper a:hover, .nav-wrapper a:focus, .nav-wrapper a:active {
   background-color: transparent;
-  color: $link_color;
-  text-decoration: underline;
+  color: #fff;
+  text-decoration: none;
 }
 
 .nav-wrapper a.sign-in {
   display: inline-block;
+  padding: 0 0 0 15px;
+}
+
+.nav-wrapper a.olx-button {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav-wrapper a.olx-button {
+    color: #002f34;
+    font-size: 16px;
+    display: flex;
+    padding: unset;
+  }
+  .nav-wrapper a.olx-button:hover, .nav-wrapper a.olx-button:active, .nav-wrapper a.olx-button:focus {
+    color: #fff;
+  }
 }
 
 @media (max-width: 768px) {
@@ -819,9 +945,8 @@ ul {
 .nav-wrapper .menu-button {
   background: none;
   border: 0;
-  color: $link_color;
+  color: #fff;
   display: inline-block;
-  margin-right: 10px;
   padding: 0;
   width: auto;
 }
@@ -834,8 +959,8 @@ ul {
 
 .nav-wrapper .menu-button .icon-menu {
   vertical-align: middle;
-  width: 13px;
-  height: 13px;
+  width: 15px;
+  height: 15px;
 }
 
 [dir="rtl"] .nav-wrapper .menu-button {
@@ -845,7 +970,8 @@ ul {
 
 .nav-wrapper .menu-button:hover, .nav-wrapper .menu-button:focus, .nav-wrapper .menu-button:active {
   background-color: transparent;
-  color: $link_color;
+  color: #7f9799;
+  outline: none;
 }
 
 .skip-navigation {
