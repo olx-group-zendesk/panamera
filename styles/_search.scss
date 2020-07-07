@@ -1,49 +1,128 @@
 /***** Search field *****/
 .search {
-  position: relative;
+    position: relative;
 
-  input[type="search"] {
-    border: 1px solid $border-color;
-    border-radius: 30px;
-    box-sizing: border-box;
-    color: $field-text-color;
-    height: 40px;
-    padding-left: 40px;
-    padding-right: 20px;
-    -webkit-appearance: none;
-    width: 100%;
+    input[type="search"] {
+        @include tablet {
+            padding-left: 50px;
+            min-height: 72px;
+            font-size: 20px;
+        }
+        font-size: 16px;
+        min-height: 45px;
+        border: 1px solid $border-color;
+        border-radius: $border-radius;
+        box-sizing: border-box;
+        color: $field-text-color;
+        height: 40px;
+        padding-left: 40px;
+        padding-right: 20px;
+        -webkit-appearance: none;
+        width: 100%;
 
-    [dir="rtl"] & {
-      padding-right: 40px;
-      padding-left: 20px;
+        [dir="rtl"] & {
+            padding-right: 40px;
+            padding-left: 20px;
+        }
+        &::placeholder {
+            color: $color-roman-silver;
+            margin-right: 10px;
+        }
+        &:focus {
+            color: $field-text-focus-color;
+        }
     }
 
-    &:focus {
-      border: 1px solid $brand_color;
-      color: $field-text-focus-color;
+    &-full input[type="search"] {
+        border: 1px solid #fff;
     }
-  }
-
-  &-full input[type="search"] {
-    border: 1px solid #fff;
-  }
 }
 
 .search-icon {
-  @include vertical-align;
-  position: absolute;
-  left: 15px;
-  z-index: 1;
-  width: 18px;
-  height: 18px;
-  color: #777;
+    @include tablet {
+        top: 55px;
+        width: 25px;
+        height: 25px;
+    }
+    position: relative;
+    top: 38px;
+    left: 15px;
+    z-index: 1;
+    width: 18px;
+    height: 18px;
+    color: #777;
 
-  [dir="rtl"] & {
-    right: 15px;
-    left: auto;
-  }
+    [dir="rtl"] & {
+        right: 15px;
+        left: auto;
+    }
 }
 
 .search-container {
-  position: relative;
+    position: relative;
+}
+
+zd-autocomplete {
+    @include tablet {
+        top: 303px !important;
+    }
+    top: 285px !important;
+    background-color: $color-white;
+    border-radius: $border-radius;
+    box-shadow: $dropdown-box-shadow;
+    position: absolute;
+    z-index: 1000000;
+
+    &-multibrand {
+        border-bottom: 1px solid $color-duck-egg-blue;
+        color: $color-charcoal;
+        display: block;
+        padding: 15px 10px;
+        cursor: pointer;
+        outline: none;
+
+        &:last-child {
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-bottom: 0px;
+        }
+
+        &[aria-selected="true"] {
+            background-color: $color-white;
+        }
+        em {
+            font-style: normal;
+            font-weight: $font-weight-semibold;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $color-charcoal;
+            color: $color-white;
+            &:first-child {
+                border-top-left-radius: $border-radius;
+                border-top-right-radius: $border-radius;
+            }
+            &:last-child {
+                border-bottom-left-radius: $border-radius;
+                border-bottom-right-radius: $border-radius;
+            }
+        }
+    }
+
+    &-multibrand &-title-multibrand {
+        font-weight: $font-weight-light;
+        font-size: $font-size-navigation;
+        color: inherit;
+    }
+
+    &-multibrand &-breadcrumbs-multibrand {
+        font-weight: $font-weight-light;
+        font-size: $font-size-smaller;
+        color: inherit;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
 }

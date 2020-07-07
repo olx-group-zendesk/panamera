@@ -57,13 +57,13 @@
 }
 
 section {
-    // info message
     &.message {
         @include tablet {
-            margin-bottom: 32px;
             max-width: 1160px;
-            margin: 0 auto 3px auto;
-            // padding: 0 5%;
+            margin: 0 auto 15px auto;
+            &:last-child {
+                margin: 0 auto 30px auto;
+            }
         }
         margin-bottom: 16px;
         border-radius: $border-radius-alert;

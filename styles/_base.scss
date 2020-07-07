@@ -1,128 +1,157 @@
 /***** Base *****/
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: $background_color;
-  color: $text_color;
-  font-family: $text_font;
-  font-size: $font-size-base;
-  font-weight: $font-weight-base;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+    background-color: $background_color;
+    color: $text_color;
+    font-family: $text_font;
+    font-size: $font-size-base;
+    font-weight: $font-weight-base;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
 
-  > main {
-    @include desktop {
-      min-height: 65vh;
+    > main {
+        @include desktop {
+            min-height: 65vh;
+        }
     }
-  }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $heading_font;
-  font-weight: $font-weight-base;
-  margin-top: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading_font;
+    font-weight: $font-weight-base;
+    margin-top: 0;
 }
 
-h1 { font-size: 32px; }
-h2 { font-size: 22px; }
+h1 {
+    font-size: 32px;
+}
+h2 {
+    font-size: 22px;
+}
 h3 {
-  font-size: 18px;
-  font-weight: $font-weight-semibold;
+    font-size: 18px;
+    font-weight: $font-weight-semibold;
 }
 
-h4 { font-size: 16px; }
+h4 {
+    font-size: 16px;
+}
 
 a {
-  color: $link_color;
-  text-decoration: none;
+    color: $link_color;
+    text-decoration: none;
 
-  &:hover,
-  &:active,
-  &:focus {
-    text-decoration: underline;
-  }
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: underline;
+    }
+    &.link {
+        text-decoration: none;
+        font-size: $font-size-p4;
+        font-family: $heading_font;
+        transition: box-shadow 0.3s ease;
+
+        &.light {
+            color: $color-white;
+        }
+        &.link-dark {
+            color: $color-charcoal;
+            border-bottom: 2px solid $color-charcoal;
+        }
+        &:hover {
+            box-shadow: inset 0 -1px 0 0 $color-charcoal;
+        }
+    }
 }
 
 input,
 textarea {
-  color: #000;
-  font-size: $input-font-size;
+    color: #000;
+    font-size: $input-font-size;
 }
 
 input {
-  font-weight: $font-weight-light;
-  max-width: 100%;
-  box-sizing: border-box;
-  transition: border .12s ease-in-out;
+    font-weight: $font-weight-light;
+    max-width: 100%;
+    box-sizing: border-box;
+    transition: border 0.12s ease-in-out;
 
-  &:not([type="checkbox"]) {
-    outline: none;
-    
-    &:focus {
-      border: 1px solid $brand_color;
+    &:not([type="checkbox"]) {
+        outline: none;
+
+        &:focus {
+            border: 1px solid $brand_color;
+        }
     }
-  }
 }
 
 input[disabled] {
-  background-color: #ddd;
+    background-color: #ddd;
 }
 
 select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%23CCC' d='M0 0h10L5 6 0 0z'/%3E%3C/svg%3E%0A") no-repeat #fff;
-  background-position: right 10px center;
-  border: 1px solid $border-color;
-  border-radius: 4px;
-  padding: 8px 30px 8px 10px;
-  outline: none;
-  color: $field-text-focus-color;
-  width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%23CCC' d='M0 0h10L5 6 0 0z'/%3E%3C/svg%3E%0A")
+        no-repeat #fff;
+    background-position: right 10px center;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    padding: 8px 30px 8px 10px;
+    outline: none;
+    color: $field-text-focus-color;
+    width: 100%;
 
-  &:focus {
-    border: 1px solid $brand_color;
-  }
+    &:focus {
+        border: 1px solid $brand_color;
+    }
 
-  &::-ms-expand {
-    display: none;
-  }
+    &::-ms-expand {
+        display: none;
+    }
 }
 
 textarea {
-  border: 1px solid $border-color;
-  border-radius: 2px;
-  resize: vertical;
-  width: 100%;
-  outline: none;
-  padding: 10px;
+    border: 1px solid $border-color;
+    border-radius: 2px;
+    resize: vertical;
+    width: 100%;
+    outline: none;
+    padding: 10px;
 
-  &:focus {
-    border: 1px solid $brand_color;
-  }
+    &:focus {
+        border: 1px solid $brand_color;
+    }
 }
 
 .container {
-  @include max-width-container;
+    @include max-width-container;
 }
 
 .container-divider {
-  border-top: 1px solid $border-color;
-  margin-bottom: 20px;
+    border-top: 1px solid $border-color;
+    margin-bottom: 20px;
 }
 
 ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .error-page {
-  @include max-width-container;
+    @include max-width-container;
 }
 
 .visibility-hidden {
-  @include visually-hidden;
+    @include visually-hidden;
 }
