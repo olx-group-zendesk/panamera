@@ -812,7 +812,7 @@ input[type="submit"][disabled] {
 }
 
 .user-nav {
-  display: inline-block;
+  display: none;
   position: absolute;
   white-space: nowrap;
 }
@@ -826,7 +826,7 @@ input[type="submit"][disabled] {
 .user-nav[aria-expanded="true"] {
   background-color: #fff;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15), 0 4px 10px 0 rgba(0, 0, 0, 0.1);
-  border: solid 1px #ddd;
+  border: solid 1px #7f9799;
   right: 0;
   left: 0;
   top: 72px;
@@ -946,7 +946,7 @@ input[type="submit"][disabled] {
   background: none;
   border: 0;
   color: #fff;
-  display: inline-block;
+  display: none;
   padding: 0;
   width: auto;
 }
@@ -1026,19 +1026,20 @@ input[type="submit"][disabled] {
 
 .user-info > button {
   border: 0;
-  color: $link_color;
+  color: #fff;
   min-width: 0;
   padding: 0;
   white-space: nowrap;
 }
 
-.user-info > button:hover, .user-info > button:focus {
-  color: $link_color;
+.user-info > button:active, .user-info > button:focus {
+  color: #7f9799;
   background-color: transparent;
+  outline: none;
 }
 
 .user-info > button::after {
-  color: $link_color;
+  color: #fff;
   padding-right: 15px;
 }
 
@@ -1064,11 +1065,19 @@ input[type="submit"][disabled] {
 
 /***** User avatar *****/
 .user-avatar {
-  height: 25px;
-  width: 25px;
+  height: 28px;
+  width: 28px;
   border-radius: 50%;
   display: inline-block;
   vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  .user-avatar {
+    margin-right: 8px;
+    height: 34px;
+    width: 34px;
+  }
 }
 
 .avatar {
@@ -4781,9 +4790,8 @@ html[dir="rtl"] .notification-left-aligned {
 
 .dropdown-menu {
   background: #fff;
-  border: 1px solid #d8d8d8;
-  border-radius: 3px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgba(0, 48, 53, 0.15), 0 0 4px 0 rgba(0, 48, 53, 0.15);
   display: none;
   font-size: 14px;
   font-style: normal;
@@ -4816,7 +4824,7 @@ html[dir="rtl"] .notification-left-aligned {
 }
 
 .dropdown-menu [role="menuitem"] {
-  color: #333;
+  color: #002f34;
   cursor: pointer;
   display: block;
   padding: 7px 40px 7px 20px;
@@ -4834,9 +4842,9 @@ html[dir="rtl"] .notification-left-aligned {
 }
 
 .dropdown-menu [role="menuitem"]:hover, .dropdown-menu [role="menuitem"]:focus {
-  background: #f3f3f3;
+  background: #002f34;
   text-decoration: none;
-  color: #333;
+  color: #fff;
 }
 
 .dropdown-menu [role="menuitem"][aria-selected="true"] {

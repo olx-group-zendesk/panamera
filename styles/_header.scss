@@ -89,7 +89,8 @@ $header-height: 72px;
     @include tablet {
         position: relative;
     }
-    display: inline-block;
+    // display: inline-block;
+    display: none; // hide it for now
     position: absolute;
     white-space: nowrap;
 
@@ -97,7 +98,7 @@ $header-height: 72px;
         background-color: #fff;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15),
             0 4px 10px 0 rgba(0, 0, 0, 0.1);
-        border: solid 1px #ddd;
+        border: solid 1px $color-roman-silver;
         right: 0;
         left: 0;
         top: $header-height;
@@ -204,7 +205,8 @@ $header-height: 72px;
         background: none;
         border: 0;
         color: $color-white;
-        display: inline-block;
+        // display: inline-block;
+        display: none; // hide it for now
         padding: 0;
         width: auto;
 
