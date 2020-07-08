@@ -52,24 +52,25 @@
         @include tablet {
             margin: 0 15px 30px;
         }
-
-        border: 1px solid $brand_color;
+        background-color: $color-white;
+        border: 1px solid $color-white;
         border-radius: 4px;
         box-sizing: border-box;
-        color: $brand_color;
+        color: $color-charcoal;
         display: flex;
         flex: 1 0 340px;
         margin: 0 0 30px;
         max-width: 100%;
         text-align: center;
+        align-items: center;
 
         &:hover,
         &:focus,
         &:active {
-            background-color: $brand_color;
+            background-color: $color-white;
 
             * {
-                color: $brand_text_color;
+                color: $color-charcoal;
                 text-decoration: none;
             }
         }
@@ -113,12 +114,16 @@
 
     &-item-title {
         margin-bottom: 0;
-        font-size: 16px;
+        font-size: 20px;
+        font-family: $heading_font;
+        color: $color-charcoal;
     }
 
     &-item-description {
         font-weight: $font-weight-light;
+        font-size: 0.85rem;
         margin: 0;
+        color: $color-slate;
     }
 
     &-item-description:not(:empty) {
