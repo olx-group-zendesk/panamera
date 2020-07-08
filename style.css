@@ -1563,7 +1563,7 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
   color: #002f34;
   display: flex;
   flex: 1 0 340px;
-  margin: 0 0 30px;
+  margin: 0 0 15px;
   max-width: 100%;
   text-align: center;
   align-items: center;
@@ -1684,23 +1684,17 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 
 .promoted-articles-item a {
   display: block;
-  border-bottom: 1px solid #ddd;
   padding: 15px 0;
-  color: $text_color;
+  color: #002f34;
+}
+
+.promoted-articles-item a:hover, .promoted-articles-item a:active, .promoted-articles-item a:focus {
+  color: #00777f;
+  text-decoration: none;
 }
 
 .promoted-articles-item .icon-lock {
   vertical-align: baseline;
-}
-
-.promoted-articles-item:last-child a {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  .promoted-articles-item:last-child a {
-    border-bottom: 1px solid #ddd;
-  }
 }
 
 /***** Community section in homepage *****/

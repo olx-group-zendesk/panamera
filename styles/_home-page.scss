@@ -39,21 +39,18 @@
 
         a {
             display: block;
-            border-bottom: 1px solid $border-color;
             padding: 15px 0;
-            color: $text_color;
+            color: $color-charcoal;
+            &:hover,
+            &:active,
+            &:focus {
+                color: $secondary-hover-color;
+                text-decoration: none;
+            }
         }
 
         .icon-lock {
             vertical-align: baseline;
-        }
-
-        &:last-child a {
-            @include desktop {
-                border-bottom: 1px solid $border-color;
-            }
-
-            border: 0;
         }
     }
 }
