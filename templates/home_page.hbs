@@ -1,3 +1,75 @@
+{{#if settings.icons_enabled}}
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+
+    // get the real paths of icon assets on the instance
+    var iconAssets = {
+      "icon-account.svg": "{{asset 'icon-account.svg'}}",
+      "icon-action.svg": "{{asset 'icon-action.svg'}}",
+      "icon-attachment.svg": "{{asset 'icon-attachment.svg'}}",
+      "icon-bulb.svg": "{{asset 'icon-bulb.svg'}}",
+      "icon-call.svg": "{{asset 'icon-call.svg'}}",
+      "icon-card.svg": "{{asset 'icon-card.svg'}}",
+      "icon-condition.svg": "{{asset 'icon-condition.svg'}}",
+      "icon-copy.svg": "{{asset 'icon-copy.svg'}}",
+      "icon-delivery.svg": "{{asset 'icon-delivery.svg'}}",
+      "icon-double-tick.svg": "{{asset 'icon-double-tick.svg'}}",
+      "icon-filter.svg": "{{asset 'icon-filter.svg'}}",
+      "icon-flag.svg": "{{asset 'icon-flag.svg'}}",
+      "icon-goods.svg": "{{asset 'icon-goods.svg'}}",
+      "icon-grid.svg": "{{asset 'icon-grid.svg'}}",
+      "icon-home.svg": "{{asset 'icon-home.svg'}}",
+      "icon-jobs.svg": "{{asset 'icon-jobs.svg'}}",
+      "icon-legal.svg": "{{asset 'icon-legal.svg'}}",
+      "icon-menu.svg": "{{asset 'icon-menu.svg'}}",
+      "icon-message.svg": "{{asset 'icon-message.svg'}}",
+      "icon-notification.svg": "{{asset 'icon-notification.svg'}}",
+      "icon-price.svg": "{{asset 'icon-price.svg'}}",
+      "icon-search.svg": "{{asset 'icon-search.svg'}}",
+      "icon-security.svg": "{{asset 'icon-security.svg'}}",
+      "icon-settings.svg": "{{asset 'icon-settings.svg'}}",
+      "icon-sms.svg": "{{asset 'icon-sms.svg'}}",
+      "icon-squares.svg": "{{asset 'icon-squares.svg'}}",
+      "icon-wallet.svg": "{{asset 'icon-wallet.svg'}}",
+      "icon-warning.svg": "{{asset 'icon-warning.svg'}}"
+    };
+
+    function loadJSON(callback, fileName) {
+      var xobj = new XMLHttpRequest();
+      xobj.overrideMimeType("application/json");
+      xobj.open("GET", fileName, true);
+      xobj.onreadystatechange = function () {
+        if (xobj.readyState == 4 && xobj.status == "200") {
+          // Required use of an anonymous callback as .open will NOT return
+          // a value but simply returns undefined in asynchronous mode
+          callback(xobj.responseText);
+        }
+      };
+      xobj.send(null);
+    }
+
+    loadJSON(function (response) {
+      var
+        parsed = JSON.parse(response),
+        element;
+
+      // mapping in icons.json will be applied here so the proper image source
+      // can be set for appriopriate category ID.
+      Object.keys(parsed).forEach(function items(itemKey) {
+        element = document.getElementById(itemKey)
+        if (element != undefined) {
+          element.setAttribute(
+            "src",
+            iconAssets[parsed[itemKey]]
+          );
+        }
+      });
+
+    }, "{{settings.icons}}");
+  });
+</script>
+{{/if}}
+
 <h1 class="visibility-hidden">{{ help_center.name }}</h1>
 
 <section id="main-content" class="section hero">
@@ -36,6 +108,9 @@
         {{#each categories}}
         {{#if ../has_multiple_categories}}
         <li class="blocks-item">
+          <div class="blocks-image">
+            <img id={{id}} src="{{asset 'icon-flag.svg'}}">
+          </div>
           <a href='{{url}}' class="blocks-item-link">
             <span class="blocks-item-title">{{name}}</span>
             <span class="blocks-item-description">{{excerpt description}}</span>
