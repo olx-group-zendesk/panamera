@@ -1141,12 +1141,17 @@ input[type="submit"][disabled] {
   color: lighten($text_color, 20%);
 }
 
+.footer a[title] {
+  color: #002f34;
+}
+
 .footer-inner {
   max-width: 1160px;
   margin: 0 auto;
   padding: 0 5%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 @media (min-width: 1160px) {
@@ -1154,6 +1159,10 @@ input[type="submit"][disabled] {
     padding: 0;
     width: 90%;
   }
+}
+
+.footer-inner > .title {
+  font-size: 14px;
 }
 
 .footer-language-selector {
@@ -1750,6 +1759,11 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
   }
 }
 
+.recent-activity-item-parent:hover, .recent-activity-item-parent:focus, .recent-activity-item-parent:active, .recent-activity-item-link:hover, .recent-activity-item-link:focus, .recent-activity-item-link:active {
+  text-decoration: none;
+  color: #00777f;
+}
+
 .recent-activity-item-link {
   font-size: 14px;
   font-weight: 300;
@@ -1771,7 +1785,7 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 }
 
 .recent-activity-item-time, .recent-activity-item-comment {
-  color: lighten($text_color, 20%);
+  color: $text_color;
   display: inline-block;
   font-size: 13px;
   font-weight: 300;
@@ -1793,6 +1807,15 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
   padding-top: 15px;
 }
 
+.recent-activity-controls > a {
+  color: #002f34;
+}
+
+.recent-activity-controls > a:hover, .recent-activity-controls > a:focus, .recent-activity-controls > a:active {
+  color: #00777f;
+  text-decoration: none;
+}
+
 .recent-activity-accessibility-label {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1809,9 +1832,13 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 
 .recent-activity-comment-icon svg {
   vertical-align: middle;
-  color: $brand_color;
+  color: #7f9799;
   width: 16px;
   height: 16px;
+}
+
+.recent-activity-comment-icon svg:hover {
+  color: #406367;
 }
 
 .recent-activity-comment-icon:after {

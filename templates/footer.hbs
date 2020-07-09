@@ -1,25 +1,85 @@
 <footer class="footer">
   <div class="footer-inner">
-    {{#link 'help_center'}}{{help_center.name}}{{/link}}
+    <div class="logo">
+      <a target="_blank" rel="noopener noreferrer" href="{{settings.country_site_url}}">
+        <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
+      </a>
+      <div class="title title-dark">{{#link 'help_center'}}{{dc 'header_title'}}{{/link}}</div>
+    </div>
 
-    <div class="footer-language-selector">
-      {{#if alternative_locales}}
-        <div class="dropdown language-selector">
-          <button class="dropdown-toggle" aria-haspopup="true">
-            {{current_locale.name}}
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="dropdown-chevron-icon">
-              <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"/>
-            </svg>
-          </button>
-          <span class="dropdown-menu dropdown-menu-end" role="menu">
-            {{#each alternative_locales}}
-              <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
-                {{name}}
-              </a>
-            {{/each}}
-          </span>
-        </div>
-      {{/if}}
+    <div class="title">
+      <span>{{dc 'free_classifieds_footer'}}</span>
+      <span class="subtitle">
+        © 2006-<span class="current-year"></span> OLX
+      </span>
     </div>
   </div>
 </footer>
+
+{{#if settings.enhanced_analytics}}
+<script type="text/javascript">
+  function ninjaGetCookie(getCookieName) {
+    var name = getCookieName + "=";
+    var ca = document.cookie.split(";");
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == " ") c = c.substring(1, c.length);
+      if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+    }
+    return null;
+  }
+
+  function ninjaClickTrigger(event, touch_point_button) {
+    var tpb = touch_point_button || "";
+    window.dataLayer.push({
+      trackEvent: [event],
+      touch_point_button: tpb
+    });
+  }
+
+  window.dataLayer = window.dataLayer || [];
+
+  window.dataLayer.push({
+    cleanup: function () {
+      window.dataLayer.push({
+        trackPage: "help_center",
+        page_title: document.title,
+        touch_point_page: "help_center",
+        user_id: ninjaGetCookie("user_id"),
+        query_string: window.location.search
+      });
+    }
+  });
+
+  var ninjaTag = document.getElementById("ninja-script-tag");
+  var siteUrl = "{{settings.country_site_url}}".match(/(^\w+:|^)\/\/(.+)\/$/)[2];
+
+  if (!siteUrl) {
+    console.warn(
+      "[NinjaTracker]: No siteUrl defined!",
+      "{{settings.country_site_url}}"
+    );
+  } else {
+    if (!ninjaTag) {
+      (function () {
+        "use strict";
+        window.configTracking = {
+          siteUrl: siteUrl,
+          environment: "production"
+        };
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.id = "ninja-script-tag";
+        script.async = true;
+        script.src = (
+          "https:" === document.location.protocol ? "https://" : "http://"
+        ) + "ninja.data.olxcdn.com\/ninja-cee.js";
+        (document.getElementsByTagName("head")[0] ||
+          document.getElementsByTagName("body")[0]
+        ).appendChild(script);
+      })();
+    }
+  }
+
+</script>
+{{/if}}
