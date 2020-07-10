@@ -1168,16 +1168,37 @@ input[type="submit"][disabled] {
 /***** Footer *****/
 .footer {
   border-top: 1px solid #ddd;
-  margin-top: 60px;
-  padding: 30px 0;
+  padding: 14px 0 8px 0;
 }
 
-.footer a {
-  color: lighten($text_color, 20%);
+.footer .title > span:first-child {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .footer .title > span:first-child {
+    display: inline-block;
+    font-size: 14px;
+  }
+}
+
+.footer .title > .subtitle {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    margin-top: 10px;
+    padding: 18px 0 21px 0;
+  }
 }
 
 .footer a[title] {
   color: #002f34;
+}
+
+.footer a[title]:hover, .footer a[title]:active, .footer a[title]:focus {
+  color: #00777f;
 }
 
 .footer-inner {
