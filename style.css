@@ -241,7 +241,6 @@ h2 {
 
 h3 {
   font-size: 18px;
-  font-weight: 600;
 }
 
 h4 {
@@ -405,6 +404,10 @@ ul {
   position: absolute;
   width: 1px;
   white-space: nowrap;
+}
+
+.centered {
+  text-align: center;
 }
 
 /***** Buttons *****/
@@ -1551,6 +1554,60 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 
 /***** Blocks *****/
 /* Used in Homepage#categories and Community#topics */
+.blocks-stacked {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 6px 0;
+}
+
+@media (min-width: 768px) {
+  .blocks-stacked {
+    margin: 0 -15px;
+    flex-direction: row;
+  }
+}
+
+.blocks-stacked-centered {
+  justify-content: center;
+}
+
+.blocks-button {
+  margin-bottom: 16px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #002f34;
+  display: flex;
+  justify-content: space-around;
+  flex: 1 0 auto;
+  padding: 16px;
+  align-items: center;
+}
+
+.blocks-button div:last-child {
+  width: calc(100% - 114px);
+}
+
+@media (min-width: 768px) {
+  .blocks-button {
+    flex: 0 1 auto;
+    margin: 0 8px 16px;
+  }
+  .blocks-button div:last-child {
+    width: 182px;
+    margin-left: 16px;
+  }
+  [dir="rtl"] .blocks-button div:last-child {
+    margin-right: 16px;
+  }
+}
+
+.blocks-button-chat {
+  display: none;
+}
+
 .blocks-list {
   display: flex;
   flex-wrap: wrap;
@@ -1563,6 +1620,10 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
   .blocks-list {
     margin: 0 -15px;
   }
+}
+
+.blocks-list-centered {
+  justify-content: center;
 }
 
 .blocks-image {

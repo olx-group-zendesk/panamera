@@ -1,6 +1,57 @@
 /***** Blocks *****/
 /* Used in Homepage#categories and Community#topics */
 .blocks {
+    &-stacked {
+        @include tablet {
+            margin: 0 -15px;
+            flex-direction: row;
+        }
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 6px 0;
+
+        &-centered {
+            justify-content: center;
+        }
+    }
+
+    &-button {
+        margin-bottom: 16px;
+        background-color: $color-white;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: $color-charcoal;
+        display: flex;
+        justify-content: space-around;
+        flex: 1 0 auto;
+        padding: 16px;
+        align-items: center;
+
+        div:last-child {
+            width: calc(100% - 114px);
+        }
+
+        @include tablet {
+            flex: 0 1 auto;
+            margin: 0 8px 16px;
+            div:last-child {
+                [dir="rtl"] & {
+                    margin-right: 16px;
+                }
+                width: 182px;
+                margin-left: 16px;
+            }
+        }
+
+        // Hide the chat button initially, as it will be shown by JS if chat
+        // functions object (zE) is detected.
+        &-chat {
+            display: none;
+        }
+    }
+
     &-list {
         @include tablet {
             margin: 0 -15px;
@@ -11,6 +62,10 @@
         justify-content: flex-start;
         list-style: none;
         padding: 0;
+
+        &-centered {
+            justify-content: center;
+        }
     }
 
     &-image {
