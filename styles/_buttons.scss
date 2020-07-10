@@ -30,22 +30,26 @@
     &:active,
     &:focus {
         box-shadow: inset 0 0 0 3px $color-charcoal;
-        outline-color: unset;
+        outline-color: $color-charcoal;
     }
 
     &.button-primary {
         background-color: transparent;
+        &[aria-pressed="true"] {
+            @extend .button-subscribed;
+        }
     }
 
     &.button-subscribed {
         background-color: $color-teal-light;
         color: $color-slate;
-        border: 1px solid $color-teal-primary;
+        border: 1px solid transparent;
         box-shadow: inset 0 0 0 1px $color-teal-primary;
         &:hover,
         &:active,
         &:focus {
             box-shadow: inset 0 0 0 3px $color-teal-primary;
+            outline-color: $color-teal-primary;
         }
     }
 

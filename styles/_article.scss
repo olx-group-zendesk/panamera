@@ -193,7 +193,7 @@
     &-subscribe button {
         @extend .button;
         &[data-selected="true"] {
-            @extend .button-primary;
+            @extend .button-subscribed;
         }
     }
 }
