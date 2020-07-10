@@ -46,13 +46,14 @@ h4 {
 }
 
 a {
-    color: $link_color;
+    color: $color-charcoal;
     text-decoration: none;
 
     &:hover,
     &:active,
     &:focus {
-        text-decoration: underline;
+        text-decoration: none;
+        color: $secondary-hover-color;
     }
     &.link {
         text-decoration: none;
@@ -135,11 +136,25 @@ textarea {
 
 .container {
     @include max-width-container;
+    &-heading {
+        @include tablet {
+            margin: 40px 0;
+        }
+        margin: 24px 0;
+    }
 }
 
 .container-divider {
-    border-top: 1px solid $border-color;
+    @include tablet {
+        border-top: 1px solid $border-color;
+        background-color: $color-white;
+        padding: 0;
+    }
+
+    background-color: $color-pale-gray;
+
     margin-bottom: 20px;
+    padding: 30px 0 0 0;
 }
 
 ul {

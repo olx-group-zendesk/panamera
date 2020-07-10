@@ -6,16 +6,13 @@
     }
 
     &-content {
-        @include desktop {
-            flex: 0 0 80%;
-        }
         flex: 1;
     }
 
     &-subscribe button {
         @extend .button;
         &[data-selected="true"] {
-            @extend .button-primary;
+            @extend .button-subscribed;
         }
     }
 }

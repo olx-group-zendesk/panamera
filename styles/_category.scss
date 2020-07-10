@@ -1,55 +1,56 @@
 /***** Category pages *****/
 .category {
-  &-container {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  &-content {
-    @include desktop {
-      flex: 0 0 80%;
+    &-container {
+        display: flex;
+        justify-content: flex-end;
     }
 
-    flex: 1;
-  }
+    &-content {
+        flex: 1;
+    }
 }
 
 .section-tree {
-  @include tablet { flex-direction: row; }
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    @include tablet {
+        flex-direction: row;
+    }
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-  .section {
-    @include tablet { flex: 0 0 45%; /* Two columns for tablet and desktop. Leaving 5% separation between columns */ }
-    flex: initial;
-  }
+    .section {
+        @include tablet {
+            flex: 0 0 45%; /* Two columns for tablet and desktop. Leaving 5% separation between columns */
+        }
+        flex: initial;
+    }
 
-  &-title {
-    margin-bottom: 0;
-    font-size: 18px;
-    font-weight: $font-weight-semibold;
+    &-title {
+        @include tablet {
+            font-size: 20px;
+        }
+        margin-bottom: 0;
+        font-size: 16px;
+        font-weight: $font-weight-500;
+        font-family: $heading_font;
+        color: $color-charcoal;
+    }
 
-    a { color: $text_color; }
-  }
-
-  .see-all-articles {
-    display: block;
-    padding: 15px 0;
-  }
+    .see-all-articles {
+        display: block;
+        padding: 15px 0;
+    }
 }
 
 .article-list {
-  &-item {
-    font-size: $font-size-bigger;
-    padding: 15px 0;
-
-    a { color: $text_color; }
-  }
+    &-item {
+        font-size: $font-size-bigger;
+        padding: 15px 0;
+    }
 }
 
 .icon-star {
-  color: $brand_color;
-  font-size: 18px;
+    color: $color-blue-primary;
+    font-size: 18px;
 }

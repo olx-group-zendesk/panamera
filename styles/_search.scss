@@ -59,6 +59,9 @@
 }
 
 .search-container {
+    @include tablet {
+        margin-top: -15px;
+    }
     position: relative;
 }
 
