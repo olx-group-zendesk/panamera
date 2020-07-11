@@ -129,3 +129,9 @@
     width: 1px;
     white-space: nowrap;
 }
+
+@mixin link-disabled {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+}

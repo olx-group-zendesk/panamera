@@ -458,10 +458,15 @@ ul {
 .button.button-subscribed:hover, .button.button-primary[aria-pressed="true"]:hover, .split-button button.button-primary[aria-pressed="true"]:hover, .section-subscribe button.button-primary[aria-pressed="true"]:hover, .article-subscribe button.button-primary[aria-pressed="true"]:hover, .community-follow button.button-primary[aria-pressed="true"]:hover, .requests-table-toolbar .organization-subscribe button.button-primary[aria-pressed="true"]:hover, .requests-table-toolbar .organization-subscribe button[aria-pressed="true"][data-selected="true"]:hover, .subscriptions-subscribe button.button-primary[aria-pressed="true"]:hover, .subscriptions-subscribe button[aria-pressed="true"][data-selected="true"]:hover, .button-primary[aria-pressed="true"].pagination-next-link:hover, .button-primary[aria-pressed="true"].pagination-prev-link:hover, .button-primary[aria-pressed="true"].pagination-first-link:hover, .button-primary[aria-pressed="true"].pagination-last-link:hover, .split-button button.button-subscribed:hover, .section-subscribe button.button-subscribed:hover, .section-subscribe button[data-selected="true"]:hover, .article-subscribe button.button-subscribed:hover, .article-subscribe button[data-selected="true"]:hover, .community-follow button.button-subscribed:hover, .requests-table-toolbar .organization-subscribe button.button-subscribed:hover, .subscriptions-subscribe button.button-subscribed:hover, .button-subscribed.pagination-next-link:hover, .button-subscribed.pagination-prev-link:hover, .button-subscribed.pagination-first-link:hover, .button-subscribed.pagination-last-link:hover, .button.button-subscribed:active, .button.button-primary[aria-pressed="true"]:active, .split-button button.button-primary[aria-pressed="true"]:active, .section-subscribe button.button-primary[aria-pressed="true"]:active, .article-subscribe button.button-primary[aria-pressed="true"]:active, .community-follow button.button-primary[aria-pressed="true"]:active, .requests-table-toolbar .organization-subscribe button.button-primary[aria-pressed="true"]:active, .requests-table-toolbar .organization-subscribe button[aria-pressed="true"][data-selected="true"]:active, .subscriptions-subscribe button.button-primary[aria-pressed="true"]:active, .subscriptions-subscribe button[aria-pressed="true"][data-selected="true"]:active, .button-primary[aria-pressed="true"].pagination-next-link:active, .button-primary[aria-pressed="true"].pagination-prev-link:active, .button-primary[aria-pressed="true"].pagination-first-link:active, .button-primary[aria-pressed="true"].pagination-last-link:active, .split-button button.button-subscribed:active, .section-subscribe button.button-subscribed:active, .section-subscribe button[data-selected="true"]:active, .article-subscribe button.button-subscribed:active, .article-subscribe button[data-selected="true"]:active, .community-follow button.button-subscribed:active, .requests-table-toolbar .organization-subscribe button.button-subscribed:active, .subscriptions-subscribe button.button-subscribed:active, .button-subscribed.pagination-next-link:active, .button-subscribed.pagination-prev-link:active, .button-subscribed.pagination-first-link:active, .button-subscribed.pagination-last-link:active, .button.button-subscribed:focus, .button.button-primary[aria-pressed="true"]:focus, .split-button button.button-primary[aria-pressed="true"]:focus, .section-subscribe button.button-primary[aria-pressed="true"]:focus, .article-subscribe button.button-primary[aria-pressed="true"]:focus, .community-follow button.button-primary[aria-pressed="true"]:focus, .requests-table-toolbar .organization-subscribe button.button-primary[aria-pressed="true"]:focus, .requests-table-toolbar .organization-subscribe button[aria-pressed="true"][data-selected="true"]:focus, .subscriptions-subscribe button.button-primary[aria-pressed="true"]:focus, .subscriptions-subscribe button[aria-pressed="true"][data-selected="true"]:focus, .button-primary[aria-pressed="true"].pagination-next-link:focus, .button-primary[aria-pressed="true"].pagination-prev-link:focus, .button-primary[aria-pressed="true"].pagination-first-link:focus, .button-primary[aria-pressed="true"].pagination-last-link:focus, .split-button button.button-subscribed:focus, .section-subscribe button.button-subscribed:focus, .section-subscribe button[data-selected="true"]:focus, .article-subscribe button.button-subscribed:focus, .article-subscribe button[data-selected="true"]:focus, .community-follow button.button-subscribed:focus, .requests-table-toolbar .organization-subscribe button.button-subscribed:focus, .subscriptions-subscribe button.button-subscribed:focus, .button-subscribed.pagination-next-link:focus, .button-subscribed.pagination-prev-link:focus, .button-subscribed.pagination-first-link:focus, .button-subscribed.pagination-last-link:focus {
   box-shadow: inset 0 0 0 3px #23e5db;
   outline-color: #23e5db;
+  background-color: #f2f4f5;
 }
 
 .button[data-disabled], .split-button button[data-disabled], .section-subscribe button[data-disabled], .article-subscribe button[data-disabled], .community-follow button[data-disabled], .requests-table-toolbar .organization-subscribe button[data-disabled], .subscriptions-subscribe button[data-disabled], [data-disabled].pagination-next-link, [data-disabled].pagination-prev-link, [data-disabled].pagination-first-link, [data-disabled].pagination-last-link {
   cursor: default;
+}
+
+button[type="button"] {
+  outline: none;
 }
 
 .button-large,
@@ -1537,15 +1542,15 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 30px;
   min-height: 50px;
-  padding-bottom: 15px;
 }
 
 @media (min-width: 768px) {
   .sub-nav {
     align-items: center;
     flex-direction: row;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
   }
 }
 
@@ -2170,6 +2175,7 @@ section.message-alert {
 @media (min-width: 1024px) {
   .article-container {
     flex-direction: row;
+    margin-top: 2rem;
   }
 }
 
@@ -2179,7 +2185,6 @@ section.message-alert {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 40px;
   margin-top: 20px;
 }
 
@@ -2413,23 +2418,28 @@ section.message-alert {
 }
 
 .sidenav-title {
+  font-family: $heading_font;
   font-size: 15px;
   position: relative;
-  font-weight: 600;
 }
 
 .sidenav-item {
   border-radius: 4px;
-  color: $text_color;
+  color: #002f34;
   display: block;
   font-weight: 300;
   margin-bottom: 10px;
-  padding: 10px;
 }
 
-.sidenav-item.current-article, .sidenav-item:hover {
-  background-color: $brand_color;
-  color: $brand_text_color;
+.sidenav-item:first-of-type {
+  margin-top: 10px;
+}
+
+.sidenav-item.current-article {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: #7f9799;
   text-decoration: none;
 }
 
@@ -2789,28 +2799,45 @@ section.message-alert {
   transform: scale(1, -1);
 }
 
-.vote-up:hover,
-.vote-down:hover {
-  color: $brand_color;
-}
-
-.vote-up, .vote-down {
+.vote-up,
+.vote-down {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
   border: none;
-  color: lighten($text_color, 20%);
+  color: #002f34;
   cursor: pointer;
   min-height: 35px;
   min-width: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.12s ease-in-out, border-color 0.12s ease-in-out, color 0.15s ease-in-out, box-shadow 0.3s ease;
 }
 
-.vote-voted {
-  color: $brand_color;
+.vote-voted.vote-up {
+  background-color: #c8f8f6;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px #23e5db;
+  color: #406367;
+}
+
+.vote-voted.vote-up:hover {
+  background-color: #f2f4f5;
+  box-shadow: inset 0 0 0 3px #23e5db;
+}
+
+.vote-voted.vote-down {
+  background-color: #ffd6c9;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px #de1609;
+  color: #de1609;
+}
+
+.vote-voted.vote-down:hover {
+  background-color: #f2f4f5;
+  box-shadow: inset 0 0 0 3px #de1609;
 }
 
 .vote-voted:hover {
@@ -3108,6 +3135,7 @@ section.message-alert {
 
 .status-label:hover, .status-label:active, .status-label:focus {
   text-decoration: none;
+  color: #fff;
 }
 
 .status-label-pinned, .status-label-featured, .status-label-official {
@@ -3613,9 +3641,8 @@ section.message-alert {
   display: inline-block;
 }
 
-.collapsible-sidebar-toggle:focus {
+.collapsible-sidebar-toggle:focus, .collapsible-sidebar-toggle:active {
   outline: none;
-  border: 1px solid $brand_color;
 }
 
 .collapsible-sidebar-body {
@@ -5160,8 +5187,9 @@ html[dir="rtl"] .notification-left-aligned {
   vertical-align: middle;
 }
 
-.dropdown-toggle:hover {
+.dropdown-toggle:hover, .dropdown-toggle:focus, .dropdown-toggle:active {
   text-decoration: none;
+  outline: none;
 }
 
 .dropdown-toggle > * {

@@ -1,85 +1,86 @@
 /***** Status labels *****/
 /* Styles labels used in posts, articles and requests */
 .status-label {
-  background-color: #038153;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 12px;
-  font-weight: $font-weight-semibold;
-  margin-right: 2px;
-  padding: 3px 10px;
-  vertical-align: middle;
-  white-space: nowrap;
-  display: inline-block;
+    background-color: #038153;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: $font-weight-semibold;
+    margin-right: 2px;
+    padding: 3px 10px;
+    vertical-align: middle;
+    white-space: nowrap;
+    display: inline-block;
 
-  &:hover,
-  &:active,
-  &:focus {
-    text-decoration: none;
-  }
-
-  &-pinned,
-  &-featured,
-  &-official {
-    background-color: $brand_color;
-  }
-
-  &-official {
-    border-radius: 0;
-    margin-right: 0;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 0;
-    width: 100%;
-
-    @include tablet {
-      border-radius: 0 0 4px 4px;
-      right: 30px;
-      width: auto;
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        color: #fff;
     }
 
-    [dir="rtl"] & {
-      left: 30px;
-      right: auto;
+    &-pinned,
+    &-featured,
+    &-official {
+        background-color: $brand_color;
     }
-  }
 
-  &-not-planned,
-  &-closed {
-    background-color: #e9ebed;
-    color: $secondary-text-color;
-  }
+    &-official {
+        border-radius: 0;
+        margin-right: 0;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        width: 100%;
 
-  &-pending,
-  &-pending-moderation {
-    background-color: #1f73b7;
-    text-align: center;
-  }
+        @include tablet {
+            border-radius: 0 0 4px 4px;
+            right: 30px;
+            width: auto;
+        }
 
-  &-open {
-    background-color: #c72a1c;
-  }
+        [dir="rtl"] & {
+            left: 30px;
+            right: auto;
+        }
+    }
 
-  &-solved {
-    background-color: #68737d;
-  }
+    &-not-planned,
+    &-closed {
+        background-color: #e9ebed;
+        color: $secondary-text-color;
+    }
 
-  &-new {
-    background-color: #ffb648;
-    color: #703b15;
-  }
+    &-pending,
+    &-pending-moderation {
+        background-color: #1f73b7;
+        text-align: center;
+    }
 
-  &-hold {
-    background-color: #000;
-  }
+    &-open {
+        background-color: #c72a1c;
+    }
 
-  &-open,
-  &-closed,
-  &-solved,
-  &-new,
-  &-hold,
-  &-pending {
-    text-transform: lowercase; // To be consistent with Lotus
-  }
+    &-solved {
+        background-color: #68737d;
+    }
+
+    &-new {
+        background-color: #ffb648;
+        color: #703b15;
+    }
+
+    &-hold {
+        background-color: #000;
+    }
+
+    &-open,
+    &-closed,
+    &-solved,
+    &-new,
+    &-hold,
+    &-pending {
+        text-transform: lowercase; // To be consistent with Lotus
+    }
 }

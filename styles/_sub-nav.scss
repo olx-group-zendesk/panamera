@@ -2,14 +2,14 @@
     @include tablet {
         align-items: center;
         flex-direction: row;
+        margin-bottom: 30px;
+        padding-bottom: 15px;
     }
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 30px;
     min-height: 50px;
-    padding-bottom: 15px;
 
     //Inner pages search field
     input[type="search"] {

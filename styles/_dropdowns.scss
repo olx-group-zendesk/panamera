@@ -12,8 +12,11 @@
     text-align: initial;
     vertical-align: middle;
 
-    &:hover {
+    &:hover,
+    &:focus,
+    &:active {
         text-decoration: none;
+        outline: none;
     }
 
     > * {
