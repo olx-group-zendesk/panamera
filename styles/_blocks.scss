@@ -1,6 +1,10 @@
 /***** Blocks *****/
 /* Used in Homepage#categories and Community#topics */
 .blocks {
+    &:last-of-type {
+        margin-bottom: 1rem;
+    }
+
     &-stacked {
         @include tablet {
             margin: 0 -15px;
@@ -157,12 +161,10 @@
         border-radius: inherit;
 
         &:hover,
-        &:active {
-            text-decoration: none;
-        }
-
+        &:active,
         &:focus {
             text-decoration: none;
+            background: transparent;
         }
     }
 

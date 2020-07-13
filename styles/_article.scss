@@ -179,10 +179,13 @@
         a {
             display: block;
             padding: 20px 0;
+            font-size: 18px;
 
             &:hover,
             &:focus {
                 text-decoration: none;
+                background-color: transparent;
+                color: $color-charcoal;
             }
         }
 
@@ -208,7 +211,7 @@
     }
 
     &-item {
-        border-radius: 4px;
+        // border-radius: 4px;
         color: $color-charcoal;
         display: block;
         font-weight: $font-weight-light;
@@ -219,6 +222,13 @@
         &.current-article {
             @include link-disabled;
             color: $color-roman-silver;
+            text-decoration: none;
+        }
+        &:active,
+        &:hover,
+        &:focus {
+            color: $secondary-hover-color;
+            background-color: transparent;
             text-decoration: none;
         }
     }

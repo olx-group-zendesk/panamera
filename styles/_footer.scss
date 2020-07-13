@@ -19,15 +19,13 @@
         padding: 18px 0 21px 0;
     }
 
-    // a {
-    //     color: $secondary-text-color;
-    // }
     a[title] {
         color: $color-charcoal;
         &:hover,
         &:active,
         &:focus {
-            color: $secondary-hover-color;
+            text-decoration: none;
+            background-color: transparent;
         }
     }
 

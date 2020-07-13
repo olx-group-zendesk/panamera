@@ -1,24 +1,181 @@
-<div class="container-divider"></div>
-<div class="container">
-  <nav class="sub-nav">
-    {{breadcrumbs}}
-    <div class="search-container">
-      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-icon">
-        <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"/>
-        <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"/>
-      </svg>
-      {{search submit=false}}
-    </div>
-  </nav>
+{{#if settings.hints_enabled}}
+<script defer type="text/javascript" src="{{asset 'sanitize-html.min.js'}}"></script>
+<script type="text/javascript">
+  // Services for the "hints" module.
+  document.addEventListener("DOMContentLoaded", function () {
 
+    // do some digging with query selectors and regexes to get currently used
+    // cascading select field ID.
+    var
+      cascadingSelectFieldId,
+      cascadingFieldAriaLabel,
+      cascadingSelectField = document.querySelector(
+        "a[aria-labelledby^='request_custom_fields_']"
+      );
+
+    if (cascadingSelectField != undefined && typeof cascadingSelectField === "object") {
+      cascadingFieldAriaLabel = cascadingSelectField.attributes[
+        "aria-labelledby"
+      ].value;
+    }
+
+    if (cascadingFieldAriaLabel != undefined) {
+      var
+        re = new RegExp(/\d{1,}/),
+        reSearch = re.exec(cascadingFieldAriaLabel);
+      if (reSearch.length > 0) {
+        cascadingSelectFieldId = reSearch[0];
+      }
+    }
+
+    if (cascadingSelectFieldId == undefined) {
+      console.log("Cascading Select Field not found. Disabling hints.");
+      return;
+    }
+
+    // perform early exit if the multiselect form is not available
+    var multiSelect = document.querySelector(
+      ".request_custom_fields_" + cascadingSelectFieldId
+    );
+
+    if (multiSelect == undefined) {
+      return;
+    }
+
+    function loadJSON(callback, fileName) {
+      var xobj = new XMLHttpRequest();
+      xobj.overrideMimeType("application/json");
+      xobj.open("GET", fileName, true);
+      xobj.onreadystatechange = function () {
+        if (xobj.readyState == 4 && xobj.status == "200") {
+          // Required use of an anonymous callback as .open will NOT return
+          // a value but simply returns undefined in asynchronous mode
+          callback(xobj.responseText);
+        }
+      };
+      xobj.send(null);
+    }
+
+    function findForm(hints, formId) {
+      return hints.find(function (hint) {
+        return hint.form_id == formId;
+      });
+    }
+
+    function findAnswer(formObj, fieldId) {
+      if (formObj !== undefined && formObj.hasOwnProperty("data")) {
+        return formObj.data.find(function (d) {
+          return d.fields.find(function (field) {
+            return field == fieldId
+          }) !== undefined;
+        });
+      }
+    }
+
+    function updateSuggestion(content) {
+      document.querySelector(".hints-container > .subtitle")
+        .innerHTML = sanitizeHtml(content);
+    }
+
+    // once hints data is loaded from JSON...
+    loadJSON(function (response) {
+      var hintsParsed = JSON.parse(response),
+        hintsContainerDiv = document.createElement("div"),
+        hintsContentDiv = document.createElement("div"),
+        hintsAfter = document.createElement("div"),
+        title = document.createElement("p"),
+        subtitle = document.createElement("p"),
+        form = findForm(hintsParsed, cascadingSelectFieldId),
+        emailField = document.querySelector(
+          ".form-field.string.required.request_anonymous_requester_email"
+        );
+
+      // set default attributes and default content...
+      hintsContainerDiv.setAttribute("class", "hints-container");
+      title.setAttribute("class", "title");
+      subtitle.setAttribute("class", "subtitle");
+      hintsAfter.setAttribute("class", "hints-after");
+      title.innerHTML = sanitizeHtml("{{dc 'eqx_hints_title'}}");
+      hintsAfter.innerText = "{{dc 'need_more_help'}}";
+
+      if (form != undefined && form.default_suggestion) {
+        subtitle.innerHTML = sanitizeHtml(form.default_suggestion);
+      }
+
+      hintsContainerDiv.appendChild(title);
+      hintsContainerDiv.appendChild(subtitle);
+
+      // add the hints div after the selection field
+      multiSelect.insertAdjacentElement("afterend", hintsContainerDiv);
+
+      document.querySelector(".hints-container")
+        .insertAdjacentElement("afterend", hintsAfter);
+
+      // insert email field after hints so the flow makes sense...
+      // only when user is anonymous and email field is available
+      if (emailField != undefined) {
+        document.querySelector(".hints-after")
+          .insertAdjacentElement("afterend", emailField);
+      }
+
+      // if cascading select is pre-selected (i.e. validation page)
+      var input = document.querySelector(
+        'input[name="request[custom_fields][' + cascadingSelectFieldId + ']"]'
+      );
+      var hint = findAnswer(form, input.value);
+      if (hint) updateSuggestion(hint.answer_suggestion);
+
+      // on change of the field - update the hints suggestion content
+      document.querySelector(
+        "#request_custom_fields_" + cascadingSelectFieldId
+      ).addEventListener("change", function (element) {
+        var hint = findAnswer(form, element.target.value);
+        if (hint !== undefined && hint.hasOwnProperty("answer_suggestion")) {
+          updateSuggestion(hint.answer_suggestion);
+        }
+      })
+    }, "{{settings.hints}}")
+  });
+</script>
+{{/if}}
+<div class="container-divider">
+  <div class="container">
+    <nav class="sub-nav">
+      {{breadcrumbs}}
+      <div class="search-container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12"
+          class="search-icon">
+          <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor" />
+          <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5" />
+        </svg>
+        {{dc 'eqx_search_input'}}
+      </div>
+    </nav>
+  </div>
+</div>
+
+<div class="container">
+
+  {{#if settings.alert_enabled}}
+  <section class="message message-alert">
+    {{dc 'eqx_alert_content'}}
+  </section>
+  {{/if}}
+
+  {{#if settings.info_enabled}}
+  <section class="message message-info">
+    {{dc 'eqx_info_content'}}
+  </section>
+  {{/if}}
   <h1>
     {{t 'submit_a_request'}}
     <span class="follow-up-hint">
       {{follow_up}}
     </span>
   </h1>
-
-  <div id="main-content" class="form">
-    {{request_form}}
+  <div class="form-background">
+    <div id="main-content" class="form">
+      {{request_form}}
+    </div>
   </div>
 </div>
