@@ -1,8 +1,37 @@
 /***** Community *****/
 .community {
     &-hero {
-        background-image: url($community_background_image);
+        background-color: $color-sunglow-light;
         margin-bottom: 10px;
+
+        &::before {
+            @include tablet {
+                width: 766px;
+                height: 766px;
+                border: 100px solid $color-sunglow;
+            }
+            @include desktop {
+                width: 1066px;
+                height: 1066px;
+                border: 130px solid $color-sunglow;
+            }
+
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 420px;
+            height: 420px;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            border: 70px solid $color-sunglow;
+
+            border-radius: 50%;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            z-index: -1;
+        }
     }
 
     &-footer {
