@@ -1,47 +1,47 @@
 /***** Split button *****/
 .split-button {
-  display: flex;
+    display: flex;
 }
 
 .split-button button {
-  @extend .button;
-  background-color: $brand_color;
-  border: 0;
-  color: $brand_text_color;
-  line-height: normal;
-  outline-color: $brand_color;
-  padding: 8px 20px;
+    @extend .button;
+    background-color: transparent;
+    border: 1px solid $color-charcoal;
+    color: $color-charcoal;
+    line-height: normal;
+    box-shadow: inset 0 0 0 1px $color-charcoal;
+    padding: 8px 20px;
 }
 
 .split-button button:not(:only-child) {
-  &:first-child {
-    [dir="rtl"] & {
-      border-left: 1px solid $brand_text_color;
-      border-top-left-radius: unset;
-      border-bottom-left-radius: unset;
+    &:first-child {
+        [dir="rtl"] & {
+            border-left: 1px solid $brand_text_color;
+            border-top-left-radius: unset;
+            border-bottom-left-radius: unset;
+        }
+
+        [dir="ltr"] & {
+            border-right: 1px solid $brand_text_color;
+            border-top-right-radius: unset;
+            border-bottom-right-radius: unset;
+        }
     }
 
-    [dir="ltr"] & {
-      border-right: 1px solid $brand_text_color;
-      border-top-right-radius: unset;
-      border-bottom-right-radius: unset;
-    }
-  }
+    &:last-child {
+        width: 26px;
+        min-width: 26px;
+        max-width: 26px;
+        padding: 0;
 
-  &:last-child {
-    width: 26px;
-    min-width: 26px;
-    max-width: 26px;
-    padding: 0;
+        [dir="rtl"] & {
+            border-top-right-radius: unset;
+            border-bottom-right-radius: unset;
+        }
 
-    [dir="rtl"] & {
-      border-top-right-radius: unset;
-      border-bottom-right-radius: unset;
+        [dir="ltr"] & {
+            border-top-left-radius: unset;
+            border-bottom-left-radius: unset;
+        }
     }
-
-    [dir="ltr"] & {
-      border-top-left-radius: unset;
-      border-bottom-left-radius: unset;
-    }
-  }
 }

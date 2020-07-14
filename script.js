@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 ) {
                     e.style.display = "block";
                 });
-                requestCommentSubmit.style.display = "inline-block";
+                requestCommentSubmit.style.display = "block";
 
                 if (commentContainerTextarea) {
                     commentContainerTextarea.focus();

@@ -110,13 +110,14 @@
     }
 
     &-sidebar {
-        @include desktop {
-            background-color: $primary-shade;
+        @include tablet {
+            background-color: $color-white;
             border: 0;
             font-size: $font-size-small;
             flex: 0 0 auto;
             padding: 0 20px;
             width: 30%; //IE11 fix
+            border-radius: 4px;
         }
 
         border-bottom: 1px solid $border-color;
@@ -129,8 +130,7 @@
                 display: none;
             }
 
-            font-size: $font-size-base;
-            font-weight: $font-weight-semibold;
+            font-size: 18px;
             position: relative;
         }
     }

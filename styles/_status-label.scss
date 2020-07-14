@@ -11,6 +11,7 @@
     vertical-align: middle;
     white-space: nowrap;
     display: inline-block;
+    letter-spacing: 0.05em;
 
     &:hover,
     &:active,
@@ -22,7 +23,7 @@
     &-pinned,
     &-featured,
     &-official {
-        background-color: $brand_color;
+        background-color: $color-blue-primary;
     }
 
     &-official {
@@ -60,10 +61,11 @@
 
     &-open {
         background-color: #c72a1c;
+        // background-color: $color-error;
     }
 
     &-solved {
-        background-color: #68737d;
+        background-color: $color-roman-silver;
     }
 
     &-new {
@@ -72,7 +74,7 @@
     }
 
     &-hold {
-        background-color: #000;
+        background-color: $color-charcoal;
     }
 
     &-open,

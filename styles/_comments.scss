@@ -8,7 +8,6 @@
         margin-bottom: 5px;
         margin-top: 0;
         font-size: 20px;
-        // font-weight: $font-weight-semibold;
     }
 
     &-overview {
@@ -116,6 +115,7 @@
     &-form {
         display: flex;
         padding-top: 30px;
+        padding: 10px 0 20px 0;
         word-wrap: break-word;
     }
 
