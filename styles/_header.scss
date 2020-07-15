@@ -178,10 +178,11 @@ $header-height: 72px;
 
         &.olx-button {
             @include tablet {
+                white-space: nowrap;
                 color: $color-charcoal;
                 font-size: 16px;
                 display: flex;
-                padding: unset;
+                padding: 0 10px;
                 &:hover,
                 &:active,
                 &:focus {

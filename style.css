@@ -1005,10 +1005,11 @@ input[type="submit"][disabled] {
 
 @media (min-width: 768px) {
   .nav-wrapper a.olx-button {
+    white-space: nowrap;
     color: #002f34;
     font-size: 16px;
     display: flex;
-    padding: unset;
+    padding: 0 10px;
   }
   .nav-wrapper a.olx-button:hover, .nav-wrapper a.olx-button:active, .nav-wrapper a.olx-button:focus {
     color: #fff;
