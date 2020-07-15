@@ -3602,6 +3602,7 @@ section.message-alert {
 @media (min-width: 768px) {
   .collapsible-nav-list {
     flex-direction: row;
+    align-items: center;
   }
 }
 
