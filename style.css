@@ -1205,7 +1205,7 @@ input[type="submit"][disabled] {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .footer .title > span:first-child {
     display: inline-block;
     font-size: 14px;
