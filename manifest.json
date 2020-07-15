@@ -1,6 +1,6 @@
 {
-    "name": "Copenhagen",
-    "author": "Zendesk",
+    "name": "OLX-KZ",
+    "author": "Zendesk, Igor Wasinski",
     "version": "2.3.0",
     "api_version": 2,
     "default_locale": "en-us",
@@ -407,9 +407,10 @@
                     "label": "country_name_label",
                     "options": [
                         { "label": "Poland", "value": "Poland" },
-                        { "label": "Ukraine", "value": "Ukraine" }
+                        { "label": "Ukraine", "value": "Ukraine" },
+                        { "label": "Kazakhstan", "value": "Kazakhstan" }
                     ],
-                    "value": "Poland"
+                    "value": "Kazakhstan"
                 },
                 {
                     "identifier": "country_site_url",
@@ -419,14 +420,18 @@
                     "options": [
                         {
                             "label": "Poland",
-                            "value": "https://www.otodom.pl/"
+                            "value": "https://www.olx.pl/"
                         },
                         {
                             "label": "Ukraine",
-                            "value": "https://www.otodom.ua/"
+                            "value": "https://www.olx.ua/"
+                        },
+                        {
+                            "label": "Kazakhstan",
+                            "value": "https://www.olx.kz/"
                         }
                     ],
-                    "value": "https://www.otodom.pl/"
+                    "value": "https://www.olx.kz/"
                 }
             ]
         },
@@ -470,14 +475,14 @@
                     "type": "checkbox",
                     "description": "phone_line1_enabled_description",
                     "label": "phone_line1_enabled_label",
-                    "value": true
+                    "value": false
                 },
                 {
                     "identifier": "phone_line2_enabled",
                     "type": "checkbox",
                     "description": "phone_line2_enabled_description",
                     "label": "phone_line2_enabled_label",
-                    "value": true
+                    "value": false
                 }
             ]
         },
