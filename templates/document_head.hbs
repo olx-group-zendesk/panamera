@@ -1,4 +1,14 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 {{#if settings.enable_headroom}}
+{{#unless signed_in}}
+<script type="text/javascript">
+    if (
+        document.cookie.match(/^(.*;)?\s*access_token\s*=\s*[^;]+(.*)?$/) !==
+        null
+    ) {
+        window.location = "{{settings.country_site_url}}" + "account/zendesksso?nativeMode=1"
+    }
+</script>
+{{/unless}}
 <script src="{{asset 'headroom.min.js'}}"></script>
 {{/if}}
