@@ -406,10 +406,10 @@
                     "description": "country_name_description",
                     "label": "country_name_label",
                     "options": [
-                        { "label": "Poland", "value": "Poland" },
+                        { "label": "Uzbekistan", "value": "Uzbekistan" },
                         { "label": "Ukraine", "value": "Ukraine" }
                     ],
-                    "value": "Poland"
+                    "value": "Uzbekistan"
                 },
                 {
                     "identifier": "country_site_url",
@@ -418,15 +418,15 @@
                     "label": "country_site_url_label",
                     "options": [
                         {
-                            "label": "Poland",
-                            "value": "https://www.otodom.pl/"
+                            "label": "Uzbekistan",
+                            "value": "https://www.olx.uz/"
                         },
                         {
                             "label": "Ukraine",
-                            "value": "https://www.otodom.ua/"
+                            "value": "https://www.olx.ua/"
                         }
                     ],
-                    "value": "https://www.otodom.pl/"
+                    "value": "https://www.olx.uz/"
                 }
             ]
         },
@@ -470,14 +470,14 @@
                     "type": "checkbox",
                     "description": "phone_line1_enabled_description",
                     "label": "phone_line1_enabled_label",
-                    "value": true
+                    "value": false
                 },
                 {
                     "identifier": "phone_line2_enabled",
                     "type": "checkbox",
                     "description": "phone_line2_enabled_description",
                     "label": "phone_line2_enabled_label",
-                    "value": true
+                    "value": false
                 }
             ]
         },
@@ -489,7 +489,7 @@
                     "type": "checkbox",
                     "description": "hints_enabled_description",
                     "label": "hints_enabled_label",
-                    "value": true
+                    "value": false
                 },
                 {
                     "identifier": "hints",
@@ -507,7 +507,7 @@
                     "type": "checkbox",
                     "description": "enhanced_analytics_description",
                     "label": "enhanced_analytics_label",
-                    "value": true
+                    "value": false
                 }
             ]
         }
