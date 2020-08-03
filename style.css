@@ -2492,6 +2492,72 @@ section.message-alert {
   margin-bottom: 15px;
 }
 
+.container--tabs {
+  display: inline-block;
+  width: 100%;
+}
+
+.container--tabs .nav-tabs {
+  float: left;
+  width: 100%;
+  margin: 0;
+  list-style-type: none;
+  border-bottom: 1px solid #d8dfe0;
+}
+
+.container--tabs .nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+
+.container--tabs .nav-tabs > li > a {
+  float: left;
+  margin-right: 2px;
+  line-height: 1.42857143;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+
+.container--tabs .nav-tabs > li > a:hover {
+  color: #002f34;
+  background-color: transparent;
+  border-color: #d8dfe0 #d8dfe0 #d8dfe0;
+}
+
+.container--tabs .nav-tabs > li.active > a,
+.container--tabs .nav-tabs > li.active > a:hover,
+.container--tabs .nav-tabs > li.active > a:focus {
+  color: #002f34;
+  cursor: default;
+  background-color: #fff;
+  border: 1px solid #d8dfe0;
+  border-bottom-color: #fff;
+}
+
+.container--tabs .tab-content {
+  float: left;
+  width: 100%;
+}
+
+.container--tabs .tab-content > .tab-pane {
+  display: none;
+}
+
+.container--tabs .tab-content > .tab-pane.active {
+  display: block;
+  padding: 2.5% 3.5%;
+  background-color: #fff;
+  border-radius: 4px;
+  border-bottom: 1px solid #d8dfe0;
+  border-left: 1px solid #d8dfe0;
+  border-right: 1px solid #d8dfe0;
+}
+
+.container--tabs .tab-content > .active {
+  display: block;
+}
+
 /***** Attachments *****/
 /* Styles attachments inside posts, articles and comments */
 .attachments .attachment-item {
