@@ -296,7 +296,7 @@
                     "type": "checkbox",
                     "description": "article_author_description",
                     "label": "article_author_label",
-                    "value": true
+                    "value": false
                 },
                 {
                     "identifier": "show_article_comments",
@@ -407,7 +407,7 @@
                     "label": "country_name_label",
                     "options": [
                         { "label": "Poland", "value": "Poland" },
-                        { "label": "Ukraine", "value": "Ukraine" }
+                        { "label": "Portugal", "value": "Portugal" }
                     ],
                     "value": "Poland"
                 },
@@ -419,14 +419,14 @@
                     "options": [
                         {
                             "label": "Poland",
-                            "value": "https://www.otodom.pl/"
+                            "value": "https://www.olx.pl/"
                         },
                         {
-                            "label": "Ukraine",
-                            "value": "https://www.otodom.ua/"
+                            "label": "Portugal",
+                            "value": "https://www.olx.pt/"
                         }
                     ],
-                    "value": "https://www.otodom.pl/"
+                    "value": "https://www.olx.pt/"
                 }
             ]
         },
@@ -470,14 +470,14 @@
                     "type": "checkbox",
                     "description": "phone_line1_enabled_description",
                     "label": "phone_line1_enabled_label",
-                    "value": true
+                    "value": false
                 },
                 {
                     "identifier": "phone_line2_enabled",
                     "type": "checkbox",
                     "description": "phone_line2_enabled_description",
                     "label": "phone_line2_enabled_label",
-                    "value": true
+                    "value": false
                 }
             ]
         },
