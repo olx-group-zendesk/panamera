@@ -47,6 +47,14 @@ $header-height: 72px;
 }
 
 .logo {
+    a {
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: transparent;
+        }
+    }
+
     img {
         max-height: 31px;
         height: 31px;

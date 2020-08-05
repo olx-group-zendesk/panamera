@@ -856,6 +856,10 @@ input[type="submit"][disabled] {
   transform: translateY(-100%);
 }
 
+.logo a:hover, .logo a:focus, .logo a:active {
+  background-color: transparent;
+}
+
 .logo img {
   max-height: 31px;
   height: 31px;
@@ -1199,6 +1203,7 @@ input[type="submit"][disabled] {
 .footer {
   border-top: 1px solid #d8dfe0;
   padding: 14px 0 8px 0;
+  font-weight: 400;
 }
 
 .footer .title > span:first-child {
