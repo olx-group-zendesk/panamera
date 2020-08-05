@@ -1791,6 +1791,7 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 .blocks-item-title {
   margin-bottom: 0;
   font-size: 20px;
+  font-weight: 400;
   font-family: $heading_font;
   color: #002f34;
 }
