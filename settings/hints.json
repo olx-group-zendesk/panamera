@@ -1,0 +1,13 @@
+[
+    {
+        "instance": "Test",
+        "form_id": "360017767431",
+        "default_suggestion": "Hello there!",
+        "data": [
+            {
+                "fields": ["ato__level_6__level7"],
+                "answer_suggestion": "Hello, this is a test hint to be displayed in the widget. Check <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/210631449'>this</a> <script>alert('evil code!');</script>out dude!"
+            }
+        ]
+    }
+]

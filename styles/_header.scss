@@ -20,6 +20,7 @@ $header-height: 60px;
         left: 0;
         top: 0;
     }
+
     & > div {
         @include max-width-container;
         @include tablet {
@@ -47,6 +48,14 @@ $header-height: 60px;
 }
 
 .logo {
+    a {
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: transparent;
+        }
+    }
+
     img {
         max-height: 26px;
         height: 26px;
@@ -70,12 +79,13 @@ $header-height: 60px;
                 font-size: 18px;
                 line-height: 1.1;
                 font-weight: 500;
+                &:hover,
+                &:focus,
+                &:active {
+                    text-decoration: none;
+                }
             }
         }
-    }
-
-    & .title a {
-        color: $color-text-navbar;
     }
 
     @include tablet {
@@ -88,7 +98,8 @@ $header-height: 60px;
     @include tablet {
         position: relative;
     }
-    display: inline-block;
+    // display: inline-block;
+    display: none; // hide it for now
     position: absolute;
     white-space: nowrap;
 
@@ -96,7 +107,7 @@ $header-height: 60px;
         background-color: #fff;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15),
             0 4px 10px 0 rgba(0, 0, 0, 0.1);
-        border: solid 1px #ddd;
+        border: solid 1px $color-roman-silver;
         right: 0;
         left: 0;
         top: $header-height;
@@ -105,20 +116,55 @@ $header-height: 60px;
         > a {
             display: block;
             margin: 20px;
+            color: $color-charcoal;
         }
     }
 }
 
 .nav-wrapper {
+    display: flex;
+    align-items: center;
+
+    & .locale {
+        color: $color-white;
+        display: inline-block;
+
+        &-current {
+            display: inline-block;
+            color: $color-roman-silver;
+            & > span[dir="ltr"] {
+                display: flex;
+                padding: 0 7px 0 0;
+                &::after {
+                    content: "";
+                    width: 1px;
+                    height: 21px;
+                    background-color: $color-slate;
+                    margin: 0 0 0 7px;
+                }
+            }
+            & > span[dir="rtl"] {
+                display: flex;
+                padding: 0 0 0 7px;
+                &::after {
+                    content: "";
+                    width: 1px;
+                    height: 21px;
+                    background-color: $color-slate;
+                    margin: 0 7px 0 0;
+                }
+            }
+        }
+    }
     a {
         @include tablet {
             display: inline-block;
         }
 
         border: 0;
-        color: $link_color;
+        color: $color-white;
         display: none;
-        font-size: 14px;
+        font-size: 15px;
         padding: 0 20px 0 0;
         width: auto;
 
@@ -130,12 +176,29 @@ $header-height: 60px;
         &:focus,
         &:active {
             background-color: transparent;
-            color: $link_color;
-            text-decoration: underline;
+            color: $color-white;
+            text-decoration: none;
         }
 
         &.sign-in {
             display: inline-block;
+            padding: 0 0 0 15px;
+        }
+
+        &.olx-button {
+            @include tablet {
+                white-space: nowrap;
+                color: $color-charcoal;
+                font-size: 16px;
+                display: flex;
+                padding: 0 10px;
+                &:hover,
+                &:active,
+                &:focus {
+                    color: $color-white;
+                }
+            }
+            display: none;
         }
     }
 
@@ -151,16 +214,16 @@ $header-height: 60px;
         }
         background: none;
         border: 0;
-        color: $link_color;
-        display: inline-block;
-        margin-right: 10px;
+        color: $color-white;
+        // display: inline-block;
+        display: none; // hide it for now
         padding: 0;
         width: auto;
 
         .icon-menu {
             vertical-align: middle;
-            width: 13px;
-            height: 13px;
+            width: 15px;
+            height: 15px;
         }
 
         [dir="rtl"] & {
@@ -172,7 +235,8 @@ $header-height: 60px;
         &:focus,
         &:active {
             background-color: transparent;
-            color: $link_color;
+            color: $color-roman-silver;
+            outline: none;
         }
     }
 }

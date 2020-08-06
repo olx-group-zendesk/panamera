@@ -1,147 +1,203 @@
 /***** Community *****/
 .community {
-  &-hero {
-    background-image: url($community_background_image);
-    margin-bottom: 10px;
-  }
+    &-hero {
+        background-color: $color-sunglow-light;
+        margin-bottom: 10px;
 
-  &-footer {
-    padding-top: 50px;
-    text-align: center;
+        &::before {
+            @include tablet {
+                width: 766px;
+                height: 766px;
+                border: 100px solid $color-sunglow;
+            }
+            @include desktop {
+                width: 1066px;
+                height: 1066px;
+                border: 130px solid $color-sunglow;
+            }
 
-    &-title {
-      font-size: 16px;
-      margin-bottom: 20px;
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 420px;
+            height: 420px;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            border: 70px solid $color-sunglow;
+
+            border-radius: 50%;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            z-index: -1;
+        }
     }
-  }
 
-  &-featured-posts .title {
-    font-size: 18px;
-    font-weight: 600;
-  }
+    &-footer {
+        padding-top: 50px;
+        padding-bottom: 20px;
+        text-align: center;
 
-  &-featured-posts,
-  &-activity {
-    padding-top: 40px;
-    width: 100%;
-  }
-
-  &-header {
-    margin-bottom: 30px;
-
-    .title {
-      margin-bottom: 0;
-      font-size: 16px;
+        &-title {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
     }
-  }
+
+    &-featured-posts .title {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &-featured-posts,
+    &-activity {
+        padding-top: 40px;
+        width: 100%;
+    }
+
+    &-header {
+        margin-bottom: 30px;
+
+        .title {
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+    }
 }
 
 .post-to-community {
-  @include tablet { margin: 0; }
-  margin-top: 10px;
+    @include tablet {
+        margin: 0;
+    }
+    margin-top: 10px;
 }
 
 /* Community topics grid */
 .topics {
-  max-width: none;
-  width: 100%;
+    max-width: none;
+    width: 100%;
 
-  &-item {
-    .meta-group {
-      justify-content: center;
-      margin-top: 20px;
+    &-item {
+        .meta-group {
+            justify-content: center;
+            margin-top: 20px;
+        }
     }
-  }
 }
 
 /* Community topic page */
 
 .topic-header {
-  @include tablet { padding-bottom: 10px; }
-  border-bottom: 1px solid $border-color;
-  font-size: $font-size-small;
-
-  .dropdown {
     @include tablet {
-      border-top: 0;
-      display: inline-block;
-      margin-right: 20px;
-      padding: 0;
+        padding-bottom: 10px;
     }
+    border-bottom: 1px solid $border-color;
+    font-size: $font-size-small;
 
-    display: block;
-    border-top: 1px solid $border-color;
-    padding: 10px 0;
-  }
+    .dropdown {
+        @include tablet {
+            border-top: 0;
+            display: inline-block;
+            margin-right: 20px;
+            padding: 0;
+        }
+
+        display: block;
+        border-top: 1px solid $border-color;
+        padding: 10px 0;
+    }
 }
 
 .no-posts-with-filter {
-  margin-top: 20px;
-  margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Topic, post and user follow button */
 .community-follow {
-  @include tablet {
-    margin-bottom: 0;
-    width: auto;
-  }
+    @include tablet {
+        margin-bottom: 0;
+        width: auto;
+    }
 
-  margin-bottom: 10px;
-  width: 100%;
-
-  button {
-    @extend .button;
-    @include tablet { width: auto;}
-
-    line-height: 30px;
-    padding: 0 10px 0 15px;
-    position: relative;
+    margin-bottom: 10px;
     width: 100%;
 
-    &:hover { background-color: $brand_color; }
+    button {
+        @extend .button;
+        @include tablet {
+            width: auto;
+        }
 
-    &:hover::after, &:focus::after {
-      border-color: $brand_text_color;
-      color: $brand_text_color;
+        line-height: 30px;
+        padding: 0 10px 0 15px;
+        position: relative;
+        width: 100%;
+        box-shadow: inset 0 0 0 1px $color-charcoal;
+        border: 1px solid $color-charcoal;
+        background-color: transparent;
+
+        &:active,
+        &:focus {
+            box-shadow: inset 0 0 0 3px $color-charcoal;
+        }
+
+        &:hover {
+            box-shadow: inset 0 0 0 3px $color-charcoal;
+            background-color: transparent;
+        }
+
+        &:hover::after,
+        &:focus::after {
+            border-color: $color-charcoal;
+            color: $color-slate;
+        }
+
+        &[data-selected="true"] {
+            box-shadow: inset 0 0 0 1px $color-teal-primary;
+            border: 1px solid $color-teal-primary;
+            background-color: $color-teal-light;
+            color: $color-slate;
+
+            &::after {
+                border-left: 1px solid $color-teal-primary;
+                color: $color-slate;
+            }
+
+            &:active,
+            &:focus,
+            &:hover {
+                box-shadow: inset 0 0 0 3px $color-teal-primary;
+                border: 1px solid $color-teal-primary;
+            }
+
+            &:hover {
+                background-color: $color-pale-gray;
+            }
+        }
+
+        &::after {
+            @include tablet {
+                position: static;
+            }
+
+            border-left: 1px solid $color-charcoal;
+            content: attr(data-follower-count);
+            color: $color-slate;
+            display: inline-block;
+            font-family: $heading_font;
+            margin-left: 15px;
+            padding-left: 10px;
+            position: absolute;
+            right: 10px;
+
+            [dir="rtl"] & {
+                border-left: 0;
+                border-right: 1px solid $button-color;
+                margin: 0 10px 0 0;
+                padding: 0 10px 0 0;
+            }
+        }
     }
-
-    &[data-selected="true"] {
-      background-color: $brand_color;
-      color: $brand_text_color;
-
-      &::after {
-        border-left: 1px solid $brand_text_color;
-        color: $brand_text_color;
-      }
-
-      &:hover {
-        background-color: $hover-button-color;
-        border-color: $hover-button-color;
-      }
-    }
-
-    &::after {
-      @include tablet {
-        position: static;
-      }
-
-      border-left: 1px solid $button-color;
-      content: attr(data-follower-count);
-      color: $button-color;
-      display: inline-block;
-      font-family: $heading_font;
-      margin-left: 15px;
-      padding-left: 10px;
-      position: absolute;
-      right: 10px;
-
-      [dir="rtl"] & {
-        border-left: 0;
-        border-right: 1px solid $button-color;
-        margin: 0 10px 0 0;
-        padding: 0 10px 0 0;
-      }
-    }
-  }
 }

@@ -1,27 +1,24 @@
 /***** Breadcrumbs *****/
 .breadcrumbs {
-  @include tablet {
     margin: 0;
-  }
+    padding: 0;
 
-  margin: 0 0 15px 0;
-  padding: 0;
+    li {
+        color: $color-slate;
+        display: inline;
+        font-weight: $font-weight-light;
+        font-size: 16px;
+        max-width: 450px;
+        overflow: hidden;
+        text-overflow: ellipsis;
 
-  li {
-    color: $secondary-text-color;
-    display: inline;
-    font-weight: $font-weight-light;
-    font-size: $font-size-small;
-    max-width: 450px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
-    + li::before {
-      content: ">";
-      margin: 0 4px;
+        + li::before {
+            content: " • ";
+            margin: 0 4px;
+        }
     }
-    a:visited {
-      color: $link_color;
+
+    li:last-of-type {
+        color: $color-roman-silver;
     }
-  }
 }

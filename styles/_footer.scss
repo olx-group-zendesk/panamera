@@ -1,20 +1,48 @@
 /***** Footer *****/
 .footer {
-  border-top: 1px solid $border-color;
-  margin-top: 60px;
-  padding: 30px 0;
+    border-top: 1px solid $border-color;
+    padding: 14px 0 8px 0;
+    font-weight: $font-weight-base;
 
-  a { color: $secondary-text-color; }
+    .title > span:first-child {
+        display: none;
+        @include tablet {
+            display: inline-block;
+            font-size: $font-size-p4;
+        }
+    }
+    .title > .subtitle {
+        font-size: $font-size-p4;
+    }
 
-  &-inner {
-    @include max-width-container;
-    display: flex;
-    justify-content: space-between;
-  }
+    @include tablet {
+        margin-top: 10px;
+        padding: 18px 0 21px 0;
+    }
 
-  &-language-selector {
-    color: $secondary-text-color;
-    display: inline-block;
-    font-weight: $font-weight-light;
-  }
+    a[title] {
+        color: $color-charcoal;
+        &:hover,
+        &:active,
+        &:focus {
+            text-decoration: none;
+            background-color: transparent;
+        }
+    }
+
+    &-inner {
+        @include max-width-container;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & > .title {
+            font-size: 14px;
+        }
+    }
+
+    &-language-selector {
+        color: $secondary-text-color;
+        display: inline-block;
+        font-weight: $font-weight-light;
+    }
 }
