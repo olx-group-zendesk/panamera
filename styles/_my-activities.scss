@@ -30,9 +30,7 @@
             &:active,
             &:focus,
             &:hover {
-                color: $color-white;
-                background-color: $color-charcoal;
-                text-decoration: none;
+                text-decoration: underline;
             }
         }
 

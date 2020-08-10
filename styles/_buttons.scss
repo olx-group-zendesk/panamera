@@ -4,10 +4,11 @@
         width: auto;
     }
 
-    background-color: transparent;
-    border: 1px solid $color-charcoal;
-    border-radius: 4px;
-    color: $color-charcoal;
+    background-color: $color-primary;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: $border-radius;
+
+    color: $color-white;
     cursor: pointer;
     display: inline-block;
     font-size: 12px;
@@ -16,21 +17,17 @@
     margin: 0;
     padding: 0 20px;
     text-align: center;
-    transition: background-color 0.12s ease-in-out,
-        border-color 0.12s ease-in-out, color 0.15s ease-in-out,
-        box-shadow 0.3s ease;
     user-select: none;
     white-space: nowrap;
     width: 100%;
     -webkit-touch-callout: none;
-    box-shadow: inset 0 0 0 1px $color-charcoal;
     letter-spacing: 0.03rem;
 
     &:hover,
     &:active,
     &:focus {
-        box-shadow: inset 0 0 0 3px $color-charcoal;
-        outline-color: $color-charcoal;
+        background-color: $color-primary-hover;
+        text-decoration: none;
     }
 
     &.button-primary {
@@ -41,16 +38,13 @@
     }
 
     &.button-subscribed {
-        background-color: $color-teal-light;
-        color: $color-slate;
-        border: 1px solid transparent;
-        box-shadow: inset 0 0 0 1px $color-teal-primary;
+        background-color: $color-white;
+        color: $color-secondary;
+        border: 1px solid $color-secondary;
         &:hover,
         &:active,
         &:focus {
-            box-shadow: inset 0 0 0 3px $color-teal-primary;
-            outline-color: $color-teal-primary;
-            background-color: $color-pale-gray;
+            background-color: $color-secondary-faded;
         }
     }
 
@@ -82,16 +76,11 @@ input[type="submit"] {
     min-width: 190px;
     padding: 0 1.9286em;
     width: 100%;
-    // box-shadow: inset 0 0 0 8px $color-charcoal;
-    // transition: all 0.3s ease;
 
     &:hover,
     &:active,
     &:focus {
-        // background: none;
         background-color: $color-secondary-hover;
-        // box-shadow: inset 0 0 0 5px $color-charcoal;
-        // color: $color-charcoal;
     }
 
     &[disabled] {
@@ -133,16 +122,12 @@ input[type="submit"] {
     &-primary {
         background-color: $button-color;
         color: $color-white;
-        // box-shadow: inset 0 0 0 8px $color-charcoal;
 
         &:hover,
         &:focus,
         &:active {
             background-color: $hover-button-color;
             text-decoration: none;
-            // background: none;
-            // color: $color-charcoal;
-            // box-shadow: inset 0 0 0 5px $color-charcoal;
         }
     }
 
