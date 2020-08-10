@@ -8,7 +8,7 @@ $link_color: #0072ef !default;
 $background_color: #f2f4f5 !default;
 
 $visited-link-color: zass-darken($link_color, 20%);
-$hover-button-color: zass-darken($brand_color, 20%);
+// $hover-button-color: zass-darken($brand_color, 20%);
 $secondary-text-color: zass-lighten($text_color, 20%);
 
 $primary-shade: zass-darken(
@@ -26,7 +26,15 @@ $font-size-navigation: 14px;
 $font-size-small: 13px;
 $font-size-smaller: 11px;
 
-$button-color: $brand_color;
+$color-primary: #00b54b;
+$color-secondary: #ff7200;
+$color-primary-hover: #3ec777;
+$color-secondary-hover: rgba(255, 114, 0, 0.65);
+$color-primary-faded: rgba(0, 181, 75, 0.25);
+$color-secondary-faded: rgba(255, 114, 0, 0.1);
+
+$button-color: $color-primary;
+$hover-button-color: $color-primary-hover;
 
 $input-font-size: 14px;
 $field-text-color: #666;
@@ -44,7 +52,12 @@ $font-size-alert: 0.85rem;
 $color-alert: #ffd6c9;
 $color-info: #c7dcff;
 $color-text-navbar: #fff;
-$header-background-color: #002f34;
+
+// ================================ OTODOM Custom ==============================
+$header-background-color: #464b53;
+$header-border-bottom-color: #e4e2e2;
+
+// ================================ OTODOM Custom ==============================
 $header-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
 $dropdown-box-shadow: 0 0 4px 0 rgba(0, 48, 53, 0.15),
     0 0 4px 0 rgba(0, 48, 53, 0.15);
@@ -89,14 +102,14 @@ $secondary-hover-color: #00777f;
     src: url($assets-geomanist-regular-otf);
 }
 
-$heading_font: "Geomanist Medium", Roboto, -apple-system, BlinkMacSystemFont,
-    Segoe UI, Helvetica, Arial, sans-serif !default;
+$heading_font: Ubuntu, Arial, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Helvetica, Arial, sans-serif !default;
 
-$text_font: "Geomanist Regular", Roboto, -apple-system, BlinkMacSystemFont,
-    Segoe UI, Helvetica, Arial, sans-serif !default;
+$text_font: Ubuntu, Arial, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Helvetica, Arial, sans-serif !default;
 
-$paragraph_font: "Geomanist Book", Roboto, -apple-system, BlinkMacSystemFont,
-    Segoe UI, Helvetica, Arial, sans-serif;
+$paragraph_font: Ubuntu, Arial, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Helvetica, Arial, sans-serif;
 
 $font-weight-base: 400;
 $font-weight-light: 300;
@@ -113,8 +126,8 @@ $font-size-p4: 14px;
 $font-size-p6: 12px;
 
 // Buttons
-$button-border-radius: 4px;
-$border-radius: 4px;
+$button-border-radius: 2px;
+$border-radius: 2px;
 
 // Borders
 $border-color: $color-duck-egg-blue;

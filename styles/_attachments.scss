@@ -30,14 +30,21 @@
 }
 
 .upload-dropzone {
-    background: $color-aero-blue;
+    border: 1px solid $color-secondary;
+    background-color: $color-white;
     border-radius: $border-radius;
-    border: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $color-secondary-faded;
+    }
+
     & span,
     & span > a {
         font-family: $heading_font;
         font-size: $font-size-p4;
         line-height: 1.29;
-        color: $color-slate;
+        color: $color-secondary;
     }
 }

@@ -9,39 +9,42 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
-    background-color: $color-aero-blue;
+    // background-color: $color-aero-blue;
+    background-image: url($assets-background-jpg);
+    background-position: center;
+    background-size: cover;
     height: 150px;
     padding: 0 20px;
     text-align: center;
     width: 100%;
-    &::before {
-        @include tablet {
-            width: 766px;
-            height: 766px;
-            border: 100px solid $color-teal-primary;
-        }
-        @include desktop {
-            width: 1066px;
-            height: 1066px;
-            border: 130px solid $color-teal-primary;
-        }
+    // &::before {
+    //     @include tablet {
+    //         width: 766px;
+    //         height: 766px;
+    //         border: 100px solid $color-teal-primary;
+    //     }
+    //     @include desktop {
+    //         width: 1066px;
+    //         height: 1066px;
+    //         border: 130px solid $color-teal-primary;
+    //     }
 
-        content: "";
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 420px;
-        height: 420px;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        border: 70px solid $color-teal-primary;
+    //     content: "";
+    //     position: absolute;
+    //     left: 50%;
+    //     top: 50%;
+    //     width: 420px;
+    //     height: 420px;
+    //     -webkit-transform: translate(-50%, -50%);
+    //     -ms-transform: translate(-50%, -50%);
+    //     transform: translate(-50%, -50%);
+    //     border: 70px solid $color-teal-primary;
 
-        border-radius: 50%;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        z-index: -1;
-    }
+    //     border-radius: 50%;
+    //     -webkit-box-sizing: border-box;
+    //     box-sizing: border-box;
+    //     z-index: -1;
+    // }
     &-inner {
         @include vertical-align;
         max-width: 610px;
@@ -58,5 +61,7 @@
         font-size: calc(24px + 6 * ((100vw - 320px) / 680));
         line-height: 1.08;
         margin: -0.33em 0;
+        text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.6);
+        color: $color-white;
     }
 }

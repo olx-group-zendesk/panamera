@@ -48,15 +48,15 @@ a {
     color: $color-charcoal;
     text-decoration: none;
     padding: 2px 1px 0px 1px;
-    transition: background-color 0.1s ease-in, color 0.1s ease-in;
+    // transition: background-color 0.1s ease-in, color 0.1s ease-in;
 
     &:hover,
     &:active,
     &:focus {
-        text-decoration: none;
+        text-decoration: underline;
         // color: $secondary-hover-color;
-        color: $color-white;
-        background-color: $color-charcoal;
+        // color: $color-white;
+        // background-color: $color-charcoal;
     }
     &.link {
         text-decoration: none;

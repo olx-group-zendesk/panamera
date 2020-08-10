@@ -34,9 +34,9 @@
         &:hover,
         &:focus,
         &:active {
-            text-decoration: none;
-            color: $secondary-hover-color;
-            background-color: transparent;
+            text-decoration: underline;
+            // color: $secondary-hover-color;
+            // background-color: transparent;
         }
     }
 
