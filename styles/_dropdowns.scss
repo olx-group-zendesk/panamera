@@ -76,9 +76,9 @@
         }
         &:hover,
         &:focus {
-            background: $color-charcoal;
+            background: $color-menu-hover;
             text-decoration: none;
-            color: $color-white;
+            color: $color-charcoal;
         }
 
         &[aria-selected="true"] {

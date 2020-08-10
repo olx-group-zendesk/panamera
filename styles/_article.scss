@@ -227,9 +227,9 @@
         &:active,
         &:hover,
         &:focus {
-            color: $secondary-hover-color;
-            background-color: transparent;
-            text-decoration: none;
+            // color: $secondary-hover-color;
+            // background-color: transparent;
+            text-decoration: underline;
         }
     }
 }

@@ -2434,9 +2434,7 @@ section.message-alert {
 }
 
 .sidenav-item:active, .sidenav-item:hover, .sidenav-item:focus {
-  color: #00777f;
-  background-color: transparent;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .recent-articles li,
@@ -5488,9 +5486,9 @@ html[dir="rtl"] .notification-left-aligned {
 }
 
 .dropdown-menu [role="menuitem"]:hover, .dropdown-menu [role="menuitem"]:focus {
-  background: #002f34;
+  background: #f0f0f0;
   text-decoration: none;
-  color: #fff;
+  color: #002f34;
 }
 
 .dropdown-menu [role="menuitem"][aria-selected="true"] {

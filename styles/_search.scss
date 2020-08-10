@@ -101,7 +101,7 @@ zd-autocomplete {
         &:hover,
         &:focus,
         &:active {
-            background-color: rgb(240, 240, 240);
+            background-color: $color-menu-hover;
             color: $color-charcoal;
             &:first-child {
                 border-top-left-radius: $border-radius;
