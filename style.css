@@ -2941,41 +2941,8 @@ section.message-alert {
 
 /***** Community *****/
 .community-hero {
-  background-color: #f8fbcf;
   margin-bottom: 10px;
-}
-
-.community-hero::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 420px;
-  height: 420px;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  border: 70px solid #ffce32;
-  border-radius: 50%;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  z-index: -1;
-}
-
-@media (min-width: 768px) {
-  .community-hero::before {
-    width: 766px;
-    height: 766px;
-    border: 100px solid #ffce32;
-  }
-}
-
-@media (min-width: 1024px) {
-  .community-hero::before {
-    width: 1066px;
-    height: 1066px;
-    border: 130px solid #ffce32;
-  }
+  background-image: url($assets-background-community-jpg);
 }
 
 .community-footer {
