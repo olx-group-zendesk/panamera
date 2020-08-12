@@ -3,6 +3,10 @@
     display: flex;
 }
 
+.split-button button:hover {
+    @extend .button-primary:hover;
+}
+
 .split-button button {
     @extend .button;
     background-color: transparent;
@@ -29,6 +33,9 @@
     }
 
     &:last-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 26px;
         min-width: 26px;
         max-width: 26px;
