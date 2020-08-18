@@ -25,6 +25,7 @@
         "preview": "zat theme preview",
         "start": "nodemon -e scss -x \"npm run build-css\"",
         "zat-test": "rm ./.zat && ln -s ./zat-dotfiles/.zat-test ./.zat",
-        "zat-otodom": "rm ./.zat && ln -s ./zat-dotfiles/.zat-otodom ./.zat"
+        "zat-otodom": "rm ./.zat && ln -s ./zat-dotfiles/.zat-otodom ./.zat",
+        "zat-otomoto": "rm ./.zat && ln -s ./zat-dotfiles/.zat-otomoto ./.zat"
     }
 }
