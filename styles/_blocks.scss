@@ -77,7 +77,11 @@
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        background-color: $color-primary;
+        background: linear-gradient(
+            135deg,
+            rgba(250, 0, 0, 1) 50%,
+            rgba(35, 46, 105, 1) 50%
+        );
         color: $color-white;
         min-width: 36px;
         width: 36px;
@@ -112,6 +116,7 @@
         @include tablet {
             margin: 0 15px 30px;
         }
+        box-shadow: 0 8px 20px 0 rgba(20, 35, 85, 0.1);
         background-color: $color-white;
         border: 1px solid $color-white;
         border-radius: 4px;

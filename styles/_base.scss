@@ -68,11 +68,11 @@ a {
             color: $color-white;
         }
         &.link-dark {
-            color: $color-charcoal;
-            border-bottom: 2px solid $color-charcoal;
+            color: $color-white;
+            border-bottom: 2px solid $color-white;
         }
         &:hover {
-            box-shadow: inset 0 -1px 0 0 $color-charcoal;
+            box-shadow: inset 0 -1px 0 0 $color-white;
             background-color: transparent;
         }
     }

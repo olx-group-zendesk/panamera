@@ -181,24 +181,6 @@ template {
   display: none;
 }
 
-@font-face {
-  font-family: "Geomanist Book";
-  src: local("Geomanist Book");
-  src: url($assets-geomanist-book-otf);
-}
-
-@font-face {
-  font-family: "Geomanist Medium";
-  src: local("Geomanist Medium");
-  src: url($assets-geomanist-medium-otf);
-}
-
-@font-face {
-  font-family: "Geomanist Regular";
-  src: local("Geomanist Regular");
-  src: url($assets-geomanist-regular-otf);
-}
-
 /***** Base *****/
 * {
   box-sizing: border-box;
@@ -269,12 +251,12 @@ a.link.light {
 }
 
 a.link.link-dark {
-  color: #002f34;
-  border-bottom: 2px solid #002f34;
+  color: #fff;
+  border-bottom: 2px solid #fff;
 }
 
 a.link:hover {
-  box-shadow: inset 0 -1px 0 0 #002f34;
+  box-shadow: inset 0 -1px 0 0 #fff;
   background-color: transparent;
 }
 
@@ -773,9 +755,8 @@ input[type="submit"][disabled] {
 
 /***** Header *****/
 .header {
-  background-color: #464b53;
+  background-color: #fff;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid #e4e2e2;
 }
 
 .header--margin {
@@ -805,7 +786,7 @@ input[type="submit"][disabled] {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  background-color: #464b53;
+  background-color: #fff;
 }
 
 @media (min-width: 1160px) {
@@ -864,7 +845,7 @@ input[type="submit"][disabled] {
   }
   .logo div a {
     font-family: $heading_font;
-    color: $brand_text_color;
+    color: #605d5e;
     white-space: nowrap;
     font-size: 18px;
     line-height: 1.1;
@@ -1099,7 +1080,7 @@ input[type="submit"][disabled] {
 
 .user-info > button {
   border: 0;
-  color: #fff;
+  color: #605d5e;
   min-width: 0;
   padding: 0;
   white-space: nowrap;
@@ -1112,7 +1093,7 @@ input[type="submit"][disabled] {
 }
 
 .user-info > button::after {
-  color: #fff;
+  color: #605d5e;
   padding-right: 15px;
 }
 
@@ -1419,7 +1400,7 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background-image: url($assets-background-jpg);
+  background-image: url($assets-background-svg);
   background-position: center;
   background-size: cover;
   height: 150px;
@@ -1642,7 +1623,7 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: #00b54b;
+  background: linear-gradient(135deg, #fa0000 50%, #232e69 50%);
   color: #fff;
   min-width: 36px;
   width: 36px;
@@ -1685,6 +1666,7 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 }
 
 .blocks-item {
+  box-shadow: 0 8px 20px 0 rgba(20, 35, 85, 0.1);
   background-color: #fff;
   border: 1px solid #fff;
   border-radius: 4px;
@@ -2129,11 +2111,13 @@ section.message > div > div:last-child a {
 }
 
 section.message-info {
-  background-color: rgba(0, 181, 75, 0.25);
+  background-color: rgba(35, 46, 105, 0.8);
+  color: #fff;
 }
 
 section.message-alert {
-  background-color: rgba(255, 114, 0, 0.45);
+  background-color: rgba(255, 0, 0, 0.8);
+  color: #fff;
 }
 
 /***** Article *****/

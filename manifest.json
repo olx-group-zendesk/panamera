@@ -41,7 +41,7 @@
                     "type": "color",
                     "description": "background_color_description",
                     "label": "background_color_label",
-                    "value": "#f2f4f5"
+                    "value": "#fff"
                 }
             ]
         },
@@ -56,7 +56,7 @@
                     "options": [
                         {
                             "label": "System",
-                            "value": "Ubuntu, Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+                            "value": "Montserrat, Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
                         },
                         {
                             "label": "Arial",
@@ -119,7 +119,7 @@
                             "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
                         }
                     ],
-                    "value": "Ubuntu, Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+                    "value": "Montserrat, Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
                 },
                 {
                     "identifier": "text_font",
@@ -129,7 +129,7 @@
                     "options": [
                         {
                             "label": "System",
-                            "value": "'Geomanist Regular', Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+                            "value": "Montserrat, Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
                         },
                         {
                             "label": "Arial",
@@ -192,7 +192,7 @@
                             "value": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"
                         }
                     ],
-                    "value": "'Geomanist Regular', Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+                    "value": "Montserrat, Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
                 }
             ]
         },

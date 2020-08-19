@@ -4,7 +4,7 @@ $header-height: 60px;
 .header {
     background-color: $header-background-color;
     box-shadow: $header-box-shadow;
-    border-bottom: 1px solid #e4e2e2;
+    // border-bottom: 1px solid #e4e2e2;
 
     &--margin {
         @include tablet {
@@ -74,7 +74,7 @@ $header-height: 60px;
             }
             a {
                 font-family: $heading_font;
-                color: $brand_text_color;
+                color: $color-text-navbar;
                 white-space: nowrap;
                 font-size: 18px;
                 line-height: 1.1;
