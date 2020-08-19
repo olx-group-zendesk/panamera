@@ -839,14 +839,14 @@ input[type="submit"][disabled] {
 }
 
 .logo img {
-  max-height: 26px;
-  height: 26px;
+  max-width: 150px;
+  width: 150px;
 }
 
 @media (min-width: 768px) {
   .logo img {
-    max-height: 32px;
-    height: 32px;
+    max-width: 168px;
+    width: 168px;
   }
 }
 
