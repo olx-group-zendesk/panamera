@@ -108,6 +108,7 @@
         border: 1px solid $color-secondary;
         background-color: $color-secondary;
         color: $color-white;
+        box-shadow: $box-shadow-secondary;
 
         &:active,
         &:focus {

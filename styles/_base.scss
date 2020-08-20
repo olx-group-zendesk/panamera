@@ -45,7 +45,7 @@ h4 {
 }
 
 a {
-    color: $color-charcoal;
+    color: $text_color;
     text-decoration: none;
     padding: 2px 1px 0px 1px;
     // transition: background-color 0.1s ease-in, color 0.1s ease-in;
@@ -56,7 +56,7 @@ a {
         text-decoration: underline;
         // color: $secondary-hover-color;
         // color: $color-white;
-        // background-color: $color-charcoal;
+        // background-color: $text_color;
     }
     &.link {
         text-decoration: none;

@@ -1,9 +1,9 @@
 // Variables
 
 // Colors
-$brand_color: #0072ef !default;
+$brand_color: #0071ce !default;
 $brand_text_color: #fff !default; //Color for text with an accent color background
-$text_color: #002f34 !default;
+$text_color: #000 !default;
 $link_color: #0072ef !default;
 $background_color: #fff !default;
 
@@ -26,13 +26,16 @@ $font-size-navigation: 14px;
 $font-size-small: 13px;
 $font-size-smaller: 11px;
 
-$color-primary: #00b54b;
-$color-secondary: #ff7200;
-$color-primary-hover: #3ec777;
-$color-secondary-hover: rgba(255, 114, 0, 0.65);
-$color-primary-faded: rgba(0, 181, 75, 0.25);
-$color-secondary-faded: rgba(255, 114, 0, 0.1);
+$color-primary: #c82814;
+$color-secondary: #0071ce;
+$color-primary-hover: #9c1907;
+$color-secondary-hover: #0d61ab;
+$color-primary-faded: rgba(200, 40, 20, 0.6);
+$color-secondary-faded: rgb(236, 245, 254);
 $color-menu-hover: rgb(240, 240, 240);
+
+$box-shadow-primary: 0 1px 2px #af4d41;
+$box-shadow-secondary: 0 1px 2px $color-secondary-faded;
 
 $button-color: $color-primary;
 $hover-button-color: $color-primary-hover;
@@ -48,7 +51,7 @@ $max-width-container: 1160px;
 
 // ================================ OLX Custom =================================
 
-$border-radius-alert: 2px;
+$border-radius-alert: 4px;
 $font-size-alert: 0.85rem;
 $color-alert: #ffd6c9;
 $color-info: #c7dcff;
@@ -127,8 +130,8 @@ $font-size-p4: 14px;
 $font-size-p6: 12px;
 
 // Buttons
-$button-border-radius: 2px;
-$border-radius: 2px;
+$button-border-radius: 4px;
+$border-radius: 4px;
 
 // Borders
 $border-color: $color-duck-egg-blue;

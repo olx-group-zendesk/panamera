@@ -57,6 +57,7 @@
             }
 
             border: 1px solid $brand_color;
+            border-radius: $border-radius;
             padding: 40px 20px 20px; // 20 + 20 of official commment badge
         }
     }

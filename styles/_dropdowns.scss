@@ -59,7 +59,7 @@
     }
 
     [role="menuitem"] {
-        color: $color-charcoal;
+        color: $text_color;
         cursor: pointer;
         display: block;
         padding: 7px 40px 7px 20px;
@@ -76,9 +76,9 @@
         }
         &:hover,
         &:focus {
-            background: $color-menu-hover;
+            background: $color-secondary;
             text-decoration: none;
-            color: $color-charcoal;
+            color: $color-white;
         }
 
         &[aria-selected="true"] {

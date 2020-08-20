@@ -78,17 +78,11 @@ zd-autocomplete {
 
     &-multibrand {
         border-bottom: 1px solid $color-duck-egg-blue;
-        color: $color-charcoal;
+        color: $text_color;
         display: block;
         padding: 15px 10px;
         cursor: pointer;
         outline: none;
-
-        &:last-child {
-            border-bottom-left-radius: 0px;
-            border-bottom-right-radius: 0px;
-            border-bottom: 0px;
-        }
 
         &[aria-selected="true"] {
             background-color: $color-white;
@@ -102,7 +96,7 @@ zd-autocomplete {
         &:focus,
         &:active {
             background-color: $color-menu-hover;
-            color: $color-charcoal;
+            color: $text_color;
             &:first-child {
                 border-top-left-radius: $border-radius;
                 border-top-right-radius: $border-radius;

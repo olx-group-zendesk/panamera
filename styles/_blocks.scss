@@ -26,7 +26,7 @@
         background-color: $color-white;
         border-radius: 4px;
         box-sizing: border-box;
-        color: $color-charcoal;
+        color: $text_color;
         display: flex;
         justify-content: space-around;
         flex: 1 0 auto;
@@ -121,7 +121,7 @@
         border: 1px solid $color-white;
         border-radius: 4px;
         box-sizing: border-box;
-        color: $color-charcoal;
+        color: $text_color;
         display: flex;
         flex: 1 0 340px;
         margin: 0 0 15px;
@@ -135,7 +135,7 @@
             background-color: $color-white;
 
             * {
-                color: $color-charcoal;
+                color: $text_color;
                 text-decoration: none;
             }
         }
@@ -178,7 +178,7 @@
         margin-bottom: 0;
         font-size: 20px;
         font-family: $heading_font;
-        color: $color-charcoal;
+        color: $text_color;
     }
 
     &-item-description {

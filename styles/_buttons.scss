@@ -5,6 +5,7 @@
     }
 
     background-color: $color-primary;
+    box-shadow: $box-shadow-primary;
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: $border-radius;
 
@@ -31,7 +32,7 @@
     }
 
     &.button-primary {
-        background-color: transparent;
+        // background-color: transparent;
         &[aria-pressed="true"] {
             @extend .button-subscribed;
         }
@@ -39,6 +40,7 @@
 
     &.button-subscribed {
         background-color: $color-white;
+        box-shadow: $box-shadow-secondary;
         color: $color-secondary;
         border: 1px solid $color-secondary;
         &:hover,
@@ -66,6 +68,7 @@ input[type="submit"] {
 
     cursor: pointer;
     background-color: $color-secondary;
+    box-shadow: $box-shadow-secondary;
 
     border: 0;
     border-radius: $border-radius;
@@ -121,6 +124,7 @@ input[type="submit"] {
 
     &-primary {
         background-color: $button-color;
+        box-shadow: $box-shadow-primary;
         color: $color-white;
 
         &:hover,

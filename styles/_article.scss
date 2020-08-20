@@ -185,7 +185,7 @@
             &:focus {
                 text-decoration: none;
                 background-color: transparent;
-                color: $color-charcoal;
+                color: $text_color;
             }
         }
 
@@ -212,7 +212,7 @@
 
     &-item {
         // border-radius: 4px;
-        color: $color-charcoal;
+        color: $text_color;
         display: block;
         font-weight: $font-weight-light;
         margin-bottom: 10px;
@@ -269,7 +269,7 @@
                 border-radius: 4px 4px 0 0;
 
                 &:hover {
-                    color: $color-charcoal;
+                    color: $text_color;
                     background-color: transparent;
                     border-color: $color-duck-egg-blue $color-duck-egg-blue
                         $color-duck-egg-blue;
@@ -280,7 +280,7 @@
                 > a,
                 > a:hover,
                 > a:focus {
-                    color: $color-charcoal;
+                    color: $text_color;
                     cursor: default;
                     background-color: $color-white;
                     border: 1px solid $color-duck-egg-blue;
