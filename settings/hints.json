@@ -1,12 +1,471 @@
 [
     {
-        "instance": "Test",
-        "form_id": "360017767431",
-        "default_suggestion": "Hello there!",
+        "instance": "UA Russian",
+        "form_id": "360004273660",
+        "default_suggestion": "Выберите из списка выше",
         "data": [
             {
-                "fields": ["ato__level_6__level7"],
-                "answer_suggestion": "Hello, this is a test hint to be displayed in the widget. Check <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/210631449'>this</a> <script>alert('evil code!');</script>out dude!"
+                "fields": ["l101_l201_ru"],
+                "answer_suggestion": "Возможно, на ваш номер ранее уже был зарегистрирован профиль. Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/360009944999'>детальнее</a>."
+            },
+            {
+                "fields": ["l101_l202_ru"],
+                "answer_suggestion": "Возможно, вы забыли пароль? Воспользуйтесь <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/360009944999'>подсказками</a> для восстановления."
+            },
+            {
+                "fields": ["l101_l204_ru"],
+                "answer_suggestion": "Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/207403185'>здесь</a> как удалить свой профиль."
+            },
+            {
+                "fields": ["l101_l205_ru"],
+                "answer_suggestion": "После регистрации вы получаете доступ ко всем <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/206715729'>возможностям личного профиля</a>."
+            },
+            {
+                "fields": ["l101_l207_ru"],
+                "answer_suggestion": "Возможно, ответ на ваш вопрос находится в разделе <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/sections/201604729'>Настройки профиля</a>. Если у вас другой вопрос, пожалуйста, обратитесь к нам и опишите подробно сложившуюся ситуацию."
+            },
+            {
+                "fields": ["l102_l208_l3012_ru"],
+                "answer_suggestion": "Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/360001565880'>здесь</a> как получить больше откликов и повысить продажи."
+            },
+            {
+                "fields": ["l102_l208_l3013_ru"],
+                "answer_suggestion": "Если продавец не указал контактный номер - вы всегда можете написать ему сообщение через соответствующую форму под объявлением."
+            },
+            {
+                "fields": ["l102_l208_l3014_ru"],
+                "answer_suggestion": "Если продавец не отвечает, вы можете попробовать связаться с ним позже или другим способом (телефон, звонок, смс, email)."
+            },
+            {
+                "fields": ["l102_l208_l207_ru"],
+                "answer_suggestion": "Возможно, ответ на ваш вопрос находится в разделе <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/categories/200832255'>Управление объявлением</a>. Если у вас другой вопрос, пожалуйста, обратитесь к нам и опишите подробно сложившуюся ситуацию."
+            },
+            {
+                "fields": ["l102_l209_l3015_ru"],
+                "answer_suggestion": "Пожалуйста, проверьте, соответствует ли ваше объявление <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/sections/201659305'>правилам публикации</a>."
+            },
+            {
+                "fields": ["l102_l209_l3088_ru"],
+                "answer_suggestion": "Пожалуйста, проверьте, соответствует ли ваше объявление <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/sections/201659305'>правилам публикации</a>."
+            },
+            {
+                "fields": ["l102_l209_l3016_ru"],
+                "answer_suggestion": "Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/209387989'>здесь</a> подробную информацию о логике и сроке размещения объявлений."
+            },
+            {
+                "fields": ["l102_l209_l3089_ru"],
+                "answer_suggestion": "Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/210646469'>здесь</a> о лимитах на публикацию объявлений."
+            },
+            {
+                "fields": ["l102_l209_l3090_ru"],
+                "answer_suggestion": "Если покупатель не отвечает, вы можете попробовать связаться с ним позже или другим способом (звонок, смс, email)."
+            },
+            {
+                "fields": ["l102_l209_l3017_ru"],
+                "answer_suggestion": "Проверьте вкладку Неактивные, Ожидающие или Удаленные. Возможно, срок действия вашего объявления завершился. Узнайте частые причины модерации <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/207403085'>здесь</a>."
+            },
+            {
+                "fields": ["l102_l209_l3020_ru"],
+                "answer_suggestion": "Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/sections/202299189'>здесь</a>, достигли ли вы лимита бесплатных размещений в выбранной рубрике. Также, пожалуйста, проверьте, соответствует ли ваше объявление общим <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/206715599'>Правилам публикации</a> на сервисе."
+            },
+            {
+                "fields": ["l102_l209_l3021_ru"],
+                "answer_suggestion": "Изменить объявление можно в вашем профиле на вкладке «Объявление». Нажмите «Редактировать» под заголовком нужного объявления и вы сможете внести изменения. Детальнее о редактировании объявлений <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/207403155'>здесь</a>."
+            },
+            {
+                "fields": ["l102_l209_l3022_ru"],
+                "answer_suggestion": "При размещении объявления необходимо ввести первые буквы населенного пункта и выбрать из выпадающего списка. Если вы вводите первые буквы населенного пункта, но он не появляется в списке, пожалуйста, пришлите нам описание ваших действий, название необходимого населенного пункта и скриншот возникших трудностей."
+            },
+            {
+                "fields": ["l102_l209_l207_ru"],
+                "answer_suggestion": "Возможно, ответ на ваш вопрос находится в <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/categories/200832255'>статье</a>. Если у вас другой вопрос, пожалуйста, обратитесь к нам, и опишите подробно сложившуюся ситуацию."
+            },
+            {
+                "fields": ["l103_l2010_ru"],
+                "answer_suggestion": "Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/sections/201659425'>здесь</a> подробную информацию о том, как воспользоваться услугой OLX Доставка."
+            },
+            {
+                "fields": ["l103_l2011_ru"],
+                "answer_suggestion": "Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/360010383819'>здесь</a> ответы на возможные сложности при подключении услуги OLX Доставка.  Если вы Продавец - ответы для вас по <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/sections/201604829'>ссылке</a>."
+            },
+            {
+                "fields": ["l103_l2012_ru"],
+                "answer_suggestion": "Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/360010395119'>здесь</a> информацию о сроках зачисления средств по сделке продавцу.  Если вы Покупатель, информация о возврате средств для вас по <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/360010318920'>ссылке</a>."
+            },
+            {
+                "fields": ["l103_l207_ru"],
+                "answer_suggestion": "Возможно, ответ на ваш вопрос уже есть в <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/categories/200832265'>разделе</a> частых вопросов по использованию услуги OLX Доставка."
+            },
+            {
+                "fields": ["l104_l2013_l3023_ru"],
+                "answer_suggestion": "Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/206715909'>здесь</a> как получать больше откликов с помощью платных услуг."
+            },
+            {
+                "fields": ["l104_l2013_l3024_ru"],
+                "answer_suggestion": "Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/208261089'>здесь</a> как заказать дополнительную услугу для объявления."
+            },
+            {
+                "fields": ["l104_l2013_l3027_ru"],
+                "answer_suggestion": "Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/207403415'>здесь</a> возможные причины, почему вы не видите объявление (например, оплата за дополнительную услугу еще не поступила к нам или объявление удалено из-за нарушения Правил публикации)."
+            },
+            {
+                "fields": ["l104_l2013_l3028_ru"],
+                "answer_suggestion": "Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/208282449'>здесь</a> возможные причины, почему объявление еще не отображается на сервисе (возможно, оно еще не было проверено, или оплата за размещение не прошла). "
+            },
+            {
+                "fields": ["l104_l2013_l3029_ru"],
+                "answer_suggestion": "Информацию о причине удаления объявления вы можете посмотреть, перейдя в Мой профиль, на вкладке Удаленные. Узнайте детальнее о причинах <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/207403085'>удаления</a> и <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/207403395'>возврате</a> денежных средств."
+            },
+            {
+                "fields": ["l104_l2013_l207_ru"],
+                "answer_suggestion": "Чтобы мы смогли вам помочь как можно быстрее, пожалуйста, опишите подробно сложившуюся ситуацию. Мы обязательно найдем решение!"
+            },
+            {
+                "fields": ["l104_l2014_l3030_ru"],
+                "answer_suggestion": "Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/206716069'>здесь</a> преимущества и принцип работы пакета размещений."
+            },
+            {
+                "fields": ["l104_l2014_l3033_ru"],
+                "answer_suggestion": "Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/206716179'>здесь</a> как заказать пакет."
+            },
+            {
+                "fields": ["l104_l2014_l3034_ru"],
+                "answer_suggestion": "Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/207403375'>здесь</a> как можно использовать пакет."
+            },
+            {
+                "fields": ["l104_l2014_l207_ru"],
+                "answer_suggestion": "Чтобы мы смогли вам помочь, пожалуйста, опишите детально какие сложности у вас возникли. Мы обязательно найдем решение!"
+            },
+            {
+                "fields": ["l104_l2015_l3036_ru", "l104_l2015_l3035_ru"],
+                "answer_suggestion": "Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/206715969'>здесь</a> варианты оплаты услуг."
+            },
+            {
+                "fields": ["l104_l2015_l3037_ru"],
+                "answer_suggestion": "1. Пожалуйста, попробуйте повторить попытку оплаты позже.  2. Если ситуация не изменится, пожалуйста, в своем обращении предоставьте нам <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/209138725'>информацию о неполадке</a>."
+            },
+            {
+                "fields": ["l104_l2015_l3039_ru"],
+                "answer_suggestion": "Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/207403395'>здесь</a> условия возврата денежных средств."
+            },
+            {
+                "fields": ["l104_l2015_l207_ru"],
+                "answer_suggestion": "Возможно, ответ на ваш вопрос находится в <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/206715969'>статье</a>. Если у вас другой вопрос, пожалуйста, обратитесь к нам, и опишите подробно сложившуюся ситуацию."
+            },
+            {
+                "fields": [
+                    "l105_l2018_l2018_ru",
+                    "l105_l2019_l2019_ru",
+                    "l105_l2020_l2020_ru"
+                ],
+                "answer_suggestion": "1.Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/115005553629'>здесь</a> рекомендации при технических неполадках.   2.Если ситуация не изменится, пожалуйста, в своем обращении предоставьте нам <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/209138725'>информацию о неполадке</a>."
+            },
+            {
+                "fields": ["l105_l2021_ru"],
+                "answer_suggestion": "Будь ласка, надайте нам докладну інформацію про неполадку і скріншоти. Ми обов'язково вам допоможемо!"
+            },
+            {
+                "fields": ["l106_l2022_l3040_ru"],
+                "answer_suggestion": "Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/209083325'>здесь</a> какие данные предоставить, если вы оплатили, но не получили товар."
+            },
+            {
+                "fields": ["l106_l2022_l3041_ru"],
+                "answer_suggestion": "Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/209083325'>здесь</a> какие данные предоставить, если вы отправили товар, но не получили оплату. Чтобы избежать подобной ситуации в будущем, пожалуйста, придерживайтесь <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/206715879'>правил безопасных продаж</a>."
+            },
+            {
+                "fields": ["l106_l2022_l3042_ru"],
+                "answer_suggestion": "Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/209083325'>здесь</a> какие данные предоставить, если вы отправили товар, но получили оплату поддельными средствами. Чтобы избежать подобной ситуации в будущем, пожалуйста, придерживайтесь <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/206715879'>правил безопасных продаж</a>."
+            },
+            {
+                "fields": ["l106_l2022_l3043_ru"],
+                "answer_suggestion": "Если у вас украли деньги или товар при личной встрече, пожалуйста, предоставьте нам полную информацию о нарушителе и переписку с ним. Также рекомендуем Вам обратиться в полицию, воспользовавшись  советами из <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/209294945'>статьи</a>."
+            },
+            {
+                "fields": ["l106_l2022_l207_ru"],
+                "answer_suggestion": "Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/209294945'>здесь</a> что делать при краже товаром или денег."
+            },
+            {
+                "fields": ["l106_l2023_l3044_ru"],
+                "answer_suggestion": "Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/209083325'>здесь</a> какие данные предоставить, если вы получили поддельный товар. Чтобы избежать подобной ситуации в будущем, пожалуйста, придерживайтесь <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/206715879'>правил безопасных продаж</a>."
+            },
+            {
+                "fields": ["l106_l2023_l3045_ru"],
+                "answer_suggestion": " Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/209083325'>здесь</a> какие данные предоставить, если вы получили некачественный товар. Чтобы избежать подобной ситуации в будущем, пожалуйста, придерживайтесь <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/206715879'>правил безопасных продаж</a>."
+            },
+            {
+                "fields": ["l106_l2023_l3046_ru"],
+                "answer_suggestion": " Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/209083325'>здесь</a> какие данные предоставить, если вы получили краденый товар. Чтобы избежать подобной ситуации в будущем, пожалуйста, придерживайтесь <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/206715879'>правил безопасных продаж</a>."
+            },
+            {
+                "fields": [
+                    "l106_l2023_l3047_ru",
+                    "l106_l2023_l207_ru",
+                    "l106_l2024_l3048_ru",
+                    "l106_l2024_l3049_ru",
+                    "l106_l2024_l207_ru",
+                    "l106_l2025_l3050_ru",
+                    "l106_l2025_l3051_ru",
+                    "l106_l2025_l3052_ru"
+                ],
+                "answer_suggestion": "Чтобы сообщить о нарушении, пожалуйста, воспользуйтесь <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/207403305'>рекомендациями</a>"
+            },
+            {
+                "fields": [
+                    "l106_l2025_l3053_ru",
+                    "l106_l2025_l207_ru",
+                    "l106_l2026_l3055_ru",
+                    "l106_l2027_ru",
+                    "l106_l207_ru"
+                ],
+                "answer_suggestion": "Используйте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/207403305'>рекомендации</a> для более оперативного решения вопроса."
+            },
+            {
+                "fields": ["l106_l2026_l3054_ru", "l106_l2026_l207_ru"],
+                "answer_suggestion": "Используйте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/206715809'>рекомендации</a> для более оперативного решения вопроса."
+            },
+            {
+                "fields": ["l106_l2026_l3056_ru"],
+                "answer_suggestion": "1) Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/360003605299'>тут</a> как восстановить доступ к профилю. 2) Узнайте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/ru/articles/360002800220'>тут</a> что делать, если вы заметили подозрительную активность в профиле."
+            },
+            {
+                "fields": ["l108_ru"],
+                "answer_suggestion": "1) Узнайте <a target='_blank' rel='noreferrer noopener' href='https://www.olxgroup.com/careers'>здесь</a> об открытых вакансиях в компании OLX. 2) Если у вас есть предложение, пожалуйста, опишите его максимально подробно :)"
+            }
+        ]
+    },
+    {
+        "instance": "UA Ukrainian",
+        "form_id": "360004272800",
+        "default_suggestion": "Оберіть зі списку вище",
+        "data": [
+            {
+                "fields": ["l101_l201"],
+                "answer_suggestion": "Можливо на ваш номер вже був зареєстрований профіль раніше. Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/360009944999'>детальніше</a>."
+            },
+            {
+                "fields": ["l101_l202"],
+                "answer_suggestion": "Можливо, ви забули пароль? Скористайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/360009944999'>підказками</a> для відновлення. "
+            },
+            {
+                "fields": ["l101_l204"],
+                "answer_suggestion": "Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/207403185'>тут</a> як видалити свій профіль."
+            },
+            {
+                "fields": ["l101_l205"],
+                "answer_suggestion": "Після реєстрації ви отримуєте доступ до всіх <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/206715729'>можливостей особистого профілю</a>."
+            },
+            {
+                "fields": ["l101_l207"],
+                "answer_suggestion": "Можливо, відповідь на ваше питання знаходиться в розділі <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/sections/201604729'>Налаштування профілю</a>. Якщо у вас інше питання, будь ласка, зверніться до нас, і опишіть докладно ситуацію, що склалася."
+            },
+            {
+                "fields": ["l102_l208_l3012"],
+                "answer_suggestion": "Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/360001565880'>тут</a> як отримати більше відгуків і підвищити продажі."
+            },
+            {
+                "fields": ["l102_l208_l3013"],
+                "answer_suggestion": "Якщо продавець не вказав контактний номер - Ви завжди можете написати йому повідомлення через відповідну форму під оголошенням."
+            },
+            {
+                "fields": ["l102_l208_l3014"],
+                "answer_suggestion": "Якщо продавець не відповідає, Ви можете спробувати зв'язатися з ним пізніше або іншим способом (телефон, дзвінок, смс, email)."
+            },
+            {
+                "fields": ["l102_l208_l207"],
+                "answer_suggestion": "Можливо, відповідь на Ваше питання знаходиться <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/categories/200832255'>тут</a>. Якщо у Вас інше питання, будь ласка, зверніться до нас і опишіть докладно ситуацію, що склалася."
+            },
+            {
+                "fields": ["l102_l209_l3015"],
+                "answer_suggestion": "Будь ласка, перевірте, чи відповідає Ваше оголошення <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/sections/201659305'>правилам публікації</a> і внесіть необхідні зміни в разі потреби.</a>."
+            },
+            {
+                "fields": ["l102_l209_l3088"],
+                "answer_suggestion": "Будь ласка, перевірте, чи відповідає Ваше оголошення <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/sections/201659305'>правилам публікації.</a>."
+            },
+            {
+                "fields": ["l102_l209_l3016"],
+                "answer_suggestion": "Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/209387989'>тут</a> детальну інформацію про логіку і терміні розміщення оголошень."
+            },
+            {
+                "fields": ["l102_l209_l3089"],
+                "answer_suggestion": "Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/210646469'>тут</a> про ліміти на публікацію оголошень."
+            },
+            {
+                "fields": ["l102_l209_l3090"],
+                "answer_suggestion": "Якщо покупець не відповідає, Ви можете спробувати зв'язатися з ним пізніше або іншим способом (дзвінок, смс, email)."
+            },
+            {
+                "fields": ["l102_l209_l3017"],
+                "answer_suggestion": "Перевірте вкладки Неактивні, В очікуванні або Видалені. Можливо, термін дії Вашого оголошення завершився. Дізнайтеся часті причини модерації <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/207403085'>тут</a>."
+            },
+            {
+                "fields": ["l102_l209_l3020"],
+                "answer_suggestion": "Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/sections/202299189'>тут</a>, чи досягли ви ліміту безкоштовних розміщень в обраній рубриці. Також, будь ласка, перевірте, чи відповідає ваше оголошення загальним <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/206715599'>Правилам публікації</a> на сервісі."
+            },
+            {
+                "fields": ["l102_l209_l3021"],
+                "answer_suggestion": "Змінити оголошення можна у Вашому профілі на вкладці «Оголошення». Натисніть «Редагувати» під заголовком потрібного оголошення і Ви зможете внести зміни. Детальніше про редагування оголошень <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/207403155'>тут</a>."
+            },
+            {
+                "fields": ["l102_l209_l3022"],
+                "answer_suggestion": "При розміщенні оголошення необхідно ввести перші літери назви населеного пункту і вибрати необхідний зі списку. Якщо Ви докладно опишете які саме труднощі виникають при виборі місцезнаходження, а також надасте скріншоти, це прискорить вирішення цієї труднощі."
+            },
+            {
+                "fields": ["l102_l209_l207"],
+                "answer_suggestion": "Можливо, відповідь на Ваше питання знаходиться в <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/categories/200832255'>статті</a>. Якщо у Вас інше питання, будь ласка, зверніться до нас, і опишіть докладно ситуацію, що склалася."
+            },
+            {
+                "fields": ["l103_l2010"],
+                "answer_suggestion": "Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/sections/201659425'>тут</a> детальну інформацію про те, як скористатися послугою OLX Доставка."
+            },
+            {
+                "fields": ["l103_l2011"],
+                "answer_suggestion": "Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/360010383819'>тут</a> відповіді на можливі складнощі при підключенні послуги OLX Доставка. Якщо Ви Продавець - відповіді для Вас за <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/sections/201604829'>посиланням</a>."
+            },
+            {
+                "fields": ["l103_l2012"],
+                "answer_suggestion": "Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/360010395119'>тут</a> інформацію про терміни зарахування коштів по угоді продавцю. Якщо Ви Покупець, інформація про повернення коштів для Вас за <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/360010318920'>посиланням</a>."
+            },
+            {
+                "fields": ["l103_l207"],
+                "answer_suggestion": "Можливо, відповідь на Ваше питання вже є в <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/categories/200832265'>розділі</a> частих питань по використанню послуги OLX Доставка."
+            },
+            {
+                "fields": ["l104_l2013_l3023"],
+                "answer_suggestion": "Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/206715909'>тут</a> як отримувати більше відгуків з допомогою платних послуг."
+            },
+            {
+                "fields": ["l104_l2013_l3024"],
+                "answer_suggestion": "Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/208261089'>тут</a> як замовити додаткову послугу для оголошення."
+            },
+            {
+                "fields": ["l104_l2013_l3027"],
+                "answer_suggestion": "Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/207403415'>тут</a> можливі причини, чому Ви не бачите оголошення (наприклад, оплата за додаткову послугу ще не надійшла до нас, або оголошення видалено через порушення Правил публікації)."
+            },
+            {
+                "fields": ["l104_l2013_l3028"],
+                "answer_suggestion": "Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/208282449'>тут</a> можливі причини, чому оголошення ще не відображається на сервісі (можливо, воно ще не було перевірено, чи оплата за розміщення не пройшла)."
+            },
+            {
+                "fields": ["l104_l2013_l3029"],
+                "answer_suggestion": "Інформація про причини видалення оголошення відображається в Мій профіль, на вкладці Видалені. Детальныше про причини <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/207403085'>видалення</a> і повернення <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/207403395'>грошових коштів</a>."
+            },
+            {
+                "fields": ["l104_l2013_l207", "l104_l2014_l207"],
+                "answer_suggestion": "Щоб ми змогли вам допомогти, будь ласка, опишіть детально які складнощі у вас виникли. Ми обов'язково знайдемо рішення!"
+            },
+            {
+                "fields": ["l104_l2014_l3030"],
+                "answer_suggestion": "Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/206716069'>тут</a> переваги і принцип роботи пакета розміщень."
+            },
+            {
+                "fields": ["l104_l2014_l3033"],
+                "answer_suggestion": "Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/206716179'>тут</a> як можна використовувати пакет."
+            },
+            {
+                "fields": ["l104_l2014_l3034"],
+                "answer_suggestion": "Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/207403375'>тут</a> як можна використовувати пакет."
+            },
+            {
+                "fields": ["l104_l2015_l3035", "l104_l2015_l3036"],
+                "answer_suggestion": "Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/206715969'>тут</a> варіанти оплати послуг."
+            },
+            {
+                "fields": ["l104_l2015_l3037"],
+                "answer_suggestion": "1. Будь ласка, повторіть спробу оплати пізніше. 2. Якщо ситуація не зміниться, будь ласка, в своєму зверненні надайте нам <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/209138725'>інформацію про неполадку.</a>."
+            },
+            {
+                "fields": ["l104_l2015_l3039"],
+                "answer_suggestion": "Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/207403395'>тут</a> умови повернення грошових коштів."
+            },
+            {
+                "fields": ["l104_l2015_l207"],
+                "answer_suggestion": "Можливо, відповідь на Ваше питання знаходиться в <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/206715969'>статті</a>. Якщо у Вас інше питання, будь ласка, зверніться до нас, і опишіть докладно ситуацію, що склалася."
+            },
+            {
+                "fields": [
+                    "l105_l2018_l2018",
+                    "l105_l2019_l2019",
+                    "l105_l2020_l2020"
+                ],
+                "answer_suggestion": "1.Дізнатись <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/115005553629'>тут</a> рекомендації при технічних неполадках. 2.Якщо ситуація не зміниться, будь ласка, в своєму зверненні надайте нам <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/209138725'>інформацію про неполадку>."
+            },
+            {
+                "fields": ["l105_l2021"],
+                "answer_suggestion": "Будь ласка, надайте нам докладну інформацію про неполадку і скріншоти. Ми обов'язково вам допоможемо!"
+            },
+            {
+                "fields": ["l106_l2022_l3040"],
+                "answer_suggestion": "Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/209083325'>тут</a> які дані надати, якщо ви оплатили, але не отримали товар."
+            },
+            {
+                "fields": ["l106_l2022_l3041"],
+                "answer_suggestion": "Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/207403355'>тут</a> які дані надати, якщо ви відправили товар, але не отримали оплату. Щоб уникнути подібної ситуації в майбутньому, будь ласка, дотримуйтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/206715879'>правил безпечних продажів</a>."
+            },
+            {
+                "fields": ["l106_l2022_l3042"],
+                "answer_suggestion": "Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/207403355'><тут> які дані надати, якщо ви відправили товар, але отримали оплату підробленими коштами. Щоб уникнути подібної ситуації в майбутньому, будь ласка, дотримуйтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/206715879'>правил безпечних продажів</a>."
+            },
+            {
+                "fields": ["l106_l2022_l3043"],
+                "answer_suggestion": "Якщо у вас вкрали гроші або товар особистій зустрічі, будь ласка, надайте нам повну інформацію про порушника і листування з ним. Також рекомендуємо Вам звернутися в поліцію, скориставшись порадами з <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/209294945'>статті</a>."
+            },
+            {
+                "fields": ["l106_l2022_l207"],
+                "answer_suggestion": "Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/209294945'>тут</a> що робити при крадіжці товара або грошей."
+            },
+            {
+                "fields": ["l106_l2023_l3044"],
+                "answer_suggestion": "Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/209083325'>тут</a> які дані надати, якщо ви отримали підроблений товар. Щоб уникнути подібної ситуації в майбутньому, будь ласка, дотримуйтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/206715879'>правил безпечних продажів</a>."
+            },
+            {
+                "fields": ["l106_l2023_l3045"],
+                "answer_suggestion": "Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/209083325'>тут</a> які дані надати, якщо ви отримали неякісний товар. Щоб уникнути подібної ситуації в майбутньому, будь ласка, дотримуйтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/206715879'>правил безпечних продажів</a>."
+            },
+            {
+                "fields": ["l106_l2023_l3046"],
+                "answer_suggestion": "Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/209083325'>тут</a> які дані надати, якщо ви отримали крадений товар. Щоб уникнути подібної ситуації в майбутньому, будь ласка, дотримуйтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/206715879'>правил безпечних продажів</a>."
+            },
+            {
+                "fields": [
+                    "l106_l2023_l3047",
+                    "l106_l2023_l207",
+                    "l106_l2024_l3048",
+                    "l106_l2024_l3049",
+                    "l106_l2024_l207",
+                    "l106_l2025_l3050",
+                    "l106_l2025_l3051",
+                    "l106_l2025_l3052"
+                ],
+                "answer_suggestion": "Щоб повідомити про порушення, будь ласка, скористайтеся нашими <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/207403305'>рекомендаціями.</a>"
+            },
+            {
+                "fields": [
+                    "l106_l2025_l3053",
+                    "l106_l2025_l207",
+                    "l106_l2026_l3055"
+                ],
+                "answer_suggestion": "Для більш оперативного вирішення питання Ви можете скористатися нашими рекомендаціями за <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/207403305'>посиланням</a>"
+            },
+            {
+                "fields": ["l106_l2026_l3054"],
+                "answer_suggestion": "Используйте <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/206715809'>рекомендации</a> для более оперативного решения вопроса."
+            },
+            {
+                "fields": ["l106_l2026_l3056"],
+                "answer_suggestion": "<br>1) Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/360003605299'>тут</a> як відновити доступ до профілю.</br> <br>2) Дізнайтеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/360002800220'>тут</a> що робити, якщо ви помітили підозрілу активність в профілі</br>"
+            },
+            {
+                "fields": ["l108"],
+                "answer_suggestion": "<br>1) З відкритими вакансіями в компанії OLX Ви можете ознайомитися <a target='_blank' rel='noreferrer noopener' href='https://www.olxgroup.com/careers'>тут</a></br> <br>2) Якщо у Вас є пропозиція, будь ласка, опишіть його максимально детально :)</br>"
+            },
+            {
+                "fields": ["l106_l2026_l207"],
+                "answer_suggestion": "Скористатеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/206715809'>рекомендаціями</a> для оперативнішого вирішення питання."
+            },
+            {
+                "fields": ["l106_l2027", "l106_l207"],
+                "answer_suggestion": "Скористатеся <a target='_blank' rel='noreferrer noopener' href='https://help.olx.ua/hc/uk/articles/207403305'>рекомендаціями</a> для оперативнішого вирішення питання."
             }
         ]
     }

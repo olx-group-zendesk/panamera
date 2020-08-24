@@ -419,14 +419,14 @@
                     "options": [
                         {
                             "label": "Poland",
-                            "value": "https://www.otodom.pl/"
+                            "value": "https://www.olx.pl/"
                         },
                         {
                             "label": "Ukraine",
-                            "value": "https://www.otodom.ua/"
+                            "value": "https://www.olx.ua/"
                         }
                     ],
-                    "value": "https://www.otodom.pl/"
+                    "value": "https://www.olx.ua/"
                 }
             ]
         },
@@ -463,21 +463,21 @@
                     "type": "checkbox",
                     "description": "home_page_contact_enabled_description",
                     "label": "home_page_contact_enabled_label",
-                    "value": true
+                    "value": false
                 },
                 {
                     "identifier": "phone_line1_enabled",
                     "type": "checkbox",
                     "description": "phone_line1_enabled_description",
                     "label": "phone_line1_enabled_label",
-                    "value": true
+                    "value": false
                 },
                 {
                     "identifier": "phone_line2_enabled",
                     "type": "checkbox",
                     "description": "phone_line2_enabled_description",
                     "label": "phone_line2_enabled_label",
-                    "value": true
+                    "value": false
                 }
             ]
         },
