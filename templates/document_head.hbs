@@ -14,8 +14,13 @@
 <script type="text/javascript">
     if (
         document.cookie.match(/^(.*;)?\s*access_token\s*=\s*[^;]+(.*)?$/) !==
+        null &&
+        document.cookie.match(/^(.*;)?\s*sso_checked\s*=\s*[^;]+(.*)?$/) ===
         null
     ) {
+        var date = new Date();
+        date.setTime(date.getTime() + (5 * 60 * 1000)); // expires in 5 minutes from now
+        document.cookie = "sso_checked=1; expires=" + date.toUTCString() + "; path=/";
         window.location = "{{settings.country_site_url}}" + "account/zendesksso?nativeMode=1"
     }
 </script>
