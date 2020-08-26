@@ -11,7 +11,7 @@
     cursor: pointer;
     display: inline-block;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: $font-weight-base;
     line-height: 2.34; //Taken from Zendesk garden bedrock
     margin: 0;
     padding: 0 20px;
@@ -85,7 +85,7 @@ input[type="submit"] {
     color: $color-white;
     font-size: 18px;
     font-family: $heading_font;
-    line-height: 2.72;
+    line-height: 2.73;
     min-width: 190px;
     padding: 0 1.9286em;
     width: 100%;
