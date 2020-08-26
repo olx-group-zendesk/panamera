@@ -423,7 +423,7 @@ ul {
   cursor: pointer;
   display: inline-block;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 2.34;
   margin: 0;
   padding: 0 20px;
@@ -491,7 +491,7 @@ input[type="submit"] {
   color: #fff;
   font-size: 18px;
   font-family: $heading_font;
-  line-height: 2.72;
+  line-height: 2.73;
   min-width: 190px;
   padding: 0 1.9286em;
   width: 100%;
