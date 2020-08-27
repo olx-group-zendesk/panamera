@@ -956,7 +956,6 @@ input[type="submit"][disabled] {
 
 .nav-wrapper a:hover, .nav-wrapper a:focus, .nav-wrapper a:active {
   background-color: transparent;
-  color: #fff;
   text-decoration: none;
 }
 
