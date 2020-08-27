@@ -823,15 +823,8 @@ input[type="submit"][disabled] {
 }
 
 .logo img {
-  max-width: 150px;
-  width: 150px;
-}
-
-@media (min-width: 768px) {
-  .logo img {
-    max-width: 168px;
-    width: 168px;
-  }
+  max-width: 188px;
+  width: 188px;
 }
 
 .logo div {
