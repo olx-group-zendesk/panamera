@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: zendesk/checkout@v2
       - run: "sudo apt-get install zip"
-      - run: "zip --exclude=*.git* -r theme.zip ."
+      - run: "zip -x node_modules/\* .git/\* -r theme.zip ."
       - uses: zendesk/setup-ruby@v1
         with:
           ruby-version: '2.6'
@@ -25,23 +25,8 @@ jobs:
         with:
           urls: |
             https://${{ secrets.subdomain }}.zendesk.com/hc/en-us
-            https://${{ secrets.subdomain }}.zendesk.com/hc/en-us/categories/360002267479
-            https://${{ secrets.subdomain }}.zendesk.com/hc/en-us/sections/360003307259
-            https://${{ secrets.subdomain }}.zendesk.com/hc/en-us/articles/360010829359
-            https://${{ secrets.subdomain }}.zendesk.com/hc/en-us/requests/new
-            https://${{ secrets.subdomain }}.zendesk.com/hc/en-us/search?utf8=%E2%9C%93&query=Help+Center
             https://${{ secrets.subdomain }}.zendesk.com/hc/en-us/community/topics
-            https://${{ secrets.subdomain }}.zendesk.com/hc/en-us/community/topics/360000644279
             https://${{ secrets.subdomain }}.zendesk.com/hc/en-us/community/posts
-            https://${{ secrets.subdomain }}.zendesk.com/hc/en-us/community/posts/360006766799
-            https://${{ secrets.subdomain }}.zendesk.com/hc/en-us/profiles/364655812519
-            https://${{ secrets.subdomain }}.zendesk.com/hc/contributions/posts?locale=en-us
-            https://${{ secrets.subdomain }}.zendesk.com/hc/en-us/subscriptions
-            https://${{ secrets.subdomain }}.zendesk.com/hc/en-us/requests
-            https://${{ secrets.subdomain }}.zendesk.com/hc/en-us/requests/3
-            https://${{ secrets.subdomain }}.zendesk.com/hc/en-us/community/posts/new
           configPath: ./.github/workflows/lighthouserc.json
         env:
-          end_user_email: ${{ secrets.end_user_email }}
-          end_user_password: ${{ secrets.end_user_password }}
           subdomain: ${{ secrets.subdomain }}

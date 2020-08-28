@@ -68,14 +68,14 @@ end
 
 # Publish
 
-zendesk_connection.post("themes/#{theme_id}/publish")
+# zendesk_connection.post("themes/#{theme_id}/publish")
 
 # Clear old themes
 
-themes = zendesk_connection.get("themes?brand_id=#{brand_id}").body["themes"]
+# themes = zendesk_connection.get("themes?brand_id=#{brand_id}").body["themes"]
 
-themes.each do |theme|
-  next if theme["id"] == theme_id
+# themes.each do |theme|
+#   next if theme["id"] == theme_id
 
-  zendesk_connection.delete("themes/#{theme["id"]}")
-end
+#   zendesk_connection.delete("themes/#{theme["id"]}")
+# end
