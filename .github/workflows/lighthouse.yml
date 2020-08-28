@@ -17,13 +17,13 @@ jobs:
             - run: ruby ./.github/workflows/theme_upload.rb
               env:
                   zendesk_email: ${{ secrets.zendesk_email }}
-                  zendesk_token: ${{ secrets.zendesk_token }}
+                  zendesk_token: ${{ secrets.zendesk_token_kz }}
                   brand_id: ${{ secrets.brand_id }}
-                  subdomain: ${{ secrets.subdomain }}
+                  subdomain: ${{ secrets.subdomain_kz }}
             - name: Audit URLs using Lighthouse
               uses: zendesk/lighthouse-ci-action@v3
               with:
                   urls: |
-                      https://${{ secrets.subdomain }}.zendesk.com/hc/en-us
+                      https://${{ secrets.subdomain_kz }}.zendesk.com/hc/kk
               env:
-                  subdomain: ${{ secrets.subdomain }}
+                  subdomain: ${{ secrets.subdomain_kz }}
