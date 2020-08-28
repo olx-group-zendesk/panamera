@@ -27,6 +27,5 @@ jobs:
                       https://${{ secrets.subdomain }}.zendesk.com/hc/en-us
                       https://${{ secrets.subdomain }}.zendesk.com/hc/en-us/community/topics
                       https://${{ secrets.subdomain }}.zendesk.com/hc/en-us/community/posts
-                  configPath: ./.github/workflows/lighthouserc.json
               env:
                   subdomain: ${{ secrets.subdomain }}

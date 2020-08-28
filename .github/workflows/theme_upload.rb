@@ -68,7 +68,7 @@ end
 
 # Publish
 
-# zendesk_connection.post("themes/#{theme_id}/publish")
+zendesk_connection.post("themes/#{theme_id}/publish")
 
 # Clear old themes
 
