@@ -2,11 +2,11 @@ require 'faraday'
 require 'faraday_middleware'
 require 'logger'
 
-brand_id = ENV["brand_id"]
-subdomain =  ENV["subdomain"]
+brand_id = ENV["brand_id_kz"]
+subdomain =  ENV["subdomain_kz"]
 file_path = File.expand_path("theme.zip")
 email = ENV["zendesk_email"]
-token = ENV["zendesk_token"]
+token = ENV["zendesk_token_kz"]
 
 base_url = "https://#{subdomain}.zendesk.com/api/v2/guide/theming"
 
@@ -70,12 +70,11 @@ end
 
 zendesk_connection.post("themes/#{theme_id}/publish")
 
-# Clear old themes
+# Clear older themes (keep last 3)
 
-# themes = zendesk_connection.get("themes?brand_id=#{brand_id}").body["themes"]
-
-# themes.each do |theme|
-#   next if theme["id"] == theme_id
-
-#   zendesk_connection.delete("themes/#{theme["id"]}")
-# end
+themes = zendesk_connection.get("themes?brand_id=#{brand_id}").body["themes"]
+sorted = themes.sort_by { |p| p['created_at'] }
+sorted[0..-4].each do |theme|
+    next if theme["id"] == theme_id
+    zendesk_connection.delete("themes/#{theme["id"]}")
+end
