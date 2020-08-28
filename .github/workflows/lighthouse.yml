@@ -25,7 +25,5 @@ jobs:
               with:
                   urls: |
                       https://${{ secrets.subdomain }}.zendesk.com/hc/en-us
-                      https://${{ secrets.subdomain }}.zendesk.com/hc/en-us/community/topics
-                      https://${{ secrets.subdomain }}.zendesk.com/hc/en-us/community/posts
               env:
                   subdomain: ${{ secrets.subdomain }}
