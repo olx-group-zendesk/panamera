@@ -18,7 +18,7 @@ jobs:
               env:
                   zendesk_email: ${{ secrets.zendesk_email }}
                   zendesk_token: ${{ secrets.zendesk_token_kz }}
-                  brand_id: ${{ secrets.brand_id }}
+                  brand_id: ${{ secrets.brand_id_kz }}
                   subdomain: ${{ secrets.subdomain_kz }}
             - name: Audit URLs using Lighthouse
               uses: zendesk/lighthouse-ci-action@v3

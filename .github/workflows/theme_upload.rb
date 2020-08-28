@@ -2,11 +2,11 @@ require 'faraday'
 require 'faraday_middleware'
 require 'logger'
 
-brand_id = ENV["brand_id_kz"]
-subdomain =  ENV["subdomain_kz"]
+brand_id = ENV["brand_id"]
+subdomain =  ENV["subdomain"]
 file_path = File.expand_path("theme.zip")
 email = ENV["zendesk_email"]
-token = ENV["zendesk_token_kz"]
+token = ENV["zendesk_token"]
 
 base_url = "https://#{subdomain}.zendesk.com/api/v2/guide/theming"
 
