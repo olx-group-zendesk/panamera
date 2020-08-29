@@ -24,5 +24,6 @@ jobs:
               with:
                   urls: |
                       https://${{ secrets.subdomain_kz }}.zendesk.com/hc/kk
+                      https://${{ secrets.subdomain_kz }}.zendesk.com/hc/ru
               env:
                   subdomain: ${{ secrets.subdomain_kz }}
