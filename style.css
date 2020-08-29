@@ -2324,6 +2324,10 @@ section.message-alert {
   list-style-type: disc;
 }
 
+.article-body a {
+  text-decoration: underline;
+}
+
 .article-body a:visited {
   color: darken($link_color, 20%);
 }
@@ -2876,6 +2880,10 @@ section.message-alert {
 
 .comment-body ul {
   list-style-type: disc;
+}
+
+.comment-body a {
+  text-decoration: underline;
 }
 
 .comment-body a:visited {
@@ -3526,6 +3534,10 @@ section.message-alert {
 
 .post-body ul {
   list-style-type: disc;
+}
+
+.post-body a {
+  text-decoration: underline;
 }
 
 .post-body a:visited {

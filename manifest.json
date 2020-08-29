@@ -1,6 +1,6 @@
 {
-    "name": "Copenhagen",
-    "author": "Zendesk",
+    "name": "Horizontals-APIv2",
+    "author": "Zendesk, Igor Wasiński",
     "version": "2.3.1",
     "api_version": 2,
     "default_locale": "en-us",
