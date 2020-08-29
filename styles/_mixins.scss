@@ -87,8 +87,11 @@
         list-style-type: disc;
     }
 
-    a:visited {
-        color: $visited-link-color;
+    a {
+        text-decoration: underline;
+        &:visited {
+            color: $visited-link-color;
+        }
     }
 
     code {
