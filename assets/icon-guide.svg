@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_guide</title>
+    <g id="icon_guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Line-4" fill="#fff" fill-rule="nonzero" points="16.2778838 6 16.2753837 6.71256629 13.7282975 9.34349846 13.0099464 9.3436136 12 8.23264349 12.0069496 7.58812861 12.6099844 7.50599766 13.3684584 8.27671563 15.5664136 6.00708808"></polygon>
+        <path d="M19,2 L5,2 L4,3 L4,21 L5,22 L19,22 L20,21 L20,3 L19,2 Z M18,4 L18,20 L6,20 L6,4 L18,4 Z" id="Rectangle" fill="#fff" fill-rule="nonzero"></path>
+        <polygon id="Fill-5" fill="#fff" points="8.54018421 13.9990352 8.96405263 13.9980704 16.2956439 13.9990352 16.9123808 12.9995176 16.2956439 12 8.96405263 12 8.54018421 12 7.61563158 12 7 12.9995176 7.61563158 13.9990352"></polygon>
+        <polygon id="Fill-5" fill="#fff" points="8.54018421 17.9990352 8.96405263 17.9980704 16.2956439 17.9990352 16.9123808 16.9995176 16.2956439 16 8.96405263 16 8.54018421 16 7.61563158 16 7 16.9995176 7.61563158 17.9990352"></polygon>
+    </g>
+</svg>
