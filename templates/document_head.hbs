@@ -14,57 +14,41 @@
 {{/if}}
 
 <script>
-    // housekeeping
+    console.info("---=== Version 03 ===---");
+</script>
+
+{{#if signed_in}}
+<script>
+    console.info("Signed in.");
+    window.sessionStorage.removeItem("phone_reg");
+</script>
+{{else}}
+<script>
     function getAccessToken() {
         var b = document.cookie.match('(^|;)\\s*' + "access_token" + '\\s*=\\s*([^;]+)');
         return b ? b.pop() : null;
     }
+    var accessToken = getAccessToken();
 
-    if (window.sessionStorage.getItem("last_access_token") === null && getAccessToken() !== null) {
-        window.sessionStorage.setItem("last_access_token", getAccessToken());
-    }
-
-    if (window.sessionStorage.getItem("last_access_token") !== getAccessToken()) {
+    if (window.sessionStorage.getItem("last_access_token") !== accessToken) {
         window.sessionStorage.removeItem("sso_checked");
-        window.sessionStorage.removeItem("phone_reg");
-        window.sessionStorage.setItem("last_access_token", getAccessToken());
-    }
-</script>
-
-{{#unless signed_in}}
-<script type="text/javascript">
-
-    function getAccessToken() {
-        var b = document.cookie.match('(^|;)\\s*' + "access_token" + '\\s*=\\s*([^;]+)');
-        return b ? b.pop() : '';
+        window.sessionStorage.setItem("last_access_token", accessToken);
     }
 
-    // housekeeping
-    if (window.sessionStorage.getItem("last_access_token") !== getAccessToken()) {
-        window.sessionStorage.removeItem("sso_checked");
-        window.sessionStorage.removeItem("phone_reg");
-    } else {
-        window.sessionStorage.setItem("last_access_token", getAccessToken());
-    }
-
-    // user authenticated on BU with email account
-    if (
-        document.cookie.match(/^(.*;)?\s*access_token\s*=\s*[^;]+(.*)?$/) !==
-        null && sessionStorage.getItem("sso_checked") === null
-    ) {
+    if (accessToken !== null && sessionStorage.getItem("sso_checked") === null) {
+        console.info("NOT Signed in. - Querying ZENDESKSSO...");
         window.sessionStorage.setItem("sso_checked", true);
         window.location = "{{settings.country_site_url}}" + "account/zendesksso/?nativeMode=1"
     }
-    // user authenticated on BU with phone account
-    if (document.cookie.match(/^(.*;)?\s*access_token\s*=\s*[^;]+(.*)?$/) !==
-        null && sessionStorage.getItem("sso_checked") !== null) {
-        console.log("PHONE REGISTRATION DETECTED");
+    else if (accessToken !== null && sessionStorage.getItem("sso_checked") !== null) {
+        console.info("Phone registered account.");
         window.sessionStorage.setItem("phone_reg", true);
+        window.sessionStorage.setItem("last_access_token", accessToken)
     }
-    // user signed-out on BU
-    if (document.cookie.match(/^(.*;)?\s*access_token\s*=\s*[^;]+(.*)?$/) === null) {
+    else if (accessToken === null) {
+        console.info("Signed out.");
         window.sessionStorage.removeItem("sso_checked");
         window.sessionStorage.removeItem("phone_reg");
     }
 </script>
-{{/unless}}
+{{/if}}
