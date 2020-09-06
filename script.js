@@ -540,6 +540,24 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    // clear sessionStorage variable upon logout from Help Center
+    function clearSSOCheck() {
+        sessionStorage.removeItem("sso_checked");
+    }
+
+    var logoutLink = document.querySelector(".dropdown-menu > a:nth-child(2)");
+    var loginLink = document.querySelector(".sign-in");
+    if (logoutLink) {
+        logoutLink.addEventListener("click", clearSSOCheck, false);
+    }
+    if (loginLink) {
+        loginLink.addEventListener("click", clearSSOCheck, false);
+    }
+
+    if (sessionStorage.getItem("phone_reg") !== null) {
+        setStyleAttribute(".sign-in", "display:none");
+    }
+
     // store tabs variable
     var myTabs = document.querySelectorAll("ul.nav-tabs > li");
     function myTabClicks(tabClickEvent) {
