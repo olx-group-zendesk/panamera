@@ -191,6 +191,9 @@
 
     &-follow-up {
         padding-top: 20px;
+        & > a {
+            text-decoration: underline;
+        }
     }
 }
 
