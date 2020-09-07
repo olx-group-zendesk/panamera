@@ -14,41 +14,40 @@
 {{/if}}
 
 <script>
-    console.info("---=== Version 03 ===---");
-</script>
-
-{{#if signed_in}}
-<script>
-    console.info("Signed in.");
-    window.sessionStorage.removeItem("phone_reg");
-</script>
-{{else}}
-<script>
+    console.info("---=== Version 04 ===---");
     function getAccessToken() {
         var b = document.cookie.match('(^|;)\\s*' + "access_token" + '\\s*=\\s*([^;]+)');
         return b ? b.pop() : null;
     }
     var accessToken = getAccessToken();
+</script>
 
-    if (window.sessionStorage.getItem("last_access_token") !== accessToken) {
-        window.sessionStorage.removeItem("sso_checked");
-        window.sessionStorage.setItem("last_access_token", accessToken);
-    }
-
-    if (accessToken !== null && sessionStorage.getItem("sso_checked") === null) {
-        console.info("NOT Signed in. - Querying ZENDESKSSO...");
-        window.sessionStorage.setItem("sso_checked", true);
-        window.location = "{{settings.country_site_url}}" + "account/zendesksso/?nativeMode=1"
-    }
-    else if (accessToken !== null && sessionStorage.getItem("sso_checked") !== null) {
-        console.info("Phone registered account.");
-        window.sessionStorage.setItem("phone_reg", true);
-        window.sessionStorage.setItem("last_access_token", accessToken)
-    }
-    else if (accessToken === null) {
+{{#if signed_in}}
+<script>
+    console.info("Signed in.");
+    sessionStorage.removeItem("phone_reg");
+</script>
+{{else}}
+<script>
+    if (accessToken === null) {
         console.info("Signed out.");
-        window.sessionStorage.removeItem("sso_checked");
-        window.sessionStorage.removeItem("phone_reg");
+        sessionStorage.clear();
+    } else {
+        if (sessionStorage.getItem("last_access_token") !== accessToken) {
+            sessionStorage.clear();
+            sessionStorage.setItem("last_access_token", accessToken);
+        }
+
+        if (accessToken !== null && Number(sessionStorage.getItem("sso_checked")) < 3) {
+            console.info("NOT Signed in. - Querying ZENDESKSSO...");
+            sessionStorage.setItem("sso_checked", Number(sessionStorage.getItem("sso_checked")) + 1);
+            location = "{{settings.country_site_url}}" + "account/zendesksso/?nativeMode=1&return_to=" + location.href;
+        }
+
+        if (Number(sessionStorage.getItem("sso_checked")) >= 3) {
+            console.info("Phone reg.");
+            sessionStorage.setItem("phone_reg", true);
+        }
     }
 </script>
 {{/if}}
