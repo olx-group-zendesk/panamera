@@ -393,7 +393,7 @@
                     "type": "checkbox",
                     "description": "info_enabled_description",
                     "label": "info_enabled_label",
-                    "value": true
+                    "value": false
                 }
             ]
         },
@@ -419,14 +419,14 @@
                     "options": [
                         {
                             "label": "Poland",
-                            "value": "https://www.otodom.pl/"
+                            "value": "https://www.olx.pl/"
                         },
                         {
                             "label": "Ukraine",
-                            "value": "https://www.otodom.ua/"
+                            "value": "https://www.olx.ua/"
                         }
                     ],
-                    "value": "https://www.otodom.pl/"
+                    "value": "https://www.olx.pl/"
                 }
             ]
         },
@@ -477,7 +477,7 @@
                     "type": "checkbox",
                     "description": "phone_line2_enabled_description",
                     "label": "phone_line2_enabled_label",
-                    "value": true
+                    "value": false
                 }
             ]
         },
