@@ -4345,6 +4345,10 @@ section.message-alert {
   padding-top: 20px;
 }
 
+.request-follow-up > a {
+  text-decoration: underline;
+}
+
 /* Hints module styling (including multiselect font color custom styles */
 .hints-container {
   margin: 16px 0 24px 0;
