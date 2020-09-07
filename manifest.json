@@ -303,7 +303,7 @@
                     "type": "checkbox",
                     "description": "article_comments_description",
                     "label": "article_comments_label",
-                    "value": true
+                    "value": false
                 },
                 {
                     "identifier": "show_follow_article",
@@ -470,14 +470,14 @@
                     "type": "checkbox",
                     "description": "phone_line1_enabled_description",
                     "label": "phone_line1_enabled_label",
-                    "value": true
+                    "value": false
                 },
                 {
                     "identifier": "phone_line2_enabled",
                     "type": "checkbox",
                     "description": "phone_line2_enabled_description",
                     "label": "phone_line2_enabled_label",
-                    "value": true
+                    "value": false
                 }
             ]
         },
