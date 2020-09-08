@@ -13,8 +13,11 @@ body {
     -webkit-font-smoothing: antialiased;
 
     > main {
+        min-height: 79vh; // fallback
+        min-height: calc(95vh - 90px);
         @include desktop {
-            min-height: 65vh;
+            min-height: 65vh; // fallback
+            min-height: calc(95vh - 90px);
         }
     }
 }
@@ -48,15 +51,12 @@ a {
     color: $text_color;
     text-decoration: none;
     padding: 2px 1px 0px 1px;
-    // transition: background-color 0.1s ease-in, color 0.1s ease-in;
 
     &:hover,
     &:active,
     &:focus {
         text-decoration: underline;
-        // color: $secondary-hover-color;
-        // color: $color-white;
-        // background-color: $text_color;
+        color: $hover-link-color;
     }
     &.link {
         text-decoration: none;
@@ -150,15 +150,13 @@ textarea {
 
 .container-divider {
     @include tablet {
-        border-top: 1px solid $border-color;
-        background-color: $color-white;
         padding: 0;
     }
 
-    background-color: $color-pale-gray;
+    background-color: $color-white;
 
-    margin-bottom: 20px;
-    padding: 30px 0 0 0;
+    margin-bottom: 18px;
+    padding: 18px 0 0 0;
 }
 
 ul {
