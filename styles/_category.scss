@@ -3,6 +3,9 @@
     &-container {
         display: flex;
         justify-content: flex-end;
+        @include desktop {
+            margin-top: 2rem;
+        }
     }
 
     &-content {
@@ -45,8 +48,11 @@
 
 .article-list {
     &-item {
-        font-size: $font-size-bigger;
-        padding: 15px 0;
+        font-size: $font-size-base;
+        padding: 12px 0 0 5px;
+        @include desktop {
+            font-size: $font-size-bigger;
+        }
     }
 }
 
