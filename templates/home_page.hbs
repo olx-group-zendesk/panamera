@@ -74,7 +74,7 @@
 
 <section id="main-content" class="section hero">
   <div class="hero-inner">
-    <h1 class="hero-h1">{{dc 'hero_welcome_message'}}</h1>
+    <h1 class="hero-h1">{{dc "v2_hero_text"}}</h1>
     <h2 class="visibility-hidden">{{ t 'search' }}</h2>
     <div style="text-align: initial;">
       <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12"
@@ -82,7 +82,7 @@
         <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor" />
         <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5" />
       </svg>
-      {{dc 'search_with_placeholder'}}
+      {{dc "v2_search_full"}}
     </div>
   </div>
 </section>
@@ -91,13 +91,13 @@
   <div class="messages">
     {{#if settings.alert_enabled}}
     <section class="message message-alert">
-      {{dc 'eqx_alert_content'}}
+      {{dc "v2_alert_otmprofi"}}
     </section>
     {{/if}}
 
     {{#if settings.info_enabled}}
     <section class="message message-info">
-      {{dc 'eqx_info_content'}}
+      {{dc "v2_info_otmprofi"}}
     </section>
     {{/if}}
   </div>
@@ -176,7 +176,7 @@
 
   {{#if settings.home_page_contact_enabled}}
 
-  <h3 class="centered">{{dc "need_more_help"}}</h3>
+  <h3 class="centered">{{dc "v2_contact_callout_text"}}</h3>
 
   <section class="categories blocks">
     <ul class="blocks-list blocks-list-centered">
@@ -186,11 +186,11 @@
         <div class="blocks-item-button">
           {{#if settings.default_form_id}}
           {{#link "new_request" class="olx-button olx-button-primary"}}
-          {{dc "write_to_us"}}
+          {{dc "v2_contact_form_button_text"}}
           {{/link}}
           {{else}}
-          <a class="olx-button olx-button-primary" href="{{dc 'eqx_ticket_form_id'}}">
-            {{dc "write_to_us"}}
+          <a class="olx-button olx-button-primary" href="{{dc "v2_ticket_form_url_otmprofi"}}">
+            {{dc "v2_contact_form_button_text"}}
           </a>
           {{/if}}
         </div>
@@ -200,7 +200,7 @@
         <img src="{{asset 'icon-chat.svg'}}">
         <div class="blocks-item-button">
           <a name="live-chat" onclick="zen.webWidget.show();" class="olx-button olx-button-primary">
-            {{dc 'chat_live'}}
+            {{dc "v2_chat_button_text"}}
           </a>
         </div>
       </li>
@@ -215,10 +215,10 @@
       <li class="blocks-button">
         <img src="{{asset 'icon-call-us.svg'}}">
         <div class="blocks-item-button">
-          <a href="tel:{{dc 'eqx_phone_line_one_number_otmprofi'}}" title="{{dc 'eqx_phone_line_one_number_otmprofi'}}"
-            name="phone-line-1" data-phone-line1-number-title="{{dc 'eqx_phone_line_one_text_otmprofi'}}"
-            data-phone-line1-number="{{dc 'eqx_phone_line_one_number_otmprofi'}}" class="olx-button olx-button-primary">
-            {{dc 'eqx_phone_line_one_text_otmprofi'}}
+          <a href="tel:{{dc "v2_phone_1_number_otmprofi"}}" title="{{dc "v2_phone_1_number_otmprofi"}}"
+            name="phone-line-1" data-phone-line1-number-title="{{dc "v2_phone_1_title_otmprofi"}}"
+            data-phone-line1-number="{{dc "v2_phone_1_number_otmprofi"}}" class="olx-button olx-button-primary">
+            {{dc "v2_phone_1_title_otmprofi"}}
           </a>
         </div>
       </li>
@@ -237,18 +237,7 @@
       </li>
       {{/if}}
     </ul>
-    {{!-- {{#if settings.phone_line1_enabled}} --}}
-    <div class="blocks-stacked blocks-stacked-centered">
-      <span class="gray centered small">&ast;{{dc 'eqx_phone_line_one_business_hours_title_otmprofi'}}&nbsp;</span>
-      <span class="gray centered small">{{dc 'eqx_phone_line_one_business_hours_subtitle_otmprofi'}}</span>
-    </div>
-    {{!-- {{/if}} --}}
-    {{#if settings.phone_line2_enabled}}
-    <div class="blocks-stacked blocks-stacked-centered">
-      <span class="gray centered small">&ast;{{dc 'eqx_phone_line_two_business_hours_title_otmprofi'}}&nbsp;</span>
-      <span class="gray centered small">{{dc 'eqx_phone_line_two_business_hours_subtitle_otmprofi'}}</span>
-    </div>
-    {{/if}}
+    {{dc "v2_business_hours_otmprofi"}}
   </section>
 
   {{/if}}

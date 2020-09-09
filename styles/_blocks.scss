@@ -15,9 +15,11 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         padding: 6px 0;
-
         &-centered {
+            flex-direction: column;
             justify-content: center;
+            color: $color-text-light;
+            font-size: $font-size-navigation;
         }
     }
 
@@ -179,6 +181,11 @@
         font-size: 20px;
         font-family: $heading_font;
         color: $text_color;
+        &:hover,
+        &:active,
+        &:focus {
+            color: $hover-link-color;
+        }
     }
 
     &-item-description {

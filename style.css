@@ -524,6 +524,7 @@ input[type="submit"][disabled] {
 .olx-button-primary:hover, .olx-button-primary:focus, .olx-button-primary:active {
   background-color: #9c1907;
   text-decoration: none;
+  color: #fff;
 }
 
 .olx-button-large {
@@ -1557,7 +1558,10 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 }
 
 .blocks-stacked-centered {
+  flex-direction: column;
   justify-content: center;
+  color: #7f7f7f;
+  font-size: 14px;
 }
 
 .blocks-button {
@@ -1726,6 +1730,10 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
   font-size: 20px;
   font-family: $heading_font;
   color: $text_color;
+}
+
+.blocks-item-title:hover, .blocks-item-title:active, .blocks-item-title:focus {
+  color: #1d34a5;
 }
 
 .blocks-item-description {
