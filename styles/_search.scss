@@ -27,6 +27,7 @@
         &::placeholder {
             color: $color-roman-silver;
             margin-right: 10px;
+            font-family: -apple-system, BlinkMacSystemFont, system-ui, Arial;
         }
         &:focus {
             color: $field-text-focus-color;
