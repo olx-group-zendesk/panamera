@@ -87,6 +87,9 @@
         line-height: 1.6;
         margin: 40px 0;
         word-wrap: break-word;
+        & a {
+            text-decoration: underline;
+        }
     }
 
     &-footer {

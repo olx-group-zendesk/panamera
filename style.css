@@ -2295,6 +2295,10 @@ section.message-alert {
   word-wrap: break-word;
 }
 
+.article-content a {
+  text-decoration: underline;
+}
+
 .article-footer {
   align-items: center;
   display: flex;
