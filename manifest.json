@@ -489,7 +489,7 @@
                     "type": "checkbox",
                     "description": "hints_enabled_description",
                     "label": "hints_enabled_label",
-                    "value": true
+                    "value": false
                 },
                 {
                     "identifier": "hints",
