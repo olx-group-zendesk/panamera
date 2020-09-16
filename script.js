@@ -67,6 +67,33 @@ document.addEventListener("DOMContentLoaded", function () {
     // Always hide this element - we have a "single form setup" for contact.
     setStyleAttribute(".request_ticket_form_id", "display:none");
 
+    // Customize Web widget
+
+    zE("webWidget", "updateSettings", {
+        webWidget: {
+            helpCenter: {
+                title: {
+                    uk: "Потрібна допомога?",
+                    ru: "Потрібна допомога?",
+                },
+                chatButton: {
+                    uk: "Почати чат",
+                    ru: "Почати чат",
+                },
+                messageButton: {
+                    uk: "Відправити",
+                    ru: "Відправити",
+                },
+            },
+            launcher: {
+                label: {
+                    uk: "Потрібна допомога?",
+                    ru: "Потрібна допомога?",
+                },
+            },
+        },
+    });
+
     // ############################## END CUSTOM ##############################
 
     // Key map
