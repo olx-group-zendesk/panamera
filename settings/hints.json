@@ -1,13 +1,82 @@
-[
-    {
-        "instance": "Test",
-        "form_id": "360017767431",
-        "default_suggestion": "Hello there!",
-        "data": [
-            {
-                "fields": ["ato__level_6__level7"],
-                "answer_suggestion": "Hello, this is a test hint to be displayed in the widget. Check <a target='_blank' rel='noreferrer noopener' href='https://pomoc.olx.pl/hc/pl/articles/210631449'>this</a> <script>alert('evil code!');</script>out dude!"
-            }
-        ]
-    }
-]
+[{
+	"instance": "Otodom",
+	"form_id": "360004458860",
+	"default_suggestion": "",
+	"data": [{
+            "fields": ["ogłoszenia_i_promowania_-_wybierz_opcję_z_listy__jak_dodać_lub_edytować_ogłoszenie"],
+			"answer_suggestion": "Ogłoszenie w Otodom możesz dodać poprzez przycisk <b>Dodaj ogłoszenie</b> widoczny w górnym menu strony - sprawdź nasz  <a taget='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/206828965'><artykuł></a> na ten temat. <br>Edycja ogłoszenia możliwa jest po zalogowaniu się na konto w Otodom - sprawdź <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/207873009'><instrukcję></a>, jak edytować Twoje ogłoszenie. </br> <br>Jeśli nie masz pewności, jak zalogować się do swojego konta - przygotowaliśmy dla Ciebie kilka podpowiedzi <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/203121441'><tutaj></a>. </br> <br>Masz inne pytania? Skorzystaj z poniższego formularza kontaktowego.</br>"
+		},
+		{
+			"fields": ["ogłoszenia_i_promowania_-_wybierz_opcję_z_listy__nie_mogę_znaleźć_dodanego_ogłoszenia"],
+			"answer_suggestion": "Zaloguj się na konto i sprawdź, czy na pewno Twoje ogłoszenie jest aktywne. <br>Oferta jest w zakładce <b>Ogłoszenia > Aktywne</b>, a Ty nie możesz jej znaleźć? Upewnij się najpierw, czy szukasz we właściwej kategorii i lokalizacji wskazanej w ogłoszeniu. Możesz również napisać do nas - podaj koniecznie numer ogłoszenia i opisz kryteria, według jakich szukasz ogłoszenia. Postaramy się pomóc!</br>"
+		},
+		{
+			"fields": ["ogłoszenia_i_promowania_-_wybierz_opcję_z_listy__promowania_lub_pakiety"],
+			"answer_suggestion": "Dodajesz ogłoszenie i chcesz, aby oferta była bardziej widoczna dla poszukujących? Sprawdź nasze dostępne promowania i zobacz, jak działają. To proste! Wystarczy, że przeczytasz nasz <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/203187621'><artykuł></a>.<br>Jesteś pośrednikiem i nie wiesz, który pakiet promowań będzie dla Ciebie najlepszy? Sprawdź <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/203125791'><tutaj></a>.</br><br>Dla deweloperów polecamy artykuł o <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/210599129'><promowaniu inwestycji></a>. </br>"
+		},
+		{
+			"fields": ["ogłoszenia_i_promowania_-_wybierz_opcję_z_listy__blokada_ogłoszenia_przez_otodom__moderacja"],
+			"answer_suggestion": "Jeśli Twoje ogłoszenie zostało zmoderowane i masz pytania w tej sprawie, podaj nam w zgłoszeniu numer oferty w Otodom. Dzięki temu szybciej zidentyfikujemy Twoje ogłoszenie. <br>Pamiętaj, że ogłoszenia muszą być zgodne ze stanem rzeczywistym, a nieprawidłowe informacje na temat nieruchomości wprowadzają użytkowników w błąd i zniechęcają ich do dalszych poszukiwań.</br>"
+		},
+		{
+			"fields": ["ogłoszenia_i_promowania_-_wybierz_opcję_z_listy__inne",
+				"zarządzanie_kontem_-_wybierz_opcję_z_listy__inne",
+				"płatności_i_faktury_-_wybierz_opcję_z_listy__płatności_-_status_/_pytania",
+				"płatności_i_faktury_-_wybierz_opcję_z_listy__inne",
+				"problemy_techniczne_-_wybierz_opcję_z_listy__strona_otodom_na_komputerze_/_laptopie",
+				"problemy_techniczne_-_wybierz_opcję_z_listy__strona_otodom_na_urządzeniach_mobilnych",
+				"problemy_techniczne_-_wybierz_opcję_z_listy__aplikacja_android",
+				"reklamacja_type_issues",
+				"naruszenie_zasad__-_wybierz_opcję_z_listy__lokalizacja_jest_nieprawidłowa",
+				"inne_type_issues"
+			],
+			"answer_suggestion": "Zależy nam na szybkim i skutecznym rozwiązaniu Twojej sprawy. Dlatego napisz do nas i zadbaj o to, aby podać jak najwięcej szczegółów."
+		},
+		{
+			"fields": ["zarządzanie_kontem_-_wybierz_opcję_z_listy__zmiana_danych_na_koncie"],
+			"answer_suggestion": "Pamiętaj, że część swoich danych możesz zmienić samodzielnie w zakładce <b>Ustawienia</b> po zalogowaniu się na swoje konto, np. adres e-mail, dane korespondencyjne. <br>Jeśli zmiana dotyczy danych na fakturze skontaktuj się z nami. Podaj numer NIP oraz adres e-mail, którym logujesz się do konta.</br>"
+		},
+		{
+			"fields": ["zarządzanie_kontem_-_wybierz_opcję_z_listy__zmiana_hasła_/_przypomnij_hasło"],
+			"answer_suggestion": "Jeśli nie masz pewności, jak zalogować się do swojego konta - przygotowaliśmy dla Ciebie kilka podpowiedzi <a taget='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/203121441'><tutaj></a>."
+		},
+		{
+			"fields": ["zarządzanie_kontem_-_wybierz_opcję_z_listy__usunięcie__wypowiedzenie_lub_cesja_konta"],
+			"answer_suggestion": "Jeśli jesteś użytkownikiem indywidualnym, usunięcie konta jest możliwe po zalogowaniu do konta. W zakładce <b>Ustawienia > Dane</b> logowania znajdziesz opcję <b>Usuń moje konto</b>. Pamiętaj, że jest to nieodwracalne.<br><br>W przypadku użytkowników biznesowych prosimy o przesłanie wypowiedzenia przez formularz kontaktowy. Pamiętaj, aby podać adres e-mail, na który jest założone konto w Otodom. Więcej o wypowiedzeniu przeczytasz <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/203058142'><tutaj></a>.</br><br><br>Pomocny może okazać się także nasz artykuł o <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/115005972325'><cesji></a>, która pozwala zmienić właściciela danego konta biznesowego.</br> "
+		},
+		{
+			"fields": ["płatności_i_faktury_-_wybierz_opcję_z_listy__jak_znaleźć_lub_wygenerować_fakturę"],
+			"answer_suggestion": "Klienci indywidualni w Otodom mogą samodzielnie wystawić fakturę za wystawione ogłoszenie. Ta opcja dostępna jest po zalogowaniu do konta w Otodom, a <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/208190805'><tutaj></a> możesz sprawdzić dokladną instrukcję, jak to zrobić.<br><br>W przypadku użytkowników biznesowych wszystkie faktury znajdziesz w zakładce <b>Płatności > Faktury.</b></br>"
+		},
+		{
+			"fields": ["płatności_i_faktury_-_wybierz_opcję_z_listy__liczba_wystawień_/_cennik"],
+			"answer_suggestion": "Jeśli masz pytania dotyczące faktury lub aktualnej liczby wystawień, skontaktuj się z nami. Pamiętaj o podaniu numeru NIP oraz adresu e-mail, z pomocą którego logujesz się do konta w Otodom. "
+		},
+		{
+			"fields": ["eksporty_type_issues"],
+			"answer_suggestion": "Jeśli chcesz zacząć korzystać z programu do eksportu ogłoszeń, zapoznaj się z naszym <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/203120562'><artykułem></a> w Centrum Pomocy. <br><br>W przypadku pytań dotyczących np. błędów w eksporcie ofert, podaj nam proszę numery ogłoszeń w CRM, których problem dotyczy. Pomocne też będą zrzuty ekranu.</br>"
+		},
+		{
+			"fields": ["sugestie_i_zmiany_type_issues"],
+			"answer_suggestion": "Dziękujemy za zaangażowanie!<br><br>Twoja opinia jest dla nas niezwykle cenna, ponieważ to właśnie dzięki niej możemy zmieniać się na lepsze.</br>"
+		},
+		{
+			"fields": ["naruszenie_zasad__-_wybierz_opcję_z_listy__bezprawne_logowanie_lub_przejęcie_konta"],
+			"answer_suggestion": "Jeśli podejrzewasz, że ktoś próbuje lub już przejął Twoje konto, skontaktuj się z nami!<br><br>Jak najszybciej zmień swoje dane logowania wszędzie tam, gdzie były one takie same, jak w naszym serwisie, np. skrzynka mailowa. </br><br><br>Więcej informacji znajdziesz <a target='_blank' rel='norefferer noopenner' href='pomoc.otodom.pl/hc/pl/articles/360000301660'><tutaj></a></br>."
+		},
+		{
+			"fields": ["naruszenie_zasad__-_wybierz_opcję_z_listy__ogłoszenie_jest_nieaktualne"],
+			"answer_suggestion": "Napisz do nas i zadbaj o to, aby podać jak najwięcej szczegółów.<br><br>Pomocny będzie numer ogłoszenia oraz informacja, na podstawie której stwierdzimy, czy ogłoszenie jest nieaktualne.<br><br>Dzięki temu szybciej zajmiemy się Twoim zgłoszeniem.</br>"
+		},
+		{
+			"fields": ["naruszenie_zasad__-_wybierz_opcję_z_listy__ofertę_zamieszczono_bez_zgody_właściciela_nieruchomości"],
+			"answer_suggestion": "Napisz do nas i zadbaj o to, aby podać jak najwięcej szczegółów. Pomocny będzie numer ogłoszenia. <br><br>Dzięki temu szybciej zajmiemy się Twoim zgłoszeniem.</br>"
+		},
+		{
+			"fields": ["naruszenie_zasad__-_wybierz_opcję_z_listy__inne"],
+			"answer_suggestion": "Napisz do nas i zadbaj o to, aby podać jak najwięcej szczegółów. Pomocny będzie numer ogłoszenia. <br><br>Dzięki temu szybciej zajmiemy się Twoim zgłoszeniem.</br>"
+		}
+
+
+	]
+}]
