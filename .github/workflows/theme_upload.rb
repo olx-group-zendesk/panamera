@@ -70,11 +70,12 @@ end
 
 zendesk_connection.post("themes/#{theme_id}/publish")
 
-# Clear older themes (keep last 3)
+# Clear old themes
 
-themes = zendesk_connection.get("themes?brand_id=#{brand_id}").body["themes"]
-sorted = themes.sort_by { |p| p['created_at'] }
-sorted[0..-4].each do |theme|
-    next if theme["id"] == theme_id
-    zendesk_connection.delete("themes/#{theme["id"]}")
-end
+# themes = zendesk_connection.get("themes?brand_id=#{brand_id}").body["themes"]
+
+# themes.each do |theme|
+#   next if theme["id"] == theme_id
+
+#   zendesk_connection.delete("themes/#{theme["id"]}")
+# end

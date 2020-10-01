@@ -7,25 +7,22 @@ jobs:
         steps:
             - uses: zendesk/checkout@v2
             - run: "sudo apt-get install zip"
-            - run: "zip --exclude=*.git* -r theme.zip ."
+            - run: "zip -x node_modules/* .git/* -r theme.zip ."
             - uses: zendesk/setup-ruby@v1
               with:
                   ruby-version: "2.6"
             - run: gem install faraday -v 0.16.0
             - run: gem install faraday_middleware -v 0.13.1
-            # - run: ruby ./.github/workflows/theme_upload.rb
-            #   env:
-            #       zendesk_email: ${{ secrets.zendesk_email }}
-            #       zendesk_token: ${{ secrets.zendesk_token }}
-            #       brand_id: ${{ secrets.brand_id }}
-            #       subdomain: ${{ secrets.subdomain }}
+            - run: ruby ./.github/workflows/theme_upload.rb
+              env:
+                  zendesk_email: ${{ secrets.zendesk_email }}
+                  zendesk_token: ${{ secrets.zendesk_token_otodom }}
+                  brand_id: ${{ secrets.brand_id_otodom }}
+                  subdomain: ${{ secrets.subdomain_otodom }}
             - name: Audit URLs using Lighthouse
               uses: zendesk/lighthouse-ci-action@v3
               with:
                   urls: |
-                      https://${{ secrets.subdomain }}.zendesk.com/hc/en-us
-                  configPath: ./.github/workflows/lighthouserc.json
+                      https://${{ secrets.subdomain_otodom }}.zendesk.com/hc/en-us
               env:
-                  end_user_email: ${{ secrets.end_user_email }}
-                  end_user_password: ${{ secrets.end_user_password }}
-                  subdomain: ${{ secrets.subdomain }}
+                  subdomain: ${{ secrets.subdomain_otodom }}
