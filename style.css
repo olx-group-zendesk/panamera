@@ -2031,7 +2031,7 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 }
 
 .icon-star {
-  color: #3a77ff;
+  color: #ff7200;
   font-size: 18px;
 }
 
@@ -2412,6 +2412,7 @@ section.message-alert {
   font-family: $heading_font;
   font-size: 15px;
   position: relative;
+  font-weight: 600;
 }
 
 .sidenav-item {
