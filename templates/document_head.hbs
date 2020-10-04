@@ -14,7 +14,7 @@
 {{#unless signed_in}}
 <script type="text/javascript">
     if (
-        document.cookie.match(/^(.*;)?\s*access_token\s*=\s*[^;]+(.*)?$/) !==
+        document.cookie.match(/^(.*;)?\s*isLogged\s*=\s*[^;]+(.*)?$/) !==
         null
     ) {
         window.location = "{{settings.country_site_url}}" + "account/zendesksso?nativeMode=1"
