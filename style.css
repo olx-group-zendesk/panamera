@@ -2745,7 +2745,7 @@ section.message-alert {
 }
 
 .comment-author {
-  align-items: flex-end;
+  align-items: baseline;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
@@ -3330,7 +3330,7 @@ section.message-alert {
   color: #fff;
   font-size: 12px;
   font-weight: 600;
-  margin-right: 2px;
+  margin-left: 5px;
   padding: 3px 10px;
   vertical-align: middle;
   white-space: nowrap;
