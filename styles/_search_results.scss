@@ -10,17 +10,31 @@
     justify-content: space-between;
 
     &-column {
-        @include desktop {
-            flex: 0 0 75%;
+        & a {
+            text-decoration: underline;
+        }
+
+        & > img {
+            display: block;
+            margin: auto;
+            padding-bottom: 1rem;
         }
 
         flex: 1;
+        @include desktop {
+            flex: 0 0 75%;
+            & > img {
+                padding-bottom: 2rem;
+                display: flex;
+                margin: unset;
+            }
+        }
     }
 
     &-sidebar {
         border-top: 1px solid $border-color;
         flex: 1 0 auto;
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
         padding: 0;
 
         @include desktop {

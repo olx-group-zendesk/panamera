@@ -365,8 +365,8 @@ textarea:focus {
 
 .container-divider {
   background-color: #f2f4f5;
-  margin-bottom: 20px;
-  padding: 30px 0 0 0;
+  margin-bottom: 18px;
+  padding: 18px 0 0 0;
 }
 
 @media (min-width: 768px) {
@@ -1335,6 +1335,7 @@ input[type="submit"][disabled] {
 .search input[type="search"]::placeholder {
   color: #7f9799;
   margin-right: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, system-ui, Arial;
 }
 
 .search input[type="search"]:focus {
@@ -1369,6 +1370,7 @@ input[type="submit"][disabled] {
 }
 
 .search-container {
+  margin-top: -8px;
   position: relative;
 }
 
@@ -2043,6 +2045,12 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
   justify-content: flex-end;
 }
 
+@media (min-width: 1024px) {
+  .category-container {
+    margin-top: 2rem;
+  }
+}
+
 .category-content {
   flex: 1;
 }
@@ -2091,8 +2099,14 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 }
 
 .article-list-item {
-  font-size: 16px;
-  padding: 15px 0;
+  font-size: 15px;
+  padding: 12px 0 0 5px;
+}
+
+@media (min-width: 1024px) {
+  .article-list-item {
+    font-size: 16px;
+  }
 }
 
 .icon-star {
@@ -2731,7 +2745,7 @@ section.message-alert {
 }
 
 .comment-author {
-  align-items: flex-end;
+  align-items: baseline;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
@@ -3316,7 +3330,7 @@ section.message-alert {
   color: #fff;
   font-size: 12px;
   font-weight: 600;
-  margin-right: 2px;
+  margin-left: 5px;
   padding: 3px 10px;
   vertical-align: middle;
   white-space: nowrap;
@@ -3623,6 +3637,50 @@ section.message-alert {
   .post-comments {
     margin-bottom: 0;
   }
+}
+
+/***** Community Badges *****/
+/* Styles labels used next to the authors of article comments, community posts, and community comments */
+.community-badge-titles {
+  background-color: #04444d;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  vertical-align: middle;
+  white-space: nowrap;
+  display: inline-flex;
+  line-height: 20px;
+  margin: 0 2px;
+}
+
+.community-badge-container-achievements {
+  padding-top: 5px;
+}
+
+.community-badge-achievements {
+  display: inline-block;
+  margin: 0 3px 0 0;
+}
+
+[dir="rtl"] .community-badge-achievements {
+  margin: 0 0 0 3px;
+}
+
+.community-badge-achievements img {
+  width: 22px;
+  height: 22px;
+}
+
+.community-badge-titles img {
+  width: 20px;
+  height: 20px;
+}
+
+.profile-info .community-badge-achievements img {
+  width: 40px;
+  height: 40px;
 }
 
 /* Navigation element that collapses on mobile */
@@ -4512,6 +4570,14 @@ section.message-alert {
   display: block;
 }
 
+.meta-group-opposite {
+  float: right;
+}
+
+[dir="rtl"] .meta-group-opposite {
+  float: left;
+}
+
 .meta-group * {
   display: inline;
 }
@@ -4564,8 +4630,8 @@ section.message-alert {
 }
 
 .profile-avatar .user-avatar {
-  width: 65px;
-  height: 65px;
+  width: 80px;
+  height: 80px;
 }
 
 .profile-avatar .icon-agent {
@@ -4589,6 +4655,7 @@ section.message-alert {
 
 .profile-header .basic-info .name {
   margin: 0;
+  line-height: 25px;
 }
 
 .profile-header .options {
@@ -4859,6 +4926,65 @@ section.message-alert {
   }
 }
 
+.profile-badges-items {
+  margin-top: 25px;
+}
+
+.profile-badges-item {
+  border-top: 1px solid #d8dfe0;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 27px 12px;
+}
+
+.profile-badges-item > div {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.profile-badges-item-image {
+  height: 40px;
+  width: 40px;
+  margin-right: 12px;
+}
+
+.profile-badges-item-image img {
+  max-height: 40px;
+}
+
+[dir="rtl"] .profile-badges-item-image {
+  margin-left: 12px;
+  margin-right: 0;
+}
+
+.profile-badges-item-title, .profile-badges-item-metadata-title {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.profile-badges-item-title {
+  font-weight: 600;
+}
+
+.profile-badges-item-description, .profile-badges-item-metadata-description {
+  color: lighten($text_color, 20%);
+  font-size: 13px;
+  margin: 0;
+}
+
+.profile-badges-item-metadata {
+  margin-left: auto;
+  text-align: right;
+}
+
+[dir="rtl"] .profile-badges-item-metadata {
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left;
+}
+
 .profile-contribution {
   -moz-hyphens: auto;
   -ms-hyphens: auto;
@@ -5120,16 +5246,30 @@ section.message-alert {
   flex: 1;
 }
 
+.search-results-column a {
+  text-decoration: underline;
+}
+
+.search-results-column > img {
+  display: block;
+  margin: auto;
+  padding-bottom: 1rem;
+}
+
 @media (min-width: 1024px) {
   .search-results-column {
     flex: 0 0 75%;
+  }
+  .search-results-column > img {
+    padding-bottom: 2rem;
+    display: flex;
+    margin: unset;
   }
 }
 
 .search-results-sidebar {
   border-top: 1px solid #d8dfe0;
   flex: 1 0 auto;
-  margin-bottom: 20px;
   padding: 0;
 }
 
