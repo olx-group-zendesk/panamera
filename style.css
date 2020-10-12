@@ -2000,7 +2000,7 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 .section-tree-title {
   margin-bottom: 0;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   font-family: $heading_font;
   color: $text_color;
 }
@@ -2018,7 +2018,7 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 
 .article-list-item {
   font-size: 15px;
-  padding: 12px 0 0 5px;
+  padding: 12px 0 10px 5px;
 }
 
 @media (min-width: 1024px) {
