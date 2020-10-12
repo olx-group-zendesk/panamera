@@ -24,6 +24,7 @@
         "build-css": "./bin/compile.rb",
         "preview": "zat theme preview",
         "start": "nodemon -e scss -x \"npm run build-css\"",
+        "preview-nodemon": "nodemon -e scss,hbs,js -x \"npm run preview\"",
         "zat-test": "rm ./.zat && ln -s ./zat-dotfiles/.zat-test ./.zat",
         "zat-pl": "rm ./.zat && ln -s ./zat-dotfiles/.zat-pl ./.zat",
         "zat-pt": "rm ./.zat && ln -s ./zat-dotfiles/.zat-pt ./.zat",

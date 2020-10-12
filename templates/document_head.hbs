@@ -14,12 +14,12 @@
 {{/if}}
 
 <script>
-    console.info("---=== Version 04 ===---");
-    function getAccessToken() {
-        var b = document.cookie.match('(^|;)\\s*' + "access_token" + '\\s*=\\s*([^;]+)');
+        console.info("---=== Version 05 ===---");
+        function getCookieByName(name) {
+            var b = document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)');
         return b ? b.pop() : null;
     }
-    var accessToken = getAccessToken();
+        var refreshToken = getCookieByName("refresh_token");
 </script>
 
 {{#if signed_in}}
@@ -29,16 +29,17 @@
 </script>
 {{else}}
 <script>
-    if (accessToken === null) {
+        if (refreshToken === null) {
         console.info("Signed out.");
         sessionStorage.clear();
     } else {
-        if (sessionStorage.getItem("last_access_token") !== accessToken) {
+
+        if (sessionStorage.getItem("last_refresh_token") !== refreshToken) {
             sessionStorage.clear();
-            sessionStorage.setItem("last_access_token", accessToken);
+            sessionStorage.setItem("last_refresh_token", refreshToken);
         }
 
-        if (accessToken !== null && Number(sessionStorage.getItem("sso_checked")) < 3) {
+        if (refreshToken !== null && Number(sessionStorage.getItem("sso_checked")) < 3) {
             console.info("NOT Signed in. - Querying ZENDESKSSO...");
             sessionStorage.setItem("sso_checked", Number(sessionStorage.getItem("sso_checked")) + 1);
             location = "{{settings.country_site_url}}" + "account/zendesksso/?nativeMode=1&return_to=" + location.href;
