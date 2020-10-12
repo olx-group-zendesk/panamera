@@ -1,3 +1,25 @@
+## [2.4.1](https://github.com/zendesk/copenhagen_theme/compare/v2.4.0...v2.4.1) (2020-10-06)
+
+
+### Bug Fixes
+
+* **article:** use t helper for article attachments download string ([7959d9c](https://github.com/zendesk/copenhagen_theme/commit/7959d9c165aaaa90bd4e59e233aebf21c7e0edca))
+
+# [2.4.0](https://github.com/zendesk/copenhagen_theme/compare/v2.3.1...v2.4.0) (2020-08-31)
+
+
+### Bug Fixes
+
+* **badges:** Changes based on feedback ([d6bdc4d](https://github.com/zendesk/copenhagen_theme/commit/d6bdc4db2760603c124ab4173d86312ec6d28417))
+* **badges:** CSS changes ([3b51de8](https://github.com/zendesk/copenhagen_theme/commit/3b51de8f7751ad878205fdf8da691a4df966a5a1))
+* **manifest:** Do not rename the theme ([244979c](https://github.com/zendesk/copenhagen_theme/commit/244979c31333a8f1ceea433909cbb191f1518391))
+* **user-profile:** Remove accidental indentation + space ([0951454](https://github.com/zendesk/copenhagen_theme/commit/09514540f7cacb61b0c5f5708f9df60a8462ad44))
+
+
+### Features
+
+* **badges:** Add theme support for user badges ([d86db46](https://github.com/zendesk/copenhagen_theme/commit/d86db46dc1bbf8703df08cd4b9fd8388a7acaafd))
+
 ## [2.3.1](https://github.com/zendesk/copenhagen_theme/compare/v2.3.0...v2.3.1) (2020-07-13)
 
 
