@@ -507,7 +507,7 @@
                     "type": "checkbox",
                     "description": "enhanced_analytics_description",
                     "label": "enhanced_analytics_label",
-                    "value": false
+                    "value": true
                 }
             ]
         }
