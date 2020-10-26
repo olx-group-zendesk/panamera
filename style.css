@@ -1513,7 +1513,7 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 
 @media (min-width: 768px) {
   .sub-nav input[type="search"] {
-    min-width: 300px;
+    min-width: 360px;
   }
 }
 
