@@ -1284,6 +1284,7 @@ input[type="submit"][disabled] {
 .search input[type="search"]::placeholder {
   color: #7f9799;
   margin-right: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, system-ui, Arial;
 }
 
 .search input[type="search"]:focus {
