@@ -17,12 +17,12 @@ jobs:
               env:
                   zendesk_email: ${{ secrets.zendesk_email }}
                   zendesk_token: ${{ secrets.zendesk_token_otomoto }}
-                  brand_id: ${{ secrets.brand_id_otomoto_profi }}
-                  subdomain: ${{ secrets.subdomain_otomoto_profi }}
+                  brand_id: ${{ secrets.brand_id_otomoto }}
+                  subdomain: ${{ secrets.subdomain_otomoto }}
             - name: Audit URLs using Lighthouse
               uses: zendesk/lighthouse-ci-action@v3
               with:
                   urls: |
-                      https://${{ secrets.subdomain_otomoto_profi }}.zendesk.com/hc/pl
+                      https://${{ secrets.subdomain_otomoto }}.zendesk.com/hc/pl
               env:
-                  subdomain: ${{ secrets.subdomain_otomoto_profi }}
+                  subdomain: ${{ secrets.subdomain_otomoto }}
