@@ -8,7 +8,7 @@
           <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor" />
           <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5" />
         </svg>
-        {{dc 'eqx_search_input'}}
+        {{dc "v2_search"}}
       </div>
     </nav>
   </div>
@@ -17,13 +17,13 @@
 <div class="container">
   {{#if settings.alert_enabled}}
   <section class="message message-alert">
-    {{dc 'eqx_alert_content'}}
+    {{dc "v2_alert"}}
   </section>
   {{/if}}
 
   {{#if settings.info_enabled}}
   <section class="message message-info">
-    {{dc 'eqx_info_content'}}
+    {{dc "v2_info"}}
   </section>
   {{/if}}
   <div class="article-container" id="article-container">
@@ -95,10 +95,12 @@
 
             <ul class="meta-group">
               {{#is article.created_at article.edited_at}}
-              <li class="meta-data">{{date article.created_at timeago=true}}</li>
+              {{!-- <li class="meta-data">{{date article.created_at timeago=true}}</li> --}}
+              <li class="meta-data">&nbsp;</li>
               {{else}}
-              <li class="meta-data">{{date article.edited_at timeago=true}}</li>
-              <li class="meta-data">{{t 'updated'}}</li>
+              {{!-- <li class="meta-data">{{date article.edited_at timeago=true}}</li> --}}
+              {{!-- <li class="meta-data">{{t 'updated'}}</li> --}}
+              <li class="meta-data">&nbsp;</li>
               {{/is}}
             </ul>
           </div>
@@ -125,7 +127,7 @@
                 <a href="{{url}}" target="_blank">{{name}}</a>
                 <div class="attachment-meta meta-group">
                   <span class="attachment-meta-item meta-data">{{size}}</span>
-                  <a href="{{url}}" target="_blank" class="attachment-meta-item meta-data">Download</a>
+                  <a href="{{url}}" target="_blank" class="attachment-meta-item meta-data">{{t 'download'}}</a>
                 </div>
               </li>
               {{/each}}
@@ -170,11 +172,7 @@
         </div>
         {{/with}}
 
-        {{!-- <div class="article-more-questions">
-          {{request_callout}}
-        </div> --}}
-
-        <h3 class="centered">{{dc "need_more_help"}}</h3>
+        <h3 class="centered">{{dc "v2_contact_callout_text"}}</h3>
 
         <section class="categories blocks">
           <ul class="blocks-list blocks-list-centered">
@@ -184,11 +182,11 @@
               <div class="blocks-item-button">
                 {{#if settings.default_form_id}}
                 {{#link "new_request" class="olx-button olx-button-primary"}}
-                {{dc "write_to_us"}}
+                {{dc "v2_contact_form_button_text"}}
                 {{/link}}
                 {{else}}
-                <a class="olx-button olx-button-primary" href="{{dc 'eqx_ticket_form_id'}}">
-                  {{dc "write_to_us"}}
+                <a class="olx-button olx-button-primary" href="{{dc "v2_ticket_form_url_otmprofi"}}">
+                  {{dc "v2_contact_form_button_text"}}
                 </a>
                 {{/if}}
               </div>
@@ -198,7 +196,7 @@
               <img src="{{asset 'icon-chat.svg'}}">
               <div class="blocks-item-button">
                 <a name="live-chat" onclick="zen.webWidget.show();" class="olx-button olx-button-primary">
-                  {{dc 'chat_live'}}
+                  {{dc "v2_chat_button_text"}}
                 </a>
               </div>
             </li>
@@ -213,10 +211,10 @@
             <li class="blocks-button">
               <img src="{{asset 'icon-call-us.svg'}}">
               <div class="blocks-item-button">
-                <a href="tel:{{dc 'eqx_phone_line_one_number'}}" title="{{dc 'eqx_phone_line_one_number'}}"
-                  name="phone-line-1" data-phone-line1-number-title="{{dc 'eqx_phone_line_one_text'}}"
-                  data-phone-line1-number="{{dc 'eqx_phone_line_one_number'}}" class="olx-button olx-button-primary">
-                  {{dc 'eqx_phone_line_one_text'}}
+                <a href="tel:{{dc "v2_phone_1_number_otmprofi"}}" title="{{dc "v2_phone_1_number_otmprofi"}}"
+                  name="phone-line-1" data-phone-line1-number-title="{{dc "v2_phone_1_title_otmprofi"}}"
+                  data-phone-line1-number="{{dc "v2_phone_1_number_otmprofi"}}" class="olx-button olx-button-primary">
+                  {{dc "v2_phone_1_title_otmprofi"}}
                 </a>
               </div>
             </li>
@@ -226,27 +224,16 @@
             <li class="blocks-button">
               <img src="{{asset 'icon-call-us.svg'}}">
               <div class="blocks-item-button">
-                <a href="tel:{{dc 'eqx_phone_line_two_number'}}" title="{{dc 'eqx_phone_line_two_number'}}"
-                  name="phone-line-2" data-phone-line2-number-title="{{dc 'eqx_phone_line_two_text'}}"
-                  data-phone-line2-number="{{dc 'eqx_phone_line_two_number'}}" class="olx-button olx-button-primary">
-                  {{dc 'eqx_phone_line_two_text'}}
+                <a href="tel:{{dc "v2_phone_2_number_otmprofi"}}" title="{{dc "v2_phone_2_number_otmprofi"}}"
+                  name="phone-line-2" data-phone-line1-number-title="{{dc "v2_phone_2_title_otmprofi"}}"
+                  data-phone-line1-number="{{dc "v2_phone_2_number_otmprofi"}}" class="olx-button olx-button-primary">
+                  {{dc "v2_phone_2_title_otmprofi"}}
                 </a>
               </div>
             </li>
             {{/if}}
           </ul>
-          {{#if settings.phone_line1_enabled}}
-          <div class="blocks-stacked blocks-stacked-centered">
-            <span class="gray centered small">&ast;{{dc 'eqx_phone_line_one_business_hours_title'}}&nbsp;</span>
-            <span class="gray centered small">{{dc 'eqx_phone_line_one_business_hours_subtitle'}}</span>
-          </div>
-          {{/if}}
-          {{#if settings.phone_line2_enabled}}
-          <div class="blocks-stacked blocks-stacked-centered">
-            <span class="gray centered small">&ast;{{dc 'eqx_phone_line_two_business_hours_title'}}&nbsp;</span>
-            <span class="gray centered small">{{dc 'eqx_phone_line_two_business_hours_subtitle'}}</span>
-          </div>
-          {{/if}}
+          {{dc "v2_business_hours_otmprofi"}}
         </section>
 
         <div class="article-return-to-top">
@@ -316,9 +303,20 @@
                         {{#link 'user_profile' id=author.id}}
                         {{author.name}}
                         {{/link}}
+                        {{#each author.badges}}
+                        {{#is category_slug "titles"}}
+                        <span class="community-badge community-badge-titles" title="{{description}}"
+                          aria-label="{{name}}">
+                          {{#if icon_url}}
+                          <img src="{{icon_url}}" alt="" />
+                          {{/if}}
+                          {{name}}
+                        </span>
+                        {{/is}}
+                        {{/each}}
                       </span>
 
-                      <ul class="meta-group">
+                      <ul class="meta-group meta-group-opposite">
                         {{#if editor}}
                         <li class="meta-data">{{date edited_at timeago=true}}</li>
                         <li class="meta-data">{{t 'edited'}}</li>
@@ -326,6 +324,19 @@
                         <li class="meta-data">{{date created_at timeago=true}}</li>
                         {{/if}}
                       </ul>
+
+                      <div class="community-badge-container-achievements">
+                        {{#each author.badges}}
+                        {{#is category_slug "achievements"}}
+                        {{#if icon_url}}
+                        <div class="community-badge community-badge-achievements">
+                          <img src="{{icon_url}}" alt="{{name}}" title="{{name}} | {{description}}"
+                            aria-label="{{name}}" />
+                        </div>
+                        {{/if}}
+                        {{/is}}
+                        {{/each}}
+                      </div>
                     </div>
                     <div class="comment-labels">
                       {{#with ticket}}

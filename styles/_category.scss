@@ -3,6 +3,9 @@
     &-container {
         display: flex;
         justify-content: flex-end;
+        @include desktop {
+            margin-top: 2rem;
+        }
     }
 
     &-content {
@@ -32,7 +35,7 @@
         }
         margin-bottom: 0;
         font-size: 16px;
-        font-weight: $font-weight-500;
+        font-weight: $font-weight-semibold;
         font-family: $heading_font;
         color: $text_color;
     }
@@ -45,8 +48,11 @@
 
 .article-list {
     &-item {
-        font-size: $font-size-bigger;
-        padding: 15px 0;
+        font-size: $font-size-base;
+        padding: 12px 0 10px 5px;
+        @include desktop {
+            font-size: $font-size-bigger;
+        }
     }
 }
 

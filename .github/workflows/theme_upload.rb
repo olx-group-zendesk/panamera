@@ -50,11 +50,16 @@ loop do
   raise "timeout" if retries < 1
 
   job_status_response = zendesk_connection.get("jobs/#{job_id}")
-  status = job_status_response.body['job']['status']
+  body = job_status_response.body
+  status = body['job']['status']
 
-  raise 'Import failed' if status == "failed"
+  if status == "failed"
+    warn(body)
 
-  break if job_status_response.body['job']['status'] == 'completed'
+    raise 'Import failed'
+  end
+
+  break if status == 'completed'
 
   retries -= 1
 
@@ -65,12 +70,11 @@ end
 
 zendesk_connection.post("themes/#{theme_id}/publish")
 
-# Clear old themes
+# Clear older themes (keep last 3)
 
 themes = zendesk_connection.get("themes?brand_id=#{brand_id}").body["themes"]
-
-themes.each do |theme|
-  next if theme["id"] == theme_id
-
-  zendesk_connection.delete("themes/#{theme["id"]}")
+sorted = themes.sort_by { |p| p['created_at'] }
+sorted[0..-4].each do |theme|
+    next if theme["id"] == theme_id
+    zendesk_connection.delete("themes/#{theme["id"]}")
 end

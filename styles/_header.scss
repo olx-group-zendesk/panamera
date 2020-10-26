@@ -57,12 +57,8 @@ $header-height: 60px;
     }
 
     img {
-        max-width: 150px;
-        width: 150px;
-        @include tablet {
-            max-width: 168px;
-            width: 168px;
-        }
+        max-width: 188px;
+        width: 188px;
     }
     div {
         display: none;

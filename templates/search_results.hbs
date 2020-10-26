@@ -8,7 +8,7 @@
           <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor" />
           <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5" />
         </svg>
-        {{dc 'eqx_search_input'}}
+        {{dc "v2_search"}}
       </div>
     </nav>
   </div>
@@ -199,6 +199,14 @@
         {{t 'browse_help_center'}}
         {{/link}}
       </p>
+      <p>
+        {{dc 'v2_external_search_prefix_otmprofi'}}<strong>{{query}}</strong>{{dc 'v2_external_search_postfix_otmprofi'}}
+        <a href="{{settings.country_site_url}}{{dc 'v2_external_search_url_otmprofi'}}{{query}}" target="_blank"
+          rel="noreferrer noopener">
+          {{dc 'v2_external_search_text_otmprofi'}}
+        </a>
+      </p>
+
       {{/if}}
     </section>
   </div>
