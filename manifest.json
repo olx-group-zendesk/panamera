@@ -1,5 +1,5 @@
 {
-    "name": "OTOMOTO-PROFI",
+    "name": "OTOMOTO",
     "author": "Zendesk",
     "version": "2.4.1",
     "api_version": 2,
@@ -419,14 +419,14 @@
                     "options": [
                         {
                             "label": "Poland",
-                            "value": "https://www.otomotoprofi.pl/"
+                            "value": "https://www.otomoto.pl/"
                         },
                         {
                             "label": "Ukraine",
                             "value": "https://www.otodom.ua/"
                         }
                     ],
-                    "value": "https://www.otomotoprofi.pl/"
+                    "value": "https://www.otomoto.pl/"
                 }
             ]
         },
@@ -470,7 +470,7 @@
                     "type": "checkbox",
                     "description": "phone_line1_enabled_description",
                     "label": "phone_line1_enabled_label",
-                    "value": false
+                    "value": true
                 },
                 {
                     "identifier": "phone_line2_enabled",

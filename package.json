@@ -22,7 +22,6 @@
     },
     "scripts": {
         "build-css": "./bin/compile.rb",
-        "preview-nodemon": "nodemon -e hbs,json -x \"zat theme preview\"",
         "preview": "zat theme preview",
         "preview-nodemon": "nodemon -e hbs,json -x \"zat theme preview\"",
         "start": "nodemon -e scss -x \"npm run build-css\"",
