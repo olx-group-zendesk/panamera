@@ -1289,7 +1289,7 @@ input[type="submit"][disabled] {
 @media (min-width: 768px) {
   .search input[type="search"] {
     padding-left: 50px;
-    min-height: 72px;
+    min-height: 71px;
     font-size: 20px;
   }
 }
@@ -1302,6 +1302,7 @@ input[type="submit"][disabled] {
 .search input[type="search"]::placeholder {
   color: #7f9799;
   margin-right: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, system-ui, Arial;
 }
 
 .search input[type="search"]:focus {
@@ -1536,7 +1537,7 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 
 @media (min-width: 768px) {
   .sub-nav input[type="search"] {
-    min-width: 300px;
+    min-width: 360px;
   }
 }
 
@@ -1642,7 +1643,7 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: #00b54b;
+  background-color: #232e3f;
   color: #fff;
   min-width: 36px;
   width: 36px;
