@@ -553,11 +553,14 @@ input[type="submit"][disabled] {
 
 .split-button button {
   background-color: transparent;
-  border: 1px solid #002f34;
-  color: #002f34;
+  border: 1px solid #00b54b;
+  color: #00b54b;
   line-height: normal;
-  box-shadow: inset 0 0 0 1px #002f34;
   padding: 8px 20px;
+}
+
+.split-button button:hover, .split-button button:focus, .split-button button:active {
+  background-color: rgba(0, 181, 75, 0.25);
 }
 
 [dir="rtl"] .split-button button:not(:only-child):first-child {
@@ -1645,9 +1648,9 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
   border-radius: 50%;
   background-color: #232e3f;
   color: #fff;
-  min-width: 36px;
-  width: 36px;
-  height: 36px;
+  min-width: 56px;
+  width: 56px;
+  height: 56px;
   margin: 0 12px 0 10px;
 }
 
@@ -1674,15 +1677,8 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 }
 
 .blocks-image > img {
-  width: 16px;
-  height: 16px;
-}
-
-@media (min-width: 768px) {
-  .blocks-image > img {
-    width: 24px;
-    height: 24px;
-  }
+  width: 24px;
+  height: 24px;
 }
 
 .blocks-item {
@@ -1695,7 +1691,6 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
   flex: 1 0 340px;
   margin: 0 0 15px;
   max-width: 100%;
-  text-align: center;
   align-items: center;
 }
 
@@ -1731,13 +1726,18 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 }
 
 .blocks-item-link {
+  width: 100%;
   color: $brand_color;
-  padding: 20px 30px;
+  padding: 12px 5px;
   display: flex;
-  flex-direction: column;
-  flex: 1;
-  justify-content: center;
+  align-items: center;
   border-radius: inherit;
+}
+
+@media (min-width: 768px) {
+  .blocks-item-link {
+    padding: 16px 0px;
+  }
 }
 
 .blocks-item-link:hover, .blocks-item-link:active, .blocks-item-link:focus {
@@ -1747,9 +1747,15 @@ zd-autocomplete-multibrand zd-autocomplete-breadcrumbs-multibrand {
 
 .blocks-item-title {
   margin-bottom: 0;
-  font-size: 20px;
+  font-size: 18px;
   font-family: $heading_font;
   color: #002f34;
+}
+
+@media (min-width: 768px) {
+  .blocks-item-title {
+    font-size: 20px;
+  }
 }
 
 .blocks-item-description {
@@ -2573,12 +2579,12 @@ section.message-alert {
 }
 
 .share a {
-  color: lighten($text_color, 20%);
+  color: #00b54b;
 }
 
 .share a:hover {
   text-decoration: none;
-  color: $brand_color;
+  color: #3ec777;
 }
 
 .share a svg {

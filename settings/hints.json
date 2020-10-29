@@ -4,7 +4,7 @@
 	"default_suggestion": "",
 	"data": [{
             "fields": ["ogłoszenia_i_promowania_-_wybierz_opcję_z_listy__jak_dodać_lub_edytować_ogłoszenie"],
-			"answer_suggestion": "Ogłoszenie w Otodom możesz dodać poprzez przycisk <b>Dodaj ogłoszenie</b> widoczny w górnym menu strony - sprawdź nasz  <a taget='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/206828965'><artykuł></a> na ten temat. <br>Edycja ogłoszenia możliwa jest po zalogowaniu się na konto w Otodom - sprawdź <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/207873009'><instrukcję></a>, jak edytować Twoje ogłoszenie. </br> <br>Jeśli nie masz pewności, jak zalogować się do swojego konta - przygotowaliśmy dla Ciebie kilka podpowiedzi <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/203121441'><tutaj></a>. </br> <br>Masz inne pytania? Skorzystaj z poniższego formularza kontaktowego.</br>"
+			"answer_suggestion": "Ogłoszenie w Otodom możesz dodać poprzez przycisk <b>Dodaj ogłoszenie</b> widoczny w górnym menu strony - sprawdź nasz  <a taget='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/206828965'>artykuł</a> na ten temat. <br>Edycja ogłoszenia możliwa jest po zalogowaniu się na konto w Otodom - sprawdź <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/207873009'>instrukcję</a>, jak edytować Twoje ogłoszenie. </br> <br>Jeśli nie masz pewności, jak zalogować się do swojego konta - przygotowaliśmy dla Ciebie kilka podpowiedzi <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/203121441'>tutaj</a>. </br> <br>Masz inne pytania? Skorzystaj z poniższego formularza kontaktowego.</br>"
 		},
 		{
 			"fields": ["ogłoszenia_i_promowania_-_wybierz_opcję_z_listy__nie_mogę_znaleźć_dodanego_ogłoszenia"],
@@ -12,7 +12,7 @@
 		},
 		{
 			"fields": ["ogłoszenia_i_promowania_-_wybierz_opcję_z_listy__promowania_lub_pakiety"],
-			"answer_suggestion": "Dodajesz ogłoszenie i chcesz, aby oferta była bardziej widoczna dla poszukujących? Sprawdź nasze dostępne promowania i zobacz, jak działają. To proste! Wystarczy, że przeczytasz nasz <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/203187621'><artykuł></a>.<br>Jesteś pośrednikiem i nie wiesz, który pakiet promowań będzie dla Ciebie najlepszy? Sprawdź <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/203125791'><tutaj></a>.</br><br>Dla deweloperów polecamy artykuł o <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/210599129'><promowaniu inwestycji></a>. </br>"
+			"answer_suggestion": "Dodajesz ogłoszenie i chcesz, aby oferta była bardziej widoczna dla poszukujących? Sprawdź nasze dostępne promowania i zobacz, jak działają. To proste! Wystarczy, że przeczytasz nasz <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/203187621'>artykuł</a>.<br>Jesteś pośrednikiem i nie wiesz, który pakiet promowań będzie dla Ciebie najlepszy? Sprawdź <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/203125791'>tutaj</a>.</br><br>Dla deweloperów polecamy artykuł o <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/210599129'>promowaniu inwestycji</a>. </br>"
 		},
 		{
 			"fields": ["ogłoszenia_i_promowania_-_wybierz_opcję_z_listy__blokada_ogłoszenia_przez_otodom__moderacja"],
@@ -38,15 +38,15 @@
 		},
 		{
 			"fields": ["zarządzanie_kontem_-_wybierz_opcję_z_listy__zmiana_hasła_/_przypomnij_hasło"],
-			"answer_suggestion": "Jeśli nie masz pewności, jak zalogować się do swojego konta - przygotowaliśmy dla Ciebie kilka podpowiedzi <a taget='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/203121441'><tutaj></a>."
+			"answer_suggestion": "Jeśli nie masz pewności, jak zalogować się do swojego konta - przygotowaliśmy dla Ciebie kilka podpowiedzi <a taget='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/203121441'>tutaj</a>."
 		},
 		{
 			"fields": ["zarządzanie_kontem_-_wybierz_opcję_z_listy__usunięcie__wypowiedzenie_lub_cesja_konta"],
-			"answer_suggestion": "Jeśli jesteś użytkownikiem indywidualnym, usunięcie konta jest możliwe po zalogowaniu do konta. W zakładce <b>Ustawienia > Dane</b> logowania znajdziesz opcję <b>Usuń moje konto</b>. Pamiętaj, że jest to nieodwracalne.<br><br>W przypadku użytkowników biznesowych prosimy o przesłanie wypowiedzenia przez formularz kontaktowy. Pamiętaj, aby podać adres e-mail, na który jest założone konto w Otodom. Więcej o wypowiedzeniu przeczytasz <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/203058142'><tutaj></a>.</br><br><br>Pomocny może okazać się także nasz artykuł o <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/115005972325'><cesji></a>, która pozwala zmienić właściciela danego konta biznesowego.</br> "
+			"answer_suggestion": "Jeśli jesteś użytkownikiem indywidualnym, usunięcie konta jest możliwe po zalogowaniu do konta. W zakładce <b>Ustawienia > Dane</b> logowania znajdziesz opcję <b>Usuń moje konto</b>. Pamiętaj, że jest to nieodwracalne.<br><br>W przypadku użytkowników biznesowych prosimy o przesłanie wypowiedzenia przez formularz kontaktowy. Pamiętaj, aby podać adres e-mail, na który jest założone konto w Otodom. Więcej o wypowiedzeniu przeczytasz <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/203058142'>tutaj</a>.</br><br><br>Pomocny może okazać się także nasz artykuł o <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/115005972325'>cesji</a>, która pozwala zmienić właściciela danego konta biznesowego.</br> "
 		},
 		{
 			"fields": ["płatności_i_faktury_-_wybierz_opcję_z_listy__jak_znaleźć_lub_wygenerować_fakturę"],
-			"answer_suggestion": "Klienci indywidualni w Otodom mogą samodzielnie wystawić fakturę za wystawione ogłoszenie. Ta opcja dostępna jest po zalogowaniu do konta w Otodom, a <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/208190805'><tutaj></a> możesz sprawdzić dokladną instrukcję, jak to zrobić.<br><br>W przypadku użytkowników biznesowych wszystkie faktury znajdziesz w zakładce <b>Płatności > Faktury.</b></br>"
+			"answer_suggestion": "Klienci indywidualni w Otodom mogą samodzielnie wystawić fakturę za wystawione ogłoszenie. Ta opcja dostępna jest po zalogowaniu do konta w Otodom, a <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/208190805'>tutaj</a> możesz sprawdzić dokladną instrukcję, jak to zrobić.<br><br>W przypadku użytkowników biznesowych wszystkie faktury znajdziesz w zakładce <b>Płatności > Faktury.</b></br>"
 		},
 		{
 			"fields": ["płatności_i_faktury_-_wybierz_opcję_z_listy__liczba_wystawień_/_cennik"],
@@ -54,7 +54,7 @@
 		},
 		{
 			"fields": ["eksporty_type_issues"],
-			"answer_suggestion": "Jeśli chcesz zacząć korzystać z programu do eksportu ogłoszeń, zapoznaj się z naszym <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/203120562'><artykułem></a> w Centrum Pomocy. <br><br>W przypadku pytań dotyczących np. błędów w eksporcie ofert, podaj nam proszę numery ogłoszeń w CRM, których problem dotyczy. Pomocne też będą zrzuty ekranu.</br>"
+			"answer_suggestion": "Jeśli chcesz zacząć korzystać z programu do eksportu ogłoszeń, zapoznaj się z naszym <a target='_blank' rel='noreferrer noopener' href='pomoc.otodom.pl/hc/pl/articles/203120562'>artykułem</a> w Centrum Pomocy. <br><br>W przypadku pytań dotyczących np. błędów w eksporcie ofert, podaj nam proszę numery ogłoszeń w CRM, których problem dotyczy. Pomocne też będą zrzuty ekranu.</br>"
 		},
 		{
 			"fields": ["sugestie_i_zmiany_type_issues"],
@@ -62,7 +62,7 @@
 		},
 		{
 			"fields": ["naruszenie_zasad__-_wybierz_opcję_z_listy__bezprawne_logowanie_lub_przejęcie_konta"],
-			"answer_suggestion": "Jeśli podejrzewasz, że ktoś próbuje lub już przejął Twoje konto, skontaktuj się z nami!<br><br>Jak najszybciej zmień swoje dane logowania wszędzie tam, gdzie były one takie same, jak w naszym serwisie, np. skrzynka mailowa. </br><br><br>Więcej informacji znajdziesz <a target='_blank' rel='norefferer noopenner' href='pomoc.otodom.pl/hc/pl/articles/360000301660'><tutaj></a></br>."
+			"answer_suggestion": "Jeśli podejrzewasz, że ktoś próbuje lub już przejął Twoje konto, skontaktuj się z nami!<br><br>Jak najszybciej zmień swoje dane logowania wszędzie tam, gdzie były one takie same, jak w naszym serwisie, np. skrzynka mailowa. </br><br><br>Więcej informacji znajdziesz <a target='_blank' rel='norefferer noopenner' href='pomoc.otodom.pl/hc/pl/articles/360000301660'>tutaj</a></br>."
 		},
 		{
 			"fields": ["naruszenie_zasad__-_wybierz_opcję_z_listy__ogłoszenie_jest_nieaktualne"],

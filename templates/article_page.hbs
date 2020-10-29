@@ -184,15 +184,9 @@
             <li class="blocks-button">
               <img src="{{asset 'icon-write-us.svg'}}">
               <div class="blocks-item-button">
-                {{#if settings.default_form_id}}
-                {{#link "new_request" class="olx-button olx-button-primary"}}
-                {{dc "write_to_us"}}
-                {{/link}}
-                {{else}}
                 <a class="olx-button olx-button-primary" href="{{dc 'eqx_ticket_form_id'}}">
                   {{dc "write_to_us"}}
                 </a>
-                {{/if}}
               </div>
             </li>
 

@@ -386,14 +386,14 @@
                     "type": "checkbox",
                     "description": "alert_enabled_description",
                     "label": "alert_enabled_label",
-                    "value": true
+                    "value": false
                 },
                 {
                     "identifier": "info_enabled",
                     "type": "checkbox",
                     "description": "info_enabled_description",
                     "label": "info_enabled_label",
-                    "value": true
+                    "value": false
                 }
             ]
         },
@@ -477,7 +477,7 @@
                     "type": "checkbox",
                     "description": "phone_line2_enabled_description",
                     "label": "phone_line2_enabled_label",
-                    "value": true
+                    "value": false
                 }
             ]
         },

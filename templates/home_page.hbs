@@ -111,15 +111,17 @@
       <ul class="blocks-list">
         {{#each categories}}
         {{#if ../has_multiple_categories}}
-        <li class="blocks-item">
-          <div class="blocks-image">
-            <img id={{id}} src="{{asset 'icon-flag.svg'}}">
-          </div>
+        <li class="blocks-item"> 
           <a href='{{url}}' class="blocks-item-link">
-            <span class="blocks-item-title">{{name}}</span>
-            <span class="blocks-item-description">{{excerpt description}}</span>
+            <div class="blocks-image">
+              <img id={{id}} src="{{asset 'icon-flag.svg'}}">
+            </div>
+            <div>
+              <span class="blocks-item-title">{{name}}</span>
+              <span class="blocks-item-description">{{excerpt description}}</span>
+            </div>
           </a>
-        </li>
+          </li>
         {{else}}
         {{#each sections}}
         <li class="blocks-item">
@@ -188,15 +190,9 @@
       <li class="blocks-button">
         <img src="{{asset 'icon-write-us.svg'}}">
         <div class="blocks-item-button">
-          {{#if settings.default_form_id}}
-          {{#link "new_request" class="olx-button olx-button-primary"}}
-          {{dc "write_to_us"}}
-          {{/link}}
-          {{else}}
           <a class="olx-button olx-button-primary" href="{{dc 'eqx_ticket_form_id'}}">
             {{dc "write_to_us"}}
           </a>
-          {{/if}}
         </div>
       </li>
 

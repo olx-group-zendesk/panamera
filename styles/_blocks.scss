@@ -79,9 +79,9 @@
         border-radius: 50%;
         background-color: #232e3f;
         color: $color-white;
-        min-width: 36px;
-        width: 36px;
-        height: 36px;
+        min-width: 56px;
+        width: 56px;
+        height: 56px;
         margin: 0 12px 0 10px;
         [dir="rtl"] & {
             margin: 0 10px 0 12px;
@@ -99,12 +99,8 @@
             }
         }
         & > img {
-            width: 16px;
-            height: 16px;
-            @include tablet {
-                width: 24px;
-                height: 24px;
-            }
+            width: 24px;
+            height: 24px;
         }
     }
 
@@ -121,7 +117,6 @@
         flex: 1 0 340px;
         margin: 0 0 15px;
         max-width: 100%;
-        text-align: center;
         align-items: center;
 
         &:hover,
@@ -153,12 +148,14 @@
     }
 
     &-item-link {
+        width: 100%;
         color: $brand_color;
-        padding: 20px 30px;
+        @include tablet {
+            padding: 16px 0px;
+        }
+        padding: 12px 5px;
         display: flex;
-        flex-direction: column;
-        flex: 1;
-        justify-content: center;
+        align-items: center;
         border-radius: inherit;
 
         &:hover,
@@ -171,7 +168,10 @@
 
     &-item-title {
         margin-bottom: 0;
-        font-size: 20px;
+        @include tablet {
+            font-size: 20px;
+        }
+        font-size: 18px;
         font-family: $heading_font;
         color: $color-charcoal;
     }
