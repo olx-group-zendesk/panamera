@@ -167,15 +167,18 @@
     {{dc 'eqx_info_content'}}
   </section>
   {{/if}}
-  <h1>
-    {{t 'submit_a_request'}}
-    <span class="follow-up-hint">
-      {{follow_up}}
-    </span>
-  </h1>
-  <div class="form-background">
-    <div id="main-content" class="form">
-      {{request_form}}
+    <h1>
+      {{t 'submit_a_request'}}
+      <span class="follow-up-hint">
+        {{follow_up}}
+      </span>
+    </h1>
+    <div class="form-background">
+      <div id="main-content" class="form form-with-aside">
+        {{request_form}}
+        <aside>
+          {{dc 'v2_business_hours'}}
+        </aside>
+      </div>
     </div>
-  </div>
 </div>

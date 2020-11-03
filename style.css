@@ -658,10 +658,6 @@ input[type="submit"][disabled] {
 }
 
 /***** Forms *****/
-.form {
-  max-width: 650px;
-}
-
 .form-background {
   background: #fff;
   border-radius: 2px;
@@ -673,6 +669,39 @@ input[type="submit"][disabled] {
   .form-background {
     padding: 32px;
   }
+}
+
+.form-with-aside {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 768px) {
+  .form-with-aside {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.form-with-aside > aside > div {
+  font-size: smaller;
+  padding: 0 0.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid #d8dfe0;
+  border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+  .form-with-aside > aside > div {
+    margin-bottom: inherit;
+    margin-left: 2rem;
+    width: 250px;
+    padding: 0.5rem 1rem;
+  }
+}
+
+.form-with-aside > aside > div p {
+  text-align: center;
 }
 
 .form-field ~ .form-field {
@@ -4292,6 +4321,7 @@ section.message-alert {
   .hints-container {
     min-height: 100px;
     margin: 16px 0 32px 0;
+    max-width: 500px;
   }
 }
 

@@ -1,7 +1,7 @@
 /***** Forms *****/
 
 .form {
-    max-width: 650px;
+    // max-width: 650px;
     &-background {
         @include tablet {
             padding: 32px;
@@ -10,6 +10,33 @@
         border-radius: $border-radius;
         padding: 16px;
         margin-bottom: 28px;
+    }
+    &-with-aside {
+        display: flex;
+        flex-direction: column-reverse;
+        
+        
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        & > aside > div {
+            @include tablet {
+                margin-bottom: inherit;
+                margin-left: 2rem;
+                width: 250px;
+                padding: 0.5rem 1rem;
+            }
+            font-size: smaller;
+            padding: 0 0.5rem;
+            margin-bottom: 2rem;
+            border: 1px solid $border-color;
+            border-radius: 4px;
+            & p {
+                text-align: center;
+            }
+        }        
     }
 }
 
