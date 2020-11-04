@@ -1,7 +1,7 @@
 {
     "name": "Copenhagen",
     "author": "Zendesk",
-    "version": "2.3.1",
+    "version": "2.4.1",
     "api_version": 2,
     "default_locale": "en-us",
     "settings": [
@@ -296,7 +296,7 @@
                     "type": "checkbox",
                     "description": "article_author_description",
                     "label": "article_author_label",
-                    "value": true
+                    "value": false
                 },
                 {
                     "identifier": "show_article_comments",
@@ -386,14 +386,14 @@
                     "type": "checkbox",
                     "description": "alert_enabled_description",
                     "label": "alert_enabled_label",
-                    "value": true
+                    "value": false
                 },
                 {
                     "identifier": "info_enabled",
                     "type": "checkbox",
                     "description": "info_enabled_description",
                     "label": "info_enabled_label",
-                    "value": true
+                    "value": false
                 }
             ]
         },
@@ -477,7 +477,7 @@
                     "type": "checkbox",
                     "description": "phone_line2_enabled_description",
                     "label": "phone_line2_enabled_label",
-                    "value": true
+                    "value": false
                 }
             ]
         },
