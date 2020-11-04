@@ -11,15 +11,5 @@
     })(window, document, 'script', 'dataLayer', 'GTM-MRK4JFF');</script>
 <!-- End Google Tag Manager -->
 {{#if settings.enable_headroom}}
-{{#unless signed_in}}
-<script type="text/javascript">
-    if (
-        document.cookie.match(/^(.*;)?\s*access_token\s*=\s*[^;]+(.*)?$/) !==
-        null
-    ) {
-        window.location = "{{settings.country_site_url}}" + "account/zendesksso?nativeMode=1"
-    }
-</script>
-{{/unless}}
 <script src="{{asset 'headroom.min.js'}}"></script>
 {{/if}}
