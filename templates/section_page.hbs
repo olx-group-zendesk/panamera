@@ -91,4 +91,109 @@
 
     </section>
   </div>
+<h3 class="centered">
+    {{dc "need_more_help"}}
+</h3>
+<section class="categories blocks">
+    <ul class="blocks-list blocks-list-centered">
+        <li class="blocks-button">
+            <img src="{{asset "icon-write-us.svg"}}" />
+            <div class="blocks-item-button">
+                {{#if settings.default_form_id}}
+                    {{#link "new_request" class="olx-button olx-button-primary"
+                    }}
+                        {{dc "write_to_us"}}
+                    {{/link}}
+                {{else}}
+                    <a
+                        class="olx-button olx-button-primary"
+                        href="{{dc "eqx_ticket_form_id"}}"
+                    >
+                        {{dc "write_to_us"}}
+                    </a>
+                {{/if}}
+            </div>
+        </li>
+        <li class="blocks-button blocks-button-chat">
+            <img src="{{asset "icon-chat.svg"}}" />
+            <div class="blocks-item-button">
+                <a
+                    name="live-chat"
+                    onclick="zen.webWidget.show();"
+                    class="olx-button olx-button-primary"
+                >
+                    {{dc "chat_live"}}
+                </a>
+            </div>
+        </li>
+    </ul>
+</section>
+<section class="categories blocks">
+    <ul class="blocks-list blocks-list-centered">
+        {{#if settings.phone_line1_enabled}}
+            <li class="blocks-button">
+                <img src="{{asset "icon-call-us.svg"}}" />
+                <div class="blocks-item-button">
+                    <a
+                        href="tel:{{dc "eqx_phone_line_one_number"}}"
+                        title="{{dc "eqx_phone_line_one_number"}}"
+                        name="phone-line-1"
+                        data-phone-line1-number-title="{{dc
+                                "eqx_phone_line_one_text"
+                            }}"
+                        data-phone-line1-number="{{dc
+                                "eqx_phone_line_one_number"
+                            }}"
+                        class="olx-button olx-button-primary"
+                    >
+                        {{dc "eqx_phone_line_one_text"}}
+                    </a>
+                </div>
+            </li>
+        {{/if}}
+        {{#if settings.phone_line2_enabled}}
+            <li class="blocks-button">
+                <img src="{{asset "icon-call-us.svg"}}" />
+                <div class="blocks-item-button">
+                    <a
+                        href="tel:{{dc "eqx_phone_line_two_number"}}"
+                        title="{{dc "eqx_phone_line_two_number"}}"
+                        name="phone-line-2"
+                        data-phone-line2-number-title="{{dc
+                                "eqx_phone_line_two_text"
+                            }}"
+                        data-phone-line2-number="{{dc
+                                "eqx_phone_line_two_number"
+                            }}"
+                        class="olx-button olx-button-primary"
+                    >
+                        {{dc "eqx_phone_line_two_text"}}
+                    </a>
+                </div>
+            </li>
+        {{/if}}
+    </ul>
+    {{#if settings.phone_line1_enabled}}
+        <div class="blocks-stacked blocks-stacked-centered">
+            <span class="gray centered small">
+                *
+                {{dc "eqx_phone_line_one_business_hours_title"}}
+            </span>
+            <span class="gray centered small">
+                {{dc "eqx_phone_line_one_business_hours_subtitle"}}
+            </span>
+        </div>
+    {{/if}}
+    {{#if settings.phone_line2_enabled}}
+        <div class="blocks-stacked blocks-stacked-centered">
+            <span class="gray centered small">
+                *
+                {{dc "eqx_phone_line_two_business_hours_title"}}
+            </span>
+            <span class="gray centered small">
+                {{dc "eqx_phone_line_two_business_hours_subtitle"}}
+            </span>
+        </div>
+    {{/if}}
+</section>
 </div>
